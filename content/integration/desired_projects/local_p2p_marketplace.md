@@ -52,6 +52,10 @@ Escrowed, classifieds-style P2P trade marketplace enabling local communities to 
 - **Reputation system**: ZK proofs of past successful transactions without revealing details
 - **Escrow**: Multi-signature smart contracts or trusted third-party escrow
 
+## Dependencies
+
+- [[integration/desired_projects/private_stablecoin|Private Stablecoin]]
+
 ## Technical Validation
 
 **Risks & Challenges:**
