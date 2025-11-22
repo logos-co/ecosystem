@@ -8,18 +8,20 @@ category: DeFi Core
 
 Allows users to trade their bridged and shielded assets anonymously within the ecosystem, preventing de-anonymization from using centralized exchanges.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Enable anonymous trading of shielded assets
 - Provide price discovery and liquidity mechanisms
 - Support automated market makers (AMMs) with encrypted state
 - Implement fair ordering mechanisms to prevent MEV exploitation
 
-## Performance
+### Performance
 
 - Frequent batch auctions to ensure fair, MEV-resistant trading
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Prevent front-running and sandwich attacks through encrypted mempool
 - Hide trader identities, balances, and order details

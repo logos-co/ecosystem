@@ -65,9 +65,9 @@ stateDiagram-v2
 
 # Concerns / Priorities
 What drives the prioritisation of the requirements forwarded to the Logos contributors?
-## (1) [[Sustainability]]
+## (1) [[integration/concerns/sustainability|Sustainability]]
 Enable and drive onchain activity and value accrual to sustain the development of the technology stack for the Movement.
-## (2) [[Movement]]
+## (2) Movement
 Provide the technological solutions needed by the movement to organise, identified and solve winnable issues
-## (3) [[Technology De-Risking]]
+## (3) Technology De-Risking
 Enable early delivery and validation of technology with most unknowns and risks

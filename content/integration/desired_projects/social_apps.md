@@ -8,7 +8,9 @@ category: Consumer Apps
 
 Enables viral social applications that onboard non-DeFi users while protecting social graphs, content, and user interactions from public surveillance.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Support private social trading (follow traders, copy trades, private leaderboards with ZK proofs)
 - Enable encrypted social networks (messaging, group chats, shielded social graphs, anonymous posts with optional reputation)
@@ -17,7 +19,7 @@ Enables viral social applications that onboard non-DeFi users while protecting s
 - Enable private prediction markets (forecast events without revealing bets)
 - Support anonymous forums & communities (token-gated access, reputation without identity)
 
-## Usability
+### Usability
 
 - Web2-level UX with Web3 privacy
 - Gasless transactions (subsidized or batched)
@@ -25,11 +27,11 @@ Enables viral social applications that onboard non-DeFi users while protecting s
 - Mobile-first design
 - Social recovery for key management
 
-## Performance
+### Performance
 
 - Scalability for social-scale traffic (1000s TPS)
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Protect social graphs (connections and followers remain private)
 - Shield financial activity (purchases, tips, trades not exposed)

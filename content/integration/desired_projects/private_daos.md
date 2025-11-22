@@ -8,7 +8,9 @@ category: Governance
 
 Ensures proposals and votes can be cast anonymously, protecting participants from coercion, bribery, and surveillance while maintaining verifiable, censorship-resistant governance.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Enable anonymous proposal submission
 - Support secret ballot voting
@@ -16,7 +18,7 @@ Ensures proposals and votes can be cast anonymously, protecting participants fro
 - Implement verifiable vote tallying without revealing individual votes
 - Support collusion resistance (MACI-style mechanisms)
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Anonymous proposals (submit without revealing identity)
 - Secret ballot voting (cast votes without exposing choice or voting power)

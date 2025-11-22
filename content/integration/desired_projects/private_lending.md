@@ -8,7 +8,9 @@ category: DeFi Core
 
 Allows users to collateralize their shielded assets to borrow other shielded assets without publicly revealing their financial positions, debt, or net worth.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Enable collateralization of shielded assets to borrow other shielded assets
 - Execute liquidations when positions become under-collateralized
@@ -16,7 +18,7 @@ Allows users to collateralize their shielded assets to borrow other shielded ass
 - Integrate with price oracles for asset valuation
 - Maintain protocol solvency
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Keep all user positions, collateral amounts, and borrowed amounts confidential
 - Execute liquidations without revealing the position being liquidated

@@ -8,7 +8,9 @@ category: Token Infrastructure
 
 Facilitates the fair and private launch of new tokens directly into the shielded ecosystem, allowing new communities to form and fundraise without public scrutiny or the risk of sniper bots.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Support multiple distribution methods: private IDO, fair launch auctions, liquidity bootstrapping, airdrops, token generation events (TGEs)
 - Provide no-code token creation interface
@@ -18,11 +20,11 @@ Facilitates the fair and private launch of new tokens directly into the shielded
 - Integrate with private DEX for liquidity
 - Support various token types (governance, utility, meme coins, fundraising, asset-backed)
 
-## Usability
+### Usability
 
 - Web2-level UX with gasless transactions (where mentioned as needed for adoption)
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Prevent sniper bots via encrypted mempool (no front-running)
 - Fair distribution via ZK eligibility proofs without revealing identity

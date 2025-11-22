@@ -8,7 +8,9 @@ category: NFTs & Identity
 
 Enables NFTs whose owner and metadata are encrypted, allowing for private digital asset ownership, anonymous credentials, and confidential collectibles.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Support NFTs with encrypted owner and metadata
 - Enable selective disclosure (prove ownership without revealing identity)
@@ -16,7 +18,7 @@ Enables NFTs whose owner and metadata are encrypted, allowing for private digita
 - Allow confidential transfers
 - Enable optional metadata visibility controls
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Shielded ownership (only owner knows they possess NFT)
 - Optional selective disclosure mechanisms

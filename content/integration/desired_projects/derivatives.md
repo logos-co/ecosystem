@@ -8,7 +8,9 @@ category: Advanced DeFi
 
 Attracts professional traders and generates high trading volumes by allowing for leveraged positions on shielded assets while protecting traders' strategies.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Support perpetual futures (no expiry contracts)
 - Enable options trading (calls and puts)
@@ -20,7 +22,7 @@ Attracts professional traders and generates high trading volumes by allowing for
 - Support portfolio margin (risk-based across positions)
 - Include insurance fund for bad debt protection
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Hide collateral amount and type
 - Conceal position size, direction (long/short), and leverage

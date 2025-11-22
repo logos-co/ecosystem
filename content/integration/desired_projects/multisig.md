@@ -8,7 +8,9 @@ category: Custody & Security
 
 Enables secure shared custody of shielded assets requiring multiple signatures to authorize transactions, protecting treasuries and shared funds without revealing signers or balances.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Support flexible M-of-N threshold configurations for transaction approval
 - Enable policy updates (change signers or threshold with consensus)
@@ -16,7 +18,7 @@ Enables secure shared custody of shielded assets requiring multiple signatures t
 - Support emergency recovery mechanisms if signers are lost
 - Enable transaction queuing with proposal and approval workflow
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Hide signer identities (authorized signers not publicly visible)
 - Conceal threshold requirements (required number of signatures not exposed)

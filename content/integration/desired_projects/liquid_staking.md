@@ -8,7 +8,9 @@ category: Staking & Security
 
 Unlocks staked capital by allowing users to stake the native token to secure the network while receiving a liquid, shielded token that can be used in private DeFi.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Enable staking of native token with receipt of liquid derivative token
 - Support usage of derivative in DeFi (lending, DEX trading)
@@ -17,7 +19,7 @@ Unlocks staked capital by allowing users to stake the native token to secure the
 - Enable unstaking via privacy-preserving exit queue
 - Offer slashing protection mechanisms
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Private staking deposits without public exposure
 - Shielded receipt token (e.g., stLOGOS) issuance

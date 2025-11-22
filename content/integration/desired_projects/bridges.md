@@ -8,20 +8,22 @@ category: Infrastructure
 
 Absolutely mandatory for onboarding assets and users to the privacy L1 through secure, privacy-preserving cross-chain infrastructure.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Enable cross-chain asset transfers (ETH, BTC, major tokens, stablecoins)
 - Support cross-chain messaging for advanced interoperability
 - Provide liquidity bridges for fast, low-cost bridging via liquidity pools
 - Implement light client verification or trusted validator mechanisms
 
-## Reliability
+### Reliability
 
 - Economic security models with stake requirements
 - Fraud proof mechanisms for dispute resolution
 - Recovery mechanisms from bridge compromise without revealing user funds
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - One-way deposit into shielded pool breaks link between source and destination addresses
 - Privacy-preserving withdrawals via relayer networks or mixing mechanisms

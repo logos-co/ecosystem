@@ -8,14 +8,16 @@ category: DeFi Core
 
 Provides a stable medium of exchange for private payments, payroll, and DeFi without exposing users to native asset volatility.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Provide stable medium of exchange for private payments
 - Enable compatibility with all shielded DeFi primitives (DEX, lending, etc.)
 - Support auditable reserves for solvency verification
 - Implement redemption mechanisms
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Transact entirely within shielded ecosystem
 - Individual user balances and transfers completely confidential

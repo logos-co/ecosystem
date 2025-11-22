@@ -8,7 +8,9 @@ category: DeFi Core
 
 Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Enable trust-minimized P2P swaps of shielded assets
 - Ensure atomicity (either both sides complete or neither does)
@@ -16,7 +18,7 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 - Provide trustless escrow without intermediary knowledge
 - Enable OTC trading for large deals
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Hide counterparties (neither party's identity or address revealed)
 - Conceal amounts (trade sizes not publicly visible)

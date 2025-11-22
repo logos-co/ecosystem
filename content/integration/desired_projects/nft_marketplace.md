@@ -8,7 +8,9 @@ category: NFTs & Identity
 
 Enables a market for unique digital assets where ownership, bids, and transaction history are confidential.
 
-## Functionality
+## FURPS+
+
+### Functionality
 
 - Support fixed price listings with privacy
 - Enable private auction mechanisms (sealed bid, Vickrey auctions)
@@ -20,7 +22,7 @@ Enables a market for unique digital assets where ownership, bids, and transactio
 - Provide private fractional ownership (advanced)
 - Enable shielded NFT lending and rental markets (advanced)
 
-## Design Constraints (Privacy)
+## + (Privacy, Anonymity, Censorship-Resistance)
 
 - Shielded ownership (NFT holdings not publicly visible)
 - Private transfers without exposing parties
