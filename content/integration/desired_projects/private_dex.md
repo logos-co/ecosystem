@@ -1,0 +1,50 @@
+---
+title: Private DEX (Decentralized Exchange)
+type: Desired Project
+priority: 2
+flywheel: Liquidity
+category: DeFi Core
+---
+
+Allows users to trade their bridged and shielded assets anonymously within the ecosystem, preventing de-anonymization from using centralized exchanges.
+
+## Functionality
+
+- Enable anonymous trading of shielded assets
+- Provide price discovery and liquidity mechanisms
+- Support automated market makers (AMMs) with encrypted state
+- Implement fair ordering mechanisms to prevent MEV exploitation
+
+## Performance
+
+- Frequent batch auctions to ensure fair, MEV-resistant trading
+
+## Design Constraints (Privacy)
+
+- Prevent front-running and sandwich attacks through encrypted mempool
+- Hide trader identities, balances, and order details
+- Support trading of shielded assets without revealing liquidity provider positions
+
+## Demand Validation
+
+**Potential Users:** All users with shielded assets requiring trading capability
+
+**Use Cases:**
+- Trading bridged and shielded assets without exposing identity
+- Avoiding centralized exchange KYC requirements
+- Price discovery within private ecosystem
+- Liquidity provision without position disclosure
+
+## Possible Implementation
+
+- AMMs with encrypted state for liquidity pools
+- Frequent batch auctions for MEV-resistant trading
+- ZK proofs for trade validation without revealing details
+
+## Technical Validation
+
+**Risks & Challenges:**
+- Implementing AMMs with fully encrypted state
+- Managing liquidity pools where TVL and individual positions are shielded
+- Price oracle integration while maintaining privacy
+- Fair ordering mechanisms to prevent MEV exploitation

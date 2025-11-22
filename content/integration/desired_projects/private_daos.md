@@ -1,0 +1,51 @@
+---
+title: Private DAOs and Governance
+type: Desired Project
+priority: 9
+flywheel: Network Effects
+category: Governance
+---
+
+Ensures proposals and votes can be cast anonymously, protecting participants from coercion, bribery, and surveillance while maintaining verifiable, censorship-resistant governance.
+
+## Functionality
+
+- Enable anonymous proposal submission
+- Support secret ballot voting
+- Provide private delegation mechanisms
+- Implement verifiable vote tallying without revealing individual votes
+- Support collusion resistance (MACI-style mechanisms)
+
+## Design Constraints (Privacy)
+
+- Anonymous proposals (submit without revealing identity)
+- Secret ballot voting (cast votes without exposing choice or voting power)
+- Private delegation (delegate voting power confidentially)
+- Verifiable tallying (prove vote outcome correctness without revealing individual votes)
+- Prevent vote buying and coercion
+
+## Demand Validation
+
+**Potential Users:** DAO members, protocol governance participants, community organizers
+
+**Use Cases:**
+- Protocol parameter changes with anonymous voting
+- Treasury allocation decisions without plutocratic transparency
+- Membership admission/revocation with secret ballots
+- Emergency response coordination without exposing decision-makers
+- Whistleblowing and sensitive proposal mechanisms
+
+## Possible Implementation
+
+- **MACI (Minimal Anti-Collusion Infrastructure)**: Uses ZK proofs to prevent vote buying
+- **Private weighted voting**: Stake-weighted votes with encrypted balances
+- **Threshold decryption**: Votes encrypted until threshold met, then collectively decrypted
+- **ZK tallying**: Homomorphic encryption or ZK circuits for private vote counting
+
+## Technical Validation
+
+**Risks & Challenges:**
+- Balancing privacy with accountability (preventing Sybil attacks)
+- Enabling emergency governance override mechanisms
+- Token-weighted vs. identity-based voting in privacy context
+- Integration with private treasury management (multisig)

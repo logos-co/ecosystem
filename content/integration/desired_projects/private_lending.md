@@ -1,0 +1,51 @@
+---
+title: Private Lending & Borrowing Protocol
+type: Desired Project
+priority: 4
+flywheel: Capital Efficiency
+category: DeFi Core
+---
+
+Allows users to collateralize their shielded assets to borrow other shielded assets without publicly revealing their financial positions, debt, or net worth.
+
+## Functionality
+
+- Enable collateralization of shielded assets to borrow other shielded assets
+- Execute liquidations when positions become under-collateralized
+- Calculate health factors and interest rates
+- Integrate with price oracles for asset valuation
+- Maintain protocol solvency
+
+## Design Constraints (Privacy)
+
+- Keep all user positions, collateral amounts, and borrowed amounts confidential
+- Execute liquidations without revealing the position being liquidated
+- Maintain protocol solvency while hiding individual user data
+- Prevent attackers from identifying over-leveraged positions to target
+
+## Demand Validation
+
+**Potential Users:** Capital-efficient DeFi users, leveraged traders, liquidity providers
+
+**Use Cases:**
+- Leveraging holdings without selling or exposing positions
+- Borrowing for trading opportunities while maintaining privacy
+- Earning yield on deposited collateral
+- Accessing liquidity without tax events
+
+## Possible Implementation
+
+- Advanced ZK circuits for private liquidation management
+- Privacy-preserving price oracles for asset valuation
+- Encrypted health factor and interest rate calculations
+- Fair liquidation mechanisms without public liquidation bots
+- Protocol solvency proofs without exposing user positions
+
+## Technical Validation
+
+**Risks & Challenges:**
+- Building advanced ZK circuits to manage liquidations privately
+- Calculating health factors and interest rates on encrypted data
+- Implementing privacy-preserving price oracles
+- Designing fair liquidation mechanisms without public liquidation bots
+- Proving protocol solvency without exposing user positions
