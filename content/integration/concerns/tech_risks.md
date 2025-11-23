@@ -3,11 +3,9 @@ title: Technological Risks
 ---
 # Blockchain
 
-## Execution
+## Zones: Execution and Consensus/DA Integration
 
-## DA
-
-## Consensus
+The zones design, aka, integration of Nomos' DA and consensus with Nescience as the execution protocol.
 
 # Storage
 
