@@ -51,7 +51,7 @@ Enables viral social applications that onboard non-DeFi users while protecting s
 - Anonymous community participation
 - Creator monetization without exposing earnings
 - Private messaging and social networking
-- Token-gated communities without revealing holdings
+- Token-gated communities without revealing [[integration/desired_projects/private_nft_ownership|holdings]]
 - Anonymous prediction markets and reputation building
 
 ## Possible Implementation

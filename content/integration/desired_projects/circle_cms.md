@@ -90,8 +90,8 @@ Leveraging existing opchan libraries.
 - Versioning and Conflict resolution in decentralized collaborative editing
 
 **Integration Points:**
-- Circle membership systems for access control (Private NFTs, DAOs, Keycard)
-- Logos Storage (for options 2, 3.a, 3.b)
+- Circle membership systems for access control ([[integration/desired_projects/private_nft_ownership|Private NFTs]], [[integration/desired_projects/private_daos|DAOs]], Keycard)
+- [[integration/infrastructure_essentials/logos_storage|Logos Storage]] (for options 2, 3.a, 3.b)
 - Logos Package Management (for option 2)
 - Git infrastructure (GitHub, Gitea, Radicle for option 1)
 - opchan libraries (for option 4)

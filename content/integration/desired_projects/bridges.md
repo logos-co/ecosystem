@@ -39,7 +39,7 @@ Absolutely mandatory for onboarding assets and users to the privacy L1 through s
 
 **Use Cases:**
 - Initial asset onboarding from Ethereum, Bitcoin, and other chains
-- Stablecoin transfers (USDC, USDT, DAI) for private commerce
+- [[integration/desired_projects/private_stablecoin|Stablecoin]] transfers (USDC, USDT, DAI) for private commerce
 - Cross-chain DeFi operations
 - Privacy-preserving asset migration
 

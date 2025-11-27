@@ -39,7 +39,7 @@ Attracts professional traders and generates high trading volumes by allowing for
 
 **Use Cases:**
 - Leveraged speculation on asset price movements
-- Hedging existing spot positions
+- Hedging existing [[integration/desired_projects/private_dex|spot]] positions
 - Generating yield through market making
 - Trading synthetic exposure to external assets
 - Private prediction market participation

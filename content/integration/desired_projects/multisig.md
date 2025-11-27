@@ -56,7 +56,7 @@ Enables secure shared custody of shielded assets requiring multiple signatures t
 - Proving authorization without exposing signers
 
 **Integration Points:**
-- Private DAOs: Native multisig for DAO governance
+- [[integration/desired_projects/private_daos|Private DAOs]]: Native multisig for DAO governance
 - Treasury management: Integration with portfolio tracking
-- DeFi protocols: Use multisig assets as collateral
-- Identity systems: Link multisig to ZK credentials
+- [[integration/desired_projects/private_lending|DeFi protocols]]: Use multisig assets as collateral
+- [[integration/desired_projects/private_nft_ownership|Identity systems]]: Link multisig to ZK credentials
