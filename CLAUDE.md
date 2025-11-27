@@ -24,16 +24,65 @@ The content focuses on the Integration effort which enables bi-directional feedb
 **File naming convention:**
 - Use underscores instead of spaces: `activity_hub.md` not `Activity Hub.md`
 
-## Creating Desired Projects
+## Integration Content Taxonomy
 
-### When to Create a New Project
-- Document a distinct application or primitive needed in the Logos ecosystem
-- The project addresses a specific use case not covered by existing projects
-- If unsure, check existing projects in `content/integration/desired_projects/` first
+The Integration effort organizes content into three main categories:
+
+### 1. Infrastructure Essentials (`infrastructure_essentials/`)
+**What belongs here:** Core blockchain infrastructure that the network needs to operate and be accessible
+
+**Examples:**
+- Block explorers
+- RPC endpoints and infrastructure
+- Indexers and data availability layers
+- Network monitoring and analytics
+- Faucets and testnets
+- Logos Storage
+- Logos Messaging
+
+### 2. Application Essentials (`application_essentials/`)
+**What belongs here:** Developer tools and primitives needed to build applications on Logos
+
+**Examples:**
+- Smart contract toolchain (compilers, debuggers, testing frameworks)
+- Development environments and IDEs
+- Token creation standards and tools
+- On-chain primitives (storage, compute, messaging)
+- UI libraries and component kits
+- SDK and API libraries
+- Contract templates and boilerplates
+
+### 3. Desired Projects (`desired_projects/`)
+**What belongs here:** End-user applications and ecosystem projects that provide value to users
+
+**Examples:**
+- DeFi protocols (stablecoins, lending, DEXs)
+- NFT marketplaces
+- DAOs and governance tools
+- Social applications
+- Entity formation and legal tools
+- Gaming and consumer apps
+
+---
+
+## Creating Integration Content
+
+### Determining the Right Category
+
+Use this decision tree:
+
+1. **Is it infrastructure for network access/visibility?** → `infrastructure_essentials/`
+   - Block explorers, RPCs, indexers, monitoring, Logos Storage, Logos Messaging
+
+2. **Is it a tool/primitive for developers to build apps?** → `application_essentials/`
+   - Toolchains, SDKs, standards, templates, on-chain primitives
+
+3. **Is it an end-user application or protocol?** → `desired_projects/`
+   - DeFi, NFTs, DAOs, social apps, marketplaces
 
 ### Standard Structure Template
 
-All files in `content/integration/desired_projects/` follow this structure:
+All integration content files follow this structure:
 
 ```markdown
 ---
@@ -214,7 +263,7 @@ When the user says "check", perform the following quality assurance tasks across
 
 1. **Ensure filename conventions**: Verify that all markdown files use underscores instead of spaces in filenames (e.g., `activity_hub.md` not `Activity Hub.md`)
 
-2. **Ensure document structure consistency**: Verify that files within the same folders follow consistent structure patterns (e.g., all files in `content/integration/desired_projects/` have similar headings, sections, and frontmatter format)
+2. **Ensure document structure consistency**: Verify that files within the same folders follow consistent structure patterns (e.g., all files in `content/integration/desired_projects/`, `infrastructure_essentials/`, or `application_essentials/` have similar headings, sections, and frontmatter format)
 
 3. **Add internal links**: Identify mentions of concepts and artifacts that are defined elsewhere in the repository and add wikilinks to connect them (e.g., if a file mentions "Multisig" and there's a `multisig.md` file, link to it)
 
@@ -223,7 +272,7 @@ When the user says "check", perform the following quality assurance tasks across
 **Example successful check output:**
 ```
 ✅ Filename conventions enforced (underscores not spaces)
-✅ Document structure consistency across desired_projects/
+✅ Document structure consistency across integration folders
 ✅ Internal links added throughout documents
 ✅ All internal links validated
 ```
@@ -349,7 +398,9 @@ Central configuration file containing:
 - `content/index.md`: Site homepage
 - `content/integration/`: Integration effort documentation
   - `concerns/`: Priority drivers (sustainability, movement, tech de-risking)
-  - `desired_projects/`: Ecosystem project categories (DeFi, NFTs, DAOs, etc.)
+  - `infrastructure_essentials/`: Core blockchain infrastructure (block explorers, RPCs, Logos Storage/Messaging)
+  - `application_essentials/`: Developer tools and primitives (toolchains, SDKs, on-chain primitives)
+  - `desired_projects/`: End-user applications and protocols (DeFi, NFTs, DAOs, etc.)
 
 ## Development Notes
 
