@@ -5,7 +5,7 @@ priority: 0
 category: Infrastructure
 ---
 
-Decentralized, privacy-preserving storage network (formerly Codex) providing persistent data availability for applications and content on Logos.
+Decentralized, privacy-preserving storage network (formerly Codex) providing persistent data availability for Logos applications and content.
 
 ## FURPS+
 
@@ -21,8 +21,8 @@ Decentralized, privacy-preserving storage network (formerly Codex) providing per
 ### Reliability
 - Ensure data persistence through redundancy across nodes
 - Provide verifiable proofs of data availability
-- Enable data recovery mechanisms
-- Support data repair and replication
+- Enable data recovery and repair mechanisms
+- Support automated data replication
 
 ### Performance
 - Optimize retrieval speed for frequently accessed data
@@ -31,9 +31,9 @@ Decentralized, privacy-preserving storage network (formerly Codex) providing per
 
 ## + (Privacy, Anonymity, Censorship-Resistance)
 
-- **Privacy**: Encrypted data storage with access control
+- **Privacy**: Client-side encryption with access control
 - **Anonymity**: Upload and retrieval operations unlinkable to user identity
-- **Censorship-Resistance**: Distributed storage prevents content takedown or blocking
+- **Censorship-Resistance**: Distributed storage prevents content takedown
 - **Security**: Cryptographic proof of data integrity and availability
 
 ## Demand Validation
@@ -59,7 +59,7 @@ Decentralized, privacy-preserving storage network (formerly Codex) providing per
 
 **Risks & Challenges:**
 - Economic sustainability of storage incentives
-- Balancing redundancy requirements with storage costs
+- Balancing redundancy with storage costs
 - Preventing storage spam and Sybil attacks
 - Ensuring long-term data availability
 - Metadata privacy in content-addressed systems

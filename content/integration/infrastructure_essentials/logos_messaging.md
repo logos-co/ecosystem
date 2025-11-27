@@ -5,7 +5,7 @@ priority: 0
 category: Infrastructure
 ---
 
-Private, decentralized messaging infrastructure (formerly Waku) enabling secure peer-to-peer communication for applications built on Logos.
+Private, decentralized messaging layer (formerly Waku) enabling secure peer-to-peer communication and pub/sub patterns for Logos applications.
 
 ## FURPS+
 
@@ -14,14 +14,14 @@ Private, decentralized messaging infrastructure (formerly Waku) enabling secure 
 
 ### Functionality
 - Enable private peer-to-peer messaging between nodes
-- Support ephemeral and persistent message delivery
-- Provide pub/sub messaging patterns for application communication
+- Support pub/sub messaging patterns for application coordination
+- Provide ephemeral and persistent message delivery modes
 - Enable message routing without central servers
 
 ### Reliability
-- Ensure message delivery in partially connected network conditions
-- Provide message redundancy across network nodes
-- Support offline message queuing and delivery
+- Ensure message delivery in partially connected networks
+- Provide message redundancy across distributed nodes
+- Support offline message queuing
 
 ### Performance
 - Scale to support high message throughput
@@ -30,37 +30,37 @@ Private, decentralized messaging infrastructure (formerly Waku) enabling secure 
 
 ## + (Privacy, Anonymity, Censorship-Resistance)
 
-- **Privacy**: Encrypted message content end-to-end
+- **Privacy**: End-to-end encrypted message content
 - **Anonymity**: Sender and recipient metadata protection through network-level obfuscation
-- **Censorship-Resistance**: Decentralized message routing prevents blocking or filtering
+- **Censorship-Resistance**: Decentralized message routing prevents filtering or blocking
 - **Security**: Cryptographic message authentication and integrity verification
 
 ## Demand Validation
 
-**Potential Users:** All Logos applications requiring communication, coordination, or data synchronization
+**Potential Users:** All Logos applications requiring communication, data synchronization, or event broadcasting
 
 **Use Cases:**
-- Application-to-application communication (oracles, cross-contract messaging)
-- User-to-user messaging in social apps and DAOs
-- Event broadcasting and notifications
-- Coordination for multi-party protocols (atomic swaps, governance)
+- Application-to-application messaging (oracles, cross-contract events)
+- User-to-user communication in social apps and DAOs
+- Event broadcasting and real-time notifications
+- Multi-party protocol coordination (atomic swaps, governance)
 
 ## Possible Implementation
 
 - **Protocol Layer**: libp2p-based gossipsub for message propagation
-- **Privacy Layer**: Encrypted topic-based messaging with forward secrecy
-- **Storage Layer**: Integration with Logos Storage for persistent message history
-- **API**: Simple pub/sub interface for application developers
+- **Privacy Layer**: Topic-based encryption with forward secrecy
+- **Integration**: Native integration with [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for persistent history
+- **API**: Simple pub/sub interface exposed to application developers
 
 ## Technical Validation
 
 **Risks & Challenges:**
-- Balancing message delivery guarantees with privacy requirements
+- Balancing delivery guarantees with privacy requirements
 - Preventing spam and DoS attacks without compromising anonymity
 - Maintaining performance as network scales
 - Metadata protection in gossip-based protocols
 
 **Integration Points:**
-- Logos Storage for message persistence
+- [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for message persistence
 - Application layer for pub/sub subscriptions
 - Network layer for peer discovery and routing
