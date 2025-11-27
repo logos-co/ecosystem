@@ -20,7 +20,7 @@ Facilitates the fair and private launch of new tokens directly into the shielded
 - Enable configurable distribution parameters
 - Support automated vesting and unlocks
 - Implement anti-bot protection (encrypted mempool, batch processing, rate limiting)
-- Integrate with private DEX for liquidity
+- Integrate with [[integration/desired_projects/private_dex|private DEX]] for liquidity
 - Support various token types (governance, utility, meme coins, fundraising, asset-backed)
 
 ### Usability

@@ -70,8 +70,8 @@ Escrowed, classifieds-style P2P trade marketplace enabling local communities to 
 **Integration Points:**
 - Private messaging systems
 - Reputation systems (Private NFTs or ZK credentials)
-- Private stablecoin for payments
-- Escrow/multisig for transaction security
+- [[integration/desired_projects/private_stablecoin|Private Stablecoin]] for payments
+- Escrow/[[integration/desired_projects/multisig|multisig]] for transaction security
 - Local identity networks for trust building
 - Point of Sale systems for merchant integration
 - Payment networks (traditional and crypto)

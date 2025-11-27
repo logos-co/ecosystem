@@ -53,4 +53,4 @@ Ensures proposals and votes can be cast anonymously, protecting participants fro
 - Balancing privacy with accountability (preventing Sybil attacks)
 - Enabling emergency governance override mechanisms
 - Token-weighted vs. identity-based voting in privacy context
-- Integration with private treasury management (multisig)
+- Integration with private treasury management ([[integration/desired_projects/multisig|multisig]])

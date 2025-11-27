@@ -23,7 +23,7 @@ Enables a market for unique digital assets where ownership, bids, and transactio
 - Enable private bundle sales
 - Support cross-chain private NFT bridging (advanced)
 - Provide private fractional ownership (advanced)
-- Enable shielded NFT lending and rental markets (advanced)
+- Enable shielded NFT [[integration/desired_projects/private_lending|lending]] and rental markets (advanced)
 
 ## + (Privacy, Anonymity, Censorship-Resistance)
 

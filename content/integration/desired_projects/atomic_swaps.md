@@ -35,7 +35,7 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 **Use Cases:**
 - Cross-chain swaps: Exchange assets between privacy L1 and other chains
 - OTC trading: Large trades without market impact or public visibility
-- P2P exchange: Direct user-to-user trading without DEX
+- P2P exchange: Direct user-to-user trading without [[integration/desired_projects/private_dex|DEX]]
 - Private arbitrage: Exploit price differences across venues privately
 - Trustless escrow: Buy/sell with strangers without intermediaries
 
@@ -59,5 +59,5 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 - Private communication channels for off-chain trade negotiation
 - Decentralized order books for publishing trade offers without revealing identity
 - Reputation systems via ZK reputation proofs
-- Bridge integration for cross-chain atomic swaps
-- DEX fallback if atomic swap fails
+- [[integration/desired_projects/bridges|Bridge]] integration for cross-chain atomic swaps
+- [[integration/desired_projects/private_dex|DEX]] fallback if atomic swap fails

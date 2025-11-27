@@ -16,7 +16,7 @@ Provides a stable medium of exchange for private payments, payroll, and DeFi wit
 ### Functionality
 
 - Provide stable medium of exchange for private payments
-- Enable compatibility with all shielded DeFi primitives (DEX, lending, etc.)
+- Enable compatibility with all shielded DeFi primitives ([[integration/desired_projects/private_dex|DEX]], [[integration/desired_projects/private_lending|lending]], etc.)
 - Support auditable reserves for solvency verification
 - Implement redemption mechanisms
 

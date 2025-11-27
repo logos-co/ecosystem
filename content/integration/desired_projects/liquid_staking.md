@@ -16,7 +16,7 @@ Unlocks staked capital by allowing users to stake the native token to secure the
 ### Functionality
 
 - Enable staking of native token with receipt of liquid derivative token
-- Support usage of derivative in DeFi (lending, DEX trading)
+- Support usage of derivative in DeFi ([[integration/desired_projects/private_lending|lending]], [[integration/desired_projects/private_dex|DEX]] trading)
 - Implement validator selection mechanisms
 - Provide reward distribution to stakers
 - Enable unstaking via privacy-preserving exit queue
@@ -37,7 +37,7 @@ Unlocks staked capital by allowing users to stake the native token to secure the
 **Use Cases:**
 - Securing the network while maintaining DeFi liquidity
 - Earning staking rewards without locking capital
-- Using staked assets as collateral in lending
+- Using staked assets as collateral in [[integration/desired_projects/private_lending|lending]]
 - Trading staked positions without unstaking delay
 
 ## Possible Implementation
@@ -56,7 +56,7 @@ Unlocks staked capital by allowing users to stake the native token to secure the
 - Exit queue implementation maintaining privacy
 
 **Integration Points:**
-- Private DEX for trading staked derivatives
-- Lending protocol for using derivatives as collateral
+- [[integration/desired_projects/private_dex|Private DEX]] for trading staked derivatives
+- [[integration/desired_projects/private_lending|Lending protocol]] for using derivatives as collateral
 - Yield aggregators for automatic reward compounding
-- Governance systems for protocol voting
+- [[integration/desired_projects/private_daos|Governance systems]] for protocol voting
