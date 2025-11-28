@@ -1,5 +1,5 @@
 ---
-title: Logos Web SDK
+title: Logos JS SDK
 type: Developer Tool
 priority: 0
 category: Developer Tools

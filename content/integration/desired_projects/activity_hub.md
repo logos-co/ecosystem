@@ -29,7 +29,7 @@ Because of this, the activity hub needs to be both available:
 - With a browser/DNS/webserver stack, to ensure newcomers can be onboarded with minimal friction
 - With the Logos Core stack, to ensure that not only one can use the activity hub in privacy and anonymity, with no risk of censorship. As well as enabling any of the portal sub-component to fully leverage the Logos technology stack.
 
-This is inline with requirements proposed for the [[integration/application_essentials/logos_web_sdk|Logos Web SDK]] in this [forum post](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10).
+This is inline with requirements proposed for the [[integration/application_essentials/logos_js_sdk|Logos JS SDK]] in this [forum post](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10).
 
 Note that while the activity hub should work both in the browser and in the Logos launcher, it is fine if some functionalities are only available in the Logos launcher (as described in [forum post](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10)). At some point in the onboarding journey, deep enough in the rabbit hole, we should be able to assume that a contributor is using the Logos launcher.
 
@@ -37,13 +37,13 @@ For example:
 
 As a Logos Circle lead, I upload minutes of the latest Logos circle in the activity hub.
 - I want my minutes to be backed up for the future, using [[integration/infrastructure_essentials/logos_storage|Logos Storage]].
-- The [[integration/application_essentials/logos_web_sdk|Logos Web SDK]] does not support uploading data to [[integration/infrastructure_essentials/logos_storage|Logos Storage]].
+- The [[integration/application_essentials/logos_js_sdk|Logos JS SDK]] does not support uploading data to [[integration/infrastructure_essentials/logos_storage|Logos Storage]].
 - Hence, I am using the activity hub via the Logos launcher.
 
 As someone who joined a recent Logos Circle, I want to access previous minutes to better understand what the circle has done so far, their impact, and how I can contribute.
 - I am not yet fully convinced about Logos, so not keen to install the Logos launcher just yet.
 - Hence, I am accessing the minutes via the browser.
-- However, only recent minutes are available via [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] via the [[integration/application_essentials/logos_web_sdk|Logos Web SDK]]
+- However, only recent minutes are available via [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] via the [[integration/application_essentials/logos_js_sdk|Logos JS SDK]]
 - Data retrieval from [[integration/infrastructure_essentials/logos_storage|Logos Storage]] is not available in the browser
 - To access older minutes store on [[integration/infrastructure_essentials/logos_storage|Logos Storage]], I need to install the Logos launcher.
 - However, I was still able to get a preview of my Logos Circle activity without additional software.
