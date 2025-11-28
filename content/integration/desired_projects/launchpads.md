@@ -27,7 +27,7 @@ Facilitates the fair and private launch of new tokens directly into the shielded
 
 - Web2-level UX with gasless transactions (where mentioned as needed for adoption)
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Prevent sniper bots via encrypted mempool (no front-running)
 - Fair distribution via ZK eligibility proofs without revealing identity

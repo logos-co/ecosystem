@@ -34,7 +34,7 @@ Enables viral social applications that onboard non-DeFi users while protecting s
 
 - Scalability for social-scale traffic (1000s TPS)
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Protect social graphs (connections and followers remain private)
 - Shield financial activity (purchases, tips, trades not exposed)

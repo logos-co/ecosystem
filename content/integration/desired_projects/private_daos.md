@@ -21,7 +21,7 @@ Ensures proposals and votes can be cast anonymously, protecting participants fro
 - Implement verifiable vote tallying without revealing individual votes
 - Support collusion resistance (MACI-style mechanisms)
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Anonymous proposals (submit without revealing identity)
 - Secret ballot voting (cast votes without exposing choice or voting power)

@@ -21,7 +21,7 @@ Enables NFTs whose owner and metadata are encrypted, allowing for private digita
 - Allow confidential transfers
 - Enable optional metadata visibility controls
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Shielded ownership (only owner knows they possess NFT)
 - Optional selective disclosure mechanisms

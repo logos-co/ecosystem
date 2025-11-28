@@ -22,7 +22,7 @@ Unlocks staked capital by allowing users to stake the native token to secure the
 - Enable unstaking via privacy-preserving exit queue
 - Offer slashing protection mechanisms
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Private staking deposits without public exposure
 - Shielded receipt token (e.g., stLOGOS) issuance

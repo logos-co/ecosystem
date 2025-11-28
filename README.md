@@ -9,7 +9,7 @@ Note there may be some AI slop. As we progress with any items, we can iterate on
 
 ## CI / CD
 
-None for now. If setup, should use auth.
+TBD
 
 ## Using Obsidian
 

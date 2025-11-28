@@ -26,7 +26,7 @@ Absolutely mandatory for onboarding assets and users to the privacy L1 through s
 - Fraud proof mechanisms for dispute resolution
 - Recovery mechanisms from bridge compromise without revealing user funds
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - One-way deposit into shielded pool breaks link between source and destination addresses
 - Privacy-preserving withdrawals via relayer networks or mixing mechanisms

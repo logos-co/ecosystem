@@ -21,7 +21,7 @@ Enables secure shared custody of shielded assets requiring multiple signatures t
 - Support emergency recovery mechanisms if signers are lost
 - Enable transaction queuing with proposal and approval workflow
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Hide signer identities (authorized signers not publicly visible)
 - Conceal threshold requirements (required number of signatures not exposed)

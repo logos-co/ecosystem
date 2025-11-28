@@ -25,7 +25,7 @@ Enables a market for unique digital assets where ownership, bids, and transactio
 - Provide private fractional ownership (advanced)
 - Enable shielded NFT [[integration/desired_projects/private_lending|lending]] and rental markets (advanced)
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Shielded ownership (NFT holdings not publicly visible)
 - Private transfers without exposing parties

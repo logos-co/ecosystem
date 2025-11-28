@@ -24,7 +24,7 @@ Allows users to trade their bridged and shielded assets anonymously within the e
 
 - Frequent batch auctions to ensure fair, MEV-resistant trading
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Prevent front-running and sandwich attacks through encrypted mempool
 - Hide trader identities, balances, and order details

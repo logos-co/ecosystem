@@ -89,7 +89,7 @@ Finally, the completion of quests may lead to onchain attestation or reward (e.g
 - **Content Management Flexibility**: Enable non-technical contributors to update quests, resources, and calls-to-action through markdown or low-code interfaces
 - **Cross-Platform Deployment**: Support deployment to traditional web servers, IPFS, and Logos Core infrastructure from single codebase with environment-specific configuration
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - **Privacy-First Design**: Ensure web version collects no tracking data by default; Logos Core version routes all traffic through private network infrastructure
 - **Anonymous Participation**: Enable contributors to participate in quests and earn attestations without revealing real-world identity

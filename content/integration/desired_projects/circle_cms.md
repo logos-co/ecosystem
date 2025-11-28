@@ -24,7 +24,7 @@ Enable circles to collaboratively manage knowledge, documentation, and content w
 - Integrate with circle identity and membership systems
 - Enables reference to other Circles' CMS, and contributors delivered and planned work
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Optionally encrypt content (viewable only by circle members)
 - Anonymous or pseudonymous contributions and access

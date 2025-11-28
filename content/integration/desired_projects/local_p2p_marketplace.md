@@ -26,7 +26,7 @@ Escrowed, classifieds-style P2P trade marketplace enabling local communities to 
 - Support supply chain tracking for transparent sourcing
 - Enable Point of Sale integration for merchants
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Private transaction history (not publicly visible)
 - Encrypted messaging between parties
