@@ -5,7 +5,7 @@ priority: 0
 category: Developer Tools
 ---
 
-An extension of the [[integration/application_essentials/logos_js_sdk|logos_js_sdk]] to enable web app built with it run in standard browsers, with limited access to Logos functionality. This is to enable onboarding of new users with minimal friction, specifically relevant for the [[integration/desired_projects/activity_hub|activity_hub]].
+An extension of the [[integration/infrastructure_essentials/logos_js_sdk|logos_js_sdk]] to enable web app built with it run in standard browsers, with limited access to Logos functionality. This is to enable onboarding of new users with minimal friction, specifically relevant for the [[integration/desired_projects/activity_hub|activity_hub]].
 
 
 > [!ai-generated]
@@ -22,7 +22,7 @@ An extension of the [[integration/application_essentials/logos_js_sdk|logos_js_s
 - Existing JavaScript implementation of [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] protocols
 
 ### Usability
-- Provide intuitive API matching [[integration/application_essentials/logos_js_sdk|Logos JS SDK]] where possible
+- Provide intuitive API matching [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] where possible
 - Include TypeScript type definitions for IDE support
 - Offer example code and starter templates
 - Support all modern browsers (Chrome, Firefox, Safari, Edge)
@@ -53,7 +53,7 @@ An extension of the [[integration/application_essentials/logos_js_sdk|logos_js_s
 - [[integration/desired_projects/activity_hub|Activity Hub]] browser version for newcomers
 - Preview/read-only interfaces for Logos data
 - Landing pages with live Logos network stats
-- Onboarding funnels to convert users to [[integration/application_essentials/logos_js_sdk|Logos Launcher]]
+- Onboarding funnels to convert users to [[integration/infrastructure_essentials/logos_js_sdk|Logos Launcher]]
 - Developer documentation with live code examples
 - Public-facing dashboards and explorers
 
@@ -99,7 +99,7 @@ const balance = await logos.wallet.ethBalance('0x...');
 - CORS and browser security restrictions
 - Public RPC infrastructure availability
 
-**Limitations (compared to [[integration/application_essentials/logos_js_sdk|Logos JS SDK]]):**
+**Limitations (compared to [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]]):**
 - **No Logos Storage upload**: Cannot write data to decentralized storage
 - **Limited message history**: Only recent messages available, no persistent history retrieval
 - **Reduced privacy**: IP exposure to public RPC endpoints
@@ -117,7 +117,7 @@ const balance = await logos.wallet.ethBalance('0x...');
 - [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] via public relays
 - Logos Storage HTTP gateways (read-only)
 - Browser wallet extensions (MetaMask, etc.)
-- Onboarding funnel to [[integration/application_essentials/logos_js_sdk|Logos JS SDK]]
+- Onboarding funnel to [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]]
 
 ## Migration Path
 
@@ -125,7 +125,7 @@ The browser version serves as an **onboarding funnel** to the full Logos experie
 
 1. **Newcomer** uses Activity Hub in browser (no installation)
 2. **Discovers limitations** (cannot upload minutes to Storage, limited history)
-3. **Installs Logos Launcher** to access [[integration/application_essentials/logos_js_sdk|full functionality]]
+3. **Installs Logos Launcher** to access [[integration/infrastructure_essentials/logos_js_sdk|full functionality]]
 4. **Same codebase** works in both environments with feature detection
 
 This aligns with the [Logos Web SDK strategy](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10) of reducing friction while maintaining a clear upgrade path.

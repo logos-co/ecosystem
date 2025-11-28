@@ -23,7 +23,7 @@ Building a module, enables the developer to either:
 ## FURPS+
 
 ### Functionality
-- Enable developers to create custom modules using [[integration/application_essentials/liblogos|liblogos]] SDK
+- Enable developers to create custom modules using [[integration/infrastructure_essentials/liblogos|liblogos]] SDK
 - Support module development in multiple languages (C++, Rust, JavaScript)
 - Provide access to core services (messaging, storage, blockchain)
 - Enable inter-module communication via Qt Remote Objects
@@ -68,7 +68,7 @@ Building a module, enables the developer to either:
 
 ## Possible Implementation
 
-- **Module SDK**: [[integration/application_essentials/liblogos|liblogos]] providing module development framework
+- **Module SDK**: [[integration/infrastructure_essentials/liblogos|liblogos]] providing module development framework
 - **Qt Plugin System**: Leverage Qt's plugin architecture for module loading
 - **C-API Support**: Enable modules in any language with C FFI capability
 - **Module Registry**: Service discovery and dependency resolution
@@ -85,7 +85,7 @@ Building a module, enables the developer to either:
 - Module distribution and discovery mechanisms
 
 **Requirements:**
-- [[integration/application_essentials/liblogos|liblogos]] SDK delivered and documented
+- [[integration/infrastructure_essentials/liblogos|liblogos]] SDK delivered and documented
 - Module templates for C++, Rust, JavaScript
 - Development and debugging tooling
 - Module testing framework
@@ -93,6 +93,6 @@ Building a module, enables the developer to either:
 
 **Integration Points:**
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] runtime for module hosting
-- [[integration/application_essentials/liblogos|liblogos]] for module API
+- [[integration/infrastructure_essentials/liblogos|liblogos]] for module API
 - Qt Remote Objects for IPC
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for module distribution

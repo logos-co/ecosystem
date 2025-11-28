@@ -86,7 +86,7 @@ Further solutions are needed:
 **Requirements:**
 - Module Distribution infrastructure delivered
 - Logos Launcher with mini app runtime
-- [[integration/application_essentials/logos_js_sdk|Logos JS SDK]] or similar API
+- [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] or similar API
 - App packaging and publishing tools
 - Discovery and listing infrastructure
 - Developer documentation and examples
@@ -95,4 +95,4 @@ Further solutions are needed:
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for app distribution
 - [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] for coordination
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] for module hosting
-- [[integration/application_essentials/logos_js_sdk|Logos JS SDK]] for core service access
+- [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] for core service access

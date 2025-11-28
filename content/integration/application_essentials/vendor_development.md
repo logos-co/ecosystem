@@ -64,7 +64,7 @@ Note this method bypasses the installation of the [[Logos Launcher]]:
 
 ## Possible Implementation
 
-- **[[integration/application_essentials/logos_js_sdk|Logos JS SDK]]**: JavaScript/TypeScript SDK with FFI bindings to core modules
+- **[[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]]**: JavaScript/TypeScript SDK with FFI bindings to core modules
 - **[[Logos Rust SDK]]**: A Rust wrapper to logos lib to load and use Logos modules (eg for Tauri or other Rust based app).
 - **Framework Integration**: Build tooling for Electron, Tauri, and Flutter
 - **Packaging**: Commands to ensure required modules can be bundled in standalone application.
@@ -80,9 +80,9 @@ Note this method bypasses the installation of the [[Logos Launcher]]:
 - Added commands to include in standalone application CI/CD.
 
 **Dependencies:**
-- [[integration/application_essentials/logos_js_sdk|Logos JS SDK]]
+- [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]]
 
 **Integration Points:**
-- [[integration/application_essentials/liblogos|liblogos]] for core module access
+- [[integration/infrastructure_essentials/liblogos|liblogos]] for core module access
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] module system
 - UI framework build systems (Electron, Tauri, Flutter)

@@ -29,7 +29,7 @@ Because of this, the activity hub needs to be both available:
 - With a browser/DNS/webserver stack, to ensure newcomers can be onboarded with minimal friction
 - With the Logos Core stack, to ensure that not only one can use the activity hub in privacy and anonymity, with no risk of censorship. As well as enabling any of the portal sub-component to fully leverage the Logos technology stack.
 
-This is inline with requirements proposed for the [[integration/application_essentials/logos_js_sdk|Logos JS SDK]] in this [forum post](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10).
+This is inline with requirements proposed for the [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] in this [forum post](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10).
 
 Note that while the activity hub should work both in the browser and in the Logos launcher, it is fine if some functionalities are only available in the Logos launcher (as described in [forum post](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10)). At some point in the onboarding journey, deep enough in the rabbit hole, we should be able to assume that a contributor is using the Logos launcher.
 

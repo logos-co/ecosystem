@@ -4,14 +4,14 @@ type: Developer Journey
 priority:
 category: Developer Tools
 ---
-Development path for building web-based frontend modules using HTML/CSS/JavaScript with the [[integration/application_essentials/logos_js_sdk|Logos JS SDK]], running within QtWebView in the Logos Launcher.
+Development path for building web-based frontend modules using HTML/CSS/JavaScript with the [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]], running within QtWebView in the Logos Launcher.
 
 Potentially, support running in a browser to enable developers to build one web apps, and distribute in both the [[Logos launcher]] as a [[mini app]], and in the browser, as a standard webapp (albeit with some limitations).
 ## FURPS+
 
 ### Functionality
 - Enable developers to build frontend modules using web technologies (HTML, CSS, JavaScript)
-- Provide access to [[integration/infrastructure_essentials/logos_core|Logos Core]] modules via [[integration/application_essentials/logos_js_sdk|Logos JS SDK]], JavaScript API
+- Provide access to [[integration/infrastructure_essentials/logos_core|Logos Core]] modules via [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]], JavaScript API
 - Frontends runs in [[[Logos launcher]]]
 - Support event-driven architecture with listeners for module events
 - Allow developers to use modern web frameworks (React, Vue, Svelte)
@@ -117,7 +117,7 @@ await logos.chat.joinChannel('general');
 
 **Requirements:**
 - QtWebView with Qt WebChannel support (custom fork: `logos-co/qtwebview/feature/webchannel`)
-- [[integration/application_essentials/logos_js_sdk|Logos JS SDK]] with reflective API
+- [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] with reflective API
 - Logos Launcher with integrated QtWebView runtime
 - Module packaging format for web-based modules
 - Development tooling and documentation
@@ -125,7 +125,7 @@ await logos.chat.joinChannel('general');
 
 **Integration Points:**
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] for module lifecycle management
-- [[integration/application_essentials/logos_js_sdk|Logos JS SDK]] for backend module access
+- [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] for backend module access
 - QtWebView for rendering web UI
 - Qt WebChannel for JavaScript-to-Qt bridge
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for module distribution
