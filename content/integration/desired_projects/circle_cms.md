@@ -24,7 +24,7 @@ Enable circles to collaboratively manage knowledge, documentation, and content w
 - Integrate with circle identity and membership systems
 - Enables reference to other Circles' CMS, and contributors delivered and planned work
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Optionally encrypt content (viewable only by circle members)
 - Anonymous or pseudonymous contributions and access
@@ -90,8 +90,8 @@ Leveraging existing opchan libraries.
 - Versioning and Conflict resolution in decentralized collaborative editing
 
 **Integration Points:**
-- Circle membership systems for access control (Private NFTs, DAOs, Keycard)
-- Logos Storage (for options 2, 3.a, 3.b)
+- Circle membership systems for access control ([[integration/desired_projects/private_nft_ownership|Private NFTs]], [[integration/desired_projects/private_daos|DAOs]], Keycard)
+- [[integration/infrastructure_essentials/logos_storage|Logos Storage]] (for options 2, 3.a, 3.b)
 - Logos Package Management (for option 2)
 - Git infrastructure (GitHub, Gitea, Radicle for option 1)
 - opchan libraries (for option 4)

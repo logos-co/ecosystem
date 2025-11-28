@@ -21,7 +21,7 @@ Enables NFTs whose owner and metadata are encrypted, allowing for private digita
 - Allow confidential transfers
 - Enable optional metadata visibility controls
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Shielded ownership (only owner knows they possess NFT)
 - Optional selective disclosure mechanisms
@@ -38,7 +38,7 @@ Enables NFTs whose owner and metadata are encrypted, allowing for private digita
 - Private identity documents: Encrypted passports, licenses, or certificates
 - Confidential collectibles: Art and PFPs without exposing collector wealth
 - Soulbound tokens: Non-transferable reputation or achievement tokens with privacy
-- Private tickets & access tokens: Event access without surveillance
+- Private tickets & access tokens: Event access without surveillance (see also [[integration/desired_projects/nft_marketplace|NFT Marketplace]])
 
 ## Possible Implementation
 

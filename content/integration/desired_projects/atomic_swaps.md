@@ -21,7 +21,7 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 - Provide trustless escrow without intermediary knowledge
 - Enable OTC trading for large deals
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Hide counterparties (neither party's identity or address revealed)
 - Conceal amounts (trade sizes not publicly visible)

@@ -21,7 +21,7 @@ Allows users to collateralize their shielded assets to borrow other shielded ass
 - Integrate with price oracles for asset valuation
 - Maintain protocol solvency
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Keep all user positions, collateral amounts, and borrowed amounts confidential
 - Execute liquidations without revealing the position being liquidated
@@ -34,7 +34,7 @@ Allows users to collateralize their shielded assets to borrow other shielded ass
 
 **Use Cases:**
 - Leveraging holdings without selling or exposing positions
-- Borrowing for trading opportunities while maintaining privacy
+- Borrowing for [[integration/desired_projects/private_dex|trading]] opportunities while maintaining privacy
 - Earning yield on deposited collateral
 - Accessing liquidity without tax events
 

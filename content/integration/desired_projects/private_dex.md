@@ -24,7 +24,7 @@ Allows users to trade their bridged and shielded assets anonymously within the e
 
 - Frequent batch auctions to ensure fair, MEV-resistant trading
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Prevent front-running and sandwich attacks through encrypted mempool
 - Hide trader identities, balances, and order details
@@ -35,7 +35,7 @@ Allows users to trade their bridged and shielded assets anonymously within the e
 **Potential Users:** All users with shielded assets requiring trading capability
 
 **Use Cases:**
-- Trading bridged and shielded assets without exposing identity
+- Trading [[integration/desired_projects/bridges|bridged]] and shielded assets without exposing identity
 - Avoiding centralized exchange KYC requirements
 - Price discovery within private ecosystem
 - Liquidity provision without position disclosure

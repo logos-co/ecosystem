@@ -20,7 +20,7 @@ Provides a stable medium of exchange for private payments, payroll, and DeFi wit
 - Support auditable reserves for solvency verification
 - Implement redemption mechanisms
 
-## + (Privacy, Anonymity, Censorship-Resistance)
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 - Transact entirely within shielded ecosystem
 - Individual user balances and transfers completely confidential
