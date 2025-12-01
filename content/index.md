@@ -4,7 +4,55 @@ title: Ecosystem Development
 Ecosystem Development Wiki.
 
 Currently private, yet, may become public. Be sure to not push any confidential information.
+# Eco Dev Team
 
+## How the sub-teams work together
+
+```mermaid
+flowchart LR
+    subgraph Input["Inbound Activities"]
+        MG["Marketing and growth<br/>(events, campaigns e.g. xprize)"]
+        C["Circles - grassroots activation"]
+        D["Documents<br/>(Node op guide, Dev docs)"]
+        WC["Website content<br/>(CTA pages, ecosystem pages etc)"]
+    end
+
+    subgraph Core["Contributor Journeys"]
+        CJ["Builder, Node Operator,<br/>Circle participant/organizer,<br/>Dev contributor"]
+    end
+
+    subgraph Programs["Programs & Support"]
+        NP["Node Program<br/>(Node op incentivisation)"]
+        DF["Dapp Foundry<br/>(sample apps, x-prize,<br/>builder support)"]
+    end
+
+    subgraph External["External Partnerships"]
+        SLP["Stakeholder and liquidity partners<br/>(HNWI / FO focused<br/>project requirements)"]
+        BD["Business development<br/>(ecosystem partnerships<br/>support and requirements)"]
+    end
+
+    subgraph Delivery["Delivery"]
+        INT["Integration<br/>(ecosystem map,<br/>demand validation,<br/>drive PRs/Proposals)"]
+        EP["Engineering<br/>Prioritisation"]
+    end
+
+    %% Connections
+    MG --> CJ
+    C --> CJ
+    D --> CJ
+    WC --> CJ
+    CJ --> NP
+    CJ --> DF
+    NP --> INT
+    DF --> INT
+    SLP --> INT
+    BD --> INT
+    SLP <--> BD
+    INT --> EP
+```
+# Streams
+
+- [[integration/index|Integration]]
 ## Content Authorship
 
 This wiki uses AI assistance to draft and organize content. To maintain transparency, LLM-generated sections that haven't been human-reviewed are marked with an indicator placed immediately after the section header:
@@ -14,6 +62,3 @@ This wiki uses AI assistance to draft and organize content. To maintain transpar
 
 The indicator applies to the entire section (from the header through all subsections until the next same-level or higher-level header). Once content is reviewed and approved by a human contributor, this indicator is removed. Unmarked content has been human-curated.
 
-# Streams
-
-- [[integration/index|Integration]]
