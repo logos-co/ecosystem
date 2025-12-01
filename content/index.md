@@ -17,3 +17,7 @@ The indicator applies to the entire section (from the header through all subsect
 # Streams
 
 - [[integration/index|Integration]]
+
+# Processes
+
+- [[handoff|R&D ↔ Eco Dev Handoff Protocol]]
