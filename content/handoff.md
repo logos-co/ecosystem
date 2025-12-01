@@ -45,6 +45,8 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 
 ### Eco Dev Delivers
 
+**Prerequisite**: Red team, DevRel, and Dapp Foundry must familiarize themselves with Logos R&D features and deliverables before engaging in handoff activities. This ensures effective testing, accurate communication, and quality output.
+
 Eco Dev outputs are organized by **strategic impact**: improving software, building builder attention, and enabling distribution.
 
 #### 1. Improve the Software
