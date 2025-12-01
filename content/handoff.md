@@ -72,7 +72,21 @@ Eco Dev outputs are organized by **strategic impact**: improving software, build
 | **PoC applications**   | Demonstrate feasibility and design of specific use cases, enabling more integration opportunities                                                                     |
 | **Integration Guides** | Tutorials, videos and other complementary material to documentation and examples to show how Logos integrates with other tools/protocols or enable specific use cases |
 
-**Note**: Ownership within Eco Dev (DevRel vs Integration vs dApp Foundry) to be defined.
+#### 4. Enable Partnerships
+
+| Output | Impact |
+|--------|--------|
+| **Value Proposition Mapping** | Map Logos features to partner/lead use cases and pain points for targeted outreach |
+| **Partnership Decks** | Create tailored presentations for ecosystem partnerships (VCs, protocols, enterprises) |
+| **Integration Requirements** | Document partner technical requirements and feed to Integration team for prioritization |
+| **Case Studies** | Document successful integrations/partnerships for sales pipeline and credibility |
+| **Partnership Pipeline** | Track and nurture potential ecosystem integrations (e.g., protocols using Logos stack) |
+
+**Team Ownership Mapping:**
+- **Improve Software**: DevRel + Dapp Foundry (red team, technical validation, PoC apps for testing)
+- **Get Builder Attention**: DevRel + Dapp Foundry (vibe sessions, posts, workshops) + Marketing & Growth (social media, announcements)
+- **Enable Distribution**: DevRel + Dapp Foundry (examples, PoC apps for builders)
+- **Enable Partnerships**: Business Development (value prop, partnership decks, pipeline) + Integration (requirements gathering)
 
 ---
 
@@ -114,6 +128,10 @@ sequenceDiagram
         ED->>GH: Examples (from vibe sessions)
         ED->>GH: PoC applications
         ED->>PUB: Integration guides (tutorials, videos)
+    and Enable Partnerships
+        ED->>ED: Value prop mapping
+        ED->>PUB: Partnership decks & case studies
+        ED->>ED: Track partnership pipeline
     and Growing Bazaar
         PUB->>PUB: Build applications
         PUB->>GH: Contributions & feedback
