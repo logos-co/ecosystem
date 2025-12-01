@@ -65,6 +65,7 @@ Eco Dev outputs are organized by **strategic impact**: improving software, build
 | **Long-form Posts**           | Deep dives on features, use cases, architectural decisions |
 | **Short-form Announcements**  | Discord posts, Twitter threads, release summaries          |
 | **Presentations & Workshops** | Conference talks, meetups, hands-on sessions               |
+| **Office Hours**              | Regular Q&A sessions for direct builder support and feedback |
 
 #### 3. Enable Distribution
 
@@ -126,6 +127,7 @@ sequenceDiagram
         ED->>PUB: Long-form posts
         ED->>PUB: Short announcements (Discord/Twitter)
         ED->>PUB: Workshops & talks
+        ED->>PUB: Office hours
     and Enable Distribution
         ED->>GH: Examples (from vibe sessions)
         ED->>GH: PoC applications
