@@ -53,7 +53,7 @@ Eco Dev outputs are organized by **strategic impact**: improving software, build
 
 | Output                | Impact                                                                                                        |
 | --------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **GitHub Issues**     | Document bugs, edge cases, and confusion points discovered during testing                                     |
+| **GitHub Issues**     | Document bugs, edge cases, and confusion points discovered during testing (label: `from-eco-dev`)             |
 | **Documentation PRs** | Fix unclear language, improve structure, ensure LLM-readability                                               |
 | **PoC applications**  | Test the code by building PoCs of applications, ensure appropriate developer and user experience is delivered |
 
