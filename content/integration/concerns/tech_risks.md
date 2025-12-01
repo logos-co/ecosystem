@@ -3,9 +3,11 @@ title: Technological Risks
 ---
 # Blockchain
 
+See [[integration/infrastructure_essentials/logos_blockchain|Logos Blockchain]].
+
 ## Zones: Execution and Consensus/DA Integration
 
-The zones design, aka, integration of Nomos' DA and consensus with Nescience as the execution protocol.
+The zones design, aka, integration of Nomos' DA and consensus with LSSA (formerly Nescience) as the execution protocol.
 
 # Storage
 
