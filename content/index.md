@@ -18,6 +18,9 @@ The indicator applies to the entire section (from the header through all subsect
 
 - [[integration/index|Integration]]
 
+> [!note] FURPS Placeholder
+> All FURPS in this wiki are placeholders. The actual FURPS are defined (or being migrated to) [roadmap.logos.co](https://roadmap.logos.co).
+
 # Processes
 
 - [[handoff|R&D ↔ Eco Dev Handoff Protocol]]

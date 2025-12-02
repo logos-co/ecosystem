@@ -49,6 +49,14 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 
 Eco Dev outputs are organized by **strategic impact**: improving software, building builder attention, and enabling distribution.
 
+### Eco Dev Does NOT Own
+
+Eco Dev is not responsible for:
+
+- **R&D Process**: Setting priorities, defining roadmap, milestones (including testnet), or generally being involved in the Logos R&D process
+- **Initial Documentation**: Producing initial docs, writing specs, FURPS, or APIs (see [R&D Delivers](#rd-delivers))
+- **Production Software**: Producing production-ready software with set software cycles and FURPS
+
 #### 1. Improve the Software
 
 | Output                | Impact                                                                                                        |
