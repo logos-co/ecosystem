@@ -17,7 +17,7 @@ Enable circles to collaboratively manage knowledge, documentation, and content w
 
 - Support collaborative editing of documents
 - Enable version control and change tracking
-- Provide structured content organization (wikis, knowledge bases, documentation)
+- Provide structured content organisation (wikis, knowledge bases, documentation)
 - Support templates for common circle documents (proposals, meeting notes, project plans)
 - Enable content discovery and search within circle
 - Support access control (public, circle-only, role-based)
@@ -32,7 +32,7 @@ Enable circles to collaboratively manage knowledge, documentation, and content w
 - Private edit history (hide who made specific changes if desired)
 ## Demand Validation
 
-**Potential Users:** Logos Circles, DAOs, community organizers, research groups, activist organizations
+**Potential Users:** Logos Circles, DAOs, community organisers, research groups, activist organisations
 
 **Use Cases:**
 - Circle documentation and knowledge management
@@ -82,7 +82,7 @@ Implement version management system on Logos Blockchain and Storage.
 ### 4. Forum Approach
 Leveraging existing opchan libraries.
 - Build on existing P2P forum infrastructure
-- Threaded discussions and content organization
+- Threaded discussions and content organisation
 
 ## Technical Validation
 
