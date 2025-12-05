@@ -157,8 +157,6 @@ logos info chat_module
 
 **Dependencies:**
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for module binary hosting
-- [[integration/infrastructure_essentials/module_discovery|Module Discovery & Curation]] for registry metadata
-- [[integration/infrastructure_essentials/module_distribution|Module Distribution Infrastructure]] for packaging format
 
 **Integration Points:**
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for content-addressed module storage
