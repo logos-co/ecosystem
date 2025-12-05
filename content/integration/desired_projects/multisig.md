@@ -6,7 +6,7 @@ flywheel: Security
 category: Custody & Security
 ---
 
-Enables secure shared custody of shielded assets requiring multiple signatures to authorize transactions, protecting treasuries and shared funds without revealing signers or balances.
+Enables secure shared custody of shielded assets requiring multiple signatures to authorise transactions, protecting treasuries and shared funds without revealing signers or balances.
 
 ## FURPS+
 
@@ -23,10 +23,10 @@ Enables secure shared custody of shielded assets requiring multiple signatures t
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
 
-- Hide signer identities (authorized signers not publicly visible)
+- Hide signer identities (authorised signers not publicly visible)
 - Conceal threshold requirements (required number of signatures not exposed)
 - Protect balances (asset amounts and types remain confidential)
-- Private proposals (transaction proposals visible only to authorized signers)
+- Private proposals (transaction proposals visible only to authorised signers)
 - Anonymous execution (transaction execution doesn't reveal which signers approved)
 
 ## Demand Validation

@@ -69,7 +69,16 @@ Ensure that wikilink display text matches the `title` frontmatter property of th
 
 **Note:** Contextual abbreviations are acceptable when the full title is verbose or when the context makes the reference clear.
 
-### 6. Verify AI-Generated Content Disclaimer
+### 6. Check Syntax and Grammar
+
+Verify that all content uses correct syntax and grammar:
+
+- **British English**: Use British spelling throughout
+- **Grammar**: Check for grammatical errors, incomplete sentences, and unclear phrasing
+- **Consistency**: Ensure consistent terminology and capitalisation across documents
+- **Punctuation**: Verify correct use of punctuation, especially in lists and tables
+
+### 7. Verify AI-Generated Content Disclaimer
 
 **CRITICAL**: Ensure all LLM-generated files in `content/` folder have the AI disclaimer.
 
@@ -195,6 +204,7 @@ After performing all checks, provide a summary report in this format:
 ✅ Internal links added throughout documents
 ✅ All internal links validated
 ✅ Wikilink titles match frontmatter title properties
+✅ Syntax and grammar checked (British English)
 ✅ AI-generated content disclaimers present
 ```
 
@@ -210,6 +220,8 @@ After performing all checks, provide a summary report in this format:
 - Unlinked mentions of other projects
 - Wikilink display text doesn't match the target file's `title` property (e.g., `[[file|Wrong Title]]` when frontmatter says `title: Correct Title`)
 - Missing AI-generated content disclaimer in LLM-created files
+- American English spelling (e.g., "behavior" → "behaviour", "organization" → "organisation")
+- Grammatical errors or incomplete sentences
 
 ---
 

@@ -25,7 +25,7 @@ Enables NFTs whose owner and metadata are encrypted, allowing for private digita
 
 - Shielded ownership (only owner knows they possess NFT)
 - Optional selective disclosure mechanisms
-- Private metadata (visible only to owner or authorized parties)
+- Private metadata (visible only to owner or authorised parties)
 - Confidential transaction history
 - Private minting and burning processes
 
