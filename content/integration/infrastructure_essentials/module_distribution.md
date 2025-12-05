@@ -51,11 +51,11 @@ Infrastructure for packaging, distributing, and installing Logos modules (both f
 
 ## Demand Validation
 
-**Potential Users:** All Logos developers (backend, frontend, QML, web), module consumers, Logos Launcher users
+**Potential Users:** All Logos developers (backend, frontend, QML, web), module consumers, Logos App users
 
 **Use Cases:**
 - Installing backend modules (wallet, chat, waku, custom protocols)
-- Downloading frontend modules for Logos Launcher
+- Downloading frontend modules for Logos App
 - Updating existing modules to newer versions
 - Distributing homegrown Logos ecosystem applications
 - Sharing custom modules within developer communities
@@ -133,6 +133,4 @@ module_package.tar.gz (stored in Logos Storage)
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for decentralized module hosting
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] Package Manager module for installation
 - [[integration/infrastructure_essentials/module_discovery|Module Discovery & Curation]] for finding modules
-- [[integration/application_essentials/qml_module_development|QML Module Journey]] for QML-based modules
-- [[integration/application_essentials/js_fe_module_development|Web Module Journey]] for web-based modules
-- [[integration/application_essentials/vendor_development|Vendor Journey]] for embedded module distribution
+- [[integration/application_essentials/logos_core_devex|Development Journey]] for all module development paths

@@ -25,7 +25,7 @@ Privacy-preserving wallet infrastructure for managing Logos blockchain accounts,
 ### Usability
 - Provide intuitive UI for non-technical users (addressing "wallet setup complexity" barrier identified in privacy community research)
 - Offer guided onboarding flow with clear explanations of privacy features and trade-offs
-- Support seamless integration with Logos Launcher, browser extension, and mobile platforms
+- Support seamless integration with Logos App, browser extension, and mobile platforms
 - Enable one-click connection to dApps via [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]]
 - Provide clear transaction preview with privacy implications before signing
 
@@ -72,7 +72,7 @@ Privacy-preserving wallet infrastructure for managing Logos blockchain accounts,
 
 ### Multi-Platform Architecture
 
-**Logos Launcher Wallet (Desktop)**
+**Logos App Wallet (Desktop)**
 - Full-featured wallet integrated as Logos Core module
 - Direct access to local Logos blockchain node
 - Maximum privacy (no external RPC calls, local ZK proof generation)
@@ -140,11 +140,11 @@ Privacy-preserving wallet infrastructure for managing Logos blockchain accounts,
 
 **Integration Points:**
 - [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] for dApp wallet connection and transaction signing
-- [[integration/infrastructure_essentials/logos_core|Logos Core]] as wallet module in Logos Launcher
+- [[integration/infrastructure_essentials/logos_core|Logos Core]] as wallet module in Logos App
 - [[integration/desired_projects/multisig|Multisig]] for multi-signature wallet functionality
 - [[integration/desired_projects/private_dex|Private DEX]], [[integration/desired_projects/private_lending|Private Lending]], and other DeFi protocols for asset management
 - Hardware wallets (Ledger, Trezor, Keystone) via standardized integration APIs
-- [[integration/application_essentials/js_fe_module_development|JS Frontend Module Development (QtWebView)]] for browser extension development
+- [[integration/application_essentials/logos_core_devex|Development Journey]] for browser extension development
 - Browser wallet extensions (potential interoperability layer)
 
 ## Privacy Community Insights
@@ -166,8 +166,8 @@ Based on analysis of privacy-focused cryptocurrency communities (Monero, Graphen
 
 ## Deployment Models
 
-### Logos Launcher Integration (Primary)
-- Wallet as core module in Logos Launcher
+### Logos App Integration (Primary)
+- Wallet as core module in Logos App
 - Deepest integration with Logos Core infrastructure
 - Maximum privacy (local node, no external dependencies)
 - Target: Power users, privacy advocates, developers
@@ -176,7 +176,7 @@ Based on analysis of privacy-focused cryptocurrency communities (Monero, Graphen
 - Lightweight wallet for web onboarding
 - Lower friction than Launcher installation
 - Privacy trade-offs clearly communicated
-- Upgrade path to Logos Launcher for full features
+- Upgrade path to Logos App for full features
 - Target: Newcomers, web3 users, casual users
 
 ### Mobile App (Accessibility)
@@ -186,7 +186,7 @@ Based on analysis of privacy-focused cryptocurrency communities (Monero, Graphen
 - Target: Mainstream users, mobile-first demographics
 
 ### Standalone Desktop App (Alternative)
-- Desktop wallet without full Logos Launcher
+- Desktop wallet without full Logos App
 - Lighter than Launcher but more private than browser extension
 - Option for users who only need wallet functionality
 - Target: Users wanting privacy without full Logos ecosystem adoption

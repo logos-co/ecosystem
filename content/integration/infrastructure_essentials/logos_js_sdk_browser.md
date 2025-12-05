@@ -53,7 +53,7 @@ An extension of the [[integration/infrastructure_essentials/logos_js_sdk|logos_j
 - [[integration/desired_projects/activity_hub|Activity Hub]] browser version for newcomers
 - Preview/read-only interfaces for Logos data
 - Landing pages with live Logos network stats
-- Onboarding funnels to convert users to [[integration/infrastructure_essentials/logos_js_sdk|Logos Launcher]]
+- Onboarding funnels to convert users to [[integration/infrastructure_essentials/logos_js_sdk|Logos App]]
 - Developer documentation with live code examples
 - Public-facing dashboards and explorers
 
@@ -92,7 +92,7 @@ const balance = await logos.wallet.ethBalance('0x...');
 ## Technical Validation
 
 **Risks & Challenges:**
-- Documenting which features work vs require Logos Launcher
+- Documenting which features work vs require Logos App
 - Managing user expectations about privacy limitations
 - Maintaining feature parity where possible
 - Browser bundle size with WASM dependencies
@@ -125,7 +125,7 @@ The browser version serves as an **onboarding funnel** to the full Logos experie
 
 1. **Newcomer** uses Activity Hub in browser (no installation)
 2. **Discovers limitations** (cannot upload minutes to Storage, limited history)
-3. **Installs Logos Launcher** to access [[integration/infrastructure_essentials/logos_js_sdk|full functionality]]
+3. **Installs Logos App** to access [[integration/infrastructure_essentials/logos_js_sdk|full functionality]]
 4. **Same codebase** works in both environments with feature detection
 
 This aligns with the [Logos Web SDK strategy](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10) of reducing friction while maintaining a clear upgrade path.

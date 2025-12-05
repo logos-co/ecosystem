@@ -23,7 +23,7 @@ System for discovering, browsing, and curating available Logos modules, enabling
 - Display module update notifications
 
 ### Usability
-- Intuitive browsing interface within Logos Launcher
+- Intuitive browsing interface within Logos App
 - Clear categorization (messaging, wallet, DeFi, social, utilities)
 - Visual previews and screenshots for frontend modules
 - One-click installation from discovery interface
@@ -52,7 +52,7 @@ System for discovering, browsing, and curating available Logos modules, enabling
 
 ## Demand Validation
 
-**Potential Users:** All Logos Launcher users, developers seeking modules, ecosystem builders
+**Potential Users:** All Logos App users, developers seeking modules, ecosystem builders
 
 **Use Cases:**
 - Finding chat modules for messaging applications
@@ -72,7 +72,7 @@ System for discovering, browsing, and curating available Logos modules, enabling
 - Module metadata stored on [[integration/infrastructure_essentials/logos_storage|Logos Storage]]
 - Registry published as content-addressed list (CID updated periodically)
 - Multiple independent curators publish their own registries
-- Logos Launcher aggregates from multiple registry sources
+- Logos App aggregates from multiple registry sources
 - Community voting/rating via on-chain mechanisms
 
 **Option 2: Hybrid Registry**
@@ -140,10 +140,10 @@ System for discovering, browsing, and curating available Logos modules, enabling
 - Regular maintenance and updates
 - Security audit status
 
-### Discovery Interface (Logos Launcher)
+### Discovery Interface (Logos App)
 ```
 ┌─────────────────────────────────────┐
-│ Logos Launcher - Module Discovery  │
+│ Logos App - Module Discovery  │
 ├─────────────────────────────────────┤
 │ Search: [____________] 🔍           │
 │ Filter: [All] [Messaging] [DeFi]    │
@@ -176,7 +176,7 @@ System for discovering, browsing, and curating available Logos modules, enabling
 **Requirements:**
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for registry hosting
 - [[integration/infrastructure_essentials/module_distribution|Module Distribution]] infrastructure
-- Logos Launcher with discovery interface
+- Logos App with discovery interface
 - Registry format specification
 - Curation guidelines and policies
 - Rating and feedback mechanisms
@@ -193,6 +193,6 @@ From Logos Launch Strategy:
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for registry data
 - [[integration/infrastructure_essentials/module_distribution|Module Distribution]] for installation
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] for module management
-- [[integration/application_essentials/mini_app_development|Mini App Journey]] for launcher-based apps
-- Logos Launcher for user-facing discovery interface
+- [[integration/application_essentials/logos_core_devex|Development Journey]] for launcher-based apps
+- Logos App for user-facing discovery interface
 - Community governance systems for curation decisions

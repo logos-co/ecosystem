@@ -5,7 +5,7 @@ priority: 0
 category: Developer Tools
 ---
 
-JavaScript/TypeScript SDK for building web applications that run within the Logos Launcher, with full access to Logos Core modules (blockchain, storage, messaging).
+JavaScript/TypeScript SDK for building web applications that run within the Logos App, with full access to Logos Core modules (blockchain, storage, messaging).
 
 A [[integration/infrastructure_essentials/logos_js_sdk_browser|browser variant]] with limited functionality may exist for onboarding newcomers with minimal friction.
 ## FURPS+
@@ -33,12 +33,12 @@ A [[integration/infrastructure_essentials/logos_js_sdk_browser|browser variant]]
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
 
-- Anonymous retrieval of modules, including frontend, from [[integration/infrastructure_essentials/logos_storage|Logos Storage]] via [[integration/infrastructure_essentials/module_distribution|Module Distribution]]
-- Censorship-Resistance retrieval of modules, including frontend, from [[integration/infrastructure_essentials/logos_storage|Logos Storage]] via [[integration/infrastructure_essentials/module_distribution|Module Distribution]]
+- Anonymous retrieval of modules, including frontend, via [[integration/infrastructure_essentials/package_manager|Package Manager]]
+- Censorship-resistant retrieval of modules, including frontend, via [[integration/infrastructure_essentials/package_manager|Package Manager]]
 
 ## Demand Validation
 
-**Potential Users:** Web developers building [[integration/application_essentials/js_fe_module_development|mini apps]] for Logos Launcher
+**Potential Users:** Web developers building [[integration/application_essentials/logos_core_devex|mini apps]] for Logos App
 
 **Use Cases:**
 - [[integration/desired_projects/activity_hub|Activity Hub]] with full Logos Storage integration
@@ -85,11 +85,11 @@ const balance = await logos.wallet.ethBalance('0x...');
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] with module system
 - QtWebView with Qt WebChannel support
 - [[integration/infrastructure_essentials/liblogos|liblogos]] for module APIs
-- Logos Launcher runtime environment
+- Logos App runtime environment
 
 **Integration Points:**
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] modules (wallet, chat, waku, storage)
 - QtWebView for rendering web applications
 - Qt WebChannel for JavaScript-to-C++ bridge
-- [[integration/application_essentials/js_fe_module_development|JS Frontend Module Development (QtWebView)]] for developers
+- [[integration/application_essentials/logos_core_devex|Development Journey]] for developers
 - [[integration/infrastructure_essentials/logos_js_sdk_browser|Logos JS SDK (Browser)]] for onboarding experiences
