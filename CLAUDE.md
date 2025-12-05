@@ -24,6 +24,9 @@ The content focuses on the Integration effort which enables bi-directional feedb
 **File naming convention:**
 - Use underscores instead of spaces: `activity_hub.md` not `Activity Hub.md`
 
+**Language:**
+- Use British English throughout (e.g., "colour" not "color", "organisation" not "organization", "behaviour" not "behavior")
+
 ## Integration Content Taxonomy
 
 The Integration effort organizes content into three main categories:
