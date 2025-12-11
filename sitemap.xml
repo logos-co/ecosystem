@@ -1,6 +1,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+    <loc>https://localhost/handoff</loc>
+    <lastmod>2025-12-02T00:36:24.000Z</lastmod>
+  </url><url>
     <loc>https://localhost/</loc>
-    <lastmod>2025-12-01T02:01:16.000Z</lastmod>
+    <lastmod>2025-12-02T00:36:24.000Z</lastmod>
   </url><url>
     <loc>https://localhost/integration/application_essentials/logos_core_devex</loc>
     <lastmod>2025-12-05T05:56:45.000Z</lastmod>
