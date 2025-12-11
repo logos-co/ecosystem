@@ -53,6 +53,7 @@ flowchart LR
 # Streams
 
 - [[integration/index|Integration]]
+
 ## Content Authorship
 
 This wiki uses AI assistance to draft and organize content. To maintain transparency, LLM-generated sections that haven't been human-reviewed are marked with an indicator placed immediately after the section header:
@@ -62,3 +63,9 @@ This wiki uses AI assistance to draft and organize content. To maintain transpar
 
 The indicator applies to the entire section (from the header through all subsections until the next same-level or higher-level header). Once content is reviewed and approved by a human contributor, this indicator is removed. Unmarked content has been human-curated.
 
+# Processes
+
+- [[handoff|R&D ↔ Eco Dev Handoff Protocol]]
+
+> [!note] FURPS Placeholder
+> All FURPS in this wiki are placeholders. The actual FURPS are defined (or being migrated to) [roadmap.logos.co](https://roadmap.logos.co).
