@@ -13,6 +13,7 @@ Modular platform runtime that hosts and coordinates independently developed modu
 ## FURPS+
 
 ### Functionality
+
 - Host and manage lifecycle of independent modules (wallet, consensus, networking)
 - Enable inter-module communication via Qt Remote Objects IPC
 - Provide service discovery and dependency resolution
@@ -20,18 +21,21 @@ Modular platform runtime that hosts and coordinates independently developed modu
 - Coordinate module initialization and shutdown sequences
 
 ### Reliability
+
 - Ensure process isolation to prevent cascade failures
 - Provide automatic module restart on crashes
 - Enable graceful degradation when modules fail
 - Support health monitoring and diagnostics
 
 ### Performance
+
 - Minimize IPC overhead for inter-module communication
 - Support parallel module execution
 - Optimize module startup and initialization times
 - Enable efficient resource sharing between modules
 
 ### Supportability
+
 - Provide module development SDK and tooling
 - Enable hot-reloading for development workflows
 - Support versioning and compatibility checks
@@ -49,6 +53,7 @@ Modular platform runtime that hosts and coordinates independently developed modu
 **Potential Users:** Logos network operators, node runners, infrastructure developers
 
 **Use Cases:**
+
 - Running Logos blockchain nodes
 - Operating network infrastructure (validators, RPC providers)
 - Developing and testing new consensus mechanisms
@@ -66,6 +71,7 @@ Modular platform runtime that hosts and coordinates independently developed modu
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Complexity of distributed process architecture
 - Performance overhead of IPC vs monolithic design
 - Module version compatibility and migration
@@ -73,6 +79,7 @@ Modular platform runtime that hosts and coordinates independently developed modu
 - Security boundaries and permission models
 
 **Integration Points:**
+
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for persistent data
 - [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] for network communication
 - Wallet modules for key management and signing

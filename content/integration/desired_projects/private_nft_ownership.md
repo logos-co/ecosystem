@@ -34,6 +34,7 @@ Enables NFTs whose owner and metadata are encrypted, allowing for private digita
 **Potential Users:** Identity system users, credential holders, collectors, privacy-conscious individuals
 
 **Use Cases:**
+
 - Anonymous credentials: Proof of membership, certification, or qualification without revealing identity
 - Private identity documents: Encrypted passports, licenses, or certificates
 - Confidential collectibles: Art and PFPs without exposing collector wealth
@@ -51,6 +52,7 @@ Enables NFTs whose owner and metadata are encrypted, allowing for private digita
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Proving NFT uniqueness without revealing existence
 - Implementing private royalty mechanisms
 - Selective disclosure protocols for credential verification

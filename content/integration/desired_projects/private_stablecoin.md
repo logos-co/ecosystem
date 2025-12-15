@@ -32,6 +32,7 @@ Provides a stable medium of exchange for private payments, payroll, and DeFi wit
 **Potential Users:** All ecosystem participants requiring stable value
 
 **Use Cases:**
+
 - Private payments and commerce without volatility risk
 - Payroll and salary payments with predictable value
 - DeFi operations requiring stable unit of account
@@ -46,6 +47,7 @@ Provides a stable medium of exchange for private payments, payroll, and DeFi wit
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Regulatory compliance for issuers while maintaining user privacy
 - Proof of reserves mechanisms that don't compromise individual privacy
 - Redemption mechanisms that preserve anonymity

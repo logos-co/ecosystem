@@ -15,6 +15,7 @@ The content focuses on the Integration effort which enables bi-directional feedb
 ## Quick Start
 
 **Primary workflow:**
+
 1. Open `content/` folder as Obsidian vault (see Content Management section below)
 2. Create or edit markdown files following the structure templates
 3. Use wikilinks `[[path/to/file|Display Text]]` to connect concepts
@@ -22,9 +23,11 @@ The content focuses on the Integration effort which enables bi-directional feedb
 5. Run "check" command to validate structure and links
 
 **File naming convention:**
+
 - Use underscores instead of spaces: `activity_hub.md` not `Activity Hub.md`
 
 **Language:**
+
 - Use British English throughout (e.g., "colour" not "color", "organisation" not "organization", "behaviour" not "behavior")
 
 ## Integration Content Taxonomy
@@ -32,9 +35,11 @@ The content focuses on the Integration effort which enables bi-directional feedb
 The Integration effort organizes content into three main categories:
 
 ### 1. Infrastructure Essentials (`infrastructure_essentials/`)
+
 **What belongs here:** Core blockchain infrastructure that the network needs to operate and be accessible
 
 **Examples:**
+
 - Block explorers
 - RPC endpoints and infrastructure
 - Indexers and data availability layers
@@ -44,9 +49,11 @@ The Integration effort organizes content into three main categories:
 - Logos Messaging
 
 ### 2. Application Essentials (`application_essentials/`)
+
 **What belongs here:** Developer tools and primitives needed to build applications on Logos
 
 **Examples:**
+
 - Smart contract toolchain (compilers, debuggers, testing frameworks)
 - Development environments and IDEs
 - Token creation standards and tools
@@ -56,9 +63,11 @@ The Integration effort organizes content into three main categories:
 - Contract templates and boilerplates
 
 ### 3. Desired Projects (`desired_projects/`)
+
 **What belongs here:** End-user applications and ecosystem projects that provide value to users
 
 **Examples:**
+
 - DeFi protocols (stablecoins, lending, DEXs)
 - NFT marketplaces
 - DAOs and governance tools
@@ -104,35 +113,42 @@ Brief description paragraph (1-2 sentences explaining what the project does and 
 ## FURPS+
 
 ### Functionality
+
 - Core capabilities (what the system must DO)
 - 5-8 concise bullet points maximum
 - Focus on essential features, not implementation details
 
 ### Usability (optional)
+
 - User experience and developer experience points
 - 3-5 bullets maximum
 
 ### Reliability (optional)
+
 - Fault tolerance and recovery mechanisms
 - 3-4 bullets maximum
 
 ### Performance (optional)
+
 - Critical performance requirements only
 - 2-4 bullets maximum
 
 ### Supportability (optional)
+
 - Maintenance and extensibility concerns
 - 2-3 bullets maximum
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
 
 **IMPORTANT**: Keep this section concise (4-6 bullets). Focus on:
+
 - **Privacy**: How user data and transaction details are protected
 - **Anonymity**: How user identities and patterns are hidden
 - **Security**: Key cryptographic guarantees
 - **Censorship-Resistance**: How availability is ensured
 
 Example (concise format):
+
 - **Privacy**: Private transaction history not publicly visible
 - **Anonymity**: Anonymous participation without identity disclosure
 - **Security**: End-to-end encryption for sensitive operations
@@ -143,6 +159,7 @@ Example (concise format):
 **Potential Users:** Description of target user groups
 
 **Use Cases:**
+
 - Specific scenario 1
 - Specific scenario 2
 - Specific scenario 3
@@ -156,17 +173,20 @@ Example (concise format):
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Technical risk 1
 - Implementation challenge 1
 - Open research question 1
 
 **Dependencies:** (optional)
 List other projects, infrastructure, or tools required for this project to work:
+
 - [[integration/desired_projects/other_project|Other Project Name]]
 - External systems or protocols required
 - Logos technology stack components needed
 
 **Integration Points:** (optional)
+
 - [[integration/desired_projects/related_project|Related Project]] for specific integration
 - External systems or protocols
 - Logos technology stack components
@@ -182,6 +202,7 @@ Place these AFTER the standard sections.
 Based on industry best practices, follow these principles when writing FURPS+ requirements:
 
 **General Principles:**
+
 - Use FURPS+ as a **checklist for coverage**, not rigid categorization
 - Focus on **specific, measurable, actionable** requirements
 - **Avoid technical jargon** - write for all stakeholders (developers to executives)
@@ -189,6 +210,7 @@ Based on industry best practices, follow these principles when writing FURPS+ re
 - Prioritize **essential requirements** over exhaustive lists
 
 **Writing Effective Bullets:**
+
 - ✅ **Be Specific**: "Process 10,000 requests/second" not "perform well"
 - ✅ **Be Measurable**: Include metrics, thresholds, or clear criteria
 - ✅ **Be Concise**: One requirement per bullet point
@@ -197,15 +219,16 @@ Based on industry best practices, follow these principles when writing FURPS+ re
 
 **Good vs Bad Examples:**
 
-| Good ✅ | Bad ❌ |
-|---------|--------|
+| Good ✅                                              | Bad ❌                             |
+| ---------------------------------------------------- | ---------------------------------- |
 | Support 1000 concurrent users with <2s response time | System should be fast and scalable |
-| Encrypt all user data at rest using AES-256 | Data should be secure |
-| 99.9% uptime (max 8.76 hours downtime/year) | System should be reliable |
-| Complete transaction in <500ms under normal load | Transactions should be quick |
-| Private transaction history not publicly visible | Good privacy |
+| Encrypt all user data at rest using AES-256          | Data should be secure              |
+| 99.9% uptime (max 8.76 hours downtime/year)          | System should be reliable          |
+| Complete transaction in <500ms under normal load     | Transactions should be quick       |
+| Private transaction history not publicly visible     | Good privacy                       |
 
 **Category-Specific Guidance:**
+
 - **Functionality**: Core capabilities and feature set (what system must DO)
 - **Usability**: Human factors, consistency, ease of use, documentation
 - **Reliability**: Mean time between failures, recoverability, accuracy
@@ -216,22 +239,26 @@ Based on industry best practices, follow these principles when writing FURPS+ re
 ### Choosing Frontmatter Values
 
 **`type`:**
+
 - `Desired Project`: Standard ecosystem application or service
 - `Core Primitive`: Foundational infrastructure component
 
 **`priority`:**
+
 - **IMPORTANT**: When creating new entries, ALWAYS leave this field empty
 - `0-9`: Numeric priority (0 = highest, see `content/integration/concerns/sustainability.md` for tier definitions)
 - Priority is assigned later through dedicated prioritization processes
 - Empty: Unassigned priority (this is the default and expected state for new entries)
 
 **`flywheel`:** Choose the primary economic flywheel this project drives:
+
 - `Liquidity`: Attracts capital and trading activity (DEXs, lending, stablecoins)
 - `Security`: Secures the network and user assets (staking, multisig, custody)
 - `Network Effects`: Grows with user adoption (social apps, DAOs, marketplaces)
 - `Capital Efficiency`: Maximizes utility of locked capital (liquid staking, lending)
 
 **`category`:** Existing categories include:
+
 - `DeFi Core`: Fundamental DeFi primitives (DEX, lending, stablecoins)
 - `Advanced DeFi`: Sophisticated financial instruments (derivatives, perps)
 - `Infrastructure`: Base-layer services (bridges, oracles)
@@ -250,16 +277,19 @@ Create a new category if none fit, using Title Case.
 ### Wikilink Best Practices
 
 **When to add wikilinks:**
+
 - First mention of another desired project in the document
 - Key integration points in "Technical Validation" or "Integration Points" sections
 - Dependencies section (always link)
 
 **When NOT to add wikilinks:**
+
 - Repeated mentions of the same project within a document (link only the first)
 - Generic references (e.g., "users need a DEX" vs "integrate with [[integration/desired_projects/private_dex|Private DEX]]")
 - Within section headers
 
 **Format:**
+
 ```markdown
 [[integration/desired_projects/file_name|Display Name]]
 ```
@@ -278,6 +308,7 @@ To clearly distinguish LLM-generated content from human-curated content, use the
 ```
 
 **Scope Rules:**
+
 - **IMPORTANT**: The indicator belongs to a whole section and must ALWAYS be placed immediately after the section header (before any content)
 - The indicator applies to the entire section, including all subsections, **until the next same-level or higher-level header**
 - A section ends when you reach another header at the same level (e.g., `##` to `##`) or higher level (e.g., `###` to `##`)
@@ -287,12 +318,14 @@ To clearly distinguish LLM-generated content from human-curated content, use the
 **For entirely AI-generated files (RECOMMENDED DEFAULT):** place a single indicator at the very top of the file (after frontmatter and description) to cover the entire document - this applies to integration content, process documents, protocols, and any other content type
 
 **For partially AI-generated files:**
+
 - Place the indicator only under sections that are AI-generated
 - Each major section (`##`) that is AI-generated needs its own indicator
 
 **Examples:**
 
-*Example 1: Entire file is AI-generated (recommended approach)*
+_Example 1: Entire file is AI-generated (recommended approach)_
+
 ```markdown
 ---
 title: Example Project
@@ -306,13 +339,16 @@ Brief description of the project.
 ## FURPS+
 
 ### Functionality
+
 - Statement 1
 
 ## Demand Validation
+
 ...
 ```
 
-*Example 2: Only FURPS+ section is AI-generated*
+_Example 2: Only FURPS+ section is AI-generated_
+
 ```markdown
 ## FURPS+
 
@@ -320,10 +356,12 @@ Brief description of the project.
 > This section was generated by an LLM and has not yet been human-reviewed.
 
 ### Functionality
+
 - Statement 1
 - Statement 2
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
+
 - Statement 3
 
 ## Demand Validation
@@ -340,6 +378,7 @@ Brief description of the project.
 When the user says "check", perform comprehensive quality assurance checks on the repository.
 
 **All check instructions are in `AGENT-CHECK.md`** - refer to that file for:
+
 - Complete checklist of all quality assurance tasks
 - Automated bash commands for each check
 - Expected outputs and reporting format
@@ -350,14 +389,18 @@ When the user says "check", perform comprehensive quality assurance checks on th
 ## Content Management Best Practices
 
 ### Obsidian Integration
+
 Open the `content/` folder (not repo root) as Obsidian vault:
+
 - Enable "Automatically update internal links"
 - Set link format to "Absolute path in vault"
 - Enable Wikilinks
 - Use Templater plugin with `templates/` folder for auto-populated files
 
 ### Ignore Patterns
+
 The following are ignored by Quartz (configured in `quartz.config.ts`):
+
 - `private/` - Private notes not for publication
 - `templates/` - Obsidian templates
 - `.obsidian/` - Obsidian configuration
@@ -367,13 +410,17 @@ The following are ignored by Quartz (configured in `quartz.config.ts`):
 # Logos Integration Framework Reference
 
 ## Mission
+
 The Integration effort establishes bi-directional feedback between the Logos technical stack and ecosystem by:
+
 - Identifying and evaluating technological needs of the community
 - Translating needs into requirements for the technology stack
 - Propagating information about deliveries to encourage building and contribution
 
 ## Prioritization Framework
+
 Three primary concerns drive requirement prioritization (defined in `content/integration/index.md`):
+
 1. **Sustainability**: Enable onchain activity and value accrual to sustain technology stack development
 2. **Movement**: Provide technological solutions for the movement to organize and solve winnable issues
 3. **Technology De-Risking**: Enable early delivery and validation of technology with highest unknowns and risks
@@ -381,7 +428,9 @@ Three primary concerns drive requirement prioritization (defined in `content/int
 **Priority tiers** are documented in `content/integration/concerns/sustainability.md` (0 = highest priority).
 
 ## Privacy-First Principles
+
 All desired projects emphasize privacy-preserving implementations for the Logos L1:
+
 - Shielded transactions and balances
 - ZK proofs for eligibility/verification without revealing identity
 - MEV resistance through encrypted mempools
@@ -401,6 +450,7 @@ All desired projects emphasize privacy-preserving implementations for the Logos 
 ## Key Commands
 
 ### Development
+
 ```bash
 # Build and serve with live reload (primary dev command)
 npx quartz build --serve
@@ -410,6 +460,7 @@ npm run docs
 ```
 
 ### Code Quality
+
 ```bash
 # Type checking and formatting check
 npm run check
@@ -424,6 +475,7 @@ npm test
 ## Architecture
 
 ### Plugin System
+
 Quartz uses a three-phase plugin architecture defined in `quartz/plugins/types.ts`:
 
 1. **Transformers** (`quartz/plugins/transformers/`): Process markdown content (parse, syntax highlighting, link crawling, etc.)
@@ -433,14 +485,18 @@ Quartz uses a three-phase plugin architecture defined in `quartz/plugins/types.t
 Plugins are configured in `quartz.config.ts` and execute in the order: Transformers → Filters → Emitters.
 
 ### Build Pipeline
+
 The build process (`quartz/build.ts`) follows this flow:
+
 1. Parse markdown files using transformers
 2. Filter content based on filter plugins
 3. Emit static assets and pages using emitter plugins
 4. Support incremental builds via change detection
 
 ### Component System
+
 UI components (`quartz/components/*.tsx`) are Preact-based with three optional lifecycle hooks:
+
 - `css`: Static stylesheet resource
 - `beforeDOMLoaded`: Scripts that run before DOM ready
 - `afterDOMLoaded`: Scripts that run after DOM ready
@@ -450,7 +506,9 @@ Layout structure is defined in `cfg.ts` as `FullPageLayout` with regions: head, 
 ## Important Configuration
 
 ### quartz.config.ts
+
 Central configuration file containing:
+
 - Site metadata (pageTitle, baseUrl, locale)
 - Theme settings (typography, colors for light/dark mode)
 - Analytics provider (currently set to Plausible)
@@ -458,6 +516,7 @@ Central configuration file containing:
 - Ignore patterns for content filtering
 
 ### Content Structure
+
 - `content/index.md`: Site homepage
 - `content/integration/`: Integration effort documentation
   - `concerns/`: Priority drivers (sustainability, movement, tech de-risking)

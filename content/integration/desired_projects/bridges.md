@@ -38,6 +38,7 @@ Absolutely mandatory for onboarding assets and users to the privacy L1 through s
 **Potential Users:** All L1 users requiring asset onboarding
 
 **Use Cases:**
+
 - Initial asset onboarding from Ethereum, Bitcoin, and other chains
 - [[integration/desired_projects/private_stablecoin|Stablecoin]] transfers (USDC, USDT, DAI) for private commerce
 - Cross-chain DeFi operations
@@ -52,6 +53,7 @@ Absolutely mandatory for onboarding assets and users to the privacy L1 through s
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Light client verification vs. trusted validators trade-off
 - Maintaining economic security with sufficient stake
 - Implementing fraud proofs effectively

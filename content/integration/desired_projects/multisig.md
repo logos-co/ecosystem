@@ -34,6 +34,7 @@ Enables secure shared custody of shielded assets requiring multiple signatures t
 **Potential Users:** DAOs, project teams, families/groups, businesses, escrow services
 
 **Use Cases:**
+
 - DAO treasuries: Protect multisig signers from targeted attacks
 - Project funds: Secure team funds without exposing team structure
 - Shared wallets: Families or groups managing funds privately
@@ -49,6 +50,7 @@ Enables secure shared custody of shielded assets requiring multiple signatures t
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Implementing threshold cryptography in ZK circuits
 - Coordinating signers without revealing participation
 - Handling signer rotation while maintaining privacy
@@ -56,6 +58,7 @@ Enables secure shared custody of shielded assets requiring multiple signatures t
 - Proving authorization without exposing signers
 
 **Integration Points:**
+
 - [[integration/desired_projects/private_daos|Private DAOs]]: Native multisig for DAO governance
 - Treasury management: Integration with portfolio tracking
 - [[integration/desired_projects/private_lending|DeFi protocols]]: Use multisig assets as collateral

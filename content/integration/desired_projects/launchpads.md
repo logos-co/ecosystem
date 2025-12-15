@@ -40,6 +40,7 @@ Facilitates the fair and private launch of new tokens directly into the shielded
 **Potential Users:** New token projects, communities, fundraisers, meme coin creators
 
 **Use Cases:**
+
 - Fair token launches without bot manipulation
 - Private fundraising for new projects
 - Community token distribution with privacy
@@ -57,6 +58,7 @@ Facilitates the fair and private launch of new tokens directly into the shielded
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Counterparty discovery for early participation
 - Implementing ZK identity systems for Sybil resistance
 - Escrow mechanisms that lock project funds until conditions met
@@ -65,6 +67,7 @@ Facilitates the fair and private launch of new tokens directly into the shielded
 - Balancing privacy with protection from rug pulls
 
 **Requirements:**
+
 - Smart contract templates (audited, reusable token contracts)
 - ZK identity system (prove eligibility without revealing identity)
 - Escrow mechanisms (lock funds until conditions met)

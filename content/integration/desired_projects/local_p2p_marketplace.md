@@ -37,6 +37,7 @@ Escrowed, classifieds-style P2P trade marketplace enabling local communities to 
 **Potential Users:** Local community members, small businesses, gig workers, activists, preppers, privacy advocates
 
 **Use Cases:**
+
 - Formalizing informal economies (street vendors, gig workers, cash-based trades)
 - Local food networks (farm-to-table, community gardens)
 - Skills exchange (tutoring, repairs, services)
@@ -62,12 +63,14 @@ Escrowed, classifieds-style P2P trade marketplace enabling local communities to 
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Bootstrap problem: Need critical mass of users in each locality
 - Spam and scam prevention without centralized moderation
 - Dispute resolution in decentralized context
 - Building trust without transparent transaction history
 
 **Integration Points:**
+
 - Private messaging systems
 - Reputation systems (Private NFTs or ZK credentials)
 - [[integration/desired_projects/private_stablecoin|Private Stablecoin]] for payments

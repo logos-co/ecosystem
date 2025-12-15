@@ -13,6 +13,7 @@ Decentralized package manager for discovering, resolving, and retrieving Logos m
 ## FURPS+
 
 ### Functionality
+
 - Maintain an index of available modules with metadata (name, version, dependencies, platform)
 - Resolve module dependencies and version constraints
 - Retrieve module packages from [[integration/infrastructure_essentials/logos_storage|Logos Storage]] by CID
@@ -22,18 +23,21 @@ Decentralized package manager for discovering, resolving, and retrieving Logos m
 - Provide CLI and programmatic interfaces for module operations
 
 ### Usability
+
 - Simple commands: `logos install <module>`, `logos update`, `logos publish`
 - Lockfile support for reproducible installations
 - Clear dependency tree visualization
 - Helpful error messages for resolution conflicts
 
 ### Reliability
+
 - Cache module metadata locally for offline resolution
 - Handle unavailable storage nodes gracefully
 - Support multiple registry sources for redundancy
 - Verify module hashes before installation
 
 ### Performance
+
 - Parallel module downloads
 - Incremental updates for changed modules only
 - Efficient index syncing with minimal bandwidth
@@ -52,6 +56,7 @@ Decentralized package manager for discovering, resolving, and retrieving Logos m
 **Potential Users:** All Logos developers, module publishers, Logos App, build systems
 
 **Use Cases:**
+
 - Installing modules for [[integration/application_essentials/logos_core_devex|Standalone App Development]]
 - Fetching dependencies during [[integration/application_essentials/logos_core_devex|Web Mini App]] builds
 - Publishing new modules to the ecosystem
@@ -109,6 +114,7 @@ The package manager maintains a decentralized index that maps module identifiers
 ### Storage Layer
 
 Module binaries are stored on [[integration/infrastructure_essentials/logos_storage|Logos Storage]]:
+
 - Each module version is a content-addressed package (tar.gz)
 - CID ensures integrity and enables deduplication
 - Multiple storage providers can host the same module
@@ -148,6 +154,7 @@ logos info chat_module
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Maintaining index consistency across decentralized registries
 - Handling conflicting module versions from different publishers
 - Preventing malicious packages in a permissionless system
@@ -156,9 +163,11 @@ logos info chat_module
 - Balancing decentralization with curation quality
 
 **Dependencies:**
+
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for module binary hosting
 
 **Integration Points:**
+
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for content-addressed module storage
 - [[integration/infrastructure_essentials/logos_core|Logos Core]] for module installation and loading
 - [[integration/application_essentials/logos_core_devex|Development Journey]] for module retrieval and distribution

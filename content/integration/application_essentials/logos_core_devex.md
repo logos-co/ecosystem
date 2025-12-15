@@ -4,6 +4,7 @@ type: Developer Guide
 priority:
 category: Developer Tools
 ---
+
 # Logos Core Developer Experience
 
 Overview of the different development paths for building applications on the Logos technology stack.
@@ -11,21 +12,22 @@ Overview of the different development paths for building applications on the Log
 ## Development Paths
 
 The Logos ecosystem supports multiple development journeys, each suited to different use cases, developer skills, and distribution strategies.
+
 ### Mini Apps (Logos App)
 
 Applications distributed via the [[integration/infrastructure_essentials/package_manager|Package Manager]] and loaded within the [[Logos App]]. This provides a "dApp browser" experience with seamless access to Logos infrastructure.
 
 **Two implementation options:** Web Mini App and QML Mini App
 
-| Aspect | Web Mini App | QML Mini App |
-|--------|--------------|--------------|
-| **Languages** | HTML/CSS/JavaScript[^1] | QML/C++ |
-| **Developer Pool** | All web developers | Qt developers |
-| **Tooling** | Web DevTools, npm, bundlers | Qt Creator, qmlscene |
-| **Performance** | Good (native WebView) | Excellent (native Qt) |
-| **Access to Core** | Via Logos JS SDK | Via Qt Remote Objects |
-| **Learning Curve** | Low for web devs | Medium (requires Qt knowledge) |
-| **Best For** | Rapid prototyping, simple UIs | Complex native-feeling UIs |
+| Aspect             | Web Mini App                  | QML Mini App                   |
+| ------------------ | ----------------------------- | ------------------------------ |
+| **Languages**      | HTML/CSS/JavaScript[^1]       | QML/C++                        |
+| **Developer Pool** | All web developers            | Qt developers                  |
+| **Tooling**        | Web DevTools, npm, bundlers   | Qt Creator, qmlscene           |
+| **Performance**    | Good (native WebView)         | Excellent (native Qt)          |
+| **Access to Core** | Via Logos JS SDK              | Via Qt Remote Objects          |
+| **Learning Curve** | Low for web devs              | Medium (requires Qt knowledge) |
+| **Best For**       | Rapid prototyping, simple UIs | Complex native-feeling UIs     |
 
 [^1]: JavaScript support to be confirmed
 
@@ -52,6 +54,7 @@ Developers distribute only the **web app files (HTML, JS, CSS)** which are loade
 - Less control but lower barrier to entry
 
 **Shared characteristics:**
+
 - Distributed via [[integration/infrastructure_essentials/package_manager|Package Manager]]
 - Run within Logos App environment
 - Access to Logos Core modules (messaging, storage, blockchain)
@@ -64,17 +67,20 @@ Applications that **embed Logos modules directly** using [[integration/infrastru
 **Frameworks:** Electron, Tauri, Flutter, CLI, TUI, or even Qt
 
 **Characteristics:**
+
 - Full control over UI and distribution
 - Logos modules bundled within the application
 - Modules retrieved from [[integration/infrastructure_essentials/package_manager|Package Manager]] at build time
 - No dependency on Logos App being installed
 
 **Use cases:**
+
 - Existing apps with established user bases adding Logos features
 - New apps wanting full control over distribution and branding
 - CLI/TUI tools for developers and power users
 
 **Trade-offs:**
+
 - Does not onboard users to [[Logos App]] ecosystem
 - Larger application bundle size
 - Developer responsible for module updates
@@ -85,6 +91,7 @@ Applications that **embed Logos modules directly** using [[integration/infrastru
 External applications that **connect to the Logos App Kernel** running as a separate process, enabling apps to leverage Logos infrastructure without embedding modules.
 
 **Characteristics:**
+
 - Application connects to running Logos App via IPC/RPC
 - Shared Logos runtime across multiple applications
 - Lighter application bundle (no embedded modules)
@@ -92,12 +99,14 @@ External applications that **connect to the Logos App Kernel** running as a sepa
 - Potentially distributable via [[integration/infrastructure_essentials/package_manager|Package Manager]]
 
 **Use cases:**
+
 - Browser extensions connecting to local Logos App
 - Lightweight tools that leverage user's existing Logos setup
 - Applications in languages not natively supported by liblogos
 - Development and debugging tools
 
 **Trade-offs:**
+
 - Requires user to have Logos App running
 - Split user experience (two apps)
 - IPC overhead compared to embedded modules
@@ -112,6 +121,7 @@ A key concern is ensuring user confidence that modules retrieved from the [[inte
 ### Sandboxing Strategy
 
 For **QML/Qt modules**, sandboxing is required to restrict:
+
 - Network access (no external connections)
 - Disk access (limited to module-specific storage)
 
@@ -122,6 +132,7 @@ The trust model is based on users trusting the code emerging from Logos R&D at a
 Integrity checks may be performed to ensure trusted modules have not been compromised (e.g., signature verification, hash validation against known releases).
 
 **Third-party modules** introduce a new set of developers into the trust chain. Since users have not explicitly trusted these developers, additional safeguards are required:
+
 - Sandboxing to restrict network and disk access
 - User authorisation prompts when accessing trusted modules
 - Token-based authentication and permissions
@@ -138,11 +149,13 @@ Integrity checks may be performed to ensure trusted modules have not been compro
 ## Current Priorities
 
 ### Mini App Concept
+
 - Generally more appetite from leadership
 - Provides cohesive user experience within Logos App
 - Enables ecosystem network effects through discovery and curation
 
 ### Standalone App Development
+
 - Existing integration leads via [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] (Rust SDK demand)
 - Important for onboarding existing applications with established user bases
 - Faster path to production for some use cases
