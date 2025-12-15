@@ -2,67 +2,67 @@
 <rss version="2.0">
     <channel>
       <title>Logos Ecosystem Development</title>
-      <link>https://localhost</link>
+      <link>https://ecosystem.logos.co</link>
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
     <title>Circle Content Management System</title>
-    <link>https://localhost/integration/desired_projects/circle_cms</link>
-    <guid>https://localhost/integration/desired_projects/circle_cms</guid>
+    <link>https://ecosystem.logos.co/integration/desired_projects/circle_cms</link>
+    <guid>https://ecosystem.logos.co/integration/desired_projects/circle_cms</guid>
     <description><![CDATA[ Enable circles to collaboratively manage knowledge, documentation, and content while maintaining privacy and censorship resistance. ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:46 GMT</pubDate>
   </item><item>
     <title>Multisig Treasury / Vault</title>
-    <link>https://localhost/integration/desired_projects/multisig</link>
-    <guid>https://localhost/integration/desired_projects/multisig</guid>
+    <link>https://ecosystem.logos.co/integration/desired_projects/multisig</link>
+    <guid>https://ecosystem.logos.co/integration/desired_projects/multisig</guid>
     <description><![CDATA[ Enables secure shared custody of shielded assets requiring multiple signatures to authorise transactions, protecting treasuries and shared funds without revealing signers or balances. ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:46 GMT</pubDate>
   </item><item>
     <title>Private NFT Ownership</title>
-    <link>https://localhost/integration/desired_projects/private_nft_ownership</link>
-    <guid>https://localhost/integration/desired_projects/private_nft_ownership</guid>
+    <link>https://ecosystem.logos.co/integration/desired_projects/private_nft_ownership</link>
+    <guid>https://ecosystem.logos.co/integration/desired_projects/private_nft_ownership</guid>
     <description><![CDATA[ Enables NFTs whose owner and metadata are encrypted, allowing for private digital asset ownership, anonymous credentials, and confidential collectibles. ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:46 GMT</pubDate>
   </item><item>
     <title>Package Manager</title>
-    <link>https://localhost/integration/infrastructure_essentials/package_manager</link>
-    <guid>https://localhost/integration/infrastructure_essentials/package_manager</guid>
+    <link>https://ecosystem.logos.co/integration/infrastructure_essentials/package_manager</link>
+    <guid>https://ecosystem.logos.co/integration/infrastructure_essentials/package_manager</guid>
     <description><![CDATA[ Decentralized package manager for discovering, resolving, and retrieving Logos modules. ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:46 GMT</pubDate>
   </item><item>
     <title>Logos Core DevEx</title>
-    <link>https://localhost/integration/application_essentials/logos_core_devex</link>
-    <guid>https://localhost/integration/application_essentials/logos_core_devex</guid>
+    <link>https://ecosystem.logos.co/integration/application_essentials/logos_core_devex</link>
+    <guid>https://ecosystem.logos.co/integration/application_essentials/logos_core_devex</guid>
     <description><![CDATA[ Logos Core Developer Experience Overview of the different development paths for building applications on the Logos technology stack. ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:45 GMT</pubDate>
   </item><item>
     <title>Activity Hub</title>
-    <link>https://localhost/integration/desired_projects/activity_hub</link>
-    <guid>https://localhost/integration/desired_projects/activity_hub</guid>
+    <link>https://ecosystem.logos.co/integration/desired_projects/activity_hub</link>
+    <guid>https://ecosystem.logos.co/integration/desired_projects/activity_hub</guid>
     <description><![CDATA[ The activity hub serves two main purposes, which are related to the life cycle of Logos movement participants (better word?). ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:45 GMT</pubDate>
   </item><item>
     <title>Logos JS SDK</title>
-    <link>https://localhost/integration/infrastructure_essentials/logos_js_sdk</link>
-    <guid>https://localhost/integration/infrastructure_essentials/logos_js_sdk</guid>
+    <link>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_js_sdk</link>
+    <guid>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_js_sdk</guid>
     <description><![CDATA[ JavaScript/TypeScript SDK for building web applications that run within the Logos App, with full access to Logos Core modules (blockchain, storage, messaging). ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:45 GMT</pubDate>
   </item><item>
     <title>Logos JS SDK (Browser)</title>
-    <link>https://localhost/integration/infrastructure_essentials/logos_js_sdk_browser</link>
-    <guid>https://localhost/integration/infrastructure_essentials/logos_js_sdk_browser</guid>
+    <link>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_js_sdk_browser</link>
+    <guid>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_js_sdk_browser</guid>
     <description><![CDATA[ An extension of the logos_js_sdk to enable web app built with it run in standard browsers, with limited access to Logos functionality. ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:45 GMT</pubDate>
   </item><item>
     <title>Logos Wallet</title>
-    <link>https://localhost/integration/infrastructure_essentials/logos_wallet</link>
-    <guid>https://localhost/integration/infrastructure_essentials/logos_wallet</guid>
+    <link>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_wallet</link>
+    <guid>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_wallet</guid>
     <description><![CDATA[ Privacy-preserving wallet infrastructure for managing Logos blockchain accounts, signing shielded transactions, and interacting with the Logos ecosystem. ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:56:45 GMT</pubDate>
   </item><item>
     <title>liblogos</title>
-    <link>https://localhost/integration/infrastructure_essentials/liblogos</link>
-    <guid>https://localhost/integration/infrastructure_essentials/liblogos</guid>
+    <link>https://ecosystem.logos.co/integration/infrastructure_essentials/liblogos</link>
+    <guid>https://ecosystem.logos.co/integration/infrastructure_essentials/liblogos</guid>
     <description><![CDATA[ C++ SDK library providing the core API for developing Logos modules, enabling inter-module communication and access to platform services. ]]></description>
     <pubDate>Fri, 05 Dec 2025 05:53:20 GMT</pubDate>
   </item>

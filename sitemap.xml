@@ -1,94 +1,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://localhost/handoff</loc>
+    <loc>https://ecosystem.logos.co/handoff</loc>
     <lastmod>2025-12-02T00:36:24.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/</loc>
+    <loc>https://ecosystem.logos.co/</loc>
     <lastmod>2025-12-02T00:36:24.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/application_essentials/logos_core_devex</loc>
+    <loc>https://ecosystem.logos.co/integration/application_essentials/logos_core_devex</loc>
     <lastmod>2025-12-05T05:56:45.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/concerns/movement</loc>
+    <loc>https://ecosystem.logos.co/integration/concerns/movement</loc>
     <lastmod>2025-11-22T03:21:12.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/concerns/sustainability</loc>
+    <loc>https://ecosystem.logos.co/integration/concerns/sustainability</loc>
     <lastmod>2025-11-22T03:16:56.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/concerns/tech_risks</loc>
+    <loc>https://ecosystem.logos.co/integration/concerns/tech_risks</loc>
     <lastmod>2025-11-23T23:14:47.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/activity_hub</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/activity_hub</loc>
     <lastmod>2025-12-05T05:56:45.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/atomic_swaps</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/atomic_swaps</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/bridges</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/bridges</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/circle_cms</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/circle_cms</loc>
     <lastmod>2025-12-05T05:56:46.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/derivatives</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/derivatives</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/launchpads</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/launchpads</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/liquid_staking</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/liquid_staking</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/local_p2p_marketplace</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/local_p2p_marketplace</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/multisig</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/multisig</loc>
     <lastmod>2025-12-05T05:56:46.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/nft_marketplace</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/nft_marketplace</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/private_daos</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/private_daos</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/private_dex</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/private_dex</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/private_lending</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/private_lending</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/private_nft_ownership</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/private_nft_ownership</loc>
     <lastmod>2025-12-05T05:56:46.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/private_stablecoin</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/private_stablecoin</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/desired_projects/social_apps</loc>
+    <loc>https://ecosystem.logos.co/integration/desired_projects/social_apps</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/</loc>
+    <loc>https://ecosystem.logos.co/integration/</loc>
     <lastmod>2025-11-23T23:14:47.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/infrastructure_essentials/liblogos</loc>
+    <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/liblogos</loc>
     <lastmod>2025-12-05T05:53:20.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/infrastructure_essentials/logos_core</loc>
+    <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_core</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/infrastructure_essentials/logos_js_sdk</loc>
+    <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_js_sdk</loc>
     <lastmod>2025-12-05T05:56:45.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/infrastructure_essentials/logos_js_sdk_browser</loc>
+    <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_js_sdk_browser</loc>
     <lastmod>2025-12-05T05:56:45.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/infrastructure_essentials/logos_messaging</loc>
+    <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_messaging</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/infrastructure_essentials/logos_storage</loc>
+    <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_storage</loc>
     <lastmod>2025-11-28T00:09:10.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/infrastructure_essentials/logos_wallet</loc>
+    <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_wallet</loc>
     <lastmod>2025-12-05T05:56:45.000Z</lastmod>
   </url><url>
-    <loc>https://localhost/integration/infrastructure_essentials/package_manager</loc>
+    <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/package_manager</loc>
     <lastmod>2025-12-05T05:56:46.000Z</lastmod>
   </url></urlset>
