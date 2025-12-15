@@ -4,7 +4,7 @@ title: Logos Testnet v0.1 - Eco Dev activities
 
 TODO: Link to reference page
 
-## AnnonComms
+## AnonComms
 
 **R&D Delivery**: Demo app that demonstrates the capability discovery module and mixnet features.
 
@@ -53,7 +53,7 @@ Red team the capability discovery module.
 - Native token transfers (public and private)
 - Creation and transfer of custom tokens (public and private)
 - Can interact with AMM sample app (public and private)
-- Deploy/execute custom smart contracts (public and private)
+- Develop, deploy and execute custom smart contracts (public and private)
 - Track public transactions through explorer, some info for private state (eg number of transactions)
 - Transaction generator 
 
