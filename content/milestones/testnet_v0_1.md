@@ -74,3 +74,36 @@ Red team the capability discovery module.
 - Is DST handling throughput test?
 - What about native native token faucet?
 - Is wallet available through Logos Core modules? can we build a PoC gui?
+
+## Messaging
+
+**R&D Delivery**:
+- demo app for Chat SDK (Logos Core)
+- Logos Chat Module
+
+### Eco Dev Activity
+
+**Proposal**:
+1. Dogfood demo app
+2. Build alternative PoC apps
+
+### Questions
+
+- Extent of the API?
+
+## Storage
+
+**R&D Delivery:**
+- Demo App that shows storage module
+- storage module
+
+### Eco Dev Activity
+
+**Proposal**:
+1. PoC Apps using storage module
+
+### Questions
+
+- This is for straight storage, correct?
+  - Aka, not embedded in Logos Package manager
+  - no expectation of retrieving a module from storage and executing it 
