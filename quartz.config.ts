@@ -94,4 +94,4 @@ const config: QuartzConfig = {
   },
 }
 
-a4xport default config
+export default config
