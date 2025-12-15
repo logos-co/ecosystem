@@ -37,8 +37,8 @@ Red team the capability discovery module.
 ### Eco Dev activity
 
 **Proposal**:
-- Try steps ourselves
-- Build PoC GUI to help users do steps (in Logos Core)
+1. Dogfood steps above
+2. Build PoC GUI to help users do steps (in Logos Core)
 
 ### Questions
 
@@ -60,12 +60,13 @@ Red team the capability discovery module.
 ### Eco Dev Activity
 
 **Proposal**:
-- Setup and use wallet:
+1. Setup and use wallet:
   - get native tokens, transfer
   - create custom token, transfer
   - pool, exchange tokens in AMM
   - use explorer when doing above
-- create 2 new smart contracts, deploy, doc for users to test
+2. Start building scaffold
+3. Create 2 new smart contracts, deploy, doc for users to test - using scaffold
 
 ### Questions
 
