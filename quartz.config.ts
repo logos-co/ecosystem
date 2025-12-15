@@ -15,8 +15,8 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "localhost",
+    locale: "en-GB",
+    baseUrl: "ecosystem.logos.co",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -94,4 +94,4 @@ const config: QuartzConfig = {
   },
 }
 
-export default config
+a4xport default config
