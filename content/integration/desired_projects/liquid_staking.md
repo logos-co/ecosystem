@@ -35,6 +35,7 @@ Unlocks staked capital by allowing users to stake the native token to secure the
 **Potential Users:** Network validators, DeFi users, long-term holders
 
 **Use Cases:**
+
 - Securing the network while maintaining DeFi liquidity
 - Earning staking rewards without locking capital
 - Using staked assets as collateral in [[integration/desired_projects/private_lending|lending]]
@@ -49,6 +50,7 @@ Unlocks staked capital by allowing users to stake the native token to secure the
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Validator selection mechanism design (private vs transparent)
 - Reward distribution calculations on encrypted balances
 - Slashing protection without revealing positions
@@ -56,6 +58,7 @@ Unlocks staked capital by allowing users to stake the native token to secure the
 - Exit queue implementation maintaining privacy
 
 **Integration Points:**
+
 - [[integration/desired_projects/private_dex|Private DEX]] for trading staked derivatives
 - [[integration/desired_projects/private_lending|Lending protocol]] for using derivatives as collateral
 - Yield aggregators for automatic reward compounding

@@ -24,6 +24,7 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 **"Given enough eyeballs, all bugs are shallow"** (Linus's Law)
 
 **Red team = Guaranteed eyeballs without gating public access**:
+
 - Public release happens when R&D handoff complete
 - Red team tests in parallel with community access
 - Red team seeds the bazaar (initial feedback, shallow bugs, use it in examples and PoCs)
@@ -39,7 +40,7 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 | ------------------------------ | ----------------------------------------------------------- |
 | **Code**                       | Functioning software is the core of the delivery            |
 | **C-API** (if library)         | Usable in Logos Core                                        |
-| **Protocol, API Specs, FURPS** | Clear expectation of behavior and functionality delivered  |
+| **Protocol, API Specs, FURPS** | Clear expectation of behavior and functionality delivered   |
 | **Documentation**              | To quickly jump into activities, and bypass discovery phase |
 | **Dogfooding Proof**           | Help ensure the above is done and bases are covered         |
 
@@ -67,12 +68,12 @@ Eco Dev is not responsible for:
 
 #### 2. Get Builder Attention
 
-| Output                        | Impact                                                     |
-| ----------------------------- | ---------------------------------------------------------- |
-| **Vibe Coding Sessions**      | Live, honest exploration showing real developer experience |
-| **Long-form Posts**           | Deep dives on features, use cases, architectural decisions |
-| **Short-form Announcements**  | Discord posts, Twitter threads, release summaries          |
-| **Presentations & Workshops** | Conference talks, meetups, hands-on sessions               |
+| Output                        | Impact                                                       |
+| ----------------------------- | ------------------------------------------------------------ |
+| **Vibe Coding Sessions**      | Live, honest exploration showing real developer experience   |
+| **Long-form Posts**           | Deep dives on features, use cases, architectural decisions   |
+| **Short-form Announcements**  | Discord posts, Twitter threads, release summaries            |
+| **Presentations & Workshops** | Conference talks, meetups, hands-on sessions                 |
 | **Office Hours**              | Regular Q&A sessions for direct builder support and feedback |
 
 #### 3. Enable Distribution
@@ -85,15 +86,16 @@ Eco Dev is not responsible for:
 
 #### 4. Enable Partnerships
 
-| Output | Impact |
-|--------|--------|
-| **Value Proposition Mapping** | Map Logos features to partner/lead use cases and pain points for targeted outreach |
-| **Partnership Decks** | Create tailored presentations for ecosystem partnerships (VCs, protocols, enterprises) |
-| **Integration Requirements** | Document partner technical requirements and feed to Integration team for prioritization |
-| **Case Studies** | Document successful integrations/partnerships for sales pipeline and credibility |
-| **Partnership Pipeline** | Track and nurture potential ecosystem integrations (e.g., protocols using Logos stack) |
+| Output                        | Impact                                                                                  |
+| ----------------------------- | --------------------------------------------------------------------------------------- |
+| **Value Proposition Mapping** | Map Logos features to partner/lead use cases and pain points for targeted outreach      |
+| **Partnership Decks**         | Create tailored presentations for ecosystem partnerships (VCs, protocols, enterprises)  |
+| **Integration Requirements**  | Document partner technical requirements and feed to Integration team for prioritization |
+| **Case Studies**              | Document successful integrations/partnerships for sales pipeline and credibility        |
+| **Partnership Pipeline**      | Track and nurture potential ecosystem integrations (e.g., protocols using Logos stack)  |
 
 **Team Ownership Mapping:**
+
 - **Improve Software**: DevRel + Dapp Foundry (red team, technical validation, PoC apps for testing)
 - **Get Builder Attention**: DevRel + Dapp Foundry (vibe sessions, posts, workshops) + Marketing & Growth (social media, announcements)
 - **Enable Distribution**: DevRel + Dapp Foundry (examples, PoC apps for builders)
@@ -160,10 +162,10 @@ Metrics organized by **strategic impact**: software quality, builder attention, 
 
 ### 1. Improve the Software
 
-| Metric                 | Target                                                   | Why It Matters                           |
-| ---------------------- | -------------------------------------------------------- | ---------------------------------------- |
-| **Issues Filed**       | >3 GitHub issues per release                             | Validate red team testing rigor          |
-| **Documentation PRs**  | >=1 PR per handoff                                       | Improve docs quality and LLM-readability |
+| Metric                | Target                       | Why It Matters                           |
+| --------------------- | ---------------------------- | ---------------------------------------- |
+| **Issues Filed**      | >3 GitHub issues per release | Validate red team testing rigor          |
+| **Documentation PRs** | >=1 PR per handoff           | Improve docs quality and LLM-readability |
 
 ### 2. Get Builder Attention
 
@@ -184,10 +186,10 @@ Metrics organized by **strategic impact**: software quality, builder attention, 
 
 ### 4. Bazaar Health (Overall)
 
-| Metric | Target | Why It Matters |
-|--------|--------|----------------|
+| Metric                          | Target                                        | Why It Matters                        |
+| ------------------------------- | --------------------------------------------- | ------------------------------------- |
 | **Community Engagement Growth** | Community contributions > Eco Dev (over time) | Success = Eco Dev becomes unnecessary |
-| **Self-Service Rate** | >80% questions answered by docs/Known Issues | Measure documentation quality |
+| **Self-Service Rate**           | >80% questions answered by docs/Known Issues  | Measure documentation quality         |
 
 ---
 

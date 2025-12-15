@@ -47,6 +47,7 @@ Enables viral social applications that onboard non-DeFi users while protecting s
 **Potential Users:** Social media users, content creators, traders, community members, prediction market participants
 
 **Use Cases:**
+
 - Private social trading and copy trading
 - Anonymous community participation
 - Creator monetization without exposing earnings
@@ -67,6 +68,7 @@ Enables viral social applications that onboard non-DeFi users while protecting s
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Scalability for social-scale traffic (1000s TPS)
 - UX complexity of key management
 - Preventing Sybil attacks without KYC

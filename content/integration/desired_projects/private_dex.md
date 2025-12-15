@@ -35,6 +35,7 @@ Allows users to trade their bridged and shielded assets anonymously within the e
 **Potential Users:** All users with shielded assets requiring trading capability
 
 **Use Cases:**
+
 - Trading [[integration/desired_projects/bridges|bridged]] and shielded assets without exposing identity
 - Avoiding centralized exchange KYC requirements
 - Price discovery within private ecosystem
@@ -49,6 +50,7 @@ Allows users to trade their bridged and shielded assets anonymously within the e
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Implementing AMMs with fully encrypted state
 - Managing liquidity pools where TVL and individual positions are shielded
 - Price oracle integration while maintaining privacy

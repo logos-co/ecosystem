@@ -38,6 +38,7 @@ Attracts professional traders and generates high trading volumes by allowing for
 **Potential Users:** Professional traders, speculators, hedgers, market makers
 
 **Use Cases:**
+
 - Leveraged speculation on asset price movements
 - Hedging existing [[integration/desired_projects/private_dex|spot]] positions
 - Generating yield through market making
@@ -53,6 +54,7 @@ Attracts professional traders and generates high trading volumes by allowing for
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Private price oracles: Getting accurate price feeds without exposing position details
 - Encrypted liquidations: Calculating health factors on encrypted positions
 - Private order matching: Executing trades without revealing order book

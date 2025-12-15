@@ -39,6 +39,7 @@ Enables a market for unique digital assets where ownership, bids, and transactio
 **Potential Users:** NFT collectors, artists, event organizers, credential traders, IP owners
 
 **Use Cases:**
+
 - Private event tickets: Cannot be scalped or tracked
 - Anonymous credentials marketplace: Trade certifications/memberships privately
 - Confidential intellectual property: Trade rights to private content
@@ -57,6 +58,7 @@ Enables a market for unique digital assets where ownership, bids, and transactio
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Proving NFT uniqueness without revealing current owner
 - Implementing royalties on secondary sales privately
 - Price discovery without transparent floor prices

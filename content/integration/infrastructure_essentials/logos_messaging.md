@@ -13,17 +13,20 @@ Private, decentralized messaging layer (formerly Waku) enabling secure peer-to-p
 ## FURPS+
 
 ### Functionality
+
 - Enable private peer-to-peer messaging between nodes
 - Support pub/sub messaging patterns for application coordination
 - Provide ephemeral and persistent message delivery modes
 - Enable message routing without central servers
 
 ### Reliability
+
 - Ensure message delivery in partially connected networks
 - Provide message redundancy across distributed nodes
 - Support offline message queuing
 
 ### Performance
+
 - Scale to support high message throughput
 - Minimize latency for real-time communication
 - Optimize bandwidth usage for resource-constrained devices
@@ -40,6 +43,7 @@ Private, decentralized messaging layer (formerly Waku) enabling secure peer-to-p
 **Potential Users:** All Logos applications requiring communication, data synchronization, or event broadcasting
 
 **Use Cases:**
+
 - Application-to-application messaging (oracles, cross-contract events)
 - User-to-user communication in social apps and DAOs
 - Event broadcasting and real-time notifications
@@ -55,12 +59,14 @@ Private, decentralized messaging layer (formerly Waku) enabling secure peer-to-p
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Balancing delivery guarantees with privacy requirements
 - Preventing spam and DoS attacks without compromising anonymity
 - Maintaining performance as network scales
 - Metadata protection in gossip-based protocols
 
 **Integration Points:**
+
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for message persistence
 - Application layer for pub/sub subscriptions
 - Network layer for peer discovery and routing

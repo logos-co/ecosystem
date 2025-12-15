@@ -13,18 +13,21 @@ Decentralized, privacy-preserving storage network (formerly Codex) providing per
 ## FURPS+
 
 ### Functionality
+
 - Store and retrieve data in decentralized network
 - Provide content-addressed storage with cryptographic guarantees
 - Enable data redundancy and availability proofs
 - Support both public and encrypted data storage
 
 ### Reliability
+
 - Ensure data persistence through redundancy across nodes
 - Provide verifiable proofs of data availability
 - Enable data recovery and repair mechanisms
 - Support automated data replication
 
 ### Performance
+
 - Optimize retrieval speed for frequently accessed data
 - Minimize storage overhead for redundancy
 - Support efficient large file storage and streaming
@@ -41,6 +44,7 @@ Decentralized, privacy-preserving storage network (formerly Codex) providing per
 **Potential Users:** All applications requiring data persistence, content distribution, or file storage
 
 **Use Cases:**
+
 - Application state and database storage
 - User-generated content hosting (documents, media, NFT metadata)
 - Smart contract code and data availability
@@ -58,6 +62,7 @@ Decentralized, privacy-preserving storage network (formerly Codex) providing per
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Economic sustainability of storage incentives
 - Balancing redundancy with storage costs
 - Preventing storage spam and Sybil attacks
@@ -65,6 +70,7 @@ Decentralized, privacy-preserving storage network (formerly Codex) providing per
 - Metadata privacy in content-addressed systems
 
 **Integration Points:**
+
 - [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] for coordination
 - Application layer for data storage APIs
 - Smart contracts for storage proofs and incentives

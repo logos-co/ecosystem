@@ -30,11 +30,13 @@ Enable circles to collaboratively manage knowledge, documentation, and content w
 - Anonymous or pseudonymous contributions and access
 - Censorship-resistant storage (no platform can take down content)
 - Private edit history (hide who made specific changes if desired)
+
 ## Demand Validation
 
 **Potential Users:** Logos Circles, DAOs, community organisers, research groups, activist organisations
 
 **Use Cases:**
+
 - Circle documentation and knowledge management
 - Collaborative proposal drafting and refinement
 - Meeting notes and decision records
@@ -46,28 +48,35 @@ Enable circles to collaboratively manage knowledge, documentation, and content w
 ## Possible Implementation
 
 ### 1. Git + Markdown + Rendering
+
 Use version management with simple text files and external rendering.
 
 **1.a. Existing centralized solutions (GitHub)**
+
 - Leverage web UI for easy contribution
 - Set up backup via Gitea
 - Simple onboarding for non-technical users
 
 **1.b. Decentralized git solution (Radicle)**
+
 - Peer-to-peer code collaboration
 - No central authority
 - CLI based approach, no available GUI
 - Reliance on vendor with limited adoption
 
 ### 2. Logos Blockchain and Storage
+
 Implement version management system on Logos Blockchain and Storage.
+
 - May overlap with Logos Core Package management
 - Native integration with Logos stack
 - On-chain version control and content addressing
 - As described in Westphalia booked about agreeing on a treaty/contract and keeping track of versions and feedback
+
 ### 3. Cloud Office Suite Style Solution
 
 **3.a. Adapt Fileverse**
+
 - Adapt Fileverse to Logos Technology stack
 - Use Logos Storage instead of current storage layer
 - Make it more decentralized (currently requires self-hosted community node)
@@ -75,21 +84,26 @@ Implement version management system on Logos Blockchain and Storage.
 - Migrate from centralized dependencies to Logos infrastructure
 
 **3.b. Build from scratch**
+
 - Custom implementation tailored to Logos requirements
 - Native integration with Logos infrastructure
 - Full control over features and architecture
 
 ### 4. Forum Approach
+
 Leveraging existing opchan libraries.
+
 - Build on existing P2P forum infrastructure
 - Threaded discussions and content organisation
 
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Versioning and Conflict resolution in decentralized collaborative editing
 
 **Integration Points:**
+
 - Circle membership systems for access control ([[integration/desired_projects/private_nft_ownership|Private NFTs]], [[integration/desired_projects/private_daos|DAOs]], Keycard)
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] (for options 2, 3.a, 3.b)
 - Logos Package Management (for option 2)

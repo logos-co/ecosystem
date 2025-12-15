@@ -2,7 +2,7 @@
 
 Logos Ecosystem related information.
 
-While this repository is currently *private*, it may be set to **public** in the future.
+While this repository is currently _private_, it may be set to **public** in the future.
 Do not commit sensitive information that must never be published in this repo.
 
 Note there may be some AI slop. As we progress with any items, we can iterate on the content.

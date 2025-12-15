@@ -13,6 +13,7 @@ C++ SDK library providing the core API for developing Logos modules, enabling in
 ## FURPS+
 
 ### Functionality
+
 - Provide module development framework with lifecycle management
 - Enable inter-module communication via Qt Remote Objects
 - Abstract platform services (storage, messaging, networking)
@@ -20,18 +21,21 @@ C++ SDK library providing the core API for developing Logos modules, enabling in
 - Provide cryptographic primitives and key management APIs
 
 ### Usability
+
 - Offer clear API documentation and examples
 - Include CMake integration for build systems
 - Provide module templates and scaffolding tools
 - Support multiple platforms (Linux, macOS, Windows)
 
 ### Reliability
+
 - Ensure process isolation between modules
 - Provide graceful error handling and recovery
 - Support hot-reloading of modules during development
 - Enable robust IPC with automatic reconnection
 
 ### Performance
+
 - Minimize overhead for inter-module communication
 - Support asynchronous operations to prevent blocking
 - Optimize for low-latency message passing
@@ -49,6 +53,7 @@ C++ SDK library providing the core API for developing Logos modules, enabling in
 **Potential Users:** Core platform developers, module developers, third-party contributors
 
 **Use Cases:**
+
 - Building new Logos Core modules (wallet, consensus, networking)
 - Creating custom blockchain extensions
 - Developing privacy-preserving application backends
@@ -65,6 +70,7 @@ C++ SDK library providing the core API for developing Logos modules, enabling in
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Maintaining API stability across platform versions
 - Balancing flexibility with security constraints
 - Documentation quality for third-party developers
@@ -72,6 +78,7 @@ C++ SDK library providing the core API for developing Logos modules, enabling in
 - Cross-platform compatibility and testing
 
 **Integration Points:**
+
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] client integration
 - [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] client integration
 - Logos Core runtime for module hosting

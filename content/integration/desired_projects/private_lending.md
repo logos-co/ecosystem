@@ -33,6 +33,7 @@ Allows users to collateralize their shielded assets to borrow other shielded ass
 **Potential Users:** Capital-efficient DeFi users, leveraged traders, liquidity providers
 
 **Use Cases:**
+
 - Leveraging holdings without selling or exposing positions
 - Borrowing for [[integration/desired_projects/private_dex|trading]] opportunities while maintaining privacy
 - Earning yield on deposited collateral
@@ -49,6 +50,7 @@ Allows users to collateralize their shielded assets to borrow other shielded ass
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Building advanced ZK circuits to manage liquidations privately
 - Calculating health factors and interest rates on encrypted data
 - Implementing privacy-preserving price oracles

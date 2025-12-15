@@ -34,6 +34,7 @@ Ensures proposals and votes can be cast anonymously, protecting participants fro
 **Potential Users:** DAO members, protocol governance participants, community organizers
 
 **Use Cases:**
+
 - Protocol parameter changes with anonymous voting
 - Treasury allocation decisions without plutocratic transparency
 - Membership admission/revocation with secret ballots
@@ -50,6 +51,7 @@ Ensures proposals and votes can be cast anonymously, protecting participants fro
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Balancing privacy with accountability (preventing Sybil attacks)
 - Enabling emergency governance override mechanisms
 - Token-weighted vs. identity-based voting in privacy context

@@ -33,6 +33,7 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 **Potential Users:** Early adopters, OTC traders, cross-chain users, arbitrageurs
 
 **Use Cases:**
+
 - Cross-chain swaps: Exchange assets between privacy L1 and other chains
 - OTC trading: Large trades without market impact or public visibility
 - P2P exchange: Direct user-to-user trading without [[integration/desired_projects/private_dex|DEX]]
@@ -49,6 +50,7 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 ## Technical Validation
 
 **Risks & Challenges:**
+
 - Counterparty discovery: Finding trading partners without revealing intent
 - Price negotiation: Agreeing on rates privately
 - Cross-chain verification: Validating external chain state privately
@@ -56,6 +58,7 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 - Fee coordination: Determining who pays gas on each chain
 
 **Integration Points:**
+
 - Private communication channels for off-chain trade negotiation
 - Decentralized order books for publishing trade offers without revealing identity
 - Reputation systems via ZK reputation proofs
