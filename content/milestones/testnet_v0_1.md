@@ -72,7 +72,7 @@ Red team the capability discovery module.
 
 - is the explorer a CLI or Browser?
 - Is DST handling throughput test?
-- What about native native token faucet?
+- What about native token faucet?
 - Is wallet available through Logos Core modules? can we build a PoC gui?
 
 ## Messaging
