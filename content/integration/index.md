@@ -19,7 +19,7 @@ Home of the Logos Ecosystem Development / Integration effort.
 - Set a scope of work for Eco Dev Engineering for testnet v0.1. See https://github.com/logos-co/ecosystem/pull/21
   - Consider desired apps, review requirements, and plan PoCs for them
   - Review infra essentials (eg block explorer), understand R&D delivery scope and review need for partners
-  - Start smart contract dogfooding and scaffold
+  - Start smart contract dogfooding and scaffold - highest priority
 - Validation matrix work postponed (might touch on it)
 
 # Methodology
