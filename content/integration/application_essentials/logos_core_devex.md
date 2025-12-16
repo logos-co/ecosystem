@@ -31,7 +31,7 @@ Applications distributed via the [[integration/infrastructure_essentials/package
 
 [^1]: JavaScript support to be confirmed
 
-### Web Mini App Distribution Strategies
+#### Web Mini App Distribution Strategies
 
 There are two possible strategies for distributing web-based mini apps:
 
@@ -146,15 +146,16 @@ Integrity checks may be performed to ensure trusted modules have not been compro
 | **External App (Kernel Runtime)** | More flexibility - own window       | Medium - connects to Logos App | Limited - Auth of Logos core module but no sandboxing | Split user experience       |
 | **Standalone App**                | Full flexibility - complete control | Lower - not embedded           | None - security model not carried over                | Less connected to ecosystem |
 
-## Current Priorities
+## Current Proposed Priorities
 
-### Mini App Concept
+### Mini App Concept - Qt
 
 - Generally more appetite from leadership
 - Provides cohesive user experience within Logos App
 - Enables ecosystem network effects through discovery and curation
+- Focus on Qt as more certainty in terms of strategy
 
-### Standalone App Development
+### Standalone App Development - Rust
 
 - Existing integration leads via [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] (Rust SDK demand)
 - Important for onboarding existing applications with established user bases
