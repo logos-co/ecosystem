@@ -9,6 +9,19 @@ TODO: Link to reference page
 Highest Priority: LSSA - to derisk and already available.
 Then, will depend on delivery from other teams.
 
+## Logos Core
+
+**R&D Delivery**: TBC
+
+### Eco Dev Activity
+
+TBC
+
+### Questions
+
+- Will it be ready to build PoC (Qt) GUIs? Web GUI? (assume not re Web)
+- Or only TUI/CLI?
+
 ## AnonComms
 
 **R&D Delivery**: Demo app that demonstrates the capability discovery module and mixnet features.
