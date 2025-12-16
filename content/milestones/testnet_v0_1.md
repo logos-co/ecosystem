@@ -4,6 +4,11 @@ title: Logos Testnet v0.1 - Eco Dev activities
 
 TODO: Link to reference page
 
+## Priorities
+
+Highest Priority: LSSA - to derisk and already available.
+Then, will depend on delivery from other teams.
+
 ## AnonComms
 
 **R&D Delivery**: Demo app that demonstrates the capability discovery module and mixnet features.
@@ -24,6 +29,7 @@ Red team the capability discovery module.
 - C-bindings provided in discovery module?
 - Discovery module delivered as Logos Core module?
 - Or, test discovery via messaging module?
+- Should we even do anything on this? dogfooding can be driven by messaging/storage/blockchain to integrate it.
 
 ## Blockchain - Consensus / DA
 
@@ -44,6 +50,7 @@ Red team the capability discovery module.
 
 - CLI Wallet only?
 - Wallet module available via Logos Core? Can we build a quick GUI?
+- is blockchain team already planning to build a GUI?
 
 ## Blockchain - LSSA
 
@@ -61,10 +68,10 @@ Red team the capability discovery module.
 
 **Proposal**:
 1. Setup and use wallet:
-  - get native tokens, transfer
-  - create custom token, transfer
-  - pool, exchange tokens in AMM
-  - use explorer when doing above
+   - get native tokens, transfer
+   - create custom token, transfer
+   - pool, exchange tokens in AMM
+   - use explorer when doing above
 2. Start building scaffold
 3. Create 2 new smart contracts, deploy, doc for users to test - using scaffold
 
