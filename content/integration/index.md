@@ -26,6 +26,23 @@ Home of the Logos Ecosystem Development Engineering effort.
   - Start smart contract dogfooding and scaffold - highest priority
 - Validation matrix work postponed (might touch on it)
 
+# Delivery Pipeline
+
+(Still working on format)
+
+`Select PoC -> Build PoC -> capture lessons -> decide to go for internal, XPrize or Partner`
+
+1. Atomic Swaps
+   Next: do PoC
+2. Multi-sig
+   Next: do PoC
+3. AMM
+   PoC being built internally by Zones team
+4. Forum library (OpChan)
+   Need to review as done for browser (which is out of scope), Logos CMS may be preferred, as part of activity hub 
+5. P2P Marketplace
+   Need to re-evaluate as main lead was for browser first.
+
 # Methodology
 
 - Understand and synthetise Logos roadmap and testnet phases
