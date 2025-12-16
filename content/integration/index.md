@@ -12,7 +12,17 @@ Home of the Logos Ecosystem Development / Integration effort.
 - Translating those needs into requirements for the technology stack and value of said requirements
 - Propagating information about latest delivery, to encourage the community to use, build, remix and contribute back to the Logos Technology stack
 
-# Metholodogy
+# Monthly Priorities
+
+## Dec-Jan 2025
+
+- Set a scope of work for Eco Dev Engineering for testnet v0.1. See https://github.com/logos-co/ecosystem/pull/21
+  - Consider desired apps, review requirements, and plan PoCs for them
+  - Review infra essentials (eg block explorer), understand R&D delivery scope and review need for partners
+  - Start smart contract dogfooding and scaffold
+- Progress on Validation matrix
+
+# Methodology
 
 - Understand and synthetise Logos roadmap and testnet phases
 - Review dependencies, in terms of technical decisions and delivery. Flag specific integrations that are blocked on progress until decision is made/clarified:
