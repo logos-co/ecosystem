@@ -20,7 +20,7 @@ Home of the Logos Ecosystem Development / Integration effort.
   - Consider desired apps, review requirements, and plan PoCs for them
   - Review infra essentials (eg block explorer), understand R&D delivery scope and review need for partners
   - Start smart contract dogfooding and scaffold
-- Progress on Validation matrix
+- Validation matrix work postponed (might touch on it)
 
 # Methodology
 
