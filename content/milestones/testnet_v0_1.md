@@ -88,7 +88,7 @@ Red team the capability discovery module.
    - create custom token, transfer
    - pool, exchange tokens in AMM
    - use explorer when doing above
-2. Start building scaffold
+2. Start building scaffold - focus on smart contract development
 3. Create 2 new smart contracts, deploy, doc for users to test - using scaffold
 
 ### Questions
