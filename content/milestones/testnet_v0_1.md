@@ -9,7 +9,7 @@ TODO: Link to reference page
 Highest Priority: LSSA - to derisk and already available.
 Then, will depend on delivery from other teams.
 
-Regarding PoCs, we should prioritized based on desired apps priorities.
+Regarding PoCs, we should prioritized based on desired apps priorities and readiness to build/time to effort.
 
 ## Logos Core
 
