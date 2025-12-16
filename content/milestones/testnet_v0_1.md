@@ -50,6 +50,7 @@ Red team the capability discovery module.
 
 **R&D Delivery**:
 - Running validators
+  - taking note on resource consumption - help determine if it can run on Raspberry Pi 
 - Staking
 - Setting up and using wallet
 - Receiving tokens from faucet
