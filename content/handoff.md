@@ -211,6 +211,7 @@ The R&D teams need to have a clear process or roadmap to easily find the artefac
 ## Applies To
 
 ✅ Infrastructure components, developer tools, protocols, major features
+
 ❌ Internal tooling, research prototypes, emergency hotfixes
 
 ---
