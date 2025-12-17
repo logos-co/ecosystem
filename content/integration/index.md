@@ -2,7 +2,9 @@
 title: Eco Dev Engineering
 ---
 
-TODO: restructure folder
+TODO: restructure folders
+
+TODO: review best way to track (currently using internal notion)
 
 Home of the Logos Ecosystem Development Engineering effort.
 
