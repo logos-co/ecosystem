@@ -36,13 +36,13 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 
 ### R&D Delivers
 
-| Deliverable                    | Why?                                                        |
-| ------------------------------ | ----------------------------------------------------------- |
-| **Code**                       | Functioning software is the core of the delivery            |
-| **C-API** (if library)         | Usable in Logos Core                                        |
-| **Protocol, API Specs, FURPS** | Clear expectation of behavior and functionality delivered   |
-| **Documentation**              | To quickly jump into activities, and bypass discovery phase |
-| **Dogfooding Proof**           | Help ensure the above is done and bases are covered         |
+| Deliverable                        | Why?                                                        |
+|------------------------------------|-------------------------------------------------------------|
+| **Code**                           | Functioning software is the core of the delivery            |
+| **Logos Core Module** (if library) | Usable in Logos Core, pre-wrapped                           |
+| **Protocol, API Specs, FURPS**     | Clear expectation of behavior and functionality delivered   |
+| **Documentation**                  | To quickly jump into activities, and bypass discovery phase |
+| **Dogfooding Proof**               | Help ensure the above is done and bases are covered         |
 
 ### Eco Dev Delivers
 
@@ -56,12 +56,13 @@ Eco Dev is not responsible for:
 
 - **R&D Process**: Setting priorities, defining roadmap, milestones (including testnet), or generally being involved in the Logos R&D process
 - **Initial Documentation**: Producing initial docs, writing specs, FURPS, or APIs (see [R&D Delivers](#rd-delivers))
-- **Production Software**: Producing production-ready software with set software cycles and FURPS
+- **End-User Facing or Protocol Production Software**: Only developer tools are to be produced by the Eco Dev team
+- **Wrapping C-Bindings**: Libraries produced by Logos R&D should be demonstrated usable in Logos Core before handoff.
 
 #### 1. Improve the Software
 
 | Output                | Impact                                                                                                        |
-| --------------------- | ------------------------------------------------------------------------------------------------------------- |
+|-----------------------|---------------------------------------------------------------------------------------------------------------|
 | **GitHub Issues**     | Document bugs, edge cases, and confusion points discovered during testing (label: `from-eco-dev`)             |
 | **Documentation PRs** | Fix unclear language, improve structure, ensure LLM-readability                                               |
 | **PoC applications**  | Test the code by building PoCs of applications, ensure appropriate developer and user experience is delivered |
@@ -69,7 +70,7 @@ Eco Dev is not responsible for:
 #### 2. Get Builder Attention
 
 | Output                        | Impact                                                       |
-| ----------------------------- | ------------------------------------------------------------ |
+|-------------------------------|--------------------------------------------------------------|
 | **Vibe Coding Sessions**      | Live, honest exploration showing real developer experience   |
 | **Long-form Posts**           | Deep dives on features, use cases, architectural decisions   |
 | **Short-form Announcements**  | Discord posts, Twitter threads, release summaries            |
@@ -79,7 +80,7 @@ Eco Dev is not responsible for:
 #### 3. Enable Distribution
 
 | Output                 | Impact                                                                                                                                                                |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Examples**           | Application code others can fork/reference (could emerge from live vibe coding sessions).                                                                             |
 | **PoC applications**   | Demonstrate feasibility and design of specific use cases, enabling more integration opportunities                                                                     |
 | **Integration Guides** | Tutorials, videos and other complementary material to documentation and examples to show how Logos integrates with other tools/protocols or enable specific use cases |
@@ -87,7 +88,7 @@ Eco Dev is not responsible for:
 #### 4. Enable Partnerships
 
 | Output                        | Impact                                                                                  |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
+|-------------------------------|-----------------------------------------------------------------------------------------|
 | **Value Proposition Mapping** | Map Logos features to partner/lead use cases and pain points for targeted outreach      |
 | **Partnership Decks**         | Create tailored presentations for ecosystem partnerships (VCs, protocols, enterprises)  |
 | **Integration Requirements**  | Document partner technical requirements and feed to Integration team for prioritization |
