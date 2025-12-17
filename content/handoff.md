@@ -46,9 +46,9 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 
 ### Eco Dev Delivers
 
-**Prerequisite**: Red team, DevRel, and Dapp Foundry must familiarize themselves with Logos R&D features and deliverables before engaging in handoff activities. This ensures effective testing, accurate communication, and quality output.
+**Prerequisite**: Red Team/Solution, DevKit, and Contributor Journey streams must familiarise themselves with Logos R&D features and deliverables before engaging in handoff activities. This ensures effective testing, accurate communication, and quality output.
 
-Eco Dev outputs are organized by **strategic impact**: improving software, building builder attention, and enabling distribution.
+Eco Dev outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[integration/index#Streams|Eco Dev Engineering Streams]].
 
 ### Eco Dev Does NOT Own
 
@@ -58,6 +58,10 @@ Eco Dev is not responsible for:
 - **Initial Documentation**: Producing initial docs, writing specs, FURPS, or APIs (see [R&D Delivers](#rd-delivers))
 - **End-User Facing or Protocol Production Software**: Only developer tools are to be produced by the Eco Dev team
 - **Wrapping C-Bindings**: Libraries produced by Logos R&D should be demonstrated usable in Logos Core before handoff.
+
+### Delivery Strategy
+
+For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[integration/index#Build internally, with Partner or via XPrize?|Build/Partner/XPrize decision flow]] in Eco Dev Engineering.
 
 #### 1. Improve the Software
 
@@ -95,12 +99,12 @@ Eco Dev is not responsible for:
 | **Case Studies**              | Document successful integrations/partnerships for sales pipeline and credibility        |
 | **Partnership Pipeline**      | Track and nurture potential ecosystem integrations (e.g., protocols using Logos stack)  |
 
-**Team Ownership Mapping:**
+**Stream Ownership Mapping** (see [[integration/index|Eco Dev Engineering]] for stream details):
 
-- **Improve Software**: DevRel + Dapp Foundry (red team, technical validation, PoC apps for testing)
-- **Get Builder Attention**: DevRel + Dapp Foundry (vibe sessions, posts, workshops) + Marketing & Growth (social media, announcements)
-- **Enable Distribution**: DevRel + Dapp Foundry (examples, PoC apps for builders)
-- **Enable Partnerships**: Business Development (value prop, partnership decks, pipeline) + Integration (requirements gathering)
+- **Improve Software**: Red Team/Solution (dogfooding, PoCs, bug reports) + DevKit (tooling feedback)
+- **Get Builder Attention**: Contributor Journey (DevRel assets, workshops) + Marketing & Growth (social media, announcements)
+- **Enable Distribution**: DevKit (sample apps, tooling) + Contributor Journey (examples, guides)
+- **Enable Partnerships**: Business Development (value prop, partner connections, pipeline) + Integration (requirements, delivery strategy)
 
 ---
 

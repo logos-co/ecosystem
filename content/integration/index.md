@@ -73,10 +73,10 @@ Enable early delivery and validation of technology with most unknowns and risks.
 
 # Streams
 
-These are the specific efforts to produce.
+These are the specific efforts to produce. For how these streams work together during R&D handoffs, see the [[handoff|R&D ↔ Eco Dev Handoff Protocol]].
 
-Red team is pretty much a "maintenance" style efforts, where there constant/regular interruptions. DevKit is a feature effort, where focus is necessary to deliver a specific piece of software.
-Team members are likely to shift from one effort to another, as long as there as the role at a given time is clear, to ensure software delivery.
+Red team is pretty much a "maintenance" style effort, with constant/regular interruptions. DevKit is a feature effort, where focus is necessary to deliver a specific piece of software.
+Team members are likely to shift from one effort to another, as long as their role at a given time is clear, to ensure software delivery.
 
 ## Red Team / Solution
 **Mandate:** Extended dogfooding of R&D delivery + Solution engineering for builders inc. XPrize and partners
@@ -84,10 +84,10 @@ Team members are likely to shift from one effort to another, as long as there as
 **Competency**: Solution / Architect - deep understanding on how to use the full Logos stack
 
 **Outputs:**
+- GitHub Issues documenting bugs, edge cases, confusion points (label: `from-eco-dev`)
 - DevEx evaluation (reports/issues)
-- Bug reports
 - Feature requests
-- PoC apps (requirement may come from DevKit or XPrize)
+- PoC applications to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
 - ADR (Architect Decision Records), draft specs, technical requirements
 - Builder support (mentorship, technical assistance, solution engineering)
 
@@ -102,10 +102,11 @@ Team members are likely to shift from one effort to another, as long as there as
 - Logos Scaffold: local dev environment for Logos Blockchain and Core, with templates
 - SDK wrappers for Standalone Application journey (subject to roadmap)
 - Sample apps (polished reference implementations, can be adapted from PoCs)
+- Examples: forkable application code others can reference (may emerge from vibe coding sessions)
 
 **Feedback to:** Logos R&D **on** bugs, desired features emerging for usage and developer experience
 
-**Note**: The tooling produce by DevKit is **not** a workaround for API issues.
+**Note**: The tooling produced by DevKit is **not** a workaround for API issues.
 
 ## Integration
 Partner/Internal integration focus
@@ -118,6 +119,9 @@ Partner/Internal integration focus
 - Ecosystem map: dependencies and priorities across desired projects, app essentials, infra essentials
 - Delivery strategy: re-use, partnership, XPrize, or build internally
 - Product requirements definition
+- Value Proposition Mapping: map Logos features to partner/lead use cases and pain points
+- Integration Requirements: document partner technical requirements for prioritisation
+- Case Studies: document successful integrations/partnerships for credibility
 
 **Feedback to:** whole Eco Dev Team, Logos R&D **on** priorities with regards to desired apps and related essentials
 
