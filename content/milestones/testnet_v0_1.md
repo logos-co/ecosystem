@@ -36,14 +36,15 @@ Red team the capability discovery module.
 
 **Proposal**:
 - Use messaging demo app to test module as users.
-- No specific PoC Apps for this, as module is not an API exposed to dev
+- No specific PoC Apps for this, as module is not an API exposed to developer (aka no Logos Core module).
 
 ### Questions
 
 - How to consume the module?
 - C-bindings provided in discovery module?
 - Discovery module delivered as Logos Core module?
-- Or, test discovery via messaging module?
+  - Or, test discovery via messaging module?
+  - I assume the former
 - Should we even do anything on this? dogfooding can be driven by messaging/storage/blockchain to integrate it.
 
 ## Blockchain - Consensus / DA
