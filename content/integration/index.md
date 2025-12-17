@@ -2,6 +2,8 @@
 title: Eco Dev Engineering
 ---
 
+TODO: restructure folder
+
 Home of the Logos Ecosystem Development Engineering effort.
 
 # Mandate
