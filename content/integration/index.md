@@ -34,19 +34,38 @@ Home of the Logos Ecosystem Development Engineering effort.
   - Application essentials/developer toolkit (SC toolchain, dev env, token creation, onchain primitives, UI, etc): internal requirements on blockchain and Logos Core
   - Desired projects (stablecoin, lending, entity formation, etc): getting developers to build those projects (demand validation, XPrize), and identify/onboard external projects.
 
-## Build internally, with Partner or via XPrize?
+## Build internally, with Partner, via RFP or via XPrize?
+When do we want to build internally, find a partner, or push an RFP or a XPrize?
+
+XPrize is meant for complicated and ambitious project. Huge challenges where we do not dictate the solution. We looking a category of problem and put a price to solve it.
+We let someone else draft the product requirements and solution.
+
+The other ways are for specific projects or ideas that we, the community, want to see built.
 
 ```mermaid
 flowchart TD
-    A[Build PoC] --> P{Requires core<br/>protocol changes?}
-    P -->|Yes| Q[Feedback and Postpone]
-    Q --> A
-    P -->|No| B{Is it too complex?}
-    B -->|Yes| C[Build Internally]
-    B -->|No| D{Existing projects with<br/>similar offering and architecture?}
-    D -->|Yes| E[Build with Partner]
-    D -->|No| F[XPrize]
+    START["Idea comes in<br/>(Logos circle, internal, or other)"]
+    POC["PoC to prove feasibility"]
+    PARTNER{"External partners<br/>provide same thing?"}
+    CONVINCE{"Can convince<br/>to integrate?"}
+    COST["Evaluate cost"]
+    INTEGRATE["Partner Integration"]
+    DEV_INTEREST{"Developers want<br/>to build it?"}
+    RFP["RFP with price tag<br/>(support developers)"]
+    INTERNAL["Build Internally"]
+
+    START --> POC
+    POC --> PARTNER
+    PARTNER -->|Yes| CONVINCE
+    PARTNER -->|No| DEV_INTEREST
+    CONVINCE -->|Yes| COST
+    CONVINCE -->|No| DEV_INTEREST
+    COST --> INTEGRATE
+    DEV_INTEREST -->|Yes| RFP
+    DEV_INTEREST -->|No / Critical| INTERNAL
 ```
+
+
 
 # Concerns / Priorities
 
@@ -93,7 +112,7 @@ Team members are likely to shift from one effort to another, as long as their ro
 
 **Feedback to:** Logos R&D and DevKit **on** bugs, desired features emerging for usage and developer experience
 
-## DevKit
+## DevKit / DappFoundry
 **Mandate:** Build tooling and SDKs for Logos development
 
 **Competency**: Tooling, scripting, blockchain development, full software cycle
