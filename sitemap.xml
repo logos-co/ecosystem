@@ -3,7 +3,7 @@
     <lastmod>2025-12-17T05:03:25.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/</loc>
-    <lastmod>2025-12-22T04:47:36.000Z</lastmod>
+    <lastmod>2025-12-23T01:12:48.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/integration/application_essentials/logos_core_devex</loc>
     <lastmod>2025-12-16T09:25:39.000Z</lastmod>
@@ -66,7 +66,7 @@
     <lastmod>2025-12-15T04:27:12.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/integration/</loc>
-    <lastmod>2025-12-22T04:46:16.000Z</lastmod>
+    <lastmod>2025-12-23T01:13:05.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/liblogos</loc>
     <lastmod>2025-12-15T04:27:12.000Z</lastmod>
@@ -91,4 +91,7 @@
   </url><url>
     <loc>https://ecosystem.logos.co/integration/infrastructure_essentials/package_manager</loc>
     <lastmod>2025-12-15T04:27:12.000Z</lastmod>
+  </url><url>
+    <loc>https://ecosystem.logos.co/milestones/testnet_v0_1</loc>
+    <lastmod>2025-12-23T01:13:05.000Z</lastmod>
   </url></urlset>
