@@ -21,7 +21,7 @@ Escrowed, classifieds-style P2P trade marketplace enabling local communities to 
 - Enable private escrow for secure transactions
 - Support multiple payment methods (cash, crypto, barter, mutual credit)
 - Enable location based search and navigation
-- Support service offerings (skills, labor, expertise)
+- Support service offerings (skills, labour, expertise)
 - Provide moderation and dispute resolution mechanisms
 - Support supply chain tracking for transparent sourcing
 - Enable Point of Sale integration for merchants

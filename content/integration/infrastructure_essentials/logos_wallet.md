@@ -33,7 +33,7 @@ Privacy-preserving wallet infrastructure for managing Logos blockchain accounts,
 
 ### Reliability
 
-- Ensure secure key storage with defense against common attack vectors (phishing, clipboard hijacking, screen capture)
+- Ensure secure key storage with defence against common attack vectors (phishing, clipboard hijacking, screen capture)
 - Implement automatic encrypted backups to user-controlled Logos Storage
 - Support graceful degradation when Logos node unavailable (queue transactions for later broadcast)
 - Provide transaction confirmation reliability with configurable finality thresholds
@@ -42,7 +42,7 @@ Privacy-preserving wallet infrastructure for managing Logos blockchain accounts,
 
 - Generate and sign shielded transactions in <2 seconds on standard hardware
 - Support concurrent transaction creation across multiple accounts
-- Optimize WASM-based ZK proof generation for browser environments
+- Optimise WASM-based ZK proof generation for browser environments
 - Minimize battery drain on mobile devices through efficient proof batching
 
 ### Supportability
@@ -146,7 +146,7 @@ Privacy-preserving wallet infrastructure for managing Logos blockchain accounts,
 
 **Dependencies:**
 
-- [[integration/infrastructure_essentials/logos_blockchain|Logos Blockchain]] RPC endpoints for transaction broadcast and chain state
+- Logos Blockchain RPC endpoints for transaction broadcast and chain state
 - ZK proof libraries (e.g., libsnark, bellman, circom) for shielded transaction construction
 - [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] for transaction notifications and address book (optional)
 - [[integration/infrastructure_essentials/logos_storage|Logos Storage]] for encrypted wallet backups (optional)

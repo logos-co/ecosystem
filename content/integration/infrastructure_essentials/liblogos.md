@@ -38,7 +38,7 @@ C++ SDK library providing the core API for developing Logos modules, enabling in
 
 - Minimize overhead for inter-module communication
 - Support asynchronous operations to prevent blocking
-- Optimize for low-latency message passing
+- Optimise for low-latency message passing
 - Enable parallel execution of independent modules
 
 ### + (Privacy, Anonymity, Censorship-Resistance)

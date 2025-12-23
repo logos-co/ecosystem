@@ -32,9 +32,8 @@ TBC
 
 ### Eco Dev Activity
 
-Red team the capability discovery module.
+[Red team the capability discovery module.](https://github.com/logos-co/ecosystem/issues/27)
 
-**Proposal**:
 - Use messaging demo app to test module as users.
 - No specific PoC Apps for this, as module is not an API exposed to developer (aka no Logos Core module).
 

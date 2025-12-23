@@ -19,7 +19,7 @@ The content focuses on the Integration effort which enables bi-directional feedb
 1. Open `content/` folder as Obsidian vault (see Content Management section below)
 2. Create or edit markdown files following the structure templates
 3. Use wikilinks `[[path/to/file|Display Text]]` to connect concepts
-4. Add `> [!ai-generated]` indicator after section headers for LLM-generated content
+4. Add `> [!ai-generated]` indicator when Claude creates new content
 5. Run "check" command to validate structure and links
 
 **File naming convention:**
@@ -296,9 +296,9 @@ Create a new category if none fit, using Title Case.
 
 ## ⚠️ Content Authorship Indicators
 
-**CRITICAL: This applies to ALL files in `content/` folder - integration docs, processes, protocols, guides, and any other generated documents.**
+**IMPORTANT: This applies to content that Claude creates or substantially edits.**
 
-To clearly distinguish LLM-generated content from human-curated content, use the following markdown blockquote indicator:
+To clearly distinguish LLM-generated content from human-curated content, use the following markdown blockquote indicator when Claude writes new content:
 
 ### LLM-Generated Content Marker
 
@@ -313,14 +313,16 @@ To clearly distinguish LLM-generated content from human-curated content, use the
 - The indicator applies to the entire section, including all subsections, **until the next same-level or higher-level header**
 - A section ends when you reach another header at the same level (e.g., `##` to `##`) or higher level (e.g., `###` to `##`)
 
-**Placement Guidelines:**
+**Placement Guidelines (when Claude writes content):**
 
-**For entirely AI-generated files (RECOMMENDED DEFAULT):** place a single indicator at the very top of the file (after frontmatter and description) to cover the entire document - this applies to integration content, process documents, protocols, and any other content type
+**For entirely AI-generated files:** place a single indicator at the very top of the file (after frontmatter and description) to cover the entire document
 
 **For partially AI-generated files:**
 
-- Place the indicator only under sections that are AI-generated
+- Place the indicator only under sections that Claude wrote
 - Each major section (`##`) that is AI-generated needs its own indicator
+
+**Note:** Existing files without the disclaimer are assumed to be human-written. Do not add disclaimers to files you did not create or substantially edit.
 
 **Examples:**
 

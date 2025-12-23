@@ -40,7 +40,7 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 |------------------------------------|-------------------------------------------------------------|
 | **Code**                           | Functioning software is the core of the delivery            |
 | **Logos Core Module** (if library) | Usable in Logos Core, pre-wrapped                           |
-| **Protocol, API Specs, FURPS**     | Clear expectation of behavior and functionality delivered   |
+| **Protocol, API Specs, FURPS**     | Clear expectation of behaviour and functionality delivered   |
 | **Documentation**                  | To quickly jump into activities, and bypass discovery phase |
 | **Dogfooding Proof**               | Help ensure the above is done and bases are covered         |
 

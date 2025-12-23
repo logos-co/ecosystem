@@ -29,7 +29,7 @@ Private, decentralized messaging layer (formerly Waku) enabling secure peer-to-p
 
 - Scale to support high message throughput
 - Minimize latency for real-time communication
-- Optimize bandwidth usage for resource-constrained devices
+- Optimise bandwidth usage for resource-constrained devices
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
 
