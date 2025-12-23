@@ -24,7 +24,7 @@ flowchart LR
 
     subgraph Programs["Programs & Support"]
         NP["Node Program<br/>(Node op incentivisation)"]
-        DF["Dapp Foundry<br/>(sample apps, x-prize,<br/>builder support)"]
+        DF["Eco Dev Eng<br/>Red Team (dogfood)<br/>Solution (PoCs, support)<br/>DevKit (tooling)<br/>DappFoundry (sample apps)"]
     end
 
     subgraph External["External Partnerships"]
@@ -33,7 +33,7 @@ flowchart LR
     end
 
     subgraph Delivery["Delivery"]
-        INT["Integration<br/>(ecosystem map,<br/>demand validation,<br/>drive PRs/Proposals)"]
+        INT["Integration<br/>(ecosystem map,<br/>demand validation,<br/>RFPs)"]
         EP["Engineering<br/>Prioritisation"]
     end
 
