@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Activity Hub</title>
+    <link>https://ecosystem.logos.co/integration/desired_projects/activity_hub</link>
+    <guid>https://ecosystem.logos.co/integration/desired_projects/activity_hub</guid>
+    <description><![CDATA[ The activity hub serves two main purposes, which are related to the life cycle of Logos external contributors. ]]></description>
+    <pubDate>Tue, 23 Dec 2025 04:55:03 GMT</pubDate>
+  </item><item>
     <title>Eco Dev Engineering</title>
     <link>https://ecosystem.logos.co/integration/</link>
     <guid>https://ecosystem.logos.co/integration/</guid>
@@ -40,12 +46,6 @@
     <link>https://ecosystem.logos.co/integration/concerns/movement</link>
     <guid>https://ecosystem.logos.co/integration/concerns/movement</guid>
     <description><![CDATA[ Provide the technological tools needed by Logos Circles and the movement to organise, coordinate, and solve winnable issues. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 02:08:41 GMT</pubDate>
-  </item><item>
-    <title>Activity Hub</title>
-    <link>https://ecosystem.logos.co/integration/desired_projects/activity_hub</link>
-    <guid>https://ecosystem.logos.co/integration/desired_projects/activity_hub</guid>
-    <description><![CDATA[ The activity hub serves two main purposes, which are related to the life cycle of Logos movement participants (better word?). ]]></description>
     <pubDate>Tue, 23 Dec 2025 02:08:41 GMT</pubDate>
   </item><item>
     <title>Local P2P Marketplace</title>
