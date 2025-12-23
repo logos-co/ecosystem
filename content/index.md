@@ -3,6 +3,7 @@ title: Ecosystem Development
 ---
 
 Ecosystem Development Wiki.
+[testnet_v0_1.md](milestones/testnet_v0_1.md)
 
 # Eco Dev Team
 
@@ -70,3 +71,7 @@ The indicator applies to the entire section (from the header through all subsect
 
 > [!note] FURPS Placeholder
 > All FURPS in this wiki are placeholders. The actual FURPS are defined (or being migrated to) [roadmap.logos.co](https://roadmap.logos.co).
+
+# Milestones
+
+- [[milestones/testnet_v0_1|Testnet v0.1]]
