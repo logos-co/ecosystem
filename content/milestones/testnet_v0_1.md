@@ -28,7 +28,7 @@ TBC
 
 **R&D Delivery**: Demo app that demonstrates the capability discovery module and mixnet features.
 
-**Assumption**: Only messaging module integrates Logos Core module.
+**Assumption**: Only messaging module integrates Logos Core module. Delivery is disjoint from stack.
 
 ### Eco Dev Activity
 
@@ -55,13 +55,13 @@ Red team the capability discovery module.
 - Staking
 - Setting up and using wallet
 - Receiving tokens from faucet
-- DA -> not confirmed
+- No DA
 
 ### Eco Dev activity
 
-**Proposal**:
 1. Dogfood steps above
 2. Build PoC GUI to help users do steps (in Logos Core)
+3. Initiate block explorer discovery work
 
 ### Questions
 
@@ -72,7 +72,7 @@ Red team the capability discovery module.
 ## Blockchain - LSSA
 
 **R&D Delivery**:
-- Centralized sequencer, settles on Logos Blockchain (consensus usage, maybe DA)
+- Centralized sequencer, settles on Logos Blockchain (via inscriptions, no DA)
 - CLI wallet
 - Native token transfers (public and private)
 - Creation and transfer of custom tokens (public and private)
@@ -83,7 +83,6 @@ Red team the capability discovery module.
 
 ### Eco Dev Activity
 
-**Proposal**:
 1. Setup and use wallet:
    - get native tokens, transfer
    - create custom token, transfer
@@ -91,6 +90,9 @@ Red team the capability discovery module.
    - use explorer when doing above
 2. Start building scaffold - focus on smart contract development
 3. Create 2 new smart contracts, deploy, doc for users to test - using scaffold
+4. Initiate multi-sig work
+5. Initiate scaffold work
+6. Initiate block explorer discovery work
 
 ### Questions
 
@@ -107,9 +109,8 @@ Red team the capability discovery module.
 
 ### Eco Dev Activity
 
-**Proposal**:
 1. Dogfood demo app
-2. Build alternative PoC apps
+2. Build alternative PoC apps using chat module
 
 ### Questions
 
@@ -123,7 +124,6 @@ Red team the capability discovery module.
 
 ### Eco Dev Activity
 
-**Proposal**:
 1. PoC Apps using storage module
 
 ### Questions
