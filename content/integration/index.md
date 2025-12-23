@@ -30,7 +30,7 @@ Home of the Logos Ecosystem Development Engineering effort.
 
 [GitHub Project](https://github.com/orgs/logos-co/projects/11/views/1)
 
-See [Build internally, with Partner, via RFP or via XPrize?]
+See [Build internally, with Partner, via RFP or via XPrize?](#build-internally-with-partner-via-rfp-or-via-xprize)
 
 Plan so far:
 
@@ -56,7 +56,7 @@ Plan so far:
 ## Build internally, with Partner, via RFP or via XPrize?
 When do we want to build internally, find a partner, or push an RFP or a XPrize?
 
-XPrize is meant for complicated and ambitious project. Huge challenges where we do not dictate the solution. We looking a category of problem and put a price to solve it.
+XPrize is meant for complicated and ambitious project. Huge challenges where we do not dictate the solution. We're looking at a category of problem and put a price to solve it.
 We let someone else draft the product requirements and solution.
 
 The other ways are for specific projects or ideas that we, the community, want to see built.
@@ -107,7 +107,7 @@ The end goal, why we are all here. Provide the technological solutions needed by
 
 ## (3) Technology De-Risking
 
-Enable early delivery and validation of technology with most unknowns and risks. Engineering teams flags the risks to get the prioritised accordingly.
+Enable early delivery and validation of technology with most unknowns and risks. Engineering teams flag the risks to get them prioritised accordingly.
 
 # Streams
 
