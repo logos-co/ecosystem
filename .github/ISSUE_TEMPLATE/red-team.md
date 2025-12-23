@@ -9,11 +9,9 @@ assignees: ''
 
 ## What to dogfood
 
-1. Run a validator
-2. Setup a wallet
-3. Use faucet
-4. Stake (remember, old unmoved tokens automatically stake)
-5. Check explorer
+Steps/FURPS+ to dogfood:
+
+1. ...
 
 **Ref**: <relevant link to https://ecosystem.logos.co/milestones/>
 
