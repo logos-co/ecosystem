@@ -28,13 +28,13 @@ Home of the Logos Ecosystem Development Engineering effort.
 
 # Work In Progress
 
-Todo: GitHub project
+[GitHub Project](https://github.com/orgs/logos-co/projects/11/views/1)
 
 See [Build internally, with Partner, via RFP or via XPrize?]
 
 Plan so far:
 
-1. Multi-sig
+1. [Multi-sig](https://github.com/logos-co/ecosystem/issues/31)
    Next: do PoC as simplest one
 2. AMM
    PoC being built internally by Zones team

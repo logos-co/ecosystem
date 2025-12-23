@@ -58,7 +58,7 @@ TBC
 
 ### Eco Dev activity
 
-1. Dogfood steps above
+1. [Dogfood steps above](https://github.com/logos-co/ecosystem/issues/28)
 2. Build PoC GUI to help users do steps (in Logos Core)
 3. Initiate block explorer discovery work
 
@@ -82,16 +82,17 @@ TBC
 
 ### Eco Dev Activity
 
-1. Setup and use wallet:
+1. [Setup and use wallet](https://github.com/logos-co/ecosystem/issues/28):
    - get native tokens, transfer
    - create custom token, transfer
    - pool, exchange tokens in AMM
    - use explorer when doing above
-2. Start building scaffold - focus on smart contract development
-3. Create 2 new smart contracts, deploy, doc for users to test - using scaffold
-4. Initiate multi-sig work
-5. Initiate scaffold work
-6. Initiate block explorer discovery work
+1. Start building scaffold - focus on smart contract development
+	1. https://github.com/logos-co/ecosystem/issues/30
+2. Create 2 new smart contracts, deploy, doc for users to test - using scaffold
+3. [Multi-sig CLI PoC](https://github.com/logos-co/ecosystem/issues/31)
+4. Initiate scaffold work
+5. Initiate block explorer discovery work
 
 ### Questions
 
