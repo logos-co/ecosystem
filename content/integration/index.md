@@ -20,21 +20,21 @@ Home of the Logos Ecosystem Development Engineering effort.
 
 ## Dec-Jan 2025
 
-- Set a scope of work for Eco Dev Engineering for testnet v0.1. See https://github.com/logos-co/ecosystem/pull/21
+- Set a scope of work for Eco Dev Engineering for [[milestones/testnet_v0_1|testnet_v0_1]]
+  - Start smart contract dogfooding and scaffold - highest priority
   - Consider desired apps, review requirements, and plan PoCs for them
   - Review infra essentials (eg block explorer), understand R&D delivery scope and review need for partners
-  - Start smart contract dogfooding and scaffold - highest priority
 - Validation matrix work postponed (might touch on it)
 
-# Delivery Pipeline
+# Work In Progress
 
-(Still working on format)
+[GitHub Project](https://github.com/orgs/logos-co/projects/11/views/1)
 
-`Select PoC -> Build PoC -> capture lessons -> decide to go for internal, XPrize or Partner`
+See [Build internally, with Partner, via RFP or via XPrize?](#build-internally-with-partner-via-rfp-or-via-xprize)
 
 Plan so far:
 
-1. Multi-sig
+1. [Multi-sig](https://github.com/logos-co/ecosystem/issues/31)
    Next: do PoC as simplest one
 2. AMM
    PoC being built internally by Zones team
@@ -56,7 +56,7 @@ Plan so far:
 ## Build internally, with Partner, via RFP or via XPrize?
 When do we want to build internally, find a partner, or push an RFP or a XPrize?
 
-XPrize is meant for complicated and ambitious project. Huge challenges where we do not dictate the solution. We looking a category of problem and put a price to solve it.
+XPrize is meant for complicated and ambitious project. Huge challenges where we do not dictate the solution. We're looking at a category of problem and put a price to solve it.
 We let someone else draft the product requirements and solution.
 
 The other ways are for specific projects or ideas that we, the community, want to see built.
@@ -107,7 +107,7 @@ The end goal, why we are all here. Provide the technological solutions needed by
 
 ## (3) Technology De-Risking
 
-Enable early delivery and validation of technology with most unknowns and risks. Engineering teams flags the risks to get the prioritised accordingly.
+Enable early delivery and validation of technology with most unknowns and risks. Engineering teams flag the risks to get them prioritised accordingly.
 
 # Streams
 
@@ -186,7 +186,7 @@ flowchart TB
             INT["<b>Integration</b><br/>Ecosystem map, delivery strategy,<br/>requirements"]
             XP["<b>XPrize Management</b><br/>Program ops, prize scoping,<br/>evaluation"]
             RT["<b>Red Team / Solution</b><br/>Dogfooding, PoCs,<br/>builder support"]
-            DK["<b>DevKit</b><br/>Tooling, SDKs,<br/>sample apps"]
+            DK["<b>DevKit / DappFoundry</b><br/>Tooling, SDKs,<br/>sample apps"]
         end
         subgraph bd["BD Streams"]
             CJ["<b>Contributor Journey</b><br/>DevRel assets, metrics"]

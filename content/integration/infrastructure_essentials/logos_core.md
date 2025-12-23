@@ -31,7 +31,7 @@ Modular platform runtime that hosts and coordinates independently developed modu
 
 - Minimize IPC overhead for inter-module communication
 - Support parallel module execution
-- Optimize module startup and initialization times
+- Optimise module startup and initialisation times
 - Enable efficient resource sharing between modules
 
 ### Supportability

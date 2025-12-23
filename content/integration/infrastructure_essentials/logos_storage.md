@@ -28,7 +28,7 @@ Decentralized, privacy-preserving storage network (formerly Codex) providing per
 
 ### Performance
 
-- Optimize retrieval speed for frequently accessed data
+- Optimise retrieval speed for frequently accessed data
 - Minimize storage overhead for redundancy
 - Support efficient large file storage and streaming
 

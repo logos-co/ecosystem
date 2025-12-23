@@ -19,7 +19,7 @@ It is also from there that one can find further quests (call to action), such as
 - developers: ideas to build, projects to contribute too, libraries to use and dogfood, documentation to use
 - writers: subjects to write about, books to read and amplify
 - end-users: projects and app to try, and open bugs and feature requests for
-- Circle leaders: push latest circle reports, organize task for the circle, etc.
+- Circle leaders: push latest circle reports, organise task for the circle, etc.
 - etc
 
 These are some potential examples of sub-portal within the activity hub. The activity hub should act as a one-stop-shop for all Logos related activities.
@@ -88,7 +88,7 @@ Finally, the completion of quests may lead to onchain attestation or reward (e.g
 
 - **Fast Initial Load**: Deliver critical onboarding content and navigation within 2 seconds on standard broadband to prevent newcomer drop-off
 - **Progressive Enhancement**: Load advanced features (Logos Core integration, privacy features) asynchronously without blocking basic hub functionality
-- **Efficient Asset Delivery**: Optimize images, fonts, and interactive elements for both bandwidth-constrained users and privacy-focused Logos Core network routing
+- **Efficient Asset Delivery**: Optimise images, fonts, and interactive elements for both bandwidth-constrained users and privacy-focused Logos Core network routing
 
 ### Supportability
 

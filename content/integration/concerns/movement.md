@@ -2,7 +2,7 @@
 title: Movement
 ---
 
-Provide the technological tools needed by Logos Circles and the movement to organize, coordinate, and solve winnable issues.
+Provide the technological tools needed by Logos Circles and the movement to organise, coordinate, and solve winnable issues.
 
 # Organisation
 

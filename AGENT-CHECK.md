@@ -86,15 +86,20 @@ Verify that all content uses correct syntax and grammar:
 
 ### 7. Verify AI-Generated Content Disclaimer
 
-**CRITICAL**: Ensure all LLM-generated files in `content/` folder have the AI disclaimer.
+**IMPORTANT**: This check only applies to content that Claude writes during the current session.
 
-**Check for:**
+**When Claude creates or substantially edits content:**
 
-- All markdown files in `content/` should have `> [!ai-generated]` indicator
-- This applies to ALL content types: integration docs, processes, protocols, guides, and any other generated documents
-- Indicator should be placed immediately after frontmatter and description (for whole-file) or after section headers (for partial)
+- Add the `> [!ai-generated]` indicator to mark LLM-generated sections
+- Place immediately after frontmatter and description (for whole-file) or after section headers (for partial sections)
 
-**Recommended pattern (whole-file):**
+**This check does NOT:**
+
+- Flag existing files as "missing" the disclaimer
+- Assume all files in the repository are AI-generated
+- Require human-written files to have the disclaimer
+
+**Recommended pattern (when Claude writes a new file):**
 
 ```markdown
 ---
@@ -111,11 +116,10 @@ Brief description.
 ...
 ```
 
-**What to report:**
+**What to verify:**
 
-- Files missing AI disclaimer
-- Files with incorrectly placed disclaimers
-- Percentage of files with proper disclaimers
+- Content written by Claude in this session has the appropriate disclaimer
+- Disclaimer is correctly placed (after frontmatter/description or after section header)
 
 ---
 
@@ -215,7 +219,7 @@ After performing all checks, provide a summary report in this format:
 ✅ All internal links validated
 ✅ Wikilink titles match frontmatter title properties
 ✅ Syntax and grammar checked (British English)
-✅ AI-generated content disclaimers present
+✅ AI-generated content disclaimers added to Claude-written content
 ```
 
 ---
@@ -229,7 +233,7 @@ After performing all checks, provide a summary report in this format:
 - Broken wikilinks pointing to non-existent files
 - Unlinked mentions of other projects
 - Wikilink display text doesn't match the target file's `title` property (e.g., `[[file|Wrong Title]]` when frontmatter says `title: Correct Title`)
-- Missing AI-generated content disclaimer in LLM-created files
+- Missing AI-generated content disclaimer in content Claude wrote during the session
 - American English spelling (e.g., "behavior" → "behaviour", "organization" → "organisation")
 - Grammatical errors or incomplete sentences
 
