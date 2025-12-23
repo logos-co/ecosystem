@@ -26,11 +26,11 @@ Home of the Logos Ecosystem Development Engineering effort.
   - Start smart contract dogfooding and scaffold - highest priority
 - Validation matrix work postponed (might touch on it)
 
-# Delivery Pipeline
+# Work In Progress
 
-(Still working on format)
+Todo: GitHub project
 
-`Select PoC -> Build PoC -> capture lessons -> decide to go for internal, XPrize or Partner`
+See [Build internally, with Partner, via RFP or via XPrize?]
 
 Plan so far:
 
@@ -186,7 +186,7 @@ flowchart TB
             INT["<b>Integration</b><br/>Ecosystem map, delivery strategy,<br/>requirements"]
             XP["<b>XPrize Management</b><br/>Program ops, prize scoping,<br/>evaluation"]
             RT["<b>Red Team / Solution</b><br/>Dogfooding, PoCs,<br/>builder support"]
-            DK["<b>DevKit</b><br/>Tooling, SDKs,<br/>sample apps"]
+            DK["<b>DevKit / DappFoundry</b><br/>Tooling, SDKs,<br/>sample apps"]
         end
         subgraph bd["BD Streams"]
             CJ["<b>Contributor Journey</b><br/>DevRel assets, metrics"]
