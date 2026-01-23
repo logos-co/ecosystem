@@ -10,61 +10,61 @@
     <link>https://ecosystem.logos.co/integration/desired_projects/activity_hub</link>
     <guid>https://ecosystem.logos.co/integration/desired_projects/activity_hub</guid>
     <description><![CDATA[ The activity hub serves two main purposes, which are related to the life cycle of Logos external contributors. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 04:55:03 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:05 GMT</pubDate>
   </item><item>
     <title>Eco Dev Engineering</title>
     <link>https://ecosystem.logos.co/integration/</link>
     <guid>https://ecosystem.logos.co/integration/</guid>
     <description><![CDATA[ TODO: restructure folders TODO: review best way to track (currently using internal notion) Home of the Logos Ecosystem Development Engineering effort. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 04:09:51 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:04 GMT</pubDate>
   </item><item>
     <title>Multisig Treasury / Vault</title>
     <link>https://ecosystem.logos.co/integration/desired_projects/multisig</link>
     <guid>https://ecosystem.logos.co/integration/desired_projects/multisig</guid>
     <description><![CDATA[ Enables secure shared custody of shielded assets requiring multiple signatures to authorise transactions, protecting treasuries and shared funds without revealing signers or balances. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 04:08:17 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:03 GMT</pubDate>
   </item><item>
     <title>Logos Testnet v0.1 - Eco Dev activities</title>
     <link>https://ecosystem.logos.co/milestones/testnet_v0_1</link>
     <guid>https://ecosystem.logos.co/milestones/testnet_v0_1</guid>
     <description><![CDATA[ TODO: Link to reference page Priorities Highest Priority: LSSA - to derisk and already available. Then, will depend on delivery from other teams. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 04:08:17 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:03 GMT</pubDate>
   </item><item>
     <title>R&amp;D ↔ Eco Dev Handoff Protocol</title>
     <link>https://ecosystem.logos.co/handoff</link>
     <guid>https://ecosystem.logos.co/handoff</guid>
     <description><![CDATA[ R&amp;D builds it. Eco Dev breaks it, then evangelizes it. Both succeed together. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 02:08:41 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:02 GMT</pubDate>
   </item><item>
     <title>Ecosystem Development</title>
     <link>https://ecosystem.logos.co/</link>
     <guid>https://ecosystem.logos.co/</guid>
     <description><![CDATA[ Ecosystem Development Wiki. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 02:08:41 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:02 GMT</pubDate>
   </item><item>
     <title>Movement</title>
     <link>https://ecosystem.logos.co/integration/concerns/movement</link>
     <guid>https://ecosystem.logos.co/integration/concerns/movement</guid>
     <description><![CDATA[ Provide the technological tools needed by Logos Circles and the movement to organise, coordinate, and solve winnable issues. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 02:08:41 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:02 GMT</pubDate>
   </item><item>
     <title>Local P2P Marketplace</title>
     <link>https://ecosystem.logos.co/integration/desired_projects/local_p2p_marketplace</link>
     <guid>https://ecosystem.logos.co/integration/desired_projects/local_p2p_marketplace</guid>
     <description><![CDATA[ Escrowed, classifieds-style P2P trade marketplace enabling local communities to trade goods and services privately, supporting local circular economies, resilience, and formalizing informal economies. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 02:08:41 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:02 GMT</pubDate>
   </item><item>
     <title>liblogos</title>
     <link>https://ecosystem.logos.co/integration/infrastructure_essentials/liblogos</link>
     <guid>https://ecosystem.logos.co/integration/infrastructure_essentials/liblogos</guid>
     <description><![CDATA[ C++ SDK library providing the core API for developing Logos modules, enabling inter-module communication and access to platform services. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 02:08:41 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:02 GMT</pubDate>
   </item><item>
     <title>Logos Core</title>
     <link>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_core</link>
     <guid>https://ecosystem.logos.co/integration/infrastructure_essentials/logos_core</guid>
     <description><![CDATA[ Modular platform runtime that hosts and coordinates independently developed modules via Qt Remote Objects, providing a secure and extensible foundation for Logos blockchain infrastructure. ]]></description>
-    <pubDate>Tue, 23 Dec 2025 02:08:41 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:50:02 GMT</pubDate>
   </item>
     </channel>
   </rss>
