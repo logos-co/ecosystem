@@ -37,10 +37,10 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 ### R&D Delivers
 
 | Deliverable                        | Why?                                                        |
-|------------------------------------|-------------------------------------------------------------|
+| ---------------------------------- | ----------------------------------------------------------- |
 | **Code**                           | Functioning software is the core of the delivery            |
 | **Logos Core Module** (if library) | Usable in Logos Core, pre-wrapped                           |
-| **Protocol, API Specs, FURPS**     | Clear expectation of behaviour and functionality delivered   |
+| **Protocol, API Specs, FURPS**     | Clear expectation of behaviour and functionality delivered  |
 | **Documentation**                  | To quickly jump into activities, and bypass discovery phase |
 | **Dogfooding Proof**               | Help ensure the above is done and bases are covered         |
 
@@ -48,7 +48,7 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 
 **Prerequisite**: Red Team/Solution, DevKit, and Contributor Journey streams must familiarise themselves with Logos R&D features and deliverables before engaging in handoff activities. This ensures effective testing, accurate communication, and quality output.
 
-Eco Dev outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[integration/index#Streams|Eco Dev Engineering Streams]].
+Eco Dev outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[engineering/index#Streams|Eco Dev Engineering Streams]].
 
 ### Eco Dev Does NOT Own
 
@@ -61,7 +61,7 @@ Eco Dev is not responsible for:
 
 ### Delivery Strategy
 
-For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[integration/index#Build internally, with Partner or via XPrize?|Build/Partner/XPrize decision flow]] in Eco Dev Engineering.
+For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[engineering/index#Build internally, with Partner or via Lambda Prize?|Build/Partner/Lambda Prize decision flow]] in Eco Dev Engineering.
 
 #### 1. Improve the Software
 
@@ -99,7 +99,7 @@ For ecosystem essentials identified through handoff activities, the Integration 
 | **Case Studies**              | Document successful integrations/partnerships for sales pipeline and credibility        |
 | **Partnership Pipeline**      | Track and nurture potential ecosystem integrations (e.g., protocols using Logos stack)  |
 
-**Stream Ownership Mapping** (see [[integration/index|Eco Dev Engineering]] for stream details):
+**Stream Ownership Mapping** (see [[engineering/index|Eco Dev Engineering]] for stream details):
 
 - **Improve Software**: Red Team/Solution (dogfooding, PoCs, bug reports) + DevKit (tooling feedback)
 - **Get Builder Attention**: Contributor Journey (DevRel assets, workshops) + Marketing & Growth (social media, announcements)

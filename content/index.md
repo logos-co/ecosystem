@@ -12,7 +12,7 @@ Ecosystem Development Wiki.
 ```mermaid
 flowchart LR
     subgraph Input["Inbound Activities"]
-        MG["Marketing and growth<br/>(events, campaigns e.g. xprize)"]
+        MG["Marketing and growth<br/>(events, campaigns e.g. ꟛPrize)"]
         C["Circles - grassroots activation"]
         D["Documents<br/>(Node op guide, Dev docs)"]
         WC["Website content<br/>(CTA pages, ecosystem pages etc)"]
@@ -54,7 +54,7 @@ flowchart LR
 
 # Streams
 
-- [[integration/index|Integration]]
+- [[engineering/index|Integration]]
 
 ## Content Authorship
 
@@ -68,10 +68,6 @@ The indicator applies to the entire section (from the header through all subsect
 # Processes
 
 - [[handoff|R&D ↔ Eco Dev Handoff Protocol]]
-
-> [!note] FURPS Placeholder
-> All FURPS in this wiki are placeholders. The actual FURPS are defined (or being migrated to) [roadmap.logos.co](https://roadmap.logos.co).
-
 # Milestones
 
 - [[milestones/testnet_v0_1|Testnet v0.1]]
