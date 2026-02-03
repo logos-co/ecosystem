@@ -1,0 +1,147 @@
+---
+title: Activity Hub
+type: Desired Project
+priority:
+flywheel: Network Effects
+category: Movement Tools
+---
+
+The activity hub serves two main purposes, which are related to the life cycle of Logos movement participants (better word?).
+
+When a new person is interested in the Logos Movement, they can open the activity hub and proceed to a tutorial-like experience to learn more about Logos and get onboarded.
+
+The result of this activity should give them enough context to understand what they can do (calls to actions). This could be done via a series of onboarding _quests_, that involves setting up the contributor _career path_.
+
+Once someone is onboarded in the Logos movement, then the activity hub acts as the homepage, or _base_ from most further activities. It must enable a contributor to navigate through the Logos movement and technology content.
+
+It is also from there that one can find further quests (call to action), such as:
+
+- developers: ideas to build, projects to contribute too, libraries to use and dogfood, documentation to use
+- writers: subjects to write about, books to read and amplify
+- end-users: projects and app to try, and open bugs and feature requests for
+- Circle leaders: push latest circle reports, organise task for the circle, etc.
+- etc
+
+These are some potential examples of sub-portal within the activity hub. The activity hub should act as a one-stop-shop for all Logos related activities.
+
+Because of this, the activity hub needs to be both available:
+
+- With a browser/DNS/webserver stack, to ensure newcomers can be onboarded with minimal friction
+- With the Logos Core stack, to ensure that not only one can use the activity hub in privacy and anonymity, with no risk of censorship. As well as enabling any of the portal sub-component to fully leverage the Logos technology stack.
+
+This is inline with requirements proposed for the [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] in this [forum post](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10).
+
+Note that while the activity hub should work both in the browser and in the Logos App, it is fine if some functionalities are only available in the Logos App (as described in [forum post](https://forum.vac.dev/t/why-a-web-sdk-is-critical-for-logos-adoption/583/10)). At some point in the onboarding journey, deep enough in the rabbit hole, we should be able to assume that a contributor is using the Logos App.
+
+For example:
+
+As a Logos Circle lead, I upload minutes of the latest Logos circle in the activity hub.
+
+- I want my minutes to be backed up for the future, using [[integration/infrastructure_essentials/logos_storage|Logos Storage]].
+- The [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]] does not support uploading data to [[integration/infrastructure_essentials/logos_storage|Logos Storage]].
+- Hence, I am using the activity hub via the Logos App.
+
+As someone who joined a recent Logos Circle, I want to access previous minutes to better understand what the circle has done so far, their impact, and how I can contribute.
+
+- I am not yet fully convinced about Logos, so not keen to install the Logos App just yet.
+- Hence, I am accessing the minutes via the browser.
+- However, only recent minutes are available via [[integration/infrastructure_essentials/logos_messaging|Logos Messaging]] via the [[integration/infrastructure_essentials/logos_js_sdk|Logos JS SDK]]
+- Data retrieval from [[integration/infrastructure_essentials/logos_storage|Logos Storage]] is not available in the browser
+- To access older minutes store on [[integration/infrastructure_essentials/logos_storage|Logos Storage]], I need to install the Logos App.
+- However, I was still able to get a preview of my Logos Circle activity without additional software.
+
+Note that the example above assumed specific limitations (no browser access to [[integration/infrastructure_essentials/logos_storage|Logos Storage]]). These limitations may be lifted in the future, allowing deeper Logos experience in the browser.
+
+## Gamification
+
+Gamification is a critical part of the Logos movement. As we live, join circle, discuss with fellow exiters, we play the game of life.
+The activity hub is at the core of the gamification of participation in Logos.
+
+Every potential contributions can take the form of a quest. Depending of the profile of the users (associated circles, career path, etc), then the activity hub must be able to push the relevant to the user. Whether it is an event to join near their (selected) location, a new library release for them to integrate in their app, a new app released by another contributor to dogfood and provide feedback.
+
+Finally, the completion of quests may lead to onchain attestation or reward (e.g. NFT). Gaming mechanics must be studied and most relevant ones applied without restrain.
+
+## FURPS+
+
+> [!ai-generated]
+> This section was generated by an LLM and has not yet been human-reviewed.
+
+### Functionality
+
+- **Onboarding Quest System**: Provide interactive tutorial quests that guide newcomers through Logos concepts, values, and technology, culminating in personalized contributor career path setup
+- **Multi-Role Portal Navigation**: Enable role-based navigation (developer, writer, end-user, circle leader) with contextualized calls-to-action, active quests, and relevant resources for each contributor type
+- **Progressive Disclosure**: Surface appropriate content and actions based on user familiarity level, from basic onboarding for newcomers to advanced contributor dashboards for active members
+
+### Usability
+
+- **Zero-Barrier Entry**: Ensure newcomers can access via standard web browser without requiring wallet setup, node installation, or technical knowledge as first step
+- **Consistent Mental Model**: Maintain unified navigation patterns and terminology across all sub-portals to minimize cognitive load when switching between developer, writer, and other contributor contexts
+- **Guided Pathways**: Provide clear visual cues and suggested next actions to prevent decision paralysis for contributors at all experience levels
+
+### Reliability
+
+- **Dual Infrastructure Resilience**: Ensure availability through both traditional web infrastructure (DNS/HTTPS) and Logos Core stack, preventing single point of failure from censorship or outages
+- **Content Synchronization**: Maintain consistency of quests, resources, and navigation between web-based and Logos Core deployments without manual reconciliation
+- **Graceful Degradation**: Allow core functionality (content reading, quest viewing) to work even when advanced features (private messaging, on-chain verification) are unavailable
+
+### Performance
+
+- **Fast Initial Load**: Deliver critical onboarding content and navigation within 2 seconds on standard broadband to prevent newcomer drop-off
+- **Progressive Enhancement**: Load advanced features (Logos Core integration, privacy features) asynchronously without blocking basic hub functionality
+- **Efficient Asset Delivery**: Optimise images, fonts, and interactive elements for both bandwidth-constrained users and privacy-focused Logos Core network routing
+
+### Supportability
+
+- **Modular Sub-Portal Architecture**: Design sub-portals (developer, writer, circle leader sections) as independent modules that can be updated, added, or removed without affecting core hub functionality
+- **Content Management Flexibility**: Enable non-technical contributors to update quests, resources, and calls-to-action through markdown or low-code interfaces
+- **Cross-Platform Deployment**: Support deployment to traditional web servers, IPFS, and Logos Core infrastructure from single codebase with environment-specific configuration
+
+### + (Privacy, Anonymity, Censorship-Resistance)
+
+- **Privacy-First Design**: Ensure web version collects no tracking data by default; Logos Core version routes all traffic through private network infrastructure
+- **Anonymous Participation**: Enable contributors to participate in quests and earn attestations without revealing real-world identity
+- **Censorship Resistance**: Design content addressing and routing to function even if traditional DNS/web infrastructure is blocked or compromised
+- **Open Source Foundation**: Build on auditable, open-source components to maintain trust and enable community contributions to sub-portals
+
+## Demand Validation
+
+**Potential Users:** Newcomers to Logos, active contributors (developers, writers, organizers), circle leaders, community members
+
+**Use Cases:**
+
+- Onboarding new movement participants with minimal friction
+- Discovering contribution opportunities aligned with skills and interests
+- Coordinating circle activities and tracking deliverables
+- Gamifying participation through quests and attestations
+- Navigating the Logos ecosystem and technology stack
+
+## Possible Implementation
+
+- **Progressive Web App (PWA)**: Web-first implementation deployable to traditional hosting and IPFS
+- **Logos Core Integration**: Native application using Logos Storage and private networking for censorship-resistant access
+- **Quest Engine**: Pluggable system for defining, tracking, and completing contribution quests
+- **Profile System**: User profiles with career paths, completed quests, and earned attestations (optionally private)
+- **Sub-Portal Framework**: Modular architecture allowing independent development of role-specific portals (developer, writer, etc.)
+
+## Technical Validation
+
+**Risks & Challenges:**
+
+- Balancing newcomer accessibility (web-first) with privacy guarantees (Logos Core)
+- Maintaining content synchronization across dual deployment
+- Designing quest system that incentivizes genuine contribution without gaming
+- Building network effects from cold start (empty hub problem)
+- Privacy-preserving analytics for quest completion and engagement metrics
+
+**Integration Points:**
+
+- [[integration/desired_projects/circle_cms|Circle Content Management System]] for documentation and knowledge management
+- [[integration/desired_projects/private_daos|Private DAOs]] for governance and decision-making
+- Logos Storage for censorship-resistant content hosting
+- Private attestation systems for quest completion verification
+
+## Sub-portals
+
+TODO: a tree map of sub-portals necessary in the activity hub.
+
+- [[integration/desired_projects/circle_cms|Circle Content Management System]]
