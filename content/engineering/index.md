@@ -18,6 +18,14 @@ Home of the Logos Ecosystem Development Engineering effort.
 
 # Monthly Priorities
 
+## Feb 2026
+
+- Progress on atomic swap sample app - set FURPS and start development
+- Progress on multsig wallet - set FURPS and continue development
+- Progress on scaffold - set FURPS and start development
+ - Review infra essentials (eg block explorer), understand R&D delivery scope and review need for partners (rolled over)
+ - Agree and set process for docs handover
+
 ## Dec-Jan 2025
 
 - Set a scope of work for Eco Dev Engineering for [[milestones/testnet_v0_1|testnet_v0_1]]
@@ -30,7 +38,7 @@ Home of the Logos Ecosystem Development Engineering effort.
 
 [GitHub Project](https://github.com/orgs/logos-co/projects/11/views/1)
 
-See [Build internally, with Partner, via RFP or via XPrize?](#build-internally-with-partner-via-rfp-or-via-xprize)
+See [Build internally, with Partner, via RFP or via Lambda Prize?](#build-internally-with-partner-via-rfp-or-via-lambda-prize)
 
 Plan so far:
 
@@ -51,12 +59,12 @@ Plan so far:
 - Review dependencies, in terms of technical decisions and delivery. Flag specific integrations that are blocked on progress until decision is made/clarified:
   - Infrastructure essentials (block explorer, rpc, etc): Is there a dependency on RPC format (ETH), SR vs base layer, what ecosystem can be re-used (eth vs stellar ), etc.
   - Application essentials/developer toolkit (SC toolchain, dev env, token creation, onchain primitives, UI, etc): internal requirements on blockchain and Logos Core
-  - Desired projects (stablecoin, lending, entity formation, etc): getting developers to build those projects (demand validation, XPrize), and identify/onboard external projects.
+  - Desired projects (stablecoin, lending, entity formation, etc): getting developers to build those projects (demand validation, ꟛPrize), and identify/onboard external projects.
 
-## Build internally, with Partner, via RFP or via XPrize?
-When do we want to build internally, find a partner, or push an RFP or a XPrize?
+## Build internally, with Partner, via RFP or via Lambda Prize?
+When do we want to build internally, find a partner, or push an RFP or a Lambda Prize?
 
-XPrize is meant for complicated and ambitious project. Huge challenges where we do not dictate the solution. We're looking at a category of problem and put a price to solve it.
+Lambda Prize is meant for complicated and ambitious project. Huge challenges where we do not dictate the solution. We're looking at a category of problem and put a price to solve it.
 We let someone else draft the product requirements and solution.
 
 The other ways are for specific projects or ideas that we, the community, want to see built.
@@ -117,7 +125,7 @@ Red team is pretty much a "maintenance" style effort, with constant/regular inte
 Team members are likely to shift from one effort to another, as long as their role at a given time is clear, to ensure software delivery.
 
 ## Red Team / Solution
-**Mandate:** Extended dogfooding of R&D delivery + Solution engineering for builders inc. XPrize and partners
+**Mandate:** Extended dogfooding of R&D delivery + Solution engineering for builders inc. ꟛPrize and partners
 
 **Competency**: Solution / Architect - deep understanding on how to use the full Logos stack
 
@@ -149,13 +157,13 @@ Team members are likely to shift from one effort to another, as long as their ro
 ## Integration
 Partner/Internal integration focus
 
-**Mandate:** Ensure ecosystem essentials ("batteries included") are delivered; prioritise with R&D; guide delivery (internal, XPrize, partnerships)
+**Mandate:** Ensure ecosystem essentials ("batteries included") are delivered; prioritise with R&D; guide delivery (internal, ꟛPrize, partnerships)
 
 **Competency**: Partner Management, Technical Product Management, Requirements Engineering
 
 **Outputs:**
 - Ecosystem map: dependencies and priorities across desired projects, app essentials, infra essentials
-- Delivery strategy: re-use, partnership, XPrize, or build internally
+- Delivery strategy: re-use, partnership, ꟛPrize, or build internally
 - Product requirements definition
 - Value Proposition Mapping: map Logos features to partner/lead use cases and pain points
 - Integration Requirements: document partner technical requirements for prioritisation
@@ -163,14 +171,14 @@ Partner/Internal integration focus
 
 **Feedback to:** whole Eco Dev Team, Logos R&D **on** priorities with regards to desired apps and related essentials
 
-## XPrize Management
+## Lambda Prize Management
 
-**Mandate:** Run successful XPrizes
+**Mandate:** Run successful ꟛPrizes
 
 **Competency:** Technical program manager
 
 **Outputs:**
-- XPrize program operations (submissions, judging, coordination)
+- ꟛPrize program operations (submissions, judging, coordination)
 - Ensure sample applications are available
 - Prize scoping and estimation (with Solution input)
 - Coordinate with marketing / comms
@@ -184,7 +192,7 @@ flowchart TB
         subgraph ecodev["Eco Dev Team"]
         subgraph eng["Engineering Streams"]
             INT["<b>Integration</b><br/>Ecosystem map, delivery strategy,<br/>requirements"]
-            XP["<b>XPrize Management</b><br/>Program ops, prize scoping,<br/>evaluation"]
+            XP["<b>ꟛPrize Management</b><br/>Program ops, prize scoping,<br/>evaluation"]
             RT["<b>Red Team / Solution</b><br/>Dogfooding, PoCs,<br/>builder support"]
             DK["<b>DevKit / DappFoundry</b><br/>Tooling, SDKs,<br/>sample apps"]
         end

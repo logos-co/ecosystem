@@ -37,10 +37,10 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 ### R&D Delivers
 
 | Deliverable                        | Why?                                                        |
-|------------------------------------|-------------------------------------------------------------|
+| ---------------------------------- | ----------------------------------------------------------- |
 | **Code**                           | Functioning software is the core of the delivery            |
 | **Logos Core Module** (if library) | Usable in Logos Core, pre-wrapped                           |
-| **Protocol, API Specs, FURPS**     | Clear expectation of behaviour and functionality delivered   |
+| **Protocol, API Specs, FURPS**     | Clear expectation of behaviour and functionality delivered  |
 | **Documentation**                  | To quickly jump into activities, and bypass discovery phase |
 | **Dogfooding Proof**               | Help ensure the above is done and bases are covered         |
 
@@ -61,7 +61,7 @@ Eco Dev is not responsible for:
 
 ### Delivery Strategy
 
-For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[engineering/index#Build internally, with Partner or via XPrize?|Build/Partner/XPrize decision flow]] in Eco Dev Engineering.
+For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[engineering/index#Build internally, with Partner or via Lambda Prize?|Build/Partner/Lambda Prize decision flow]] in Eco Dev Engineering.
 
 #### 1. Improve the Software
 
