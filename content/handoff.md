@@ -17,6 +17,9 @@ Eco Dev acts as **guaranteed co-developers** - the first external developers to 
 - **Permission to say "no"**: Can flag software as not ready
 - **No blame culture**: Finding issues is success, not failure
 
+### Documentation Team Role
+
+TODO: see if @jorge-campo already has a write up
 ### Bazaar Model Alignment
 
 Following Eric Raymond's "The Cathedral and the Bazaar":
@@ -36,26 +39,26 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 
 ### R&D Delivers
 
-| Deliverable                        | Why?                                                        |
-| ---------------------------------- | ----------------------------------------------------------- |
-| **Code**                           | Functioning software is the core of the delivery            |
-| **Logos Core Module** (if library) | Usable in Logos Core, pre-wrapped                           |
-| **Protocol, API Specs, FURPS**     | Clear expectation of behaviour and functionality delivered  |
-| **Documentation**                  | To quickly jump into activities, and bypass discovery phase |
-| **Dogfooding Proof**               | Help ensure the above is done and bases are covered         |
+| Deliverable                                                                                                                           | Why?                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Code**                                                                                                                              | Functioning software is the core of the delivery            |
+| **Logos Core Module** (if library)                                                                                                    | Usable in Logos Core, pre-wrapped                           |
+| **Protocol, API Specs, FURPS**                                                                                                        | Clear expectation of behaviour and functionality delivered  |
+| **Documentation and [doc packet](https://github.com/logos-co/logos-docs/blob/main/docs/_shared/templates/doc-packet-testnet-v01.md)** | To quickly jump into activities, and bypass discovery phase |
+| **Dogfooding Proof**                                                                                                                  | Help ensure the above is done and bases are covered         |
 
 ### Eco Dev Delivers
 
 **Prerequisite**: Red Team/Solution, DevKit, and Contributor Journey streams must familiarise themselves with Logos R&D features and deliverables before engaging in handoff activities. This ensures effective testing, accurate communication, and quality output.
 
-Eco Dev outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[engineering/index#Streams|Eco Dev Engineering Streams]].
+Eco Dev engineering outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[engineering/index#Streams|Eco Dev Engineering Streams]].
 
 ### Eco Dev Does NOT Own
 
 Eco Dev is not responsible for:
 
 - **R&D Process**: Setting priorities, defining roadmap, milestones (including testnet), or generally being involved in the Logos R&D process
-- **Initial Documentation**: Producing initial docs, writing specs, FURPS, or APIs (see [R&D Delivers](#rd-delivers))
+- **Initial Documentation**: Producing initial docs, writing specs, FURPS, or APIs (see [[#R&D Delivers]])
 - **End-User Facing or Protocol Production Software**: Only developer tools are to be produced by the Eco Dev team
 - **Wrapping C-Bindings**: Libraries produced by Logos R&D should be demonstrated usable in Logos Core before handoff.
 
@@ -113,21 +116,23 @@ For ecosystem essentials identified through handoff activities, the Integration 
 ```mermaid
 sequenceDiagram
     participant RD as R&D
-    participant ED as Eco Dev
+    participant EDE as Eco Dev Eng
+    participant EDD as Eco Dev Doc
     participant GH as GitHub
     participant PUB as Public/Builders
 
     RD->>RD: Build + Document + Dogfood
-    RD->>ED: Release
+    RD->>EDE: Release
     RD->>PUB: Release
 
-    Note over ED,PUB: Public gets access immediately
+    Note over EDE,PUB: Public gets access immediately
 
     par Improve Software
-        ED->>ED: Test & break it (red team)
-        ED->>ED: Build PoC applications
-        ED->>GH: File issues (bugs, edge cases, UX)
-        ED->>GH: Open docs PRs
+        EDE->>EDE: Test & break it (red team)
+        EDE->>EDE: Build PoC applications
+        EDE->>GH: File issues (bugs, edge cases, UX, doc unclarity)
+        EDE->>GH: Open small PRs (easy UX and doc fixes)
+        EDE->>EDD: Doc, doc packet and doc issues
     and Community Testing
         PUB->>PUB: Try software
         PUB->>GH: File issues
@@ -138,25 +143,25 @@ sequenceDiagram
     RD->>GH: Push fixes
 
     par Get Builder Attention
-        ED->>PUB: Vibe coding sessions
-        ED->>PUB: Long-form posts
-        ED->>PUB: Short announcements (Discord/Twitter)
-        ED->>PUB: Workshops & talks
-        ED->>PUB: Office hours
+        EDE->>PUB: Vibe coding sessions
+        EDE->>PUB: Long-form posts
+        EDE->>PUB: Short announcements (Discord/Twitter)
+        EDE->>PUB: Workshops & talks
+        EDE->>PUB: Office hours
     and Enable Distribution
-        ED->>GH: Examples (from vibe sessions)
-        ED->>GH: PoC applications
-        ED->>PUB: Integration guides (tutorials, videos)
+        EDE->>GH: Examples (from vibe sessions)
+        EDE->>GH: PoC applications
+        EDE->>PUB: Integration guides (tutorials, videos)
     and Enable Partnerships
-        ED->>ED: Value prop mapping
-        ED->>PUB: Partnership decks & case studies
-        ED->>ED: Track partnership pipeline
+        EDE->>EDE: Value prop mapping
+        EDE->>PUB: Partnership decks & case studies
+        EDE->>EDE: Track partnership pipeline
     and Growing Bazaar
         PUB->>PUB: Build applications
         PUB->>GH: Contributions & feedback
     end
 
-    Note over ED,PUB: Success = Community engagement > Eco Dev contributions
+    Note over EDE,PUB: Success = Community engagement > Eco Dev contributions
 ```
 
 ---
@@ -206,7 +211,7 @@ The R&D teams need to have a clear process or roadmap to easily find the artefac
 
 **Communication**: Lightweight communication can be done in the R&D's team general Discord channel (e.g. `#messaging-lobby`).
 
-**Eco Dev Artefacts**: As per [Eco Dev Delivers](#eco-dev-delivers), the nature of artefact will dictate the channel (X live stream, blog post, etc).
+**Eco Dev Artefacts**: As per [[#Eco Dev Delivers]], the nature of artefact will dictate the channel (X live stream, blog post, etc).
 
 **Escalation**: Once open in GitHub, critical issues are brought to the attention of the R&D lead of the software and R&D head. This may include issues from the community.
 
