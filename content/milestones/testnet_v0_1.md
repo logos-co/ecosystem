@@ -2,7 +2,7 @@
 title: Logos Testnet v0.1 - Eco Dev activities
 ---
 
-TODO: Link to reference page
+[Logos Testnet Version 0.1](https://roadmap.logos.co/testnets/v01)
 
 ## Priorities
 
@@ -13,40 +13,47 @@ Regarding PoCs, we should prioritized based on desired apps priorities and readi
 
 ## Logos Core
 
-**R&D Delivery**: TBC
+**R&D Delivery**:
+- package manager over GitHub
+- Modules
+	- Blockchain Wallet
+	- LEZ Wallet
+	- LEZ block explorer
+	- Blockchain node
+	- Storage node
+	- Chat node
+	- Messaging node
+- Simple App UIs
+	- Blockchain Wallet
+	- LEZ Wallet
+	- Chat App
+	- Filesharing App
+	- Mix Push Message App
+- Headless server mode
+	- Blockchain node
+	- Storage node
+	- Messaging node
 
 ### Eco Dev Activity
 
-TBC
-
-### Questions
-
-- Will it be ready to build PoC (Qt) GUIs? Web GUI? (assume not re Web)
-- Or only TUI/CLI?
-
+- Build with Logos Core modules
+	- Multisig, Atomic swap PoCs to use LEZ wallet and messaging or Chat node modules
+	- Go through docs/tutorials for other modules
+- run nodes in headless server mode
+- Try the App UIs
 ## AnonComms
 
 **R&D Delivery**: Demo app that demonstrates the capability discovery module and mixnet features.
-
-**Assumption**: Only messaging module integrates Logos Core module. Delivery is disjoint from stack.
-
 ### Eco Dev Activity
 
-[Red team the capability discovery module.](https://github.com/logos-co/ecosystem/issues/27)
+[Red team the capability discovery demo app.](https://github.com/logos-co/ecosystem/issues/27)
 
 - Use messaging demo app to test module as users.
 - No specific PoC Apps for this, as module is not an API exposed to developer (aka no Logos Core module).
 
-### Questions
+## Blockchain
 
-- How to consume the module?
-- C-bindings provided in discovery module?
-- Discovery module delivered as Logos Core module?
-  - Or, test discovery via messaging module?
-  - I assume the former
-- Should we even do anything on this? dogfooding can be driven by messaging/storage/blockchain to integrate it.
-
-## Blockchain - Consensus / DA
+### Bedrock
 
 **R&D Delivery**:
 - Running validators
@@ -54,7 +61,7 @@ TBC
 - Staking
 - Setting up and using wallet
 - Receiving tokens from faucet
-- No DA
+- Sending tokens
 
 ### Eco Dev activity
 
@@ -62,13 +69,7 @@ TBC
 2. Build PoC GUI to help users do steps (in Logos Core)
 3. Initiate block explorer discovery work
 
-### Questions
-
-- CLI Wallet only?
-- Wallet module available via Logos Core? Can we build a quick GUI?
-- is blockchain team already planning to build a GUI?
-
-## Blockchain - LSSA
+## LEE / LEZ
 
 **R&D Delivery**:
 - Centralized sequencer, settles on Logos Blockchain (via inscriptions, no DA)
@@ -94,13 +95,6 @@ TBC
 4. Initiate scaffold work
 5. Initiate block explorer discovery work
 
-### Questions
-
-- is the explorer a CLI or Browser?
-- Is DST handling throughput test?
-- What about native token faucet?
-- Is wallet available through Logos Core modules? can we build a PoC gui?
-
 ## Messaging
 
 **R&D Delivery**:
@@ -112,10 +106,6 @@ TBC
 1. Dogfood demo app
 2. Build alternative PoC apps using chat module
 
-### Questions
-
-- Extent of the API?
-
 ## Storage
 
 **R&D Delivery:**
@@ -125,9 +115,3 @@ TBC
 ### Eco Dev Activity
 
 1. PoC Apps using storage module
-
-### Questions
-
-- This is for straight storage, correct?
-  - Aka, not embedded in Logos Package manager
-  - no expectation of retrieving a module from storage and executing it 
