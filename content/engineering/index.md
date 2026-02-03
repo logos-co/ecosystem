@@ -47,11 +47,10 @@ Plan so far:
 2. AMM
    PoC being built internally by Zones team
 3. Atomic Swaps
-   Next: do PoC, after multi-sig as more complex
+   Next: do PoC
 4. Forum library (OpChan)
-   Need to review as done for browser (which is out of scope), Logos CMS may be preferred, as part of activity hub 
+   A forum format seems to be the simplest and easiest form for a first activity hub. Re-use Opchan protocol but in new stack
 5. P2P Marketplace
-   Need to re-evaluate as main lead was for browser first.
 
 # Methodology
 

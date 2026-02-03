@@ -7,14 +7,12 @@ category: Developer Tools
 
 JavaScript/TypeScript SDK for building web applications that run within the Logos App, with full access to Logos Core modules (blockchain, storage, messaging).
 
-A [[engineering/infrastructure_essentials/logos_js_sdk_browser|browser variant]] with limited functionality may exist for onboarding newcomers with minimal friction.
-
 ## FURPS+
 
 ### Functionality
 
 - Full access to all Logos Core backend modules (wallet, chat, messaging, storage)
-- Connect to Logos blockchain nodes for [[engineering/infrastructure_essentials/logos_wallet|Logos Wallet]] actions
+- Connect to Logos blockchain nodes for [[engineering/infrastructure_essentials/blockchain_wallet|Logos Wallet]] actions
 - Upload and download data to/from [[engineering/infrastructure_essentials/logos_storage|Logos Storage]]
 - Publish and subscribe to messages via [[engineering/infrastructure_essentials/logos_messaging|Logos Messaging]]
 - Support account management and key handling
@@ -101,4 +99,3 @@ const balance = await logos.wallet.ethBalance("0x...")
 - QtWebView for rendering web applications
 - Qt WebChannel for JavaScript-to-C++ bridge
 - [[engineering/application_essentials/logos_core_devex|Development Journey]] for developers
-- [[engineering/infrastructure_essentials/logos_js_sdk_browser|Logos JS SDK (Browser)]] for onboarding experiences

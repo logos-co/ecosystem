@@ -100,7 +100,6 @@ External applications that **connect to the Logos App Kernel** running as a sepa
 
 **Use cases:**
 
-- Browser extensions connecting to local Logos App
 - Lightweight tools that leverage user's existing Logos setup
 - Applications in languages not natively supported by liblogos
 - Development and debugging tools
