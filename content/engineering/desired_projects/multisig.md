@@ -1,0 +1,46 @@
+---
+title: Multisig Treasury / Vault
+type: Core Primitive
+priority: 0
+flywheel: Security
+category: Custody & Security
+---
+
+Enables secure shared custody of shielded assets requiring multiple signatures to authorise transactions, protecting treasuries and shared funds without revealing signers or balances.
+
+PoC: https://github.com/logos-co/ecosystem/issues/31
+
+## Demand Validation
+
+**Potential Users:** DAOs, project teams, families/groups, businesses, escrow services
+
+**Use Cases:**
+
+- DAO treasuries: Protect multisig signers from targeted attacks
+- Project funds: Secure team funds without exposing team structure
+- Shared wallets: Families or groups managing funds privately
+- Escrow services: Multi-party agreements with confidential terms
+- Corporate treasuries: Business funds without exposing financial position
+
+## Possible Implementation
+
+- **Threshold signatures**: Cryptographic threshold signature schemes (e.g., FROST, MPC) producing single signature output regardless of number of signers
+- **ZK multisig**: Zero-knowledge proofs that threshold was met without revealing individual signatures
+- **Privacy-preserving MPC**: Distributed key generation and signing where no single party holds complete key
+
+## Technical Validation
+
+**Risks & Challenges:**
+
+- Implementing threshold cryptography in ZK circuits
+- Coordinating signers without revealing participation
+- Handling signer rotation while maintaining privacy
+- Recovering from lost signer keys
+- Proving authorization without exposing signers
+
+**Integration Points:**
+
+- [[engineering/desired_projects/private_daos|Private DAOs]]: Native multisig for DAO governance
+- Treasury management: Integration with portfolio tracking
+- [[engineering/desired_projects/private_lending|DeFi protocols]]: Use multisig assets as collateral
+- [[engineering/desired_projects/private_nft_ownership|Identity systems]]: Link multisig to ZK credentials

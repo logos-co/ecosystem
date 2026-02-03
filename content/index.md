@@ -54,7 +54,7 @@ flowchart LR
 
 # Streams
 
-- [[integration/index|Integration]]
+- [[engineering/index|Integration]]
 
 ## Content Authorship
 
