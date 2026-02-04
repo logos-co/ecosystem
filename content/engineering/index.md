@@ -12,12 +12,13 @@ Enable bi-directional feedback between the Logos technical stack and the Logos c
 - Propagating information about latest delivery, to encourage the community to use, build, remix and contribute back to the Logos Technology stack
 - Provided (solution) engineering capabilities for ecosystem development activities.
 
+
 # Monthly Priorities
 
 ## Feb 2026
 
 - Progress on atomic swap sample app - set FURPS and start development
-- Progress on multsig wallet - set FURPS and continue development
+- Progress on multisig wallet - set FURPS and continue development
 - Progress on scaffold - set FURPS and start development
  - Review infra essentials (eg block explorer), understand R&D delivery scope and review need for partners (rolled over)
  - Agree and set process for docs handover
@@ -33,8 +34,6 @@ Enable bi-directional feedback between the Logos technical stack and the Logos c
 # Work In Progress
 
 [GitHub Project](https://github.com/orgs/logos-co/projects/11/views/1)
-
-See [Build internally, with Partner, via RFP or via Lambda Prize?](#build-internally-with-partner-via-rfp-or-via-lambda-prize)
 
 Plan so far:
 
@@ -84,8 +83,6 @@ flowchart TD
     DEV_INTEREST -->|No / Critical| INTERNAL
 ```
 
-
-
 # Concerns / Priorities
 
 > We are still building the house, once ready, we want to invite more people and then decide whether to build a pool or gym next
@@ -126,7 +123,7 @@ Team members are likely to shift from one effort to another, as long as their ro
 - DevEx evaluation (reports/issues)
 - Feature requests
 - Review of documentation from Eco Dev Doc team.
-- Sample (PoCs) applications to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
+- [[engineering/sample_apps|Sample Apps]] to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
 - ADR (Architect Decision Records), functional and technical requirements (FURPS)
 - Builder support (mentorship, technical assistance, solution engineering)
 
