@@ -1,7 +1,7 @@
 ---
-name: Red Team
-about: Track red team activities
-title: [Dogfood] < >
+name: red-team
+about: Red teaming
+title: ''
 labels: red-team
 assignees: ''
 
