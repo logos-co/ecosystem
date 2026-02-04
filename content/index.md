@@ -2,9 +2,6 @@
 title: Ecosystem Development
 ---
 
-Ecosystem Development Wiki.
-[testnet_v0_1.md](milestones/testnet_v0_1.md)
-
 # Eco Dev Team
 
 ## How the sub-teams work together
@@ -68,6 +65,7 @@ The indicator applies to the entire section (from the header through all subsect
 # Processes
 
 - [[handoff|R&D ↔ Eco Dev Handoff Protocol]]
+
 # Milestones
 
 - [[milestones/testnet_v0_1|Testnet v0.1]]
