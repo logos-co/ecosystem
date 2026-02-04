@@ -1,0 +1,21 @@
+name: Add issues to project
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v1.0.2
+        with:
+          # Organization project URL
+          # Format: https://github.com/orgs/<org>/projects/<number>
+          project-url: https://github.com/orgs/logos-co/projects/11
+          # A GitHub PAT or app token with `project` scope is required
+          # Create a fine-grained PAT with "Projects" read/write access
+          # or use a GitHub App with "Organization projects" permissions
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
