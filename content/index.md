@@ -52,9 +52,9 @@ flowchart LR
     INT --> EP
 ```
 
-# Streams
+# Sub-team
 
-- [[engineering/index|Integration]]
+- [[engineering/index|Engineering]]
 
 ## Content Authorship
 
