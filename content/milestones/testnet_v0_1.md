@@ -1,12 +1,11 @@
 ---
 title: Logos Testnet v0.1 - Eco Dev activities
 ---
-
 [Logos Testnet Version 0.1](https://roadmap.logos.co/testnets/v01)
 
 ## Priorities
 
-Highest Priority: LSSA - to derisk and already available.
+Highest Priority: [[#LEE / LEZ]] - to derisk and already available.
 Then, will depend on delivery from other teams.
 
 Regarding PoCs, we should prioritized based on desired apps priorities and readiness to build/time to effort.
@@ -83,7 +82,7 @@ Regarding PoCs, we should prioritized based on desired apps priorities and readi
 
 ### Eco Dev Activity
 
-1. [Setup and use wallet](https://github.com/logos-co/ecosystem/issues/28):
+1. [Cover user journeys](https://github.com/logos-co/ecosystem/milestone/4)
    - get native tokens, transfer
    - create custom token, transfer
    - pool, exchange tokens in AMM
