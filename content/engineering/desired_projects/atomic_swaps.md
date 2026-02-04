@@ -28,6 +28,45 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 - Protect asset types being swapped
 - Prevent timing analysis (swap negotiations and execution not linkable)
 
+---
+
+## Phase 1: HTLC PoC (LSSA <- Ethereum)
+
+### Functionality
+
+- Taker locks ETH → Maker locks λ -> Taker claims λ (reveals hash) -> Maker claims ETH
+- Both parties lock funds using hash lock (SHA-256) and time lock
+- Original owners can reclaim funds after timeout if swap did not complete
+- Native tokens only (ETH on Ethereum, λ on LSSA)
+- Daemon monitors both chains for swap events and preimage hash reveals
+
+### Usability
+
+- Clear error messages on failure, timeout, or invalid state transitions
+- Default timeouts for demo purposes (5-10 min)
+- User may need to run specific CLI commands to progress swap
+
+### Reliability
+
+- Funds never lost — swap completes atomically or both parties reclaim (requires daemon running)
+
+### Performance
+
+### Supportability
+
+- CLI via separate binary (throwaway PoC)
+
+---
+
+### Open Points
+
+- Counterparty negotiation: hardcoded params for PoC, or basic exchange via Logos Messaging?
+- ETH-side addresses visible on-chain
+- Shared hash lock creates cross-chain linkability
+- Amounts visible on ETH side
+
+---
+
 ## Demand Validation
 
 **Potential Users:** Early adopters, OTC traders, cross-chain users, arbitrageurs
