@@ -1,7 +1,7 @@
 ---
-name: Red Team
-about: Track red team activities
-title: [Dogfood] < >
+name: "Red Team"
+about: "Track red team activities"
+title: "[Dogfood] <user journey>"
 labels: red-team
 assignees: ''
 
