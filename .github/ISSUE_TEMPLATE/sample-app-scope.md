@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Define the scope for the <N> version of <name> swaps sample app.
+Define the scope for the <N> version of <name> sample app.
 
 ## Deliverables
 
