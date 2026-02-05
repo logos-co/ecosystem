@@ -35,7 +35,7 @@ Allows users to collateralize their shielded assets to borrow other shielded ass
 **Use Cases:**
 
 - Leveraging holdings without selling or exposing positions
-- Borrowing for [[engineering/desired_projects/private_dex|trading]] opportunities while maintaining privacy
+- Borrowing for [[engineering/desired_projects/private_dex|Private DEX]] trading opportunities while maintaining privacy
 - Earning yield on deposited collateral
 - Accessing liquidity without tax events
 
