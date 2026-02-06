@@ -51,7 +51,7 @@ Phase 1: HTLC PoC — Maker sells λ (LEZ) for ETH (Ethereum)
 1. **Target chain**: Ethereum  - familiarity, simpler see HTLC, potential usage of eth wallet module, top 3 desired from strategy
 2. **Swap direction**: Maker sells λ (LEZ) for ETH — prioritises bootstrapping inbound liquidity to LEZ
 3. **Swap mechanism**: HTLC — simplest trust-minimised primitive; adaptor signatures deferred to a later phase
-4. **Interface**: New standalone CLI — keeps PoC decoupled from Logos Core
+4. **Interface**: New standalone CLI — will try using Logos Core, but not make it a blocking dependency
 
 5. **Counterparty negotiation**: Hardcoded swap params for PoC; discovery via Logos Messaging deferred to a later phase
 
