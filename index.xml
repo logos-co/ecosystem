@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Atomic Swaps</title>
+    <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
+    <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
+    <description><![CDATA[ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity. ]]></description>
+    <pubDate>Mon, 09 Feb 2026 03:16:56 GMT</pubDate>
+  </item><item>
     <title>Ecosystem Development</title>
     <link>https://ecosystem.logos.co/</link>
     <guid>https://ecosystem.logos.co/</guid>
@@ -58,12 +64,6 @@
     <link>https://ecosystem.logos.co/engineering/concerns/sustainability</link>
     <guid>https://ecosystem.logos.co/engineering/concerns/sustainability</guid>
     <description><![CDATA[ Ensure the sustainability of the movement and Logos stack development by ensuring valuable onchain activity takes place. ]]></description>
-    <pubDate>Tue, 03 Feb 2026 04:04:56 GMT</pubDate>
-  </item><item>
-    <title>Technological Risks</title>
-    <link>https://ecosystem.logos.co/engineering/concerns/tech_risks</link>
-    <guid>https://ecosystem.logos.co/engineering/concerns/tech_risks</guid>
-    <description><![CDATA[ Blockchain Zones: Execution and Consensus/DA Integration The zones design, aka, integration of Nomos’ DA and consensus with Nescience as the execution protocol. ]]></description>
     <pubDate>Tue, 03 Feb 2026 04:04:56 GMT</pubDate>
   </item>
     </channel>
