@@ -57,7 +57,21 @@ Phase 1: HTLC PoC — Maker sells λ (LEZ) for ETH (Ethereum)
 
 ## Dependencies
 
-TODO
+### LEE / LEZ Wallet Module
+
+- Validity Windows (LEE block context) LEZ programs need a way to enforce timeouts. Validity windows (`valid_from` / `valid_until`) let the swap contract distinguish "before deadline" from "after deadline" without leaking timing metadata
+- Watching events/equivalent
+
+### Ethereum Wallet Module
+
+- Deploying smart contract
+- Getting events
+
+### Chat Module
+
+For v0.2:
+
+- We will aim to have some negotiation - ideally chat module enable boostrapping a conversation based on information maker broadcasts.
 
 ## Demand Validation
 
