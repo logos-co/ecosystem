@@ -1,9 +1,8 @@
 ---
 title: Wallet
-type: Core Primitive
-priority:
-flywheel: Network Effects
-category: Developer Tooling
+type: Core Infrastructure
+priority: 0
+category: Infrastructure
 ---
 
 ## FURPS
