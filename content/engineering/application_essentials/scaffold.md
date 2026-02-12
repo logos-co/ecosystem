@@ -8,7 +8,7 @@ category: Developer Tooling
 
 Scaffolding tooling that lets developers bootstrap a project,
 write and build Rust smart contracts,
-deploy to a local or testnet environment,
+deploy to a local or devnet environment,
 and interact with contracts via a wallet.
 
 ## FURPS
@@ -17,8 +17,8 @@ and interact with contracts via a wallet.
 
 - Create a project from one command and produce a runnable folder with contract and CLI client skeletons.
 - Compile and deploy contract source into deployable chain artifacts from the generated project.
-- Provide a CLI client flow that triggers wallet-based calls against the example contract on local or test networks.
-- Deploy compiled contracts to testnet using explicit network configuration in the generated project.
+- Provide a CLI client flow that triggers wallet-based calls against the example contract on local or dev networks.
+- Deploy compiled contracts to devnet using explicit network configuration in the generated project.
 
 ### Usability
 
@@ -42,7 +42,7 @@ and interact with contracts via a wallet.
 ### Supportability
 
 - Scaffold version and toolchain versions are explicit in generated output so projects remain buildable over time.
-- Network configuration for local and testnet deployment is centralized and editable in one documented location.
+- Network configuration for local and devnet deployment is centralized and editable in one documented location.
 - The scaffolded project includes command references for build, deploy, and interaction steps.
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
@@ -50,7 +50,7 @@ and interact with contracts via a wallet.
 - Local workflow does not require uploading source code, artifacts, or private keys to third-party services.
 - CLI interaction flow works with locally controlled wallet keys and does not require custodial key management.
 - Local development and testing can run fully offline from public networks.
-- Testnet interaction uses explicit wallet and RPC configuration so developers can avoid accidental cross-network key reuse.
+- Devnet interaction uses explicit wallet and RPC configuration so developers can avoid accidental cross-network key reuse.
 
 ## ADR (Architectural Decision Records)
 
@@ -81,9 +81,9 @@ Use native Cargo-based build flow as the primary compilation path.
 
 ### Network Configuration
 
-Developers need explicit, editable environment targeting for local and testnet workflows.
+Developers need explicit, editable environment targeting for local and devnet workflows.
 Use environment-file based network configuration as the default model.
-Generated projects include env files for local and testnet RPC,
+Generated projects include env files for local and devnet RPC,
 wallet interaction settings used by deploy and interact commands.
 Env files are familiar and automation-friendly,
 but require strict handling to avoid credential leakage.
@@ -99,8 +99,8 @@ but require strict handling to avoid credential leakage.
 ### Runtime Dependencies
 
 - Local network runtime availability for local deploy and interaction workflows.
-- Testnet RPC endpoint availability and stable chain configuration.
-- Deterministic local/testnet account and chain configuration via environment files.
+- Devnet RPC endpoint availability and stable chain configuration.
+- Deterministic local/devnet account and chain configuration via environment files.
 
 ### Wallet Dependencies
 
