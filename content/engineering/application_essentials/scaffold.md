@@ -8,41 +8,38 @@ category: Developer Tooling
 
 Scaffolding tooling that lets developers bootstrap a project,
 write and build Rust smart contracts,
-deploy to a local or devnet environment,
+deploy to a local or DevNet environment,
 and interact with contracts via a wallet.
 
 ## FURPS
 
 ### Functionality
 
-- Create a project from one command and produce a runnable folder with contract and CLI client skeletons.
-- Compile and deploy contract source into deployable chain artifacts from the generated project.
-- Provide a CLI client flow that triggers wallet-based calls against the example contract on local or dev networks.
-- Deploy compiled contracts to devnet using explicit network configuration in the generated project.
+- One public DevNet vertical slice: generate wallet, fund wallet, deploy contract, execute one transaction type, verify result.
+- Integrate wallet generation as part of the scaffold workflow for bootstrap and interaction flows.
+- Support native token topup for wallet operations on local and DevNet environments.
+- CLI prints underlying commands for each step so users can drop down to lower-level tooling.
 
 ### Usability
 
 - Single command bootstrap with no manual project wiring required.
 - Generated layout clearly separates contract code, client code, config, and deploy scripts.
-- Scaffolded example contract and CLI interaction commands are straightforward to modify for real application logic.
+- Deterministic wallet generation and .env handling for repeatability.
+- Clear happy-path docs, reproducible setup, discoverable commands.
 
 ### Reliability
 
-- Bootstrap output is deterministic for a fixed scaffold version and the same input options.
+- The vertical slice must succeed 3 times in a row on a clean machine with deterministic wallets.
 - Local network can be started and torn down in isolation without modifying host-global blockchain state.
-- Core smoke flow (init, build, local deploy and interact) succeeds in CI runs on supported environments.
 
 ### Performance
 
-- Project scaffold generation completes in under 30 seconds on a standard developer machine.
-- Local network is ready for first deploy in under 60 seconds.
-- First clean build of scaffolded example contract completes in under 180 seconds.
-- Local deployment of scaffolded example contract completes in under 60 seconds.
+- Each workshop step must complete within a demo-tolerable threshold.
 
 ### Supportability
 
 - Scaffold version and toolchain versions are explicit in generated output so projects remain buildable over time.
-- Network configuration for local and devnet deployment is centralized and editable in one documented location.
+- Network configuration for local and DevNet deployment is .env based config.
 - The scaffolded project includes command references for build, deploy, and interaction steps.
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
@@ -50,7 +47,7 @@ and interact with contracts via a wallet.
 - Local workflow does not require uploading source code, artifacts, or private keys to third-party services.
 - CLI interaction flow works with locally controlled wallet keys and does not require custodial key management.
 - Local development and testing can run fully offline from public networks.
-- Devnet interaction uses explicit wallet and RPC configuration so developers can avoid accidental cross-network key reuse.
+- DevNet interaction uses explicit wallet and RPC configuration so developers can avoid accidental cross-network key reuse.
 
 ## ADR (Architectural Decision Records)
 
@@ -81,9 +78,9 @@ Use native Cargo-based build flow as the primary compilation path.
 
 ### Network Configuration
 
-Developers need explicit, editable environment targeting for local and devnet workflows.
+Developers need explicit, editable environment targeting for local and DevNet workflows.
 Use environment-file based network configuration as the default model.
-Generated projects include env files for local and devnet RPC,
+Generated projects include env files for local and DevNet RPC,
 wallet interaction settings used by deploy and interact commands.
 Env files are familiar and automation-friendly,
 but require strict handling to avoid credential leakage.
@@ -99,8 +96,8 @@ but require strict handling to avoid credential leakage.
 ### Runtime Dependencies
 
 - Local network runtime availability for local deploy and interaction workflows.
-- Devnet RPC endpoint availability and stable chain configuration.
-- Deterministic local/devnet account and chain configuration via environment files.
+- DevNet RPC endpoint availability and stable chain configuration.
+- Deterministic local/DevNet account and chain configuration via environment files.
 
 ### Wallet Dependencies
 
