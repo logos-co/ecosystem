@@ -19,7 +19,13 @@ Eco Dev acts as **guaranteed co-developers** - the first external developers to 
 
 ### Documentation Team Role
 
-TODO: see if @jorge-campo already has a write up
+The documentation team is responsible for turning internal knowledge into documentation that users can execute correctly on the first attempt.
+
+- **Build the documentation framework**: Create and maintain the tools that enable consistent docs creation across writers and SMEs—templates, examples, LLM prompts, style guide, repository layout, etc.
+- **Identify gaps and drive SME input**: Review existing docs to find missing information, then work with SMEs to obtain draft content or doc packets to close those gaps.
+- **Surface unknowns early**: Identify unclear details, conflicting behavior, and ambiguous ownership; track questions and drive them to resolution with SMEs.
+- **Improve comprehension**: Apply shared terminology. Rewrite complex information into clear, concise guidance that readers can understand quickly.
+
 ### Bazaar Model Alignment
 
 Following Eric Raymond's "The Cathedral and the Bazaar":
@@ -40,7 +46,7 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 ### R&D Delivers
 
 | Deliverable                                                                                                                           | Why?                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | **Code**                                                                                                                              | Functioning software is the core of the delivery            |
 | **Logos Core Module** (if library)                                                                                                    | Usable in Logos Core, pre-wrapped                           |
 | **Protocol, API Specs, FURPS**                                                                                                        | Clear expectation of behaviour and functionality delivered  |
@@ -115,32 +121,38 @@ For ecosystem essentials identified through handoff activities, the Integration 
 
 ```mermaid
 sequenceDiagram
-    participant RD as R&D
+    participant RD as R&D (SME)
     participant EDE as Eco Dev Eng
-    participant EDD as Eco Dev Doc
-    participant GH as GitHub
+    participant EDD as Eco Dev Docs
     participant PUB as Public/Builders
 
     RD->>RD: Build + Document + Dogfood
-    RD->>EDE: Release
-    RD->>PUB: Release
+    RD->>EDE: Provide doc packet
+    RD->>PUB: Release code
 
     Note over EDE,PUB: Public gets access immediately
-
-    par Improve Software
-        EDE->>EDE: Test & break it (red team)
-        EDE->>EDE: Build PoC applications
-        EDE->>GH: File issues (bugs, edge cases, UX, doc unclarity)
-        EDE->>GH: Open small PRs (easy UX and doc fixes)
-        EDE->>EDD: Doc, doc packet and doc issues
+	
+	par Prepare documentation
+		EDD->>EDD: Draft Documentation PR
+		EDD->>RD: Questions, missing info (via PR)
+		RD->>EDD: Answers
+		EDD->>EDD: Runnable doc draft ready for validation
+		EDD->>EDE: Request dogfooding
+		EDD->>RD: Request review
+		RD->>EDE: Review and approve
+	and Improve Software
+        EDE->>EDE: Test & break it (red teaming)
+        EDE->>EDE: Build sample applications (PoCs)
+        EDE->>RD: File issues (bugs, edge cases, UX)
+        EDE->>RD: Open small PRs (easy UX and doc fixes)
+        EDE->>EDD: Provide feedback on documentation, approve
     and Community Testing
         PUB->>PUB: Try software
-        PUB->>GH: File issues
+        PUB->>RD: File issues
+    and Finalize
+		RD->>PUB: Fix critical issues & push fixes
+		EDD->>PUB: Merge and publish documentation
     end
-
-    GH->>RD: Issues & PRs
-    RD->>RD: Fix critical issues
-    RD->>GH: Push fixes
 
     par Get Builder Attention
         EDE->>PUB: Vibe coding sessions
@@ -149,8 +161,8 @@ sequenceDiagram
         EDE->>PUB: Workshops & talks
         EDE->>PUB: Office hours
     and Enable Distribution
-        EDE->>GH: Examples (from vibe sessions)
-        EDE->>GH: PoC applications
+        EDE->>PUB: Examples (from vibe sessions)
+        EDE->>PUB: Sample apps (PoCs)
         EDE->>PUB: Integration guides (tutorials, videos)
     and Enable Partnerships
         EDE->>EDE: Value prop mapping
@@ -158,11 +170,21 @@ sequenceDiagram
         EDE->>EDE: Track partnership pipeline
     and Growing Bazaar
         PUB->>PUB: Build applications
-        PUB->>GH: Contributions & feedback
+        PUB->>RD: Contributions & feedback
     end
 
     Note over EDE,PUB: Success = Community engagement > Eco Dev contributions
 ```
+
+### Documentation focused workflow
+
+| Phase | Owner                | What happens (DoD)                                                                                                                                             | Where              | Status          |
+|:-----:|:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------|
+|   1   | SME (R&D)            | Provide doc packet/draft; link authoritative resources; answer questions.<br />DoD: packet sufficient for Docs to write a stub.                                | Issue              | —               |
+|   2   | Docs                 | Create PR linked to issue with initial draft from packet.<br />DoD: doc exists in PR; missing info and questions tracked in issue.                             | PR (issue)         | Stub            |
+|   3   | Docs                 | Turn stub into runnable draft.<br />DoD: ready for validation with explicit assumptions/unknowns.                                                              | PR                 | Unverified      |
+|   4   | SME (R&D) + Red Team | Parallel validation: SME verifies technical correctness; Red Team tests end-to-end; Docs implement changes.<br />DoD: SME approves and Red Team report = Pass. | PR                 | Verified by SME |
+|   5   | Docs                 | Final editorial pass (structure, grammar, linters) and publish.<br />DoD: merged and published.                                                                | PR (merge) + issue | Verified        |
 
 ---
 
