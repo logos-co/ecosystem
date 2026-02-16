@@ -132,6 +132,7 @@ Team members are likely to shift from one effort to another, as long as their ro
 - GitHub Issues documenting bugs, edge cases, confusion points (label: `from-eco-dev`)
 - DevEx evaluation (reports/issues)
 - Feature requests
+- Review of documentation produced by Logos R&D, including doc packet, and hand over to Eco Dev Doc team.
 - PoC applications to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
 - ADR (Architect Decision Records), draft specs, technical requirements
 - Builder support (mentorship, technical assistance, solution engineering)
@@ -171,7 +172,6 @@ Partner/Internal integration focus
 **Feedback to:** whole Eco Dev Team, Logos R&D **on** priorities with regards to desired apps and related essentials
 
 ## Lambda Prize Management
-
 **Mandate:** Run successful ꟛPrizes
 
 **Competency:** Technical program manager

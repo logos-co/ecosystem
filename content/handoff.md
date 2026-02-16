@@ -17,6 +17,15 @@ Eco Dev acts as **guaranteed co-developers** - the first external developers to 
 - **Permission to say "no"**: Can flag software as not ready
 - **No blame culture**: Finding issues is success, not failure
 
+### Documentation Team Role
+
+The documentation team is responsible for turning internal knowledge into documentation that users can execute correctly on the first attempt.
+
+- **Build the documentation framework**: Create and maintain the tools that enable consistent docs creation across writers and SMEs—templates, examples, LLM prompts, style guide, repository layout, etc.
+- **Identify gaps and drive SME input**: Review existing docs to find missing information, then work with SMEs to obtain draft content or doc packets to close those gaps.
+- **Surface unknowns early**: Identify unclear details, conflicting behavior, and ambiguous ownership; track questions and drive them to resolution with SMEs.
+- **Improve comprehension**: Apply shared terminology. Rewrite complex information into clear, concise guidance that readers can understand quickly.
+
 ### Bazaar Model Alignment
 
 Following Eric Raymond's "The Cathedral and the Bazaar":
@@ -36,26 +45,26 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 
 ### R&D Delivers
 
-| Deliverable                        | Why?                                                        |
-| ---------------------------------- | ----------------------------------------------------------- |
-| **Code**                           | Functioning software is the core of the delivery            |
-| **Logos Core Module** (if library) | Usable in Logos Core, pre-wrapped                           |
-| **Protocol, API Specs, FURPS**     | Clear expectation of behaviour and functionality delivered  |
-| **Documentation**                  | To quickly jump into activities, and bypass discovery phase |
-| **Dogfooding Proof**               | Help ensure the above is done and bases are covered         |
+| Deliverable                                                                                                                           | Why?                                                        |
+|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| **Code**                                                                                                                              | Functioning software is the core of the delivery            |
+| **Logos Core Module** (if library)                                                                                                    | Usable in Logos Core, pre-wrapped                           |
+| **Protocol, API Specs, FURPS**                                                                                                        | Clear expectation of behaviour and functionality delivered  |
+| **Documentation and [doc packet](https://github.com/logos-co/logos-docs/blob/main/docs/_shared/templates/doc-packet-testnet-v01.md)** | To quickly jump into activities, and bypass discovery phase |
+| **Dogfooding Proof**                                                                                                                  | Help ensure the above is done and bases are covered         |
 
 ### Eco Dev Delivers
 
 **Prerequisite**: Red Team/Solution, DevKit, and Contributor Journey streams must familiarise themselves with Logos R&D features and deliverables before engaging in handoff activities. This ensures effective testing, accurate communication, and quality output.
 
-Eco Dev outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[engineering/index#Streams|Eco Dev Engineering Streams]].
+Eco Dev engineering outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[engineering/index#Streams|Eco Dev Engineering Streams]].
 
 ### Eco Dev Does NOT Own
 
 Eco Dev is not responsible for:
 
 - **R&D Process**: Setting priorities, defining roadmap, milestones (including testnet), or generally being involved in the Logos R&D process
-- **Initial Documentation**: Producing initial docs, writing specs, FURPS, or APIs (see [R&D Delivers](#rd-delivers))
+- **Initial Documentation**: Producing initial docs, writing specs, FURPS, or APIs (see [[#R&D Delivers]])
 - **End-User Facing or Protocol Production Software**: Only developer tools are to be produced by the Eco Dev team
 - **Wrapping C-Bindings**: Libraries produced by Logos R&D should be demonstrated usable in Logos Core before handoff.
 
@@ -112,52 +121,70 @@ For ecosystem essentials identified through handoff activities, the Integration 
 
 ```mermaid
 sequenceDiagram
-    participant RD as R&D
-    participant ED as Eco Dev
-    participant GH as GitHub
+    participant RD as R&D (SME)
+    participant EDE as Eco Dev Eng
+    participant EDD as Eco Dev Docs
     participant PUB as Public/Builders
 
     RD->>RD: Build + Document + Dogfood
-    RD->>ED: Release
-    RD->>PUB: Release
+    RD->>EDE: Provide doc packet
+    RD->>PUB: Release code
 
-    Note over ED,PUB: Public gets access immediately
-
-    par Improve Software
-        ED->>ED: Test & break it (red team)
-        ED->>ED: Build PoC applications
-        ED->>GH: File issues (bugs, edge cases, UX)
-        ED->>GH: Open docs PRs
+    Note over EDE,PUB: Public gets access immediately
+	
+	par Prepare documentation
+		EDD->>EDD: Draft Documentation PR
+		EDD->>RD: Questions, missing info (via PR)
+		RD->>EDD: Answers
+		EDD->>EDD: Runnable doc draft ready for validation
+		EDD->>EDE: Request dogfooding
+		EDD->>RD: Request review
+		RD->>EDE: Review and approve
+	and Improve Software
+        EDE->>EDE: Test & break it (red teaming)
+        EDE->>EDE: Build sample applications (PoCs)
+        EDE->>RD: File issues (bugs, edge cases, UX)
+        EDE->>RD: Open small PRs (easy UX and doc fixes)
+        EDE->>EDD: Provide feedback on documentation, approve
     and Community Testing
         PUB->>PUB: Try software
-        PUB->>GH: File issues
+        PUB->>RD: File issues
+    and Finalize
+		RD->>PUB: Fix critical issues & push fixes
+		EDD->>PUB: Merge and publish documentation
     end
-
-    GH->>RD: Issues & PRs
-    RD->>RD: Fix critical issues
-    RD->>GH: Push fixes
 
     par Get Builder Attention
-        ED->>PUB: Vibe coding sessions
-        ED->>PUB: Long-form posts
-        ED->>PUB: Short announcements (Discord/Twitter)
-        ED->>PUB: Workshops & talks
-        ED->>PUB: Office hours
+        EDE->>PUB: Vibe coding sessions
+        EDE->>PUB: Long-form posts
+        EDE->>PUB: Short announcements (Discord/Twitter)
+        EDE->>PUB: Workshops & talks
+        EDE->>PUB: Office hours
     and Enable Distribution
-        ED->>GH: Examples (from vibe sessions)
-        ED->>GH: PoC applications
-        ED->>PUB: Integration guides (tutorials, videos)
+        EDE->>PUB: Examples (from vibe sessions)
+        EDE->>PUB: Sample apps (PoCs)
+        EDE->>PUB: Integration guides (tutorials, videos)
     and Enable Partnerships
-        ED->>ED: Value prop mapping
-        ED->>PUB: Partnership decks & case studies
-        ED->>ED: Track partnership pipeline
+        EDE->>EDE: Value prop mapping
+        EDE->>PUB: Partnership decks & case studies
+        EDE->>EDE: Track partnership pipeline
     and Growing Bazaar
         PUB->>PUB: Build applications
-        PUB->>GH: Contributions & feedback
+        PUB->>RD: Contributions & feedback
     end
 
-    Note over ED,PUB: Success = Community engagement > Eco Dev contributions
+    Note over EDE,PUB: Success = Community engagement > Eco Dev contributions
 ```
+
+### Documentation focused workflow
+
+| Phase | Owner                | What happens (DoD)                                                                                                                                                                 | Where              | Status          |
+| :---: | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- | :-------------- |
+|   1   | SME (R&D)            | Provide doc packet/draft; link authoritative resources; answer questions.<br />DoD: packet sufficient for Docs to write a stub.                                                    | Issue              | —               |
+|   2   | Docs                 | Create PR linked to issue with initial draft from packet.<br />DoD: doc exists in PR; missing info and questions tracked in issue.                                                 | PR (issue)         | Stub            |
+|   3   | Docs                 | Turn stub into runnable draft.<br />DoD: ready for validation with explicit assumptions/unknowns.<br>Note: Red team may be involved before this step to running through the draft. | PR                 | Unverified      |
+|   4   | SME (R&D) + Red Team | Parallel validation: SME verifies technical correctness; Red Team tests end-to-end; Docs implement changes.<br />DoD: SME approves and Red Team report = Pass.                     | PR                 | Verified by SME |
+|   5   | Docs                 | Final editorial pass (structure, grammar, linters) and publish.<br />DoD: merged and published.                                                                                    | PR (merge) + issue | Verified        |
 
 ---
 
@@ -206,7 +233,7 @@ The R&D teams need to have a clear process or roadmap to easily find the artefac
 
 **Communication**: Lightweight communication can be done in the R&D's team general Discord channel (e.g. `#messaging-lobby`).
 
-**Eco Dev Artefacts**: As per [Eco Dev Delivers](#eco-dev-delivers), the nature of artefact will dictate the channel (X live stream, blog post, etc).
+**Eco Dev Artefacts**: As per [[#Eco Dev Delivers]], the nature of artefact will dictate the channel (X live stream, blog post, etc).
 
 **Escalation**: Once open in GitHub, critical issues are brought to the attention of the R&D lead of the software and R&D head. This may include issues from the community.
 
