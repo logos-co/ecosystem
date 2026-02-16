@@ -178,13 +178,13 @@ sequenceDiagram
 
 ### Documentation focused workflow
 
-| Phase | Owner                | What happens (DoD)                                                                                                                                             | Where              | Status          |
-|:-----:|:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:----------------|
-|   1   | SME (R&D)            | Provide doc packet/draft; link authoritative resources; answer questions.<br />DoD: packet sufficient for Docs to write a stub.                                | Issue              | —               |
-|   2   | Docs                 | Create PR linked to issue with initial draft from packet.<br />DoD: doc exists in PR; missing info and questions tracked in issue.                             | PR (issue)         | Stub            |
-|   3   | Docs                 | Turn stub into runnable draft.<br />DoD: ready for validation with explicit assumptions/unknowns.                                                              | PR                 | Unverified      |
-|   4   | SME (R&D) + Red Team | Parallel validation: SME verifies technical correctness; Red Team tests end-to-end; Docs implement changes.<br />DoD: SME approves and Red Team report = Pass. | PR                 | Verified by SME |
-|   5   | Docs                 | Final editorial pass (structure, grammar, linters) and publish.<br />DoD: merged and published.                                                                | PR (merge) + issue | Verified        |
+| Phase | Owner                | What happens (DoD)                                                                                                                                                                 | Where              | Status          |
+| :---: | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- | :-------------- |
+|   1   | SME (R&D)            | Provide doc packet/draft; link authoritative resources; answer questions.<br />DoD: packet sufficient for Docs to write a stub.                                                    | Issue              | —               |
+|   2   | Docs                 | Create PR linked to issue with initial draft from packet.<br />DoD: doc exists in PR; missing info and questions tracked in issue.                                                 | PR (issue)         | Stub            |
+|   3   | Docs                 | Turn stub into runnable draft.<br />DoD: ready for validation with explicit assumptions/unknowns.<br>Note: Red team may be involved before this step to running through the draft. | PR                 | Unverified      |
+|   4   | SME (R&D) + Red Team | Parallel validation: SME verifies technical correctness; Red Team tests end-to-end; Docs implement changes.<br />DoD: SME approves and Red Team report = Pass.                     | PR                 | Verified by SME |
+|   5   | Docs                 | Final editorial pass (structure, grammar, linters) and publish.<br />DoD: merged and published.                                                                                    | PR (merge) + issue | Verified        |
 
 ---
 
