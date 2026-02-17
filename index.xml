@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Scaffold</title>
+    <link>https://ecosystem.logos.co/engineering/application_essentials/scaffold</link>
+    <guid>https://ecosystem.logos.co/engineering/application_essentials/scaffold</guid>
+    <description><![CDATA[ Scaffolding tooling that lets developers bootstrap a project, write and build Rust smart contracts, deploy to a local or DevNet environment, and interact with contracts via a wallet. ]]></description>
+    <pubDate>Tue, 17 Feb 2026 01:30:20 GMT</pubDate>
+  </item><item>
     <title>R&amp;D ↔ Eco Dev Handoff Protocol</title>
     <link>https://ecosystem.logos.co/handoff</link>
     <guid>https://ecosystem.logos.co/handoff</guid>
@@ -59,12 +65,6 @@
     <guid>https://ecosystem.logos.co/engineering/infrastructure_essentials/logos_js_sdk</guid>
     <description><![CDATA[ JavaScript/TypeScript SDK for building web applications that run within the Logos App, with full access to Logos Core modules (blockchain, storage, messaging). ]]></description>
     <pubDate>Tue, 03 Feb 2026 04:30:20 GMT</pubDate>
-  </item><item>
-    <title>Movement</title>
-    <link>https://ecosystem.logos.co/engineering/concerns/movement</link>
-    <guid>https://ecosystem.logos.co/engineering/concerns/movement</guid>
-    <description><![CDATA[ Provide the technological tools needed by Logos Circles and the movement to organise, coordinate, and solve winnable issues. ]]></description>
-    <pubDate>Tue, 03 Feb 2026 04:04:56 GMT</pubDate>
   </item>
     </channel>
   </rss>
