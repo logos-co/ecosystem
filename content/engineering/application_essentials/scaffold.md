@@ -18,7 +18,6 @@ and interact with contracts via a wallet.
 1. One public DevNet vertical slice: generate wallet, fund wallet, deploy contract, execute one transaction type, verify result.
 2. Integrate wallet generation as part of the scaffold workflow for bootstrap and interaction flows.
 3. Support native token topup for wallet operations on local and DevNet environments.
-4. CLI prints underlying commands for each step so users can drop down to lower-level tooling.
 
 ### Usability
 
@@ -26,6 +25,7 @@ and interact with contracts via a wallet.
 2. Generated layout clearly separates contract code, client code, config, and deploy scripts.
 3. Deterministic wallet generation and .env handling for repeatability.
 4. Clear happy-path docs, reproducible setup, discoverable commands.
+5. CLI prints underlying commands for each step so users can drop down to lower-level tooling.
 
 ### Reliability
 
@@ -34,7 +34,7 @@ and interact with contracts via a wallet.
 
 ### Performance
 
-1. Each workshop step must complete within a demo-tolerable threshold.
+1. Each workshop step must complete within a demo-tolerable threshold (a few minutes).
 
 ### Supportability
 
@@ -80,7 +80,7 @@ Use native Cargo-based build flow as the primary compilation path.
 
 Developers need explicit, editable environment targeting for local and DevNet workflows.
 Use environment-file based network configuration as the default model.
-Generated projects include env files for local and DevNet RPC,
+Generated projects include env files for local and DevNet,
 wallet interaction settings used by deploy and interact commands.
 Env files are familiar and automation-friendly,
 but require strict handling to avoid credential leakage.
