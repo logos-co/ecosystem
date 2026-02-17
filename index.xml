@@ -12,6 +12,12 @@
     <description><![CDATA[ R&amp;D builds it. Eco Dev breaks it, then evangelizes it. Both succeed together. ]]></description>
     <pubDate>Mon, 16 Feb 2026 09:40:34 GMT</pubDate>
   </item><item>
+    <title>Wallet</title>
+    <link>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</link>
+    <guid>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</guid>
+    <description><![CDATA[ FURPS Functionality Cross-layer bridge between L1 and LEZ for token movement; support gas-related flows. ]]></description>
+    <pubDate>Thu, 12 Feb 2026 23:23:52 GMT</pubDate>
+  </item><item>
     <title>Atomic Swaps</title>
     <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
     <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
@@ -58,12 +64,6 @@
     <link>https://ecosystem.logos.co/engineering/concerns/movement</link>
     <guid>https://ecosystem.logos.co/engineering/concerns/movement</guid>
     <description><![CDATA[ Provide the technological tools needed by Logos Circles and the movement to organise, coordinate, and solve winnable issues. ]]></description>
-    <pubDate>Tue, 03 Feb 2026 04:04:56 GMT</pubDate>
-  </item><item>
-    <title>Sustainability</title>
-    <link>https://ecosystem.logos.co/engineering/concerns/sustainability</link>
-    <guid>https://ecosystem.logos.co/engineering/concerns/sustainability</guid>
-    <description><![CDATA[ Ensure the sustainability of the movement and Logos stack development by ensuring valuable onchain activity takes place. ]]></description>
     <pubDate>Tue, 03 Feb 2026 04:04:56 GMT</pubDate>
   </item>
     </channel>
