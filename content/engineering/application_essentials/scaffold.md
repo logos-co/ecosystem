@@ -15,32 +15,32 @@ and interact with contracts via a wallet.
 
 ### Functionality
 
-- One public DevNet vertical slice: generate wallet, fund wallet, deploy contract, execute one transaction type, verify result.
-- Integrate wallet generation as part of the scaffold workflow for bootstrap and interaction flows.
-- Support native token topup for wallet operations on local and DevNet environments.
-- CLI prints underlying commands for each step so users can drop down to lower-level tooling.
+1. One public DevNet vertical slice: generate wallet, fund wallet, deploy contract, execute one transaction type, verify result.
+2. Integrate wallet generation as part of the scaffold workflow for bootstrap and interaction flows.
+3. Support native token topup for wallet operations on local and DevNet environments.
+4. CLI prints underlying commands for each step so users can drop down to lower-level tooling.
 
 ### Usability
 
-- Single command bootstrap with no manual project wiring required.
-- Generated layout clearly separates contract code, client code, config, and deploy scripts.
-- Deterministic wallet generation and .env handling for repeatability.
-- Clear happy-path docs, reproducible setup, discoverable commands.
+1. Single command bootstrap with no manual project wiring required.
+2. Generated layout clearly separates contract code, client code, config, and deploy scripts.
+3. Deterministic wallet generation and .env handling for repeatability.
+4. Clear happy-path docs, reproducible setup, discoverable commands.
 
 ### Reliability
 
-- The vertical slice must succeed 3 times in a row on a clean machine with deterministic wallets.
-- Local network can be started and torn down in isolation without modifying host-global blockchain state.
+1. The vertical slice must succeed 3 times in a row on a clean machine with deterministic wallets.
+2. Local network can be started and torn down in isolation without modifying host-global blockchain state.
 
 ### Performance
 
-- Each workshop step must complete within a demo-tolerable threshold.
+1. Each workshop step must complete within a demo-tolerable threshold.
 
 ### Supportability
 
-- Scaffold version and toolchain versions are explicit in generated output so projects remain buildable over time.
-- Network configuration for local and DevNet deployment is .env based config.
-- The scaffolded project includes command references for build, deploy, and interaction steps.
+1. Scaffold version and toolchain versions are explicit in generated output so projects remain buildable over time.
+2. Network configuration for local and DevNet deployment is .env based config.
+3. The scaffolded project includes command references for build, deploy, and interaction steps.
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
 
