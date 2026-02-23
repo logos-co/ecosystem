@@ -10,6 +10,8 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 
 ## FURPS+ (v0.1)
 
+[v0.1 milestone](https://github.com/logos-co/ecosystem/milestone/7)
+
 Phase 1: HTLC PoC — Maker sells λ (LEZ) for ETH (Ethereum)
 
 - **Maker**: the party that creates and publishes the swap offer

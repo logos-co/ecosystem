@@ -11,7 +11,9 @@ write and build Rust smart contracts,
 deploy to a local or DevNet environment,
 and interact with contracts via a wallet.
 
-## FURPS
+## FURPS v0.1
+
+[v0.1 milestone](https://github.com/logos-co/ecosystem/milestone/9)
 
 ### Functionality
 
