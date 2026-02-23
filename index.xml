@@ -9,8 +9,8 @@
     <title>Multisig Treasury / Vault</title>
     <link>https://ecosystem.logos.co/engineering/desired_projects/multisig</link>
     <guid>https://ecosystem.logos.co/engineering/desired_projects/multisig</guid>
-    <description><![CDATA[ Multi-signature governance program for LEZ, enabling M-of-N threshold approval for on-chain actions. ]]></description>
-    <pubDate>Mon, 23 Feb 2026 09:47:05 GMT</pubDate>
+    <description><![CDATA[ Enables secure shared custody of shielded assets requiring multiple signatures to authorise transactions, protecting treasuries and shared funds without revealing signers or balances. ]]></description>
+    <pubDate>Mon, 23 Feb 2026 09:48:35 GMT</pubDate>
   </item><item>
     <title>Scaffold</title>
     <link>https://ecosystem.logos.co/engineering/application_essentials/scaffold</link>
