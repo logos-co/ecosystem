@@ -116,15 +116,15 @@ Team members are likely to shift from one effort to another, as long as their ro
 **Competency**: Solution / Architect - deep understanding on how to use the full Logos stack
 
 **Outputs:**
-- GitHub Issues documenting bugs, edge cases, confusion points (label: `from-eco-dev`)
+- GitHub Issues documenting bugs, edge cases, confusion points (GitHub label: `from eco dev`)
 - DevEx evaluation (reports/issues)
 - Feature requests
-- Review of documentation produced by Logos R&D, including doc packet, and hand over to Eco Dev Doc team.
-- PoC applications to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
-- ADR (Architect Decision Records), draft specs, technical requirements
+- Review of documentation from Eco Dev Doc team.
+- Sample (PoCs) applications to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
+- ADR (Architect Decision Records), functional and technical requirements (FURPS)
 - Builder support (mentorship, technical assistance, solution engineering)
 
-**Feedback to:** Logos R&D and DevKit **on** bugs, desired features emerging for usage and developer experience
+**Feedback to:** Logos R&D and DevKit **on** bugs, desired features emerging for usage and developer experience, Doc team on docs.
 
 ## DevKit / DappFoundry
 **Mandate:** Build tooling and SDKs for Logos development
@@ -132,10 +132,9 @@ Team members are likely to shift from one effort to another, as long as their ro
 **Competency**: Tooling, scripting, blockchain development, full software cycle
 
 **Outputs:**
-- Logos Scaffold: local dev environment for Logos Blockchain and Core, with templates
-- SDK wrappers for Standalone Application journey (subject to roadmap)
-- Sample apps (polished reference implementations, can be adapted from PoCs)
-- Examples: forkable application code others can reference (may emerge from vibe coding sessions)
+- Logos Scaffold: local dev environment for Logos Blockchain and Core, with templates apps
+- SDK wrappers in other languages for Logos Core
+- Template apps and examples (polished reference implementations, can be adapted from sample apps)
 
 **Feedback to:** Logos R&D **on** bugs, desired features emerging for usage and developer experience
 
@@ -144,7 +143,7 @@ Team members are likely to shift from one effort to another, as long as their ro
 ## Integration
 Partner/Internal integration focus
 
-**Mandate:** Ensure ecosystem essentials ("batteries included") are delivered; prioritise with R&D; guide delivery (internal, ꟛPrize, partnerships)
+**Mandate:** Ensure ecosystem essentials ("batteries included") are delivered; prioritise with R&D; feedback to delivery (internal, ꟛPrize, partnerships)
 
 **Competency**: Partner Management, Technical Product Management, Requirements Engineering
 
