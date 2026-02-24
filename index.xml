@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Eco Dev Engineering</title>
+    <link>https://ecosystem.logos.co/engineering/</link>
+    <guid>https://ecosystem.logos.co/engineering/</guid>
+    <description><![CDATA[ Home of the Logos Ecosystem Development Engineering effort. ]]></description>
+    <pubDate>Tue, 24 Feb 2026 02:55:09 GMT</pubDate>
+  </item><item>
     <title>Multisig Treasury / Vault</title>
     <link>https://ecosystem.logos.co/engineering/desired_projects/multisig</link>
     <guid>https://ecosystem.logos.co/engineering/desired_projects/multisig</guid>
@@ -16,7 +22,13 @@
     <link>https://ecosystem.logos.co/engineering/application_essentials/scaffold</link>
     <guid>https://ecosystem.logos.co/engineering/application_essentials/scaffold</guid>
     <description><![CDATA[ Scaffolding tooling that lets developers bootstrap a project, write and build Rust smart contracts, deploy to a local or DevNet environment, and interact with contracts via a wallet. ]]></description>
-    <pubDate>Tue, 17 Feb 2026 01:30:20 GMT</pubDate>
+    <pubDate>Mon, 23 Feb 2026 04:08:24 GMT</pubDate>
+  </item><item>
+    <title>Atomic Swaps</title>
+    <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
+    <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
+    <description><![CDATA[ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity. ]]></description>
+    <pubDate>Mon, 23 Feb 2026 04:08:24 GMT</pubDate>
   </item><item>
     <title>R&amp;D ↔ Eco Dev Handoff Protocol</title>
     <link>https://ecosystem.logos.co/handoff</link>
@@ -30,12 +42,6 @@
     <description><![CDATA[ FURPS Functionality Cross-layer bridge between L1 and LEZ for token movement; support gas-related flows. ]]></description>
     <pubDate>Thu, 12 Feb 2026 23:23:52 GMT</pubDate>
   </item><item>
-    <title>Atomic Swaps</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
-    <description><![CDATA[ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity. ]]></description>
-    <pubDate>Mon, 09 Feb 2026 03:16:56 GMT</pubDate>
-  </item><item>
     <title>Ecosystem Development</title>
     <link>https://ecosystem.logos.co/</link>
     <guid>https://ecosystem.logos.co/</guid>
@@ -47,12 +53,6 @@
     <guid>https://ecosystem.logos.co/milestones/testnet_v0_1</guid>
     <description><![CDATA[ Logos Testnet Version 0.1 Priorities Highest Priority: LEE / LEZ - to derisk and already available. Then, will depend on delivery from other teams. ]]></description>
     <pubDate>Wed, 04 Feb 2026 04:36:49 GMT</pubDate>
-  </item><item>
-    <title>Eco Dev Engineering</title>
-    <link>https://ecosystem.logos.co/engineering/</link>
-    <guid>https://ecosystem.logos.co/engineering/</guid>
-    <description><![CDATA[ TODO: restructure folders TODO: review best way to track (currently using internal notion) Home of the Logos Ecosystem Development Engineering effort. ]]></description>
-    <pubDate>Tue, 03 Feb 2026 05:20:29 GMT</pubDate>
   </item><item>
     <title>Logos Core DevEx</title>
     <link>https://ecosystem.logos.co/engineering/application_essentials/logos_core_devex</link>
