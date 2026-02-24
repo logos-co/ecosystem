@@ -1,20 +1,16 @@
 ---
 title: Eco Dev Engineering
 ---
-
-TODO: restructure folders
-
-TODO: review best way to track (currently using internal notion)
-
 Home of the Logos Ecosystem Development Engineering effort.
 
 # Mandate
 
-(wip): enable bi-directional feedback between the Logos technical stack and the Logos community/ecosystem. By:
+Enable bi-directional feedback between the Logos technical stack and the Logos community/ecosystem. By:
 
 - Identifying and evaluating the technological needs of the community and ecosystem
 - Translating those needs into requirements for the technology stack and value of said requirements
 - Propagating information about latest delivery, to encourage the community to use, build, remix and contribute back to the Logos Technology stack
+- Provided (solution) engineering capabilities for ecosystem development activities.
 
 # Monthly Priorities
 
@@ -42,29 +38,20 @@ See [Build internally, with Partner, via RFP or via Lambda Prize?](#build-intern
 
 Plan so far:
 
-1. [Multi-sig](https://github.com/logos-co/ecosystem/issues/31)
-   Next: do PoC as simplest one
-2. AMM
-   PoC being built internally by Zones team
-3. Atomic Swaps
-   Next: do PoC
+1. [Multi-sig sample app](https://github.com/logos-co/ecosystem/milestone/8)
+2. [Atomic Swaps sample app](https://github.com/logos-co/ecosystem/milestone/7)
+3. [Scaffold Dev Kit](https://github.com/logos-co/ecosystem/milestone/9)
 4. Forum library (OpChan)
    A forum format seems to be the simplest and easiest form for a first activity hub. Re-use Opchan protocol but in new stack
 5. P2P Marketplace
-
-# Methodology
-
-- Understand and synthetise Logos roadmap and testnet phases
-- Review dependencies, in terms of technical decisions and delivery. Flag specific integrations that are blocked on progress until decision is made/clarified:
-  - Infrastructure essentials (block explorer, rpc, etc): Is there a dependency on RPC format (ETH), SR vs base layer, what ecosystem can be re-used (eth vs stellar ), etc.
-  - Application essentials/developer toolkit (SC toolchain, dev env, token creation, onchain primitives, UI, etc): internal requirements on blockchain and Logos Core
-  - Desired projects (stablecoin, lending, entity formation, etc): getting developers to build those projects (demand validation, ꟛPrize), and identify/onboard external projects.
 
 ## Build internally, with Partner, via RFP or via Lambda Prize?
 When do we want to build internally, find a partner, or push an RFP or a Lambda Prize?
 
 Lambda Prize is meant for complicated and ambitious project. Huge challenges where we do not dictate the solution. We're looking at a category of problem and put a price to solve it.
 We let someone else draft the product requirements and solution.
+
+RFPs are here to outsource development effort, while keeping a tight control on the output.
 
 The other ways are for specific projects or ideas that we, the community, want to see built.
 
@@ -129,15 +116,15 @@ Team members are likely to shift from one effort to another, as long as their ro
 **Competency**: Solution / Architect - deep understanding on how to use the full Logos stack
 
 **Outputs:**
-- GitHub Issues documenting bugs, edge cases, confusion points (label: `from-eco-dev`)
+- GitHub Issues documenting bugs, edge cases, confusion points (GitHub label: `from eco dev`)
 - DevEx evaluation (reports/issues)
 - Feature requests
-- Review of documentation produced by Logos R&D, including doc packet, and hand over to Eco Dev Doc team.
-- PoC applications to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
-- ADR (Architect Decision Records), draft specs, technical requirements
+- Review of documentation from Eco Dev Doc team.
+- Sample (PoCs) applications to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
+- ADR (Architect Decision Records), functional and technical requirements (FURPS)
 - Builder support (mentorship, technical assistance, solution engineering)
 
-**Feedback to:** Logos R&D and DevKit **on** bugs, desired features emerging for usage and developer experience
+**Feedback to:** Logos R&D and DevKit **on** bugs, desired features emerging for usage and developer experience, Doc team on docs.
 
 ## DevKit / DappFoundry
 **Mandate:** Build tooling and SDKs for Logos development
@@ -145,10 +132,9 @@ Team members are likely to shift from one effort to another, as long as their ro
 **Competency**: Tooling, scripting, blockchain development, full software cycle
 
 **Outputs:**
-- Logos Scaffold: local dev environment for Logos Blockchain and Core, with templates
-- SDK wrappers for Standalone Application journey (subject to roadmap)
-- Sample apps (polished reference implementations, can be adapted from PoCs)
-- Examples: forkable application code others can reference (may emerge from vibe coding sessions)
+- Logos Scaffold: local dev environment for Logos Blockchain and Core, with templates apps
+- SDK wrappers in other languages for Logos Core
+- Template apps and examples (polished reference implementations, can be adapted from sample apps)
 
 **Feedback to:** Logos R&D **on** bugs, desired features emerging for usage and developer experience
 
@@ -157,7 +143,7 @@ Team members are likely to shift from one effort to another, as long as their ro
 ## Integration
 Partner/Internal integration focus
 
-**Mandate:** Ensure ecosystem essentials ("batteries included") are delivered; prioritise with R&D; guide delivery (internal, ꟛPrize, partnerships)
+**Mandate:** Ensure ecosystem essentials ("batteries included") are delivered; prioritise with R&D; feedback to delivery (internal, ꟛPrize, partnerships)
 
 **Competency**: Partner Management, Technical Product Management, Requirements Engineering
 
@@ -171,17 +157,19 @@ Partner/Internal integration focus
 
 **Feedback to:** whole Eco Dev Team, Logos R&D **on** priorities with regards to desired apps and related essentials
 
-## Lambda Prize Management
-**Mandate:** Run successful ꟛPrizes
+## Lambda Prize and RFPs Engineering Advisory
 
-**Competency:** Technical program manager
+**Mandate:** Ensure the quality of RFPs and Lambda Prizes deliverables.
+
+**Competency:** Solution Engineers, technical product specification and architect review.
 
 **Outputs:**
-- ꟛPrize program operations (submissions, judging, coordination)
-- Ensure sample applications are available
-- Prize scoping and estimation (with Solution input)
-- Coordinate with marketing / comms
-- Application evaluation
+- ꟛPrize and RFPs technical requirements, scoping and estimation (as [PRs](https://github.com/logos-co/rfp/pulls))
+- Input on ꟛPrize and RFPs' dependencies, feasibility and priorities
+- Applications' (as in proposals) technical and architectural sign-off
+- Technical sign-off of ꟛPrize and RFPs' deliverables
+- Pulling in SME (Logos R&D) when necessary
+- Support candidates on their delivery
 
 # Testnet Scope Flow
 
@@ -191,7 +179,7 @@ flowchart TB
         subgraph ecodev["Eco Dev Team"]
         subgraph eng["Engineering Streams"]
             INT["<b>Integration</b><br/>Ecosystem map, delivery strategy,<br/>requirements"]
-            XP["<b>ꟛPrize Management</b><br/>Program ops, prize scoping,<br/>evaluation"]
+            XP["<b>ꟛPrize & RFPs Advisory</b><br/>Technical sign-off, requirements,<br/>feasibility & candidate support"]
             RT["<b>Red Team / Solution</b><br/>Dogfooding, PoCs,<br/>builder support"]
             DK["<b>DevKit / DappFoundry</b><br/>Tooling, SDKs,<br/>sample apps"]
         end
@@ -221,6 +209,7 @@ flowchart TB
     BDP -.->|"connections"| INT
     RT -.->|"bugs & DevEx"| RD
     DK -.->|"bugs & DevEx"| RD
+    XP -.->|"SME needs"| RD
     content -->|"CTAs"| USERS["Users & Personas"]
 ```
 
