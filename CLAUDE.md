@@ -238,7 +238,7 @@ Based on industry best practices, follow these principles when writing FURPS+ re
 - `Governance`: Decision-making systems (DAOs)
 - `Token Infrastructure`: Token creation and distribution (launchpads)
 - `Consumer Apps`: End-user applications (social, gaming)
-- `Organization Tools`: Team coordination (CMS, project management)
+- `Organisation Tools`: Team coordination (CMS, project management)
 - `Movement Tools`: Logos movement-specific tools (activity hub)
 - `Winnable Issues`: Projects addressing specific movement goals
 
