@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>2026-MM-DD Eco Dev Eng Weekly Update</title>
+    <link>https://ecosystem.logos.co/weekly_updates/Template</link>
+    <guid>https://ecosystem.logos.co/weekly_updates/Template</guid>
+    <description><![CDATA[ Red Team achieved review doc a b c next doc x y z blockers Issue opened link Solution achieved Sample app v0.1 next add features blockers need delivery of feature xy from logos DevKit / DappFoundry achieved scaffold feature next scaffold feature blockers Integration achieved next blockers RFPs / λ-P... ]]></description>
+    <pubDate>Thu, 26 Feb 2026 03:13:22 GMT</pubDate>
+  </item><item>
     <title>Eco Dev Engineering</title>
     <link>https://ecosystem.logos.co/engineering/</link>
     <guid>https://ecosystem.logos.co/engineering/</guid>
@@ -58,12 +64,6 @@
     <link>https://ecosystem.logos.co/engineering/application_essentials/logos_core_devex</link>
     <guid>https://ecosystem.logos.co/engineering/application_essentials/logos_core_devex</guid>
     <description><![CDATA[ Logos Core Developer Experience Overview of the different development paths for building applications on the Logos technology stack. ]]></description>
-    <pubDate>Tue, 03 Feb 2026 04:30:20 GMT</pubDate>
-  </item><item>
-    <title>Activity Hub</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/activity_hub</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/activity_hub</guid>
-    <description><![CDATA[ The activity hub serves two main purposes, which are related to the life cycle of Logos movement participants (better word?). ]]></description>
     <pubDate>Tue, 03 Feb 2026 04:30:20 GMT</pubDate>
   </item>
     </channel>
