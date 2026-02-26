@@ -38,9 +38,15 @@ See [Build internally, with Partner, via RFP or via Lambda Prize?](#build-intern
 
 Plan so far:
 
-1. [Multi-sig sample app](https://github.com/logos-co/ecosystem/milestone/8)
-2. [Atomic Swaps sample app](https://github.com/logos-co/ecosystem/milestone/7)
-3. [Scaffold Dev Kit](https://github.com/logos-co/ecosystem/milestone/9)
+1. Multi-sig sample app v0.1
+   [FURPS wip](https://github.com/logos-co/ecosystem/pull/68)
+   [GitHub Milestone](https://github.com/logos-co/ecosystem/milestone/8)
+2. Atomic Swaps sample app v0.1
+   [FURPS](/engineering/desired_projects/atomic_swaps#furps-v01)
+   [GitHub Milestone](https://github.com/logos-co/ecosystem/milestone/7)
+3. Scaffold Dev Kit v0.1
+   [FURPS](/engineering/application_essentials/scaffold#furps-v01)
+   [GitHub Milestone](https://github.com/logos-co/ecosystem/milestone/9)
 4. Forum library (OpChan)
    A forum format seems to be the simplest and easiest form for a first activity hub. Re-use Opchan protocol but in new stack
 5. P2P Marketplace
