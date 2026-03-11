@@ -10,7 +10,7 @@ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing 
 
 ## FURPS+ (v0.2)
 
-Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integration
+Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integration, Chat-Based Negotiation
 
 - **Maker**: the party that publishes swap offers and sells λ for ETH
 - **Taker**: the party that accepts and initiates the swap by locking ETH first
