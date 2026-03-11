@@ -20,9 +20,10 @@ Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integ
 1. Taker locks first: taker generates secret preimage, locks ETH (longer timelock), maker locks LEZ (shorter timelock), taker claims LEZ (reveals preimage), maker learns preimage and claims ETH
 2. Wallet balance display: both ETH and LEZ balances visible in UI before and after swaps
 3. Maker auto-accept: start/stop toggle that broadcasts offers and auto-executes swaps until it runs out of funds
-4. Maker sells λ for ETH (unchanged — v0.1)
-5. Original owners can reclaim funds after timeout (unchanged — v0.1)
-6. Native tokens only: ETH, λ (unchanged — v0.1)
+4. Integrate Messaging Logos Module instead of using the REST API
+5. Maker sells λ for ETH (unchanged - v0.1)
+6. Original owners can reclaim funds after timeout (unchanged — v0.1)
+7. Native tokens only: ETH, λ (unchanged — v0.1)
 
 ### Usability
 
@@ -72,6 +73,7 @@ Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integ
 
 ### Chat Module
 
+- Integrate Messaging Logos Module instead of using the REST API 
 - Offer broadcast and discovery via Logos Messaging (nwaku)
 - Chat module enables bootstrapping a conversation based on information maker broadcasts
 
