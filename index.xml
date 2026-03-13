@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>2026-03-02 Eco Dev Eng Weekly Update</title>
+    <link>https://ecosystem.logos.co/weekly_updates/2026-03-02</link>
+    <guid>https://ecosystem.logos.co/weekly_updates/2026-03-02</guid>
+    <description><![CDATA[ Red Team achieved review doc a b c next doc x y z blockers Issue opened link Solution achieved Atomic Swaps: Standalone QT app for maker/taker flow Atomic Swaps: Logos Messaging integration next Atomic Swaps: Integration with Logos App/Logos Core blockers need delivery of feature xy from logos DevKi... ]]></description>
+    <pubDate>Mon, 09 Mar 2026 09:32:23 GMT</pubDate>
+  </item><item>
     <title>2026-MM-DD Eco Dev Eng Weekly Update</title>
     <link>https://ecosystem.logos.co/weekly_updates/Template</link>
     <guid>https://ecosystem.logos.co/weekly_updates/Template</guid>
@@ -59,12 +65,6 @@
     <guid>https://ecosystem.logos.co/milestones/testnet_v0_1</guid>
     <description><![CDATA[ Logos Testnet Version 0.1 Priorities Highest Priority: LEE / LEZ - to derisk and already available. Then, will depend on delivery from other teams. ]]></description>
     <pubDate>Wed, 04 Feb 2026 04:36:49 GMT</pubDate>
-  </item><item>
-    <title>Logos Core DevEx</title>
-    <link>https://ecosystem.logos.co/engineering/application_essentials/logos_core_devex</link>
-    <guid>https://ecosystem.logos.co/engineering/application_essentials/logos_core_devex</guid>
-    <description><![CDATA[ Logos Core Developer Experience Overview of the different development paths for building applications on the Logos technology stack. ]]></description>
-    <pubDate>Tue, 03 Feb 2026 04:30:20 GMT</pubDate>
   </item>
     </channel>
   </rss>
