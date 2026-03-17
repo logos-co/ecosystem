@@ -6,11 +6,29 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Scaffold</title>
+    <link>https://ecosystem.logos.co/engineering/application_essentials/scaffold</link>
+    <guid>https://ecosystem.logos.co/engineering/application_essentials/scaffold</guid>
+    <description><![CDATA[ Scaffolding tooling that lets developers bootstrap a project, write and build Rust smart contracts, deploy to a local or DevNet environment, and interact with contracts via a wallet. ]]></description>
+    <pubDate>Tue, 17 Mar 2026 02:41:36 GMT</pubDate>
+  </item><item>
+    <title>Atomic Swaps</title>
+    <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
+    <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
+    <description><![CDATA[ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity. ]]></description>
+    <pubDate>Tue, 17 Mar 2026 02:41:36 GMT</pubDate>
+  </item><item>
+    <title>Wallet</title>
+    <link>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</link>
+    <guid>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</guid>
+    <description><![CDATA[ FURPS Functionality Cross-layer bridge between L1 and LEZ for token movement; support gas-related flows. ]]></description>
+    <pubDate>Tue, 17 Mar 2026 02:41:36 GMT</pubDate>
+  </item><item>
     <title>2026-03-16 Eco Dev Eng Weekly Update</title>
     <link>https://ecosystem.logos.co/weekly_updates/2026-03-16</link>
     <guid>https://ecosystem.logos.co/weekly_updates/2026-03-16</guid>
     <description><![CDATA[ Red Team achieved reviewed docs for Transfer tokens in public and private state reviewed docs for Users can set up a wallet for an LEZ-based chain Setup logos-co.github.io/eco-prio/ to help track and communicate priorities next review Start a Logos Blockchain node doc review Run Logos App blockers N... ]]></description>
-    <pubDate>Mon, 16 Mar 2026 08:59:41 GMT</pubDate>
+    <pubDate>Tue, 17 Mar 2026 02:41:02 GMT</pubDate>
   </item><item>
     <title>2026-03-02 Eco Dev Eng Weekly Update</title>
     <link>https://ecosystem.logos.co/weekly_updates/2026-03-02</link>
@@ -36,29 +54,11 @@
     <description><![CDATA[ Enables secure shared custody of shielded assets requiring multiple signatures to authorise transactions, protecting treasuries and shared funds without revealing signers or balances. ]]></description>
     <pubDate>Mon, 23 Feb 2026 09:48:35 GMT</pubDate>
   </item><item>
-    <title>Scaffold</title>
-    <link>https://ecosystem.logos.co/engineering/application_essentials/scaffold</link>
-    <guid>https://ecosystem.logos.co/engineering/application_essentials/scaffold</guid>
-    <description><![CDATA[ Scaffolding tooling that lets developers bootstrap a project, write and build Rust smart contracts, deploy to a local or DevNet environment, and interact with contracts via a wallet. ]]></description>
-    <pubDate>Mon, 23 Feb 2026 04:08:24 GMT</pubDate>
-  </item><item>
-    <title>Atomic Swaps</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
-    <description><![CDATA[ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity. ]]></description>
-    <pubDate>Mon, 23 Feb 2026 04:08:24 GMT</pubDate>
-  </item><item>
     <title>R&amp;D ↔ Eco Dev Handoff Protocol</title>
     <link>https://ecosystem.logos.co/handoff</link>
     <guid>https://ecosystem.logos.co/handoff</guid>
     <description><![CDATA[ R&amp;D builds it. Eco Dev breaks it, then evangelizes it. Both succeed together. ]]></description>
     <pubDate>Mon, 16 Feb 2026 09:40:34 GMT</pubDate>
-  </item><item>
-    <title>Wallet</title>
-    <link>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</link>
-    <guid>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</guid>
-    <description><![CDATA[ FURPS Functionality Cross-layer bridge between L1 and LEZ for token movement; support gas-related flows. ]]></description>
-    <pubDate>Thu, 12 Feb 2026 23:23:52 GMT</pubDate>
   </item><item>
     <title>Ecosystem Development</title>
     <link>https://ecosystem.logos.co/</link>
