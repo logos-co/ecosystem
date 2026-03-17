@@ -46,7 +46,7 @@ Phase 1: HTLC PoC — Maker sells λ (LEZ) for ETH (Ethereum)
 2. Cross-chain linkability via shared hash lock: the two sides of a swap are correlatable on-chain regardless of account privacy on LEZ. Private LEZ accounts hide participant identity but not the swap linkage itself
 3. Amounts visible on ETH side
 
-## ADR
+## Architecture Decision Records
 
 ### Decisions
 
