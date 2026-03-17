@@ -51,7 +51,7 @@ and interact with contracts via a wallet.
 - Local development and testing can run fully offline from public networks.
 - DevNet interaction uses explicit wallet and RPC configuration so developers can avoid accidental cross-network key reuse.
 
-## ADR (Architectural Decision Records)
+## Architecture Decision Records
 
 ### Project Structure (Single-Repo Template)
 

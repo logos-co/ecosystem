@@ -39,7 +39,7 @@ category: Infrastructure
 - No upload of keys or source to third parties for core flows.
 - Explicit network targeting to avoid cross-network key reuse.
 
-## ADR (Architectural Decision Records)
+## Architecture Decision Records
 
 ### Unified Wallet
 
