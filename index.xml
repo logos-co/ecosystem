@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Atomic Swaps</title>
+    <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
+    <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
+    <description><![CDATA[ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity. ]]></description>
+    <pubDate>Wed, 18 Mar 2026 09:28:01 GMT</pubDate>
+  </item><item>
     <title>2026-MM-DD Eco Dev Eng Weekly Update</title>
     <link>https://ecosystem.logos.co/weekly_updates/template</link>
     <guid>https://ecosystem.logos.co/weekly_updates/template</guid>
@@ -16,12 +22,6 @@
     <link>https://ecosystem.logos.co/engineering/application_essentials/scaffold</link>
     <guid>https://ecosystem.logos.co/engineering/application_essentials/scaffold</guid>
     <description><![CDATA[ Scaffolding tooling that lets developers bootstrap a project, write and build Rust smart contracts, deploy to a local or DevNet environment, and interact with contracts via a wallet. ]]></description>
-    <pubDate>Tue, 17 Mar 2026 02:41:36 GMT</pubDate>
-  </item><item>
-    <title>Atomic Swaps</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
-    <description><![CDATA[ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity. ]]></description>
     <pubDate>Tue, 17 Mar 2026 02:41:36 GMT</pubDate>
   </item><item>
     <title>Wallet</title>
