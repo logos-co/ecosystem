@@ -20,7 +20,7 @@ Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integ
 1. Taker locks first: taker generates secret preimage, locks ETH (longer timelock), maker locks LEZ (shorter timelock), taker claims LEZ (reveals preimage), maker learns preimage and claims ETH
 2. Wallet balance display: both ETH and LEZ balances visible in UI before and after swaps
 3. Maker auto-accept: start/stop toggle that broadcasts offers and auto-executes swaps until it runs out of funds
-4. Integrate Messaging Logos Module instead of using the REST API
+4. Integrate Delivery Logos Module (messaging) instead of using the REST API
 5. Maker sells λ for ETH (unchanged - v0.1)
 6. Original owners can reclaim funds after timeout (unchanged — v0.1)
 7. Native tokens only: ETH, λ (unchanged — v0.1)
@@ -43,7 +43,7 @@ Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integ
 
 ### Supportability
 
-1. Logos-scaffold integration: replace temp-directory wallet management with scaffold-managed persistent state
+1. Logos-scaffold/SPEL integration: replace temp-directory wallet management with scaffold-managed persistent state
 2. Swap orchestration library (Rust) is interface-agnostic (unchanged — v0.1)
 
 ### + (Privacy, Anonymity, Censorship-Resistance)
@@ -56,10 +56,10 @@ Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integ
 
 ### Decisions
 
-1. **Locking order**: Taker locks first (ETH, longer timelock), maker locks second (LEZ, shorter timelock)
+1. **Locking order**: Taker locks first (ETH, longer timelock), maker locks second (LEZ, shorter timelock). If maker locked first, a malicious taker could repeatedly initiate swaps without completing them, timelocking all of the maker's funds until expiry
 2. **Preimage ownership**: Taker generates and holds the preimage; maker only receives the hashlock
 3. **Account ID format**: Base58 for display and storage, matching wallet CLI convention
-4. **Scaffold integration**: Use logos-scaffold for wallet and sequencer management
+4. **Scaffold integration**: Use logos-scaffold as the one-stop shop for Logos app development
 
 ## Dependencies (v0.2)
 
@@ -73,8 +73,8 @@ Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integ
 
 ### Chat Module
 
-- Integrate Messaging Logos Module instead of using the REST API 
-- Offer broadcast and discovery via Logos Messaging (nwaku)
+- Integrate Delivery Logos Module (messaging) instead of using the REST API
+- Offer broadcast and discovery via Delivery Logos Module (messaging)
 - Chat module enables bootstrapping a conversation based on information maker broadcasts
 
 ---
