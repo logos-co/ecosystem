@@ -2,43 +2,84 @@
 title: 2026-MM-DD Eco Dev Eng Weekly Update
 tags:
 ---
-## Red Team
-**achieved**
-- review doc a b c
-**next**
-- doc x y z
-**blockers**
-- Issue opened link
+
+## Red Teaming
+**achieved**:
+-
+-
+-
+
+**next**:
+-
+-
+-
+
+**blockers**:
+-
+-
+-
 
 ## Solution
-**achieved**
-- Sample app v0.1
-**next**
-- add features
-**blockers**
-- need delivery of feature xy from logos
+**achieved**:
+-
+-
+-
+
+**next**:
+-
+-
+-
+
+**blockers**:
+-
+-
+-
 
 ## DevKit / DappFoundry
-**achieved**
-- scaffold feature
-**next**
-- scaffold feature
+**achieved**:
+-
+-
+-
+
+**next**:
+-
+-
+-
+
 **blockers**
-- 
+-
+-
+-
 
 ## Integration
-**achieved**
-- 
-**next**
-- 
-**blockers**
-- 
+**achieved**:
+-
+-
+-
+
+**next**:
+-
+-
+-
+
+**blockers**:
+-
+-
+-
 
 ## RFPs / λ-Prizes
-**achieved**
-- 
-**next**
-- 
-**blockers**
-- 
+**achieved**:
+-
+-
+-
+
+**next**:
+-
+-
+-
+
+**blockers**:
+-
+-
+-
 
