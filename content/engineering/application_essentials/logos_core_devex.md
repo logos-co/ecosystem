@@ -4,18 +4,16 @@ type: Developer Guide
 priority:
 category: Developer Tools
 ---
-
 # Logos Core Developer Experience
 
 Overview of the different development paths for building applications on the Logos technology stack.
-
 ## Development Paths
 
 The Logos ecosystem supports multiple development journeys, each suited to different use cases, developer skills, and distribution strategies.
 
 ### Mini Apps (Logos App)
 
-Applications distributed via the [[engineering/infrastructure_essentials/package_manager|Package Manager]] and loaded within the [[Logos App]]. This provides a "dApp browser" experience with seamless access to Logos infrastructure.
+Applications distributed via the [[engineering/infrastructure_essentials/package_manager|Package Manager]] and loaded within the Logos App. This provides a "dApp browser" experience with seamless access to Logos infrastructure.
 
 **Two implementation options:** Web Mini App and QML Mini App
 
@@ -81,7 +79,7 @@ Applications that **embed Logos modules directly** using [[engineering/infrastru
 
 **Trade-offs:**
 
-- Does not onboard users to [[Logos App]] ecosystem
+- Does not onboard users to Logos App ecosystem
 - Larger application bundle size
 - Developer responsible for module updates
 - Logos Core security model (sandboxing, module permissions) not carried over

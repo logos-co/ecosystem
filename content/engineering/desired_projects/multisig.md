@@ -42,5 +42,5 @@ PoC: https://github.com/logos-co/ecosystem/issues/31
 
 - [[engineering/desired_projects/private_daos|Private DAOs]]: Native multisig for DAO governance
 - Treasury management: Integration with portfolio tracking
-- [[engineering/desired_projects/private_lending|DeFi protocols]]: Use multisig assets as collateral
+- [[engineering/desired_projects/private_lending|Private Lending]]: Use multisig assets as collateral
 - [[engineering/desired_projects/private_nft_ownership|Identity systems]]: Link multisig to ZK credentials

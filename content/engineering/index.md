@@ -12,12 +12,13 @@ Enable bi-directional feedback between the Logos technical stack and the Logos c
 - Propagating information about latest delivery, to encourage the community to use, build, remix and contribute back to the Logos Technology stack
 - Provided (solution) engineering capabilities for ecosystem development activities.
 
+
 # Monthly Priorities
 
 ## Feb 2026
 
 - Progress on atomic swap sample app - set FURPS and start development
-- Progress on multsig wallet - set FURPS and continue development
+- Progress on multisig wallet - set FURPS and continue development
 - Progress on scaffold - set FURPS and start development
  - Review infra essentials (eg block explorer), understand R&D delivery scope and review need for partners (rolled over)
  - Agree and set process for docs handover
@@ -30,26 +31,18 @@ Enable bi-directional feedback between the Logos technical stack and the Logos c
   - Review infra essentials (eg block explorer), understand R&D delivery scope and review need for partners
 - Validation matrix work postponed (might touch on it)
 
-# Work In Progress
+# Goals
 
 [GitHub Project](https://github.com/orgs/logos-co/projects/11/views/1)
 
-See [Build internally, with Partner, via RFP or via Lambda Prize?](#build-internally-with-partner-via-rfp-or-via-lambda-prize)
+1. Dogfood and software for [Testnet v0.1](https://roadmap.logos.co/testnets/v01). See [[milestones/testnet_v0_1|Testnet v0.1]]
+	1. Priority on [LEE/LEZ user journeys](https://github.com/logos-co/ecosystem/milestone/4)
+2. Build [[engineering/desired_projects/multisig|Multi-Sig sample app]] v0.1. [Milestone](https://github.com/logos-co/ecosystem/milestone/8).
+3. Build [[engineering/desired_projects/atomic_swaps|Atomic Swaps sample app]] v0.1. [Milestone](https://github.com/logos-co/ecosystem/milestone/7)
+4. Build [[engineering/application_essentials/scaffold|Scaffold Devkit]] v0.1. [Milestone](https://github.com/logos-co/ecosystem/milestone/9)
+5. Build Forum sample app v0.1 (based on opchan protocol) as a base for [[engineering/desired_projects/circle_cms|circle_cms]] and [[engineering/desired_projects/activity_hub|activity_hub]].
 
-Plan so far:
-
-1. Multi-sig sample app v0.1
-   [FURPS wip](https://github.com/logos-co/ecosystem/pull/68)
-   [GitHub Milestone](https://github.com/logos-co/ecosystem/milestone/8)
-2. Atomic Swaps sample app v0.1
-   [FURPS](/engineering/desired_projects/atomic_swaps#furps-v01)
-   [GitHub Milestone](https://github.com/logos-co/ecosystem/milestone/7)
-3. Scaffold Dev Kit v0.1
-   [FURPS](/engineering/application_essentials/scaffold#furps-v01)
-   [GitHub Milestone](https://github.com/logos-co/ecosystem/milestone/9)
-4. Forum library (OpChan)
-   A forum format seems to be the simplest and easiest form for a first activity hub. Re-use Opchan protocol but in new stack
-5. P2P Marketplace
+Note: AMM sample app has been built by LEE/LEZ team.
 
 ## Build internally, with Partner, via RFP or via Lambda Prize?
 When do we want to build internally, find a partner, or push an RFP or a Lambda Prize?
@@ -83,8 +76,6 @@ flowchart TD
     DEV_INTEREST -->|Yes| RFP
     DEV_INTEREST -->|No / Critical| INTERNAL
 ```
-
-
 
 # Concerns / Priorities
 
@@ -126,8 +117,8 @@ Team members are likely to shift from one effort to another, as long as their ro
 - DevEx evaluation (reports/issues)
 - Feature requests
 - Review of documentation from Eco Dev Doc team.
-- Sample (PoCs) applications to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
-- ADR (Architect Decision Records), functional and technical requirements (FURPS)
+- [[engineering/sample_apps|Sample Apps]] to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
+- Architecture Decision Records, functional and technical requirements (FURPS)
 - Builder support (mentorship, technical assistance, solution engineering)
 
 **Feedback to:** Logos R&D and DevKit **on** bugs, desired features emerging for usage and developer experience, Doc team on docs.

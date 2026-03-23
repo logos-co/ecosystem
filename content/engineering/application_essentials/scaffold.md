@@ -92,7 +92,7 @@ but require strict handling to avoid credential leakage.
 ### Internal Dependencies
 
 - Logos Core DevEx for overall developer journey alignment and terminology.
-- Logos Blockchain and Logos Execution Environment for functionality. 
+- Logos Blockchain and Logos Execution Environment for functionality.
 - Wallet Module for interactions with Logos Execution Environment.
 
 ### Runtime Dependencies
