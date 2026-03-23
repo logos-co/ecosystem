@@ -118,7 +118,7 @@ Team members are likely to shift from one effort to another, as long as their ro
 - Feature requests
 - Review of documentation from Eco Dev Doc team.
 - [[engineering/sample_apps|Sample Apps]] to test code and ensure appropriate developer/user experience; also to explore specific desired projects and learn about feasibility
-- ADR (Architect Decision Records), functional and technical requirements (FURPS)
+- Architecture Decision Records, functional and technical requirements (FURPS)
 - Builder support (mentorship, technical assistance, solution engineering)
 
 **Feedback to:** Logos R&D and DevKit **on** bugs, desired features emerging for usage and developer experience, Doc team on docs.

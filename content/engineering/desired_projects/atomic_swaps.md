@@ -15,7 +15,7 @@ Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integ
 - **Maker**: the party that publishes swap offers and sells λ for ETH
 - **Taker**: the party that accepts and initiates the swap by locking ETH first
 
-## ADR
+### Functionality
 
 1. Taker locks first: taker generates secret preimage, locks ETH (longer timelock), maker locks LEZ (shorter timelock), taker claims LEZ (reveals preimage), maker learns preimage and claims ETH
 2. Wallet balance display: both ETH and LEZ balances visible in UI before and after swaps
@@ -46,7 +46,7 @@ Phase 2: Taker-Locks-First, Balance Visibility, Maker Automation, Scaffold Integ
 1. Logos-scaffold/SPEL integration: replace temp-directory wallet management with scaffold-managed persistent state
 2. Swap orchestration library (Rust) is interface-agnostic (unchanged — v0.1)
 
-## Dependencies
+### + (Privacy, Anonymity, Censorship-Resistance)
 
 1. On-chain traces of atomic swaps on Ethereum chain (unchanged — v0.1)
 2. Cross-chain linkability via shared hashlock (unchanged — v0.1)

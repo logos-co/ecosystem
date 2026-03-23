@@ -3,7 +3,7 @@ title: Sample Apps
 ---
 # Sample Apps
 
-Sample apps are PoC applications that are for testnet purposes only. They are created to demonstrate the feasibility of a desired project.
+Sample apps are PoC applications that are for testnet purposes only (aka, not mainnet). They are created to demonstrate the feasibility of a desired project.
 They can become a template for developer to build said desired projects and push it to production/mainnet.
 They can also serve as:
 - Example on how to build on the Logos stack.
@@ -13,7 +13,7 @@ They can also serve as:
 A sample app release is considered shipped once the following assets are delivered:
 - **Code for the sample app**: In a public repo with right licencing.
 - **FURPS+**: On the present repo in the sample apps' page in [[engineering/desired_projects/|desired_projects]] folder. The FURPS+ define the behaviour of the sample app for a given release.
-- **ADR**: On the present repo in the sample apps' page in [[engineering/desired_projects/|desired_projects]] folder. The ADR lay out specific decisions made regarding the choices in terms of design and protocol, to help developer understand those choices as they build with the sample app as example. This may contain some protocol diagrams or specs depending on the complexity of the app
+- **Architecture Decision Records**: On the present repo in the sample apps' page in [[engineering/desired_projects/|desired_projects]] folder. The Architecture Decision Records lay out specific decisions made regarding the choices in terms of design and protocol, to help developer understand those choices as they build with the sample app as example. This may contain some protocol diagrams or specs depending on the complexity of the app
 - **Dependencies**: specific features of the Logos stack that the sample app depends on.
 
 ### Tracking
