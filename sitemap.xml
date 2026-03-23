@@ -1,9 +1,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://ecosystem.logos.co/engineering/application_essentials/logos_core_devex</loc>
-    <lastmod>2026-02-03T04:30:20.000Z</lastmod>
+    <lastmod>2026-03-23T05:01:31.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/application_essentials/scaffold</loc>
-    <lastmod>2026-03-17T02:41:36.000Z</lastmod>
+    <lastmod>2026-03-23T05:01:31.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/concerns/movement</loc>
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
@@ -18,7 +18,7 @@
     <lastmod>2026-02-03T04:30:20.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</loc>
-    <lastmod>2026-03-18T09:28:01.000Z</lastmod>
+    <lastmod>2026-03-23T05:13:36.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/desired_projects/bridges</loc>
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
@@ -27,7 +27,7 @@
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/desired_projects/derivatives</loc>
-    <lastmod>2026-02-03T04:04:56.000Z</lastmod>
+    <lastmod>2026-03-23T05:01:31.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/desired_projects/launchpads</loc>
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
@@ -39,7 +39,7 @@
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/desired_projects/multisig</loc>
-    <lastmod>2026-02-23T09:48:35.000Z</lastmod>
+    <lastmod>2026-03-23T05:01:31.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/desired_projects/nft_marketplace</loc>
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
@@ -51,7 +51,7 @@
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/desired_projects/private_lending</loc>
-    <lastmod>2026-02-03T04:04:56.000Z</lastmod>
+    <lastmod>2026-03-23T05:01:31.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/desired_projects/private_nft_ownership</loc>
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
@@ -63,7 +63,7 @@
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/</loc>
-    <lastmod>2026-02-26T00:11:57.000Z</lastmod>
+    <lastmod>2026-03-23T05:13:36.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/infrastructure_essentials/liblogos</loc>
     <lastmod>2026-02-03T04:04:56.000Z</lastmod>
@@ -85,6 +85,9 @@
   </url><url>
     <loc>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</loc>
     <lastmod>2026-03-17T02:41:36.000Z</lastmod>
+  </url><url>
+    <loc>https://ecosystem.logos.co/engineering/sample_apps</loc>
+    <lastmod>2026-03-23T05:13:36.000Z</lastmod>
   </url><url>
     <loc>https://ecosystem.logos.co/handoff</loc>
     <lastmod>2026-02-16T09:40:34.000Z</lastmod>
