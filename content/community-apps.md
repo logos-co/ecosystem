@@ -6,7 +6,7 @@ title: Community Apps & Modules
 
 Apps and modules built on Logos by the community, outside of core Logos development.
 
-**8 apps discovered** — _Last updated: 2026-03-25_
+**9 apps discovered** — _Last updated: 2026-03-25_
 
 | Name | Repo | Author | Description | Last Commit | First Discovered |
 |------|------|--------|-------------|-------------|-----------------|
@@ -18,3 +18,4 @@ Apps and modules built on Logos by the community, outside of core Logos developm
 | logos-workflow-engine | [corpetty/logos-workflow-engine](https://github.com/corpetty/logos-workflow-engine) | corpetty | Headless DAG workflow executor Logos module | 2026-03-20 | 2026-03-25 |
 | logos-workflow-scheduler | [corpetty/logos-workflow-scheduler](https://github.com/corpetty/logos-workflow-scheduler) | corpetty | Cron/webhook trigger manager Logos module | 2026-03-20 | 2026-03-25 |
 | logos-storage-app-skeleton | [logos-storage/logos-storage-app-skeleton](https://github.com/logos-storage/logos-storage-app-skeleton) | logos-storage | CLI skeleton companion for the Logos Storage API tutorial | 2026-03-24 | 2026-03-25 |
+| logos-video-hotspot | [marclawclaw/logos-video-hotspot](https://github.com/marclawclaw/logos-video-hotspot) | marclawclaw (fryorcraken) | Qt/CLI app for a local video streaming hotspot using Logos storage and delivery modules, with Qt GUI for managing streams | 2026-03-23 | 2026-03-25 |
