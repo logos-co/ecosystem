@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Multisig Treasury / Vault</title>
+    <link>https://ecosystem.logos.co/engineering/desired_projects/multisig</link>
+    <guid>https://ecosystem.logos.co/engineering/desired_projects/multisig</guid>
+    <description><![CDATA[ Multi-signature governance program for LEZ, enabling M-of-N threshold approval for on-chain actions. ]]></description>
+    <pubDate>Fri, 22 May 2026 09:34:19 GMT</pubDate>
+  </item><item>
     <title>Atomic Swaps</title>
     <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
     <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
@@ -40,12 +46,6 @@
     <link>https://ecosystem.logos.co/engineering/desired_projects/derivatives</link>
     <guid>https://ecosystem.logos.co/engineering/desired_projects/derivatives</guid>
     <description><![CDATA[ Attracts professional traders and generates high trading volumes by allowing for leveraged positions on shielded assets while protecting traders’ strategies. ]]></description>
-    <pubDate>Mon, 23 Mar 2026 05:01:31 GMT</pubDate>
-  </item><item>
-    <title>Multisig Treasury / Vault</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/multisig</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/multisig</guid>
-    <description><![CDATA[ Enables secure shared custody of shielded assets requiring multiple signatures to authorise transactions, protecting treasuries and shared funds without revealing signers or balances. ]]></description>
     <pubDate>Mon, 23 Mar 2026 05:01:31 GMT</pubDate>
   </item><item>
     <title>Private Lending &amp; Borrowing Protocol</title>
