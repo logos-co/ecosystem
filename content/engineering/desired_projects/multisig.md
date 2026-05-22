@@ -8,7 +8,7 @@ category: Custody & Security
 
 Multi-signature governance program for LEZ, enabling M-of-N threshold approval for on-chain actions. Protects shared treasuries, DAOs, and team-controlled assets by requiring multiple authorised signers before any funds move.
 
-**Repository:** [jimmy-claw/lez-multisig](https://github.com/jimmy-claw/lez-multisig)
+**Repository:** [logos-co/lez-multisig](https://github.com/logos-co/lez-multisig)
 
 ## FURPS+ (v0.1)
 
@@ -64,14 +64,11 @@ lez-wallet multisig execute --multisig <id> --proposal <index>
 
 - [x] Unit tests for all instruction handlers
 - [x] Integration test: create → fund → propose → approve → execute → verify balances
-- [x] [Technical specification](https://github.com/jimmy-claw/lez-multisig/blob/main/SPEC.md) documents full account model, PDA derivation, instruction set, validation rules
-- [x] [Gap analysis](https://github.com/jimmy-claw/lez-multisig/blob/main/docs/gap-analysis.md) for runtime dependencies
+- [x] [Technical specification](https://github.com/logos-co/lez-multisig/blob/main/SPEC.md) documents full account model, PDA derivation, instruction set, validation rules
+- [x] [Gap analysis](https://github.com/logos-co/lez-multisig/blob/main/docs/gap-analysis.md) for runtime dependencies
 - [x] Standalone CLI
 - [x] Only public interactions for v0.1
-
-### + (Privacy, Anonymity, Censorship-Resistance)
-
-- Proposal and approval actions are on-chain transactions — visible to validators
+- All proposal and approval actions are on-chain transactions — visible to validators
 - Member lists are stored in plaintext in the multisig state account
 
 ## ADR
@@ -87,21 +84,26 @@ lez-wallet multisig execute --multisig <id> --proposal <index>
 
 ## Dependencies
 
-### LEZ Runtime (LSSA)
+### v0.1
+
+#### LEZ Runtime (LSSA)
 
 - ChainedCall support for delegated execution
 - PDA derivation for deterministic account addressing
 - Account ownership and claiming semantics
 - Nonce-based replay protection
 
-### Token Program
+#### Token Program
 
 - Native token (λ) transfer instruction — target of ChainedCall on execute
 
-### Logos Messaging *(v0.2)*
+### v0.2
+
+#### Logos Messaging
 
 - In-band notification when a proposal is created or needs signing
 - Could integrate with Status messenger or Waku for decentralised delivery
+- Approval notifications will align with private TX work where Logos Messaging is required regardless
 
 ## Demand Validation
 
