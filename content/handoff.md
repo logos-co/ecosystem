@@ -46,7 +46,7 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 ### R&D Delivers
 
 | Deliverable                                                                                                                           | Why?                                                        |
-|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | **Code**                                                                                                                              | Functioning software is the core of the delivery            |
 | **Logos Core Module** (if library)                                                                                                    | Usable in Logos Core, pre-wrapped                           |
 | **Protocol, API Specs, FURPS**                                                                                                        | Clear expectation of behaviour and functionality delivered  |
@@ -57,7 +57,7 @@ Following Eric Raymond's "The Cathedral and the Bazaar":
 
 **Prerequisite**: Red Team/Solution, DevKit, and Contributor Journey streams must familiarise themselves with Logos R&D features and deliverables before engaging in handoff activities. This ensures effective testing, accurate communication, and quality output.
 
-Eco Dev engineering outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[engineering/index#Streams|Eco Dev Engineering Streams]].
+Eco Dev engineering outputs are organised by **strategic impact** below. For detailed stream responsibilities and outputs, see [[index#What We Do|Eco Dev streams]].
 
 ### Eco Dev Does NOT Own
 
@@ -70,12 +70,12 @@ Eco Dev is not responsible for:
 
 ### Delivery Strategy
 
-For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[engineering/index#Build internally, with Partner or via Lambda Prize?|Build/Partner/Lambda Prize decision flow]] in Eco Dev Engineering.
+For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[index#Build internally, with a Partner, via RFP or via Lambda Prize?|Build/Partner/Lambda Prize decision flow]].
 
 #### 1. Improve the Software
 
 | Output                | Impact                                                                                                        |
-|-----------------------|---------------------------------------------------------------------------------------------------------------|
+| --------------------- | ------------------------------------------------------------------------------------------------------------- |
 | **GitHub Issues**     | Document bugs, edge cases, and confusion points discovered during testing (label: `from-eco-dev`)             |
 | **Documentation PRs** | Fix unclear language, improve structure, ensure LLM-readability                                               |
 | **PoC applications**  | Test the code by building PoCs of applications, ensure appropriate developer and user experience is delivered |
@@ -83,7 +83,7 @@ For ecosystem essentials identified through handoff activities, the Integration 
 #### 2. Get Builder Attention
 
 | Output                        | Impact                                                       |
-|-------------------------------|--------------------------------------------------------------|
+| ----------------------------- | ------------------------------------------------------------ |
 | **Vibe Coding Sessions**      | Live, honest exploration showing real developer experience   |
 | **Long-form Posts**           | Deep dives on features, use cases, architectural decisions   |
 | **Short-form Announcements**  | Discord posts, Twitter threads, release summaries            |
@@ -93,7 +93,7 @@ For ecosystem essentials identified through handoff activities, the Integration 
 #### 3. Enable Distribution
 
 | Output                 | Impact                                                                                                                                                                |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Examples**           | Application code others can fork/reference (could emerge from live vibe coding sessions).                                                                             |
 | **PoC applications**   | Demonstrate feasibility and design of specific use cases, enabling more integration opportunities                                                                     |
 | **Integration Guides** | Tutorials, videos and other complementary material to documentation and examples to show how Logos integrates with other tools/protocols or enable specific use cases |
@@ -101,14 +101,14 @@ For ecosystem essentials identified through handoff activities, the Integration 
 #### 4. Enable Partnerships
 
 | Output                        | Impact                                                                                  |
-|-------------------------------|-----------------------------------------------------------------------------------------|
+| ----------------------------- | --------------------------------------------------------------------------------------- |
 | **Value Proposition Mapping** | Map Logos features to partner/lead use cases and pain points for targeted outreach      |
 | **Partnership Decks**         | Create tailored presentations for ecosystem partnerships (VCs, protocols, enterprises)  |
 | **Integration Requirements**  | Document partner technical requirements and feed to Integration team for prioritization |
 | **Case Studies**              | Document successful integrations/partnerships for sales pipeline and credibility        |
 | **Partnership Pipeline**      | Track and nurture potential ecosystem integrations (e.g., protocols using Logos stack)  |
 
-**Stream Ownership Mapping** (see [[engineering/index|Eco Dev Engineering]] for stream details):
+**Stream Ownership Mapping** (see [[index#What We Do|Eco Dev streams]] for stream details):
 
 - **Improve Software**: Red Team/Solution (dogfooding, PoCs, bug reports) + DevKit (tooling feedback)
 - **Get Builder Attention**: Contributor Journey (DevRel assets, workshops) + Marketing & Growth (social media, announcements)
@@ -131,7 +131,7 @@ sequenceDiagram
     RD->>PUB: Release code
 
     Note over EDE,PUB: Public gets access immediately
-	
+
 	par Prepare documentation
 		EDD->>EDD: Draft Documentation PR
 		EDD->>RD: Questions, missing info (via PR)
