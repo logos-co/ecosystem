@@ -6,65 +6,23 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Multisig Treasury / Vault</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/multisig</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/multisig</guid>
-    <description><![CDATA[ Multi-signature governance program for LEZ, enabling M-of-N threshold approval for on-chain actions. ]]></description>
-    <pubDate>Fri, 22 May 2026 09:34:19 GMT</pubDate>
+    <title>R&amp;D ↔ Eco Dev Handoff Protocol</title>
+    <link>https://ecosystem.logos.co/handoff</link>
+    <guid>https://ecosystem.logos.co/handoff</guid>
+    <description><![CDATA[ R&amp;D builds it. Eco Dev breaks it, then evangelizes it. Both succeed together. ]]></description>
+    <pubDate>Thu, 18 Jun 2026 02:44:11 GMT</pubDate>
   </item><item>
-    <title>Atomic Swaps</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/atomic_swaps</guid>
-    <description><![CDATA[ Enables trust-minimized peer-to-peer swaps of shielded assets without revealing details to a third party or the public, bootstrapping early, decentralized private liquidity. ]]></description>
-    <pubDate>Mon, 23 Mar 2026 05:13:36 GMT</pubDate>
-  </item><item>
-    <title>Eco Dev Engineering</title>
-    <link>https://ecosystem.logos.co/engineering/</link>
-    <guid>https://ecosystem.logos.co/engineering/</guid>
-    <description><![CDATA[ Home of the Logos Ecosystem Development Engineering effort. ]]></description>
-    <pubDate>Mon, 23 Mar 2026 05:13:36 GMT</pubDate>
+    <title>Ecosystem Development Engineering</title>
+    <link>https://ecosystem.logos.co/</link>
+    <guid>https://ecosystem.logos.co/</guid>
+    <description><![CDATA[ Logos Ecosystem Development Engineering Home of the Logos Ecosystem Development Engineering (“Eco Dev Eng”) team. ]]></description>
+    <pubDate>Thu, 18 Jun 2026 02:44:11 GMT</pubDate>
   </item><item>
     <title>Sample Apps</title>
-    <link>https://ecosystem.logos.co/engineering/sample_apps</link>
-    <guid>https://ecosystem.logos.co/engineering/sample_apps</guid>
+    <link>https://ecosystem.logos.co/sample_apps</link>
+    <guid>https://ecosystem.logos.co/sample_apps</guid>
     <description><![CDATA[ Sample Apps Sample apps are PoC applications that are for testnet purposes only (aka, not mainnet). ]]></description>
-    <pubDate>Mon, 23 Mar 2026 05:13:36 GMT</pubDate>
-  </item><item>
-    <title>Logos Core DevEx</title>
-    <link>https://ecosystem.logos.co/engineering/application_essentials/logos_core_devex</link>
-    <guid>https://ecosystem.logos.co/engineering/application_essentials/logos_core_devex</guid>
-    <description><![CDATA[ Logos Core Developer Experience Overview of the different development paths for building applications on the Logos technology stack. ]]></description>
-    <pubDate>Mon, 23 Mar 2026 05:01:31 GMT</pubDate>
-  </item><item>
-    <title>Scaffold</title>
-    <link>https://ecosystem.logos.co/engineering/application_essentials/scaffold</link>
-    <guid>https://ecosystem.logos.co/engineering/application_essentials/scaffold</guid>
-    <description><![CDATA[ Scaffolding tooling that lets developers bootstrap a project, write and build Rust smart contracts, deploy to a local or DevNet environment, and interact with contracts via a wallet. ]]></description>
-    <pubDate>Mon, 23 Mar 2026 05:01:31 GMT</pubDate>
-  </item><item>
-    <title>Derivatives &amp; Perpetual Trading</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/derivatives</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/derivatives</guid>
-    <description><![CDATA[ Attracts professional traders and generates high trading volumes by allowing for leveraged positions on shielded assets while protecting traders’ strategies. ]]></description>
-    <pubDate>Mon, 23 Mar 2026 05:01:31 GMT</pubDate>
-  </item><item>
-    <title>Private Lending &amp; Borrowing Protocol</title>
-    <link>https://ecosystem.logos.co/engineering/desired_projects/private_lending</link>
-    <guid>https://ecosystem.logos.co/engineering/desired_projects/private_lending</guid>
-    <description><![CDATA[ Allows users to collateralize their shielded assets to borrow other shielded assets without publicly revealing their financial positions, debt, or net worth. ]]></description>
-    <pubDate>Mon, 23 Mar 2026 05:01:31 GMT</pubDate>
-  </item><item>
-    <title>2026-MM-DD Eco Dev Eng Weekly Update</title>
-    <link>https://ecosystem.logos.co/weekly_updates/template</link>
-    <guid>https://ecosystem.logos.co/weekly_updates/template</guid>
-    <description><![CDATA[ Red Teaming achieved: next: blockers: Solution achieved: next: blockers: DevKit / DappFoundry achieved: next: blockers Integration achieved: next: blockers: RFPs / λ-Prizes achieved: next: blockers: . ]]></description>
-    <pubDate>Fri, 20 Mar 2026 00:24:29 GMT</pubDate>
-  </item><item>
-    <title>Wallet</title>
-    <link>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</link>
-    <guid>https://ecosystem.logos.co/engineering/infrastructure_essentials/wallet</guid>
-    <description><![CDATA[ FURPS Functionality Cross-layer bridge between L1 and LEZ for token movement; support gas-related flows. ]]></description>
-    <pubDate>Tue, 17 Mar 2026 02:41:36 GMT</pubDate>
+    <pubDate>Wed, 17 Jun 2026 05:15:53 GMT</pubDate>
   </item>
     </channel>
   </rss>
