@@ -74,11 +74,11 @@ For ecosystem essentials identified through handoff activities, the Integration 
 
 #### 1. Improve the Software
 
-| Output                | Impact                                                                                                        |
-| --------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **GitHub Issues**     | Document bugs, edge cases, and confusion points discovered during testing (label: `from-eco-dev`)             |
-| **Documentation PRs** | Fix unclear language, improve structure, ensure LLM-readability                                               |
-| **PoC applications**  | Test the code by building PoCs of applications, ensure appropriate developer and user experience is delivered |
+| Output                | Impact                                                                                                                                                                                                                                                                  |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **GitHub Issues**     | Document bugs, edge cases, and confusion points discovered during testing ([label: `from eco dev`](https://github.com/search?q=label%3A%22from+eco+dev%22+org%3Alogos-blockchain%2Clogos-co%2Clogos-storage%2Clogos-messaging+type%3Aissue+is%3Aopen+&type=issues&p=1)) |
+| **Documentation PRs** | Fix unclear language, improve structure, ensure LLM-readability                                                                                                                                                                                                         |
+| **PoC applications**  | Test the code by building PoCs of applications, ensure appropriate developer and user experience is delivered                                                                                                                                                           |
 
 #### 2. Get Builder Attention
 

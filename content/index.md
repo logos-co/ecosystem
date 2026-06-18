@@ -59,21 +59,21 @@ RFPs and Lambda Prizes are our **instrument to finance work built on top of the 
 
 A **journey** is a high-level user story of what Logos R&D (our internal team) is delivering — "here is what someone can do with the stack." Journeys are the spine the team works along to validate and orient people around each R&D delivery.
 
-**Mandate:** For each R&D delivery, identify the journey, refine the documentation for it, and dogfood the docs and journey end-to-end.
+**Mandate:** For each R&D delivery, identify the journey, then review and dogfood the documentation and journey end-to-end. (The Doc team owns documentation refinement; we review and dogfood it.)
 
-**Competency:** Solution / Architect — deep understanding of how to use the full Logos stack; technical writing.
+**Competency:** Solution / Architect — deep understanding of the full Logos stack; dogfooding and critical review.
 
 **Outputs:**
 
 - Journeys mapping what people can build and do with the Logos stack (see [journeys.logos.co](https://journeys.logos.co))
-- Review and refinement of documentation for each journey
+- Review of documentation for each journey (produced by the Doc team)
 - Dogfooding / red-teaming of the docs and journey (permission to break — see [[handoff|the Handoff Protocol]])
-- GitHub Issues documenting bugs, edge cases, confusion points (label: `from-eco-dev`)
+- GitHub Issues documenting bugs, edge cases, confusion points ([label: `from eco dev`](https://github.com/search?q=label%3A%22from+eco+dev%22+org%3Alogos-blockchain%2Clogos-co%2Clogos-storage%2Clogos-messaging+type%3Aissue+is%3Aopen+&type=issues&p=1))
 - DevEx evaluation (reports/issues) and feature requests
 
 **Feedback to:** Logos R&D on bugs and desired features; Doc team on docs.
 
-## 3. DevKit / DappFoundry
+## 3. DevKit
 
 **Mandate:** Build and maintain tooling and SDKs for Logos development.
 
@@ -81,8 +81,8 @@ A **journey** is a high-level user story of what Logos R&D (our internal team) i
 
 **Outputs:**
 
-- [Logos Scaffold](https://github.com/logos-co/scaffold): local dev environment for Logos Blockchain and Core, with template apps
-- [spel](https://github.com/logos-co/spel): DevKit tooling
+- [Logos Scaffold](https://github.com/logos-co/scaffold): Rust CLI (`lgs`) and dev harness for the full local loop on two fronts — bootstrapping and running LEZ (Logos Execution Zone) programs (setup, localnet, build, deploy, test nodes, wallet top-ups) and building, installing, and launching Logos modules into the Basecamp app across per-profile environments
+- [spel](https://github.com/logos-co/spel): developer framework for building SPEL programs (proc macros → IDL generation, CLI with TX submission, project scaffolding) — inspired by Anchor for Solana
 - SDK wrappers in other languages for Logos Core
 - Template apps and examples (polished reference implementations, can be adapted from sample apps)
 
@@ -106,7 +106,7 @@ A **journey** is a high-level user story of what Logos R&D (our internal team) i
 
 **Mandate:** Build [[sample_apps|Sample Apps]] as Proof-of-Concepts — a tool to document and verify more complex usage of the stack and show feasibility.
 
-**Competency:** Blockchain development, full software cycle, solution engineering.
+**Competency:** Application development, solution engineering — building end-to-end apps on the stack to prove feasibility.
 
 **Outputs:**
 
@@ -202,7 +202,7 @@ flowchart TB
             INT["<b>Integration</b><br/>Ecosystem map, delivery strategy,<br/>requirements"]
             XP["<b>λPrize & RFPs Advisory</b><br/>Technical sign-off, requirements,<br/>feasibility & candidate support"]
             RT["<b>Red Team / Solution</b><br/>Dogfooding, PoCs,<br/>builder support"]
-            DK["<b>DevKit / DappFoundry</b><br/>Tooling, SDKs,<br/>sample apps"]
+            DK["<b>DevKit</b><br/>Tooling, SDKs,<br/>sample apps"]
         end
         subgraph bd["BD Streams"]
             CJ["<b>Contributor Journey</b><br/>DevRel assets, metrics"]

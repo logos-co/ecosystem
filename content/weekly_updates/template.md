@@ -4,82 +4,76 @@ tags:
 ---
 
 ## Red Teaming
-**achieved**:
--
--
--
 
-**next**:
--
--
--
+## **achieved**:
 
-**blockers**:
+-
+- **next**:
+
+-
+-
+- **blockers**:
+
 -
 -
 -
 
 ## Solution
-**achieved**:
+
+## **achieved**:
+
+-
+- **next**:
+
+-
+-
+- **blockers**:
+
 -
 -
 -
 
-**next**:
--
--
--
+## DevKit
 
-**blockers**:
--
--
--
+## **achieved**:
 
-## DevKit / DappFoundry
-**achieved**:
 -
--
--
+- **next**:
 
-**next**:
 -
 -
--
+- **blockers**
 
-**blockers**
 -
 -
 -
 
 ## Integration
-**achieved**:
--
--
--
 
-**next**:
--
--
--
+## **achieved**:
 
-**blockers**:
+-
+- **next**:
+
+-
+-
+- **blockers**:
+
 -
 -
 -
 
 ## RFPs / λ-Prizes
-**achieved**:
--
--
--
 
-**next**:
--
--
--
+## **achieved**:
 
-**blockers**:
 -
--
--
+- **next**:
 
+-
+-
+- **blockers**:
+
+-
+-
+-
