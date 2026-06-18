@@ -39,6 +39,8 @@ RFPs and Lambda Prizes are our **instrument to finance work built on top of the 
 1. **Readiness of the stack** — what we want built so the stack is "batteries included"
 2. **Demand from users** — what end-users and partners want built (including partner integrations)
 
+The strategic contracting queue is tracked at **[flywheels.logos.co](https://friendly-carnival-n3z5zww.pages.github.io/)** ([repo](https://github.com/logos-co/flywheels.logos.co)): the flywheels, the launch-day apps that serve them, the RFPs and λ-Prizes that deliver each app, and the R&D / sample-app dependencies underneath.
+
 **Mandate:** Identify what to finance (readiness + user/partner demand), choose the delivery vehicle (build internally, partner, RFP, or Lambda Prize — see decision flow below), and own the technical side of RFPs and Lambda Prizes.
 
 **Competency:** Solution Engineers, technical product specification, requirements engineering, and architecture review.
@@ -59,13 +61,15 @@ RFPs and Lambda Prizes are our **instrument to finance work built on top of the 
 
 A **journey** is a high-level user story of what Logos R&D (our internal team) is delivering — "here is what someone can do with the stack." Journeys are the spine the team works along to validate and orient people around each R&D delivery.
 
+The prioritised pipeline of journeys is tracked at **[journeys.logos.co](https://journeys.logos.co)** ([repo](https://github.com/logos-co/journeys.logos.co)). Each journey is typed (GUI user, developer, or node operator), tied to a target testnet release, and moves through a lifecycle from R&D delivery to doc packet to dogfooding. The board is sourced from [GitHub Projects](https://github.com/orgs/logos-co/projects/12/views/1).
+
 **Mandate:** For each R&D delivery, identify the journey, then review and dogfood the documentation and journey end-to-end. (The Doc team owns documentation refinement; we review and dogfood it.)
 
 **Competency:** Solution / Architect — deep understanding of the full Logos stack; dogfooding and critical review.
 
 **Outputs:**
 
-- Journeys mapping what people can build and do with the Logos stack (see [journeys.logos.co](https://journeys.logos.co))
+- Journeys mapping what people can build and do with the Logos stack
 - Review of documentation for each journey (produced by the Doc team)
 - Dogfooding / red-teaming of the docs and journey (permission to break — see [[handoff|the Handoff Protocol]])
 - GitHub Issues documenting bugs, edge cases, confusion points ([label: `from eco dev`](https://github.com/search?q=label%3A%22from+eco+dev%22+org%3Alogos-blockchain%2Clogos-co%2Clogos-storage%2Clogos-messaging+type%3Aissue+is%3Aopen+&type=issues&p=1))
@@ -114,155 +118,80 @@ A **journey** is a high-level user story of what Logos R&D (our internal team) i
 - Architecture Decision Records, functional and technical requirements (FURPS)
 - Feasibility findings fed back into Journeys and RFP/Lambda Prize scoping
 
-# Build internally, with a Partner, via RFP or via Lambda Prize?
+# λ-Prizes vs RFPs
 
-When do we want to build internally, find a partner, or push an RFP or a Lambda Prize?
+RFPs and λ-Prizes are the two instruments we use to finance work the community builds on top of the stack. The core distinction is **what is being financed**:
 
-Lambda Prize is meant for complicated and ambitious projects — huge challenges where we do not dictate the solution. We're looking at a category of problem and put a price to solve it. We let someone else draft the product requirements and solution.
+- **RFP** — a building block, reusable primitive, or infra that is _built on_, not adopted. Tight spec, contractor model, milestone payment.
+- **λ-Prize** — a user-facing app or product a consumer can _try_ and _adopt_. We define the outcome, not the solution; the win condition is **adoption, not mere completion**.
 
-RFPs are here to outsource development effort while keeping tight control on the output.
+## What drives setting one up
 
-The other ways are for specific projects or ideas that we, the community, want to see built.
+Two inputs trigger an RFP or λ-Prize:
+
+- **Launchday Apps** — components that must be "batteries included" for mainnet launch.
+- **Community Demand** — what the ecosystem wants built, surfaced by Circles or by partner integrations.
+
+## RFP types
+
+- **Infra RFP** — we contract for software delivery (a building block / primitive / infra). Tight spec, milestone-based payment.
+- **App RFP** — a win-win agreement to push an application to users and/or operate infra: Logos funds the build and the builder shares in the upside. This is the instrument for DeFi or launch-critical apps that cannot be a λ-Prize.
+- **Integration RFP** — a light, single-partner RFP to help finance integration with a key partner (partner-as-builder). Scoped to that partner, deliverable-based, committed payment.
+
+## λ-Prize stages
+
+A λ-Prize declares one stage; the stage sets how adoption is proven (the two are mutually exclusive):
+
+- **Testnet λ-Prize** — a non-DeFi prize with a **named consumer** that would adopt it on delivery (a Circle, a sample-app integration, or a partner-as-consumer). Not published until that consumer exists.
+- **Mainnet λ-Prize** — DeFi and non-DeFi prizes whose success is **adoption/usage thresholds** (TVL, active users, volume). No named consumer; the market is the consumer.
+
+> DeFi splits on launch-criticality. A DeFi deliverable **needed for mainnet launch** cannot be a λ-Prize (testnet adoption is hollow with no real value to transact, and it must exist _before_ launch) — use a win-win **App RFP**. A DeFi deliverable that is **not** launch-critical can be a **Mainnet λ-Prize**, proven by post-launch usage.
+
+## Choosing the instrument
 
 ```mermaid
 flowchart TD
-    START["Idea comes in<br/>(Logos circle, internal, or other)"]
-    POC["PoC to prove feasibility"]
-    PARTNER{"External partners<br/>provide same thing?"}
-    CONVINCE{"Can convince<br/>to integrate?"}
-    COST["Evaluate cost"]
-    INTEGRATE["Partner Integration"]
-    DEV_INTEREST{"Developers want<br/>to build it?"}
-    RFP["RFP with price tag<br/>(support developers)"]
-    INTERNAL["Build Internally"]
+    START["Need identified<br/>(Launchday App or Community Demand)"]
+    KIND{"Is it a user-facing app/product,<br/>or a building block?"}
+    PARTNER{"Is a partner building<br/>their own integration?"}
+    DEFI{"Is it DeFi?"}
+    LAUNCHCRIT{"Is it launch-critical<br/>(a Launchday App)?"}
+    STAGE{"How is adoption proven?"}
 
-    START --> POC
-    POC --> PARTNER
-    PARTNER -->|Yes| CONVINCE
-    PARTNER -->|No| DEV_INTEREST
-    CONVINCE -->|Yes| COST
-    CONVINCE -->|No| DEV_INTEREST
-    COST --> INTEGRATE
-    DEV_INTEREST -->|Yes| RFP
-    DEV_INTEREST -->|No / Critical| INTERNAL
+    INFRA_RFP["<b>Infra RFP</b><br/>contract for software delivery"]
+    INT_RFP["<b>Integration RFP</b><br/>light, single-partner"]
+    APP_RFP["<b>App RFP</b><br/>win-win: fund build, share upside"]
+    TESTNET_LP["<b>Testnet λ-Prize</b><br/>named consumer adopts on delivery"]
+    MAINNET_LP["<b>Mainnet λ-Prize</b><br/>usage thresholds (TVL / users / volume)"]
+
+    START --> KIND
+    KIND -->|"Building block"| PARTNER
+    KIND -->|"User-facing app"| DEFI
+    PARTNER -->|Yes| INT_RFP
+    PARTNER -->|No| INFRA_RFP
+    DEFI -->|Yes| LAUNCHCRIT
+    DEFI -->|No| STAGE
+    LAUNCHCRIT -->|Yes| APP_RFP
+    LAUNCHCRIT -->|"No — post-launch"| MAINNET_LP
+    STAGE -->|"Named consumer (testnet)"| TESTNET_LP
+    STAGE -->|"Usage metrics (mainnet)"| MAINNET_LP
 ```
 
-# Concerns / Priorities
+For the full λ-Prize process, see the λPrize Detailed Process and Internal Guidelines — an [internal Notion doc](https://app.notion.com/p/3308f96fb65c80cea47fc46a5059ce6e) (access required; not public).
 
-> We are still building the house; once ready, we want to invite more people and then decide whether to build a pool or gym next.
+# Project Board
 
-> Current priorities mainly come from completing an MVP level product and doing the mainnet launch. Once done, it will be more realistic to be driven by community feedback.
-
-> Ideally the R&D priorities should be set by eco dev findings. Continuous push and pull.
-
-What drives the prioritisation of the requirements forwarded to the Logos contributors?
-
-1. **Sustainability** — Enable and drive onchain activity and value accrual to sustain the development of the technology stack for the Movement. Ensure that the L1 comes with batteries included, i.e. essential apps are available at mainnet launch.
-2. **Movement** — The end goal, why we are all here. Provide the technological solutions needed by the movement, contributors and participants, circles and people to organise, identify and solve winnable issues. Make the Internet a catalyst for prosperity and emancipation. No one is free until we are all free. See the [Logos Manifesto](https://logos.co/manifesto) for the vision, and [Farewell to Westphalia](https://logos.co/farewell-to-westphalia) to open the conversation on how we get there.
-3. **Technology De-Risking** — Enable early delivery and validation of technology with the most unknowns and risks. Engineering teams flag the risks to get them prioritised accordingly.
-
-# Monthly Priorities
-
-## Feb 2026
-
-- Progress on atomic swap sample app — set FURPS and start development
-- Progress on multisig wallet — set FURPS and continue development
-- Progress on scaffold — set FURPS and start development
-- Review infra essentials (e.g. block explorer), understand R&D delivery scope and review need for partners (rolled over)
-- Agree and set process for docs handover
-
-## Dec-Jan 2025
-
-- Set a scope of work for Eco Dev Engineering for [[milestones/testnet_v0_1|testnet_v0_1]]
-  - Start smart contract dogfooding and scaffold — highest priority
-  - Consider desired apps, review requirements, and plan PoCs for them
-  - Review infra essentials (e.g. block explorer), understand R&D delivery scope and review need for partners
-- Validation matrix work postponed (might touch on it)
-
-# Goals
-
-See the [Eco Dev Eng GitHub Project board](https://github.com/orgs/logos-co/projects/11/views/1).
-
-1. Dogfood and software for [Testnet v0.1](https://roadmap.logos.co/testnets/v01). See [[milestones/testnet_v0_1|Testnet v0.1]].
-   1. Priority on [LEE/LEZ user journeys](https://github.com/logos-co/ecosystem/milestone/4)
-2. Build Multi-Sig sample app v0.1. [Milestone](https://github.com/logos-co/ecosystem/milestone/8).
-3. Build Atomic Swaps sample app v0.1. [Milestone](https://github.com/logos-co/ecosystem/milestone/7).
-4. Build [Scaffold Devkit](https://github.com/logos-co/scaffold) v0.1. [Milestone](https://github.com/logos-co/ecosystem/milestone/9).
-5. Build Forum sample app v0.1 (based on opchan protocol) as a base for circle CMS and activity hub use cases.
-
-Note: AMM sample app has been built by the LEE/LEZ team.
-
-# Testnet Scope Flow
-
-```mermaid
-flowchart TB
-    RD["<b>Logos R&D</b><br/>Sets testnet scope & objective"]
-        subgraph ecodev["Eco Dev Team"]
-        subgraph eng["Engineering Streams"]
-            INT["<b>Integration</b><br/>Ecosystem map, delivery strategy,<br/>requirements"]
-            XP["<b>λPrize & RFPs Advisory</b><br/>Technical sign-off, requirements,<br/>feasibility & candidate support"]
-            RT["<b>Red Team / Solution</b><br/>Dogfooding, PoCs,<br/>builder support"]
-            DK["<b>DevKit</b><br/>Tooling, SDKs,<br/>sample apps"]
-        end
-        subgraph bd["BD Streams"]
-            CJ["<b>Contributor Journey</b><br/>DevRel assets, metrics"]
-            BDP["<b>Partnerships</b><br/>Partner connections"]
-        end
-        subgraph content["Content & Growth"]
-            DOC["<b>Documentation</b>"]
-            WEB["<b>Website Content</b>"]
-            MG["<b>Marketing & Growth</b>"]
-            CI["<b>Circles</b>"]
-        end
-    end
-
-    RD <-->|"scope & feedback"| INT
-    INT -->|"delivery strategy"| XP
-    INT -->|"priorities"| RT
-    INT -->|"priorities"| DK
-    INT -->|"partner needs"| BDP
-    XP <-->|"solution input"| RT
-    XP -->|"campaign needs"| MG
-    RT -->|"PoCs"| DK
-    RT -->|"examples"| CJ
-    DK -->|"tooling"| CJ
-    CJ -->|"translates"| content
-    BDP -.->|"connections"| INT
-    RT -.->|"bugs & DevEx"| RD
-    DK -.->|"bugs & DevEx"| RD
-    XP -.->|"SME needs"| RD
-    content -->|"CTAs"| USERS["Users & Personas"]
-```
-
-**Translation:** Testnet scope requires technical translation into priorities and execution order.
-
-- **Integration** translates to: Engineering teams (Red Team, DevKit, Contributor Journey) + BD
-- **Contributor Journey** translates to: Documentation, Website Content, Marketing & Growth
+Current goals and in-flight work are tracked on the [Eco Dev Eng GitHub Project board](https://github.com/orgs/logos-co/projects/11/views/1).
 
 # Processes
 
 - [[handoff|R&D ↔ Eco Dev Handoff Protocol]]
 - [[sample_apps|Sample Apps]]
 
-# Milestones
-
-- [[milestones/testnet_v0_1|Testnet v0.1]]
-
 # Resources
 
 - [Logos website](https://logos.co)
-- [Logos Docs](https://github.com/logos-co/logos-docs) (documentation website is WIP)
-- [Journeys](https://journeys.logos.co)
-- [Flywheels](https://friendly-carnival-n3z5zww.pages.github.io/) ([repo](https://github.com/logos-co/flywheels.logos.co))
+- [Logos Docs](https://docs.logos.co)
 - [Eco Dev Eng GitHub Project board](https://github.com/orgs/logos-co/projects/11/views/1)
 - DevKit: [scaffold](https://github.com/logos-co/scaffold) · [spel](https://github.com/logos-co/spel)
 - [RFPs](https://github.com/logos-co/rfp/pulls) · [Ecosystem milestones](https://github.com/logos-co/ecosystem/milestones)
-
-# Content Authorship
-
-This wiki uses AI assistance to draft and organise content. To maintain transparency, LLM-generated sections that haven't been human-reviewed are marked with an indicator placed immediately after the section header:
-
-> [!ai-generated]
-> This section was generated by an LLM and has not yet been human-reviewed.
-
-The indicator applies to the entire section (from the header through all subsections until the next same-level or higher-level header). Once content is reviewed and approved by a human contributor, this indicator is removed. Unmarked content has been human-curated.

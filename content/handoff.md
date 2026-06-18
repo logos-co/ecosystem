@@ -70,7 +70,7 @@ Eco Dev is not responsible for:
 
 ### Delivery Strategy
 
-For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[index#Build internally, with a Partner, via RFP or via Lambda Prize?|Build/Partner/Lambda Prize decision flow]].
+For ecosystem essentials identified through handoff activities, the Integration stream determines the delivery approach. See the [[index#λ-Prizes vs RFPs|λ-Prize vs RFP decision flow]].
 
 #### 1. Improve the Software
 
