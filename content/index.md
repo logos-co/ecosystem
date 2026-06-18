@@ -1,10 +1,10 @@
 ---
-title: Ecosystem Development
+title: Ecosystem Development Engineering
 ---
 
-# Eco Dev Team
+# Logos Ecosystem Development Engineering
 
-Home of the Logos **Ecosystem Development** team. We sit between Logos R&D and the wider community/ecosystem: we dogfood and stress-test what R&D ships, build proof-of-concept apps, maintain developer tooling, shape RFPs and Lambda Prizes, and feed real builder and business needs back into the stack. **Eco Dev Engineering** is the engineering effort within this team.
+Home of the Logos **Ecosystem Development Engineering** ("Eco Dev Eng") team. We sit between Logos R&D and the wider community/ecosystem: we dogfood and stress-test what R&D ships, build proof-of-concept apps, maintain developer tooling, shape RFPs and Lambda Prizes, and feed real builder and business needs back into the stack.
 
 ## Team
 
@@ -72,28 +72,52 @@ Enable bi-directional feedback between the Logos technical stack and the Logos c
 
 # What We Do
 
-The team's work is organised into five streams. Team members shift between streams as priorities demand, as long as their role at a given time is clear to ensure software delivery. For how these streams collaborate during R&D handoffs, see the [[handoff|R&D ↔ Eco Dev Handoff Protocol]].
+The team's work is organised into five streams, **numbered in priority order**. Team members shift between streams as priorities demand, as long as their role at a given time is clear to ensure software delivery. For how these streams collaborate during R&D handoffs, see the [[handoff|R&D ↔ Eco Dev Handoff Protocol]].
 
-> Red Team is a "maintenance" style effort, with constant/regular interruptions. DevKit is a feature effort, where focus is necessary to deliver a specific piece of software.
+Two of these streams relate as layers: **Journeys** validate and orient people around what Logos R&D delivers, and **RFPs & Lambda Prizes** finance the work built _on top of_ that delivered stack.
 
-## Red Team / Solution
+## 1. RFPs & Lambda Prizes
 
-**Mandate:** Extended dogfooding of R&D delivery + solution engineering for builders (incl. ꟛPrize and partners).
+RFPs and Lambda Prizes are our **instrument to finance work built on top of the journeys and what Logos R&D delivers**. They fund two types of demand:
 
-**Competency:** Solution / Architect — deep understanding of how to use the full Logos stack.
+1. **Readiness of the stack** — what we want built so the stack is "batteries included"
+2. **Demand from users** — what end-users and partners want built (including partner integrations)
+
+**Mandate:** Identify what to finance (readiness + user/partner demand), choose the delivery vehicle (build internally, partner, RFP, or Lambda Prize — see decision flow below), and own the technical side of RFPs and Lambda Prizes.
+
+**Competency:** Solution Engineers, technical product specification, requirements engineering, and architecture review.
 
 **Outputs:**
 
-- Identify and build [[sample_apps|Sample Apps]] as Proof-of-Concepts for specific use cases or mechanisms — to test code, ensure good developer/user experience, and learn about feasibility
+- Identification and validation of components the community should build, from both readiness and user/partner demand
+- Delivery strategy: re-use, partnership, RFP, or build internally
+- ꟛPrize and RFP technical requirements, scoping and estimation (as [PRs](https://github.com/logos-co/rfp/pulls))
+- Input on ꟛPrize and RFP dependencies, feasibility and priorities
+- Technical and architectural sign-off of proposals (applications) and of deliverables
+- Business and application needs expressed back to Logos R&D
+- Support for candidates on their delivery; pulling in SME (Logos R&D) when necessary
+
+**Feedback to:** Logos R&D on priorities for desired components and related essentials.
+
+## 2. Journeys
+
+A **journey** is a high-level user story of what Logos R&D (our internal team) is delivering — "here is what someone can do with the stack." Journeys are the spine the team works along to validate and orient people around each R&D delivery.
+
+**Mandate:** For each R&D delivery, identify the journey, refine the documentation for it, and dogfood the docs and journey end-to-end.
+
+**Competency:** Solution / Architect — deep understanding of how to use the full Logos stack; technical writing.
+
+**Outputs:**
+
+- Journeys mapping what people can build and do with the Logos stack (see [journeys.logos.co](https://journeys.logos.co))
+- Review and refinement of documentation for each journey
+- Dogfooding / red-teaming of the docs and journey (permission to break — see [[handoff|the Handoff Protocol]])
 - GitHub Issues documenting bugs, edge cases, confusion points (label: `from-eco-dev`)
 - DevEx evaluation (reports/issues) and feature requests
-- Review of documentation produced by the Eco Dev Doc team
-- Architecture Decision Records, functional and technical requirements (FURPS)
-- Builder support (mentorship, technical assistance, solution engineering)
 
-**Feedback to:** Logos R&D and DevKit on bugs and desired features; Doc team on docs.
+**Feedback to:** Logos R&D on bugs and desired features; Doc team on docs.
 
-## DevKit / DappFoundry
+## 3. DevKit / DappFoundry
 
 **Mandate:** Build and maintain tooling and SDKs for Logos development.
 
@@ -110,50 +134,29 @@ The team's work is organised into five streams. Team members shift between strea
 
 **Note:** The tooling produced by DevKit is **not** a workaround for API issues.
 
-## Integration & Demand
+## 4. Builder Support & Workshops
 
-**Mandate:** Ensure ecosystem essentials ("batteries included") are delivered; identify which components the community should build (via RFP or Lambda Prize); prioritise with R&D; express business and application needs back to Logos R&D.
+**Mandate:** Provide hands-on engineering support to builders and run workshops at physical events.
 
-**Competency:** Partner Management, Technical Product Management, Requirements Engineering.
-
-**Outputs:**
-
-- Ecosystem map: dependencies and priorities across desired projects, app essentials, infra essentials
-- Delivery strategy: re-use, partnership, ꟛPrize, or build internally (see decision flow below)
-- Product requirements definition; business and application needs expressed to R&D
-- Value Proposition Mapping: map Logos features to partner/lead use cases and pain points
-- Integration Requirements: document partner technical requirements for prioritisation
-- Case Studies: document successful integrations/partnerships for credibility
-
-**Feedback to:** whole Eco Dev Team, and Logos R&D on priorities for desired apps and related essentials.
-
-## ꟛPrize & RFPs Engineering Advisory
-
-**Mandate:** Technical ownership of RFPs and Lambda Prizes — write and review RFPs and prizes, and review submissions. Ensure the quality of RFP and Lambda Prize deliverables.
-
-**Competency:** Solution Engineers, technical product specification and architecture review.
+**Competency:** Solution engineering, mentorship, community engagement.
 
 **Outputs:**
 
-- ꟛPrize and RFP technical requirements, scoping and estimation (as [PRs](https://github.com/logos-co/rfp/pulls))
-- Input on ꟛPrize and RFP dependencies, feasibility and priorities
-- Technical and architectural sign-off of proposals (applications)
-- Technical sign-off of ꟛPrize and RFP deliverables
-- Pulling in SME (Logos R&D) when necessary
-- Support candidates on their delivery
-
-## Contributor Journey & DevRel
-
-**Mandate:** Help identify and promote what contributors, users and other community members can do with the stack via [journeys](https://journeys.logos.co); run workshops at physical events.
-
-**Competency:** DevRel, technical writing, community engagement.
-
-**Outputs:**
-
-- Contributor and user journeys mapping what can be built and done with the Logos stack
+- Builder support: mentorship, technical assistance, solution engineering (incl. ꟛPrize candidates and partners)
 - Workshops and hands-on sessions at physical events
-- DevRel assets, examples and integration guides
-- Metrics on builder engagement and reach
+- Examples and integration guides that emerge from supporting builders
+
+## 5. Sample Apps
+
+**Mandate:** Build [[sample_apps|Sample Apps]] as Proof-of-Concepts — a tool to document and verify more complex usage of the stack and show feasibility.
+
+**Competency:** Blockchain development, full software cycle, solution engineering.
+
+**Outputs:**
+
+- Sample apps (PoCs) demonstrating feasibility and more complex stack usage
+- Architecture Decision Records, functional and technical requirements (FURPS)
+- Feasibility findings fed back into Journeys and RFP/Lambda Prize scoping
 
 # Build internally, with a Partner, via RFP or via Lambda Prize?
 
