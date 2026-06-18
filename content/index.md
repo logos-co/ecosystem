@@ -57,6 +57,8 @@ The strategic contracting queue is tracked at **[flywheels.logos.co](https://fri
 
 **Feedback to:** Logos R&D on priorities for desired components and related essentials.
 
+**Ownership:** Sasha ([@weboko](https://github.com/weboko)).
+
 ## 2. Journeys
 
 A **journey** is a high-level user story of what Logos R&D (our internal team) is delivering — "here is what someone can do with the stack." Journeys are the spine the team works along to validate and orient people around each R&D delivery.
@@ -77,6 +79,8 @@ The prioritised pipeline of journeys is tracked at **[journeys.logos.co](https:/
 
 **Feedback to:** Logos R&D on bugs and desired features; Doc team on docs.
 
+**Ownership:** Franck ([@fryorcraken](https://github.com/fryorcraken)).
+
 ## 3. DevKit
 
 **Mandate:** Build and maintain tooling and SDKs for Logos development.
@@ -93,6 +97,8 @@ The prioritised pipeline of journeys is tracked at **[journeys.logos.co](https:/
 **Feedback to:** Logos R&D on bugs and desired features emerging from usage and developer experience.
 
 **Note:** The tooling produced by DevKit is **not** a workaround for API issues.
+
+**Ownership:** scaffold — Sasha ([@weboko](https://github.com/weboko)); spel — Vaclav ([@vpavlin](https://github.com/vpavlin)).
 
 ## 4. Builder Support & Workshops
 
@@ -117,6 +123,8 @@ The prioritised pipeline of journeys is tracked at **[journeys.logos.co](https:/
 - Sample apps (PoCs) demonstrating feasibility and more complex stack usage
 - Architecture Decision Records, functional and technical requirements (FURPS)
 - Feasibility findings fed back into Journeys and RFP/Lambda Prize scoping
+
+**Ownership (current apps, may hand over between releases):** multisig — Vaclav ([@vpavlin](https://github.com/vpavlin)); atomic swaps — Danish ([@danisharora099](https://github.com/danisharora099)); Forum — James ([@jzaki](https://github.com/jzaki)).
 
 # λ-Prizes vs RFPs
 
