@@ -124,7 +124,7 @@ The prioritised pipeline of journeys is tracked at **[journeys.logos.co](https:/
 - Architecture Decision Records, functional and technical requirements (FURPS)
 - Feasibility findings fed back into Journeys and RFP/Lambda Prize scoping
 
-**Ownership (current apps, may hand over between releases):** multisig — Vaclav ([@vpavlin](https://github.com/vpavlin)); atomic swaps — Danish ([@danisharora099](https://github.com/danisharora099)); Forum — James ([@jzaki](https://github.com/jzaki)).
+**Ownership:** Currently — multisig: Vaclav ([@vpavlin](https://github.com/vpavlin)); atomic swaps: Danish ([@danisharora099](https://github.com/danisharora099)); Forum: James ([@jzaki](https://github.com/jzaki)). A sample app may hand over between releases.
 
 # λ-Prizes vs RFPs
 
