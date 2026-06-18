@@ -21,7 +21,7 @@ Eco Dev acts as **guaranteed co-developers** - the first external developers to 
 
 The documentation team is responsible for turning internal knowledge into documentation that users can execute correctly on the first attempt.
 
-- **Build the documentation framework**: Create and maintain the tools that enable consistent docs creation across writers and SMEs—templates, examples, LLM prompts, style guide, repository layout, etc.
+- **Build the documentation framework**: Create and maintain the tools that enable consistent docs creation across writers and SMEs: templates, examples, LLM prompts, style guide, repository layout, etc.
 - **Identify gaps and drive SME input**: Review existing docs to find missing information, then work with SMEs to obtain draft content or doc packets to close those gaps.
 - **Surface unknowns early**: Identify unclear details, conflicting behavior, and ambiguous ownership; track questions and drive them to resolution with SMEs.
 - **Improve comprehension**: Apply shared terminology. Rewrite complex information into clear, concise guidance that readers can understand quickly.
