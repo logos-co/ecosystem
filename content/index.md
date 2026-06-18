@@ -10,56 +10,12 @@ Home of the Logos **Ecosystem Development Engineering** ("Eco Dev Eng") team. We
 
 | Name          | GitHub                                               |
 | ------------- | ---------------------------------------------------- |
+| Franck (lead) | [@fryorcraken](https://github.com/fryorcraken)       |
 | James Zaki    | [@jzaki](https://github.com/jzaki)                   |
 | Vaclav Pavlin | [@vpavlin](https://github.com/vpavlin)               |
 | Danish Arora  | [@danisharora099](https://github.com/danisharora099) |
-| Franck        | [@fryorcraken](https://github.com/fryorcraken)       |
 | Sasha         | [@weboko](https://github.com/weboko)                 |
-
-## How the sub-teams work together
-
-```mermaid
-flowchart LR
-    subgraph Input["Inbound Activities"]
-        MG["Marketing and growth<br/>(events, campaigns e.g. ꟛPrize)"]
-        C["Circles - grassroots activation"]
-        D["Documents<br/>(Node op guide, Dev docs)"]
-        WC["Website content<br/>(CTA pages, ecosystem pages etc)"]
-    end
-
-    subgraph Core["Contributor Journeys"]
-        CJ["Builder, Node Operator,<br/>Circle participant/organizer,<br/>Dev contributor"]
-    end
-
-    subgraph Programs["Programs & Support"]
-        NP["Node Program<br/>(Node op incentivisation)"]
-        DF["Eco Dev Eng<br/>Red Team (dogfood)<br/>Solution (PoCs, support)<br/>DevKit (tooling)<br/>DappFoundry (sample apps)"]
-    end
-
-    subgraph External["External Partnerships"]
-        SLP["Stakeholder and liquidity partners<br/>(HNWI / FO focused<br/>project requirements)"]
-        BD["Business development<br/>(ecosystem partnerships<br/>support and requirements)"]
-    end
-
-    subgraph Delivery["Delivery"]
-        INT["Integration<br/>(ecosystem map,<br/>demand validation,<br/>RFPs)"]
-        EP["Engineering<br/>Prioritisation"]
-    end
-
-    %% Connections
-    MG --> CJ
-    C --> CJ
-    D --> CJ
-    WC --> CJ
-    CJ --> NP
-    CJ --> DF
-    NP --> INT
-    DF --> INT
-    SLP --> INT
-    BD --> INT
-    SLP <--> BD
-    INT --> EP
-```
+| Alisher       | [@xAlisher](https://github.com/xAlisher)             |
 
 # Mandate
 
@@ -91,8 +47,8 @@ RFPs and Lambda Prizes are our **instrument to finance work built on top of the 
 
 - Identification and validation of components the community should build, from both readiness and user/partner demand
 - Delivery strategy: re-use, partnership, RFP, or build internally
-- ꟛPrize and RFP technical requirements, scoping and estimation (as [PRs](https://github.com/logos-co/rfp/pulls))
-- Input on ꟛPrize and RFP dependencies, feasibility and priorities
+- λPrize and RFP technical requirements, scoping and estimation (as [PRs](https://github.com/logos-co/rfp/pulls))
+- Input on λPrize and RFP dependencies, feasibility and priorities
 - Technical and architectural sign-off of proposals (applications) and of deliverables
 - Business and application needs expressed back to Logos R&D
 - Support for candidates on their delivery; pulling in SME (Logos R&D) when necessary
@@ -142,7 +98,7 @@ A **journey** is a high-level user story of what Logos R&D (our internal team) i
 
 **Outputs:**
 
-- Builder support: mentorship, technical assistance, solution engineering (incl. ꟛPrize candidates and partners)
+- Builder support: mentorship, technical assistance, solution engineering (incl. λPrize candidates and partners)
 - Workshops and hands-on sessions at physical events
 - Examples and integration guides that emerge from supporting builders
 
@@ -244,7 +200,7 @@ flowchart TB
         subgraph ecodev["Eco Dev Team"]
         subgraph eng["Engineering Streams"]
             INT["<b>Integration</b><br/>Ecosystem map, delivery strategy,<br/>requirements"]
-            XP["<b>ꟛPrize & RFPs Advisory</b><br/>Technical sign-off, requirements,<br/>feasibility & candidate support"]
+            XP["<b>λPrize & RFPs Advisory</b><br/>Technical sign-off, requirements,<br/>feasibility & candidate support"]
             RT["<b>Red Team / Solution</b><br/>Dogfooding, PoCs,<br/>builder support"]
             DK["<b>DevKit / DappFoundry</b><br/>Tooling, SDKs,<br/>sample apps"]
         end
