@@ -16,7 +16,7 @@ A sample app may have several versions. Each version moves through three phases:
 
 ## Scope
 
-The scope is agreed upon and reviewed before building starts. Scoping deliverables are produced as a PR on the sample app's repo so the team can review them. Keep all artefacts light and nimble — the goal is to agree on a clear, limited scope, trim off any excess, and know when building is "enough".
+The scope is agreed upon and reviewed before building starts. Scoping deliverables are produced as a PR on the sample app's repo so the team can review them. Keep all artefacts light and nimble. The goal is to agree on a clear, limited scope, trim off any excess, and know when building is "enough".
 
 ### 1. Functional scope
 
@@ -35,7 +35,7 @@ Sample apps need a clear, limited scope because they exist to:
 
 Architecture Decision Records documenting **why** we built it this way, conveying how to use the Logos stack. Lives in an `ADR.md` alongside the sample app.
 
-FURPS+ documents behaviour; ADRs document the reasoning behind design and protocol choices. As we build sample apps, we make decisions to use Logos components (delivery, storage, etc.) in specific ways. We document those decisions so that developers using sample apps as inspiration or examples understand why we did so. For example:
+The `SCOPE.md` documents behaviour; ADRs document the reasoning behind design and protocol choices. As we build sample apps, we make decisions to use Logos components (delivery, storage, etc.) in specific ways. We document those decisions so that developers using sample apps as inspiration or examples understand why we did so. For example:
 
 - In chat, we send messages over delivery because it gives us better latency.
 - But we send images over storage, and then the CID over delivery, because delivery has a small message size (150KiB) and is rate limited (RLN).
@@ -64,7 +64,7 @@ The sample app is built against the scope above, in a public repo with the right
 Once built, a documentation packet ("doc-packet") is handed off to the doc team:
 
 - **How to install** (via the Logos module repo) and use it.
-- **What the code demonstrates** — drawing on the [Dependencies](#3-dependencies) above, so developers can find the example matching their use case.
+- **What the code demonstrates**, drawing on the [Dependencies](#3-dependencies) above, so developers can find the example matching their use case.
 
 A GUI doc-packet does not need screenshots and can be very light.
 
@@ -74,9 +74,9 @@ A GUI doc-packet does not need screenshots and can be very light.
 
 A version is shipped once all three phases are complete and reviewed:
 
-- [ ] **Scope** — functional scope and ADRs reviewed and merged (PR), dependencies documented.
-- [ ] **Build** — sample app built against scope, in a public repo with the right licensing, module published to the Eco Dev Eng Logos module repo (_TBD_).
-- [ ] **Document** — doc-packet handed off and reviewed by the team.
+- [ ] **Scope**: functional scope and ADRs reviewed and merged (PR), dependencies documented.
+- [ ] **Build**: sample app built against scope, in a public repo with the right licensing, module published to the Eco Dev Eng Logos module repo (_TBD_).
+- [ ] **Document**: doc-packet handed off and reviewed by the team.
 
 ## Tracking
 

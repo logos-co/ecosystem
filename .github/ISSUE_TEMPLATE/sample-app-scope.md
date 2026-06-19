@@ -15,8 +15,8 @@ See the [Sample Apps process](https://ecosystem.logos.co/sample_apps) for the fu
 
 All deliverables are done as a PR on the sample app repo, so the team can review them. Keep all artefacts light and nimble.
 
-- [ ] **Functional scope** (FURPS+ or user stories) in a `SCOPE.md` — _must be team reviewed_
-- [ ] **ADRs** (Architecture Decision Records) in an `ADR.md` — _must be team reviewed_
+- [ ] **Functional scope** (FURPS+ or user stories) in a `SCOPE.md`, _must be team reviewed_
+- [ ] **ADRs** (Architecture Decision Records) in an `ADR.md`, _must be team reviewed_
 - [ ] **Dependencies**: components and design patterns used, in a `Dependencies` section of `README.md`
 
 ## Notes
