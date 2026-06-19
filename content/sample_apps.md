@@ -20,7 +20,7 @@ The scope is agreed upon and reviewed before building starts. Scoping deliverabl
 
 ### 1. Functional scope
 
-What this version will do, captured as [FURPS+](https://en.wikipedia.org/wiki/FURPS) and user stories. Lives in a `FURPS.md` alongside the sample app.
+What this version will do, captured as [FURPS+](https://en.wikipedia.org/wiki/FURPS) or user stories. Lives in a `FURPS.md` alongside the sample app.
 
 Sample apps need a clear, limited scope because they exist to:
 
