@@ -22,4 +22,3 @@ All deliverables are done as a PR on the sample app repo, so the team can review
 ## Notes
 
 - <Questions and known gotchas regarding this sample app>
-</content>

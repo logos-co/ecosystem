@@ -75,5 +75,3 @@ A GUI doc-packet does not need screenshots and can be very light.
 Each release of a sample app is tracked with a milestone on the [present repo](https://github.com/logos-co/ecosystem/milestones).
 
 Scoping is kicked off with the **Sample App Scoping** issue template in this repo.
-</content>
-</invoke>
