@@ -12,7 +12,7 @@ They can also serve as:
 - Demo applications
 - Dogfooding vector to test specific features of the Logos stack
 
-A sample app moves through three phases: **Scope**, **Build**, and **Document**. Each has its own deliverables and team review expectations.
+A sample app may have several versions. Each version moves through three phases: **Scope**, **Build**, and **Document**. Each phase has its own deliverables and team review expectations, and the deliverables below are scoped to a single version.
 
 ## Scope
 
@@ -20,7 +20,7 @@ The scope is agreed upon and reviewed before building starts. Scoping deliverabl
 
 ### 1. Functional scope
 
-What this version will do, captured as [FURPS+](https://en.wikipedia.org/wiki/FURPS) or user stories. Lives in a `FURPS.md` alongside the sample app.
+What this version will do, captured as [FURPS+](https://en.wikipedia.org/wiki/FURPS) or user stories. Lives in a `SCOPE.md` alongside the sample app.
 
 Sample apps need a clear, limited scope because they exist to:
 
@@ -45,7 +45,7 @@ FURPS+ documents behaviour; ADRs document the reasoning behind design and protoc
 
 ### 3. Dependencies
 
-What the sample app uses: the specific components and design patterns of the Logos stack it depends on. Captured in a `Dependencies` section of the `README.md`.
+What the sample app uses: the specific components and design patterns of the Logos stack it depends on. Captured in a `Dependencies` section of the `README.md`. Written once here, then reused as the basis for "what the code demonstrates" in the [doc-packet](#document).
 
 This makes it easier for a developer to find an example for a specific use case. For example:
 
@@ -64,14 +64,22 @@ The sample app is built against the scope above, in a public repo with the right
 Once built, a documentation packet ("doc-packet") is handed off to the doc team:
 
 - **How to install** (via the Logos module repo) and use it.
-- **What the code demonstrates** — drawing on the Dependencies above, so developers can find the example matching their use case.
+- **What the code demonstrates** — drawing on the [Dependencies](#3-dependencies) above, so developers can find the example matching their use case.
 
 A GUI doc-packet does not need screenshots and can be very light.
 
 > The documentation **must** be reviewed by the team.
 
+## Definition of done
+
+A version is shipped once all three phases are complete and reviewed:
+
+- [ ] **Scope** — functional scope and ADRs reviewed and merged (PR), dependencies documented.
+- [ ] **Build** — sample app built against scope, in a public repo with the right licensing, module published to the Eco Dev Eng Logos module repo (_TBD_).
+- [ ] **Document** — doc-packet handed off and reviewed by the team.
+
 ## Tracking
 
-Each release of a sample app is tracked with a milestone on the [present repo](https://github.com/logos-co/ecosystem/milestones).
+Each version of a sample app is tracked with a milestone on the [present repo](https://github.com/logos-co/ecosystem/milestones).
 
 Scoping is kicked off with the **Sample App Scoping** issue template in this repo.
