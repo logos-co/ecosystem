@@ -80,6 +80,7 @@ A version is shipped once all three phases are complete and reviewed:
 
 ## Tracking
 
-Each version of a sample app is tracked with a milestone on the [present repo](https://github.com/logos-co/ecosystem/milestones).
+Each version of a sample app is tracked with two issues on the [present repo](https://github.com/logos-co/ecosystem/issues):
 
-Scoping is kicked off with the **Sample App Scoping** issue template in this repo.
+1. **Scope**: opened with the **Sample App Scoping** issue template in this repo. Covers the functional scope, ADRs and dependencies.
+2. **Build, publish and document**: covers building the app, publishing the module, and filing the doc-packet.
