@@ -61,7 +61,7 @@ The sample app is built against the scope above, in a public repo with the right
 
 ## Document
 
-Once built, a documentation packet ("doc-packet") is handed off to the doc team:
+Once built, a documentation packet ("doc-packet") is handed off to the doc team via the [doc-packet issue template](https://github.com/logos-co/logos-docs/issues/new?template=doc-packet.yml) in the `logos-co/logos-docs` repo. It covers:
 
 - **How to install** (via the Logos module repo) and use it.
 - **What the code demonstrates**, drawing on the [Dependencies](#3-dependencies) above, so developers can find the example matching their use case.
@@ -76,7 +76,7 @@ A version is shipped once all three phases are complete and reviewed:
 
 - [ ] **Scope**: functional scope and ADRs reviewed and merged (PR), dependencies documented.
 - [ ] **Build**: sample app built against scope, in a public repo with the right licensing, module published to the Eco Dev Eng Logos module repo (_TBD_).
-- [ ] **Document**: doc-packet handed off and reviewed by the team.
+- [ ] **Document**: doc-packet filed via the [logos-docs issue template](https://github.com/logos-co/logos-docs/issues/new?template=doc-packet.yml) and reviewed by the team.
 
 ## Tracking
 
