@@ -189,7 +189,7 @@ For the full λ-Prize process, see the λPrize Detailed Process and Internal Gui
 
 # Project Board
 
-Current goals and in-flight work are tracked on the [Eco Dev Eng GitHub Project board](https://github.com/orgs/logos-co/projects/11/views/1).
+Current goals and in-flight work are tracked on the [Eco Dev Eng GitHub Project board](https://github.com/orgs/logos-co/projects/11/views/1). RFPs and λ-Prizes specifically are tracked on the [RFP & LPrize Tracking board](https://github.com/orgs/logos-co/projects/18).
 
 # Processes
 
@@ -201,5 +201,6 @@ Current goals and in-flight work are tracked on the [Eco Dev Eng GitHub Project 
 - [Logos website](https://logos.co)
 - [Logos Docs](https://docs.logos.co)
 - [Eco Dev Eng GitHub Project board](https://github.com/orgs/logos-co/projects/11/views/1)
+- [RFP & LPrize Tracking board](https://github.com/orgs/logos-co/projects/18)
 - DevKit: [scaffold](https://github.com/logos-co/scaffold) · [spel](https://github.com/logos-co/spel)
 - [RFPs](https://github.com/logos-co/rfp/pulls) · [Ecosystem milestones](https://github.com/logos-co/ecosystem/milestones)
