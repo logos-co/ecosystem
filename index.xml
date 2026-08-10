@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Ecosystem Development Engineering</title>
+    <link>https://ecosystem.logos.co/</link>
+    <guid>https://ecosystem.logos.co/</guid>
+    <description><![CDATA[ Logos Ecosystem Development Engineering Home of the Logos Ecosystem Development Engineering (“Eco Dev Eng”) team. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 05:23:45 GMT</pubDate>
+  </item><item>
     <title>Sample Apps</title>
     <link>https://ecosystem.logos.co/sample_apps</link>
     <guid>https://ecosystem.logos.co/sample_apps</guid>
@@ -16,12 +22,6 @@
     <link>https://ecosystem.logos.co/handoff</link>
     <guid>https://ecosystem.logos.co/handoff</guid>
     <description><![CDATA[ R&amp;D builds it. Eco Dev breaks it, then evangelizes it. Both succeed together. ]]></description>
-    <pubDate>Thu, 18 Jun 2026 02:44:11 GMT</pubDate>
-  </item><item>
-    <title>Ecosystem Development Engineering</title>
-    <link>https://ecosystem.logos.co/</link>
-    <guid>https://ecosystem.logos.co/</guid>
-    <description><![CDATA[ Logos Ecosystem Development Engineering Home of the Logos Ecosystem Development Engineering (“Eco Dev Eng”) team. ]]></description>
     <pubDate>Thu, 18 Jun 2026 02:44:11 GMT</pubDate>
   </item>
     </channel>
