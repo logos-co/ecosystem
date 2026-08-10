@@ -6,6 +6,12 @@
       <description>Last 10 notes on Logos Ecosystem Development</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Sample Apps</title>
+    <link>https://ecosystem.logos.co/sample_apps</link>
+    <guid>https://ecosystem.logos.co/sample_apps</guid>
+    <description><![CDATA[ Sample Apps Sample apps are PoC applications that are for testnet purposes only (aka, not mainnet). ]]></description>
+    <pubDate>Fri, 19 Jun 2026 06:29:21 GMT</pubDate>
+  </item><item>
     <title>R&amp;D ↔ Eco Dev Handoff Protocol</title>
     <link>https://ecosystem.logos.co/handoff</link>
     <guid>https://ecosystem.logos.co/handoff</guid>
@@ -17,12 +23,6 @@
     <guid>https://ecosystem.logos.co/</guid>
     <description><![CDATA[ Logos Ecosystem Development Engineering Home of the Logos Ecosystem Development Engineering (“Eco Dev Eng”) team. ]]></description>
     <pubDate>Thu, 18 Jun 2026 02:44:11 GMT</pubDate>
-  </item><item>
-    <title>Sample Apps</title>
-    <link>https://ecosystem.logos.co/sample_apps</link>
-    <guid>https://ecosystem.logos.co/sample_apps</guid>
-    <description><![CDATA[ Sample Apps Sample apps are PoC applications that are for testnet purposes only (aka, not mainnet). ]]></description>
-    <pubDate>Wed, 17 Jun 2026 05:15:53 GMT</pubDate>
   </item>
     </channel>
   </rss>
