@@ -165,7 +165,7 @@ Central configuration file containing:
 
 ### Content Structure
 
-- `content/index.md`: Site homepage — the Eco Dev team home (team, mandate, streams, priorities, resources)
+- `content/index.md`: Site homepage — the Eco Dev team home (team, mandate, streams, priorities, resources). Links to the Eco Dev Eng GitHub Project board (project 11) and the RFP & LPrize Tracking board (project 18, org `logos-co`)
 - `content/handoff.md`: R&D ↔ Eco Dev Handoff Protocol
 - `content/sample_apps.md`: Sample apps process and deliverables
 - `content/milestones/`: Milestone tracking (e.g. Testnet v0.1)
