@@ -86,6 +86,40 @@ The following are ignored by Quartz (configured in `quartz.config.ts`):
 
 ---
 
+# RFP & Lambda Prize Tracking Workflow
+
+This section documents how RFP/Lambda Prize tracking state actually flows across repos — not derivable from any single repo, so kept here explicitly.
+
+## Source-of-truth order
+
+Tracking state for an RFP/Lambda Prize is split across three places, populated in this order as an RFP moves from idea to merged:
+
+1. **`flywheels.logos.co/data/flywheels.yaml`** (sibling repo) — the dependency-graph source of truth. New RFPs/LPs/launch-day (`LD-*`) app nodes land here **while still in draft PR form**, `stage: identified`, with `spec.link`/`tracker.link` pointing at the draft PR (e.g. `logos-co/rfp/pull/57`) before that PR merges. This is the earliest place a new RFP/LP shows up — often before any GitHub issue exists.
+2. **`logos-co/ecosystem` issues** (`write-rfp` label, `[RFP]`/`[Internal RFP]` title prefix) — the tracking issue for an RFP while it's being written/reviewed (see body convention below). Created once the RFP is queued to be written, independent of whether the `rfp` repo PR has merged yet.
+3. **`logos-co/rfp` issues** (`[PROPOSAL]`, `[MILESTONE]` labels) — created only *after* an RFP is merged and published; these track proposals/milestones against the published RFP, not the RFP-writing process itself.
+4. **RFP & LPrize Tracking board (project 18, org `logos-co`)** — the project board. An item can be added once a `logos-co/ecosystem` tracking issue exists to link (see field conventions below).
+
+When checking whether something is tracked, search in this order: flywheels.yaml → ecosystem issues → rfp issues → project 18. Don't conclude "nothing tracks this yet" after checking only GitHub issues/project boards. Search both singular and plural/exact terms (e.g. "synthetic" vs "synthetics") — a truncated grep can miss hits.
+
+## `logos-co/ecosystem` tracking issue convention
+
+- Label: `write-rfp` (or `write-lambda-prize` for LPs).
+- Title: `[RFP] <name>` (or `[Internal RFP] <name>` for internal-only deliverables).
+- **Body must start with a link to the draft PR/MD**, first line, exactly: `Draft PR: https://github.com/logos-co/rfp/pull/<N>`. Then a short paragraph: the RFP number once assigned, what it does, and any deps on other RFPs (reference the tracking issue of the dep if one exists, e.g. "Depends on RFP-021, tracked in #123"). See ecosystem#217, #218 for examples.
+
+## Project 18 field conventions
+
+- **Status**: use `Backlog` for RFPs not yet actively being written/prioritized.
+- **Priority Level** (P0–P3) is the field actually in use — the plain **Priority** field is unpopulated/unused, don't set it.
+- **RFP** field (single-select of RFP-0xx values): assign a value as soon as the ecosystem tracking issue asserts the RFP number (see body convention above) — do not wait for the `rfp` repo PR to merge.
+  - **To add a new RFP-0NN option**, call the GraphQL `updateProjectV2Field` mutation directly (`gh api graphql`) with `singleSelectOptions` (not `singleSelectField` — that argument name doesn't exist) listing **every** current option **with its existing `id` explicitly set**, plus the new option(s) with no `id`. Passing `id` on unchanged options makes GitHub keep those exact option IDs, so every item's existing value survives untouched — verified end to end (2026-08-31, adding RFP-024/026: all 18 previously-set items' values read back identical after the mutation, only the two new options got fresh IDs). Omitting `id` on existing options is what regenerates all IDs and wipes every item's value for the field — that's the actual failure mode, not the mutation itself.
+  - Get current option ids+names first via `gh project field-list 18 --owner logos-co --format json` (find the `RFP` field). Build the mutation body from that list (`id`, `name`, `color: GRAY`, `description: ""` per existing option) plus the new entries (`name`/`color`/`description` only, no `id`). The response returns the new options' generated ids — use those with `gh project item-edit --field-id <RFP field id> --single-select-option-id <id>` to set values on items.
+  - No snapshot/replay dance needed as long as `id` is included for every existing option — just do the mutation directly.
+- **Category**: `RFP` or `LPrize`.
+- Priority Level generally mirrors the `priority: pN` value on the corresponding node(s) in `flywheels.yaml` (P0↔p0, P1↔p1, …) unless there's a specific reason to diverge.
+
+---
+
 # For Site Developers
 
 ## Technology Stack
