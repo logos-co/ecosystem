@@ -107,6 +107,16 @@ When checking whether something is tracked, search in this order: flywheels.yaml
 - Title: `[RFP] <name>` (or `[Internal RFP] <name>` for internal-only deliverables).
 - **Body must start with a link to the draft PR/MD**, first line, exactly: `Draft PR: https://github.com/logos-co/rfp/pull/<N>`. Then a short paragraph: the RFP number once assigned, what it does, and any deps on other RFPs (reference the tracking issue of the dep if one exists, e.g. "Depends on RFP-021, tracked in #123"). See ecosystem#217, #218 for examples.
 
+## Linking PRs/MDs to tracking issues
+
+PRs in `logos-co/rfp`, `logos-co/lambda-prize`, and `logos-co/ecosystem` deliberately do **not** use GitHub's closing keywords (`Fixes`/`Closes`/`Resolves #N`) to link back to their `logos-co/ecosystem` tracking issue — RFP/LP tracking issues stay open once the RFP/LP is written and merged; they continue to be used for later stages (proposals, milestones), so auto-closing them on PR merge is wrong. Use plain text instead, e.g. `Related to logos-co/ecosystem#208` or a bare `logos-co/ecosystem#208` reference — never a closing keyword.
+
+Consequence: GitHub's native "Linked pull requests" field on project 18 items is unpopulated for nearly all items (only auto-close links populate it) — don't rely on it. Matching a tracking issue to its PR/merged MD is manual: by RFP/LP number, by title/body text reference, or by filename. When auditing or backfilling these links:
+
+- RFP markdown files live at `logos-co/rfp` under `RFPs/RFP-0NN-slug.md`; LP files live at `logos-co/lambda-prize` under `prizes/LP-00NN.md` (spec) and `solutions/LP-00NN.md` (accepted solution). Verify a file's existence (e.g. `gh api repos/<repo>/contents/<path>`) before linking — don't trust an existing link's filename or an issue's `RFP` field slug to match the real merged filename; they can drift.
+- If no merged MD exists yet, link the open/merged PR that's drafting it instead (prefer merged MD over open PR); never link a PR that was closed without merging.
+- One PR can legitimately cover two RFPs (e.g. a single PR drafting both RFP-021 and RFP-022) — that's not a duplicate-link error.
+
 ## Project 18 field conventions
 
 - **Status**: use `Backlog` for RFPs not yet actively being written/prioritized.
