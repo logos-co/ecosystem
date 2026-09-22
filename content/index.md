@@ -195,6 +195,7 @@ Current goals and in-flight work are tracked on the [Eco Dev Eng GitHub Project 
 
 - [[handoff|R&D ↔ Eco Dev Handoff Protocol]]
 - [[sample_apps|Sample Apps]]
+- [[rfp_lifecycle|RFP & λ-Prize Lifecycle]]
 
 # Resources
 
