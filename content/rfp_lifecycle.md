@@ -86,7 +86,7 @@ Every item also carries a `Category` single-select: `RFP` or `LPrize`. It's what
 
 GitHub's native sub-issue relationship (the `addSubIssue` mutation / repo Sub-issues UI) is used to link child issues to their parent `[RFP]` main tracking issue, and which children are linked changes as the RFP moves through the pipeline.
 
-**While an RFP is in column 8 (Proposals & Submissions to review):** every competing `[PROPOSAL]` issue for that RFP is attached as a sub-issue of the parent `[RFP]` tracking issue — not just the eventual winner. This is the existing, consistently-applied practice on the live repo (verified on RFP-012, 014, 015, 016, and 017: each had its full set of open proposals linked as sub-issues of the parent already).
+**While an RFP is in column 8 (Proposals & Submissions to review):** every competing `[PROPOSAL]` issue for that RFP must be attached as a sub-issue of the parent `[RFP]` tracking issue — not just the eventual winner (RFP-012, 014, 015, 016, and 017 illustrate this: each has its full set of open proposals linked as sub-issues of the parent).
 
 > **Known platform limitation:** a sub-issue can only have one parent. A proposal that spans two RFPs (an observed real case: `[PROPOSAL] RFP-015 & 016 - LPAD`) can only be linked under one of the two parent RFP issues, not both. There's no clean fix for this — it's a structural gap in the sub-issue feature, documented here so it isn't mistaken for a missed link.
 
@@ -95,7 +95,7 @@ GitHub's native sub-issue relationship (the `addSubIssue` mutation / repo Sub-is
 - Losing proposals are unlinked from the parent, and once closed, removed from the project board entirely (see [[#Closed-issue cleanup]]).
 - `[MILESTONE]` issues become the parent's sub-issues instead.
 
-This was verified as the existing pattern on RFP-001 and RFP-002, which have zero proposal sub-issues and only milestone sub-issues once in delivery.
+Once an RFP moves into delivery, its proposal sub-issues must be removed and replaced with milestone sub-issues (RFP-001 and RFP-002 illustrate the end state: only milestone sub-issues remain once delivery is underway).
 
 ---
 
@@ -131,6 +131,54 @@ Project 18 has three board views grouped by `Status`:
 - **λ-Prize Pipeline** — filtered to `category:LPrize` with the five RFP-specific-worded statuses excluded (`RFPs Closed for proposals (reviewing proposals)`, `RFPs Contracting`, `RFPs In delivery`, `Pending RFP milestone`, `RFP milestone in review`), since a λ-Prize item can never structurally occupy them.
 
 Additional per-RFP filtered views also exist (or may exist) for RFPs that are Published or further along the pipeline — one per RFP — not enumerated here.
+
+---
+
+## Proposed GitHub Actions automation (not yet implemented)
+
+> [!ai-generated]
+> The following are proposed, not implemented. No workflows described below currently exist. This section documents candidate automations for future work, evaluated against the rules elsewhere on this page — it is not a changelog of what runs today.
+
+### Existing precedent
+
+None of `logos-co/ecosystem`, `logos-co/rfp`, or `logos-co/lambda-prize` currently has a workflow that touches project 18, and none react to `projects_v2_item` events. But each repo already has a workflow whose pattern a project-18 automation could reuse directly:
+
+| Workflow | Trigger | Pattern worth reusing |
+| --- | --- | --- |
+| `logos-co/ecosystem/.github/workflows/add-to-project.yaml` | `issues: opened` | Adds new issues to project 11 (Eco Dev Eng) via `actions/add-to-project@v1.0.2` with a PAT — the template for "add new item to project 18" automations. |
+| `logos-co/rfp/.github/workflows/label-proposals.yml` | `issues: [opened, edited]` | Regexes the issue body for the rendered `### RFP ID` form field to apply a per-RFP label — the template for extracting the RFP number reliably. Parses the rendered *body* field, not the title; titles are inconsistently formatted (see [[#Category field]]). |
+| `logos-co/lambda-prize/.github/workflows/validate-submission.yml` | `pull_request_target` | Validates LP solution PRs and upserts a single marker-tagged comment — the template for safe untrusted-PR handling and idempotent comment-based notifications. |
+
+**A title-matching caveat found in `lambda-prize` PR titles:** not all submission PRs cleanly match `Solution: LP-xxxx — <name>`. One observed PR used `Solution: LP-0002:` with a colon instead of an em-dash; others reference LP numbers without being submissions at all (e.g. "Open LP-0023: ...", "Close LP-0002, LP-0003..."). Any title-matching automation must anchor strictly on a `^Solution:` prefix, not just "mentions an LP number."
+
+### Tier 1 — low risk, clear precedent, propose doing first
+
+1. **Auto-add new `[PROPOSAL]` issues to project 18 on open** (`logos-co/rfp`) — reuse the `add-to-project` pattern, repointed at project 18, filtered on the `proposal` label (already applied by the existing issue template) or the `[PROPOSAL]` title prefix.
+2. **Auto-add new `Solution: LP-xxxx` PRs to project 18 on open** (`logos-co/lambda-prize`) — same action, `pull_request: opened` trigger, anchored title regex per the caveat above.
+3. **Auto-remove items from the board when their issue/PR closes without merging** — pure GraphQL delete, no field-write risk. Matches the existing [[#Closed-issue cleanup]] rule.
+4. **Auto-set the `Category` field** (`RFP` / `LPrize`) on newly-added items — trivial, since the source repo alone disambiguates: anything from `rfp`/`ecosystem` → `RFP`, anything from `lambda-prize` → `LPrize`.
+5. **Auto-set the `RFP` single-select field when the target option already exists** — reuse `label-proposals.yml`'s body-field-regex approach (parse `### RFP ID`, not the title). Scoped to the case where the `RFP-0NN` option already exists on the field; does *not* cover auto-creating missing options (see below) — those should be flagged instead.
+
+### The single-select-option corruption risk
+
+`updateProjectV2Field`'s `singleSelectOptions` argument must be sent with every *existing* option's `id` explicitly included, plus any new option(s) with no `id`. Omitting `id` on existing options regenerates all option IDs and silently wipes every item's existing value for that field, project-wide — not just the new item's.
+
+Given that blast radius, auto-creating a new `RFP-0NN` option should stay a human-reviewed step for at least a first pass — the bot flags "new RFP number detected, no matching board option — needs manual add" rather than creating it itself. The convenience of full automation here doesn't outweigh a mistake that can wipe every item's `RFP` field project-wide.
+
+### Tier 2 — harder, worth doing once Tier 1 is stable
+
+- **Daily scheduled lint that flags (does not auto-fix) items violating the [[#Kind-restricted columns]] rules** — e.g. a `[PROPOSAL]` issue sitting in a main-tracking-issue-only column. Read-only GraphQL, so low risk, but needs a decision on where the report lands: issue comment, summary issue, or chat webhook.
+- **Auto-linking `[PROPOSAL]` issues as sub-issues of their parent `[RFP]` tracking issue on open** — valuable, but blocked today on there being no reliable structured RFP-number → parent-tracking-issue mapping. Would require heuristic matching against `ecosystem` issue titles/bodies, which is a real accuracy risk worth calling out before attempting it.
+
+### Tier 3 — flag-only, likely indefinitely
+
+- **Auto-creating new `RFP-0NN` field options** — per the corruption risk above.
+- **Swapping proposal sub-issues for milestone sub-issues automatically when `Status` moves to "RFPs In delivery"** — GitHub's `projects_v2_item` webhook has real scoping limitations (it's tied to project activity rather than cleanly to a single repo, and the payload doesn't identify issue "kind" without follow-up API calls). This is also exactly the kind of relationship-editing operation the [[#Scope boundary]] rule argues should stay human-reviewed rather than automated.
+- **Posting comms reminders when an item's `Status` enters a `[COMMS]`-tagged stage** — same trigger-mechanics difficulty as above, plus automation can't verify a human actually completed the real-world comms action, so at best this becomes a nag-comment. Would need careful de-duplication (e.g. fire once per item per stage-entry, following `validate-submission.yml`'s marker-comment upsert pattern) to avoid being noisy and ignored.
+
+### Scope of the proposal
+
+Every automation proposed above is scoped to project-board operations only — add item, remove item, set a field, apply a label — never auto-closing issues/PRs or editing their content, consistent with this page's [[#Scope boundary]] rule.
 
 ---
 
