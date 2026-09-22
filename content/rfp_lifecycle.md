@@ -137,7 +137,7 @@ Additional per-RFP filtered views also exist (or may exist) for RFPs that are Pu
 ## Proposed GitHub Actions automation (not yet implemented)
 
 > [!ai-generated]
-> The following are proposed, not implemented. No workflows described below currently exist. This section documents candidate automations for future work, evaluated against the rules elsewhere on this page — it is not a changelog of what runs today.
+> Checked items below already exist as workflows (linked below); unchecked items are proposals only. Re-verified 2026-09-22 against the current default branch of each repo (`ecosystem`@`v4`, `rfp`@`master`, `lambda-prize`@`master`) — no workflow in any of the three repos touches project 18 or reacts to `projects_v2_item` events, so all five Tier 1 items below remain unimplemented.
 
 ### Existing precedent
 
@@ -145,19 +145,19 @@ None of `logos-co/ecosystem`, `logos-co/rfp`, or `logos-co/lambda-prize` current
 
 | Workflow | Trigger | Pattern worth reusing |
 | --- | --- | --- |
-| `logos-co/ecosystem/.github/workflows/add-to-project.yaml` | `issues: opened` | Adds new issues to project 11 (Eco Dev Eng) via `actions/add-to-project@v1.0.2` with a PAT — the template for "add new item to project 18" automations. |
-| `logos-co/rfp/.github/workflows/label-proposals.yml` | `issues: [opened, edited]` | Regexes the issue body for the rendered `### RFP ID` form field to apply a per-RFP label — the template for extracting the RFP number reliably. Parses the rendered *body* field, not the title; titles are inconsistently formatted (see [[#Category field]]). |
-| `logos-co/lambda-prize/.github/workflows/validate-submission.yml` | `pull_request_target` | Validates LP solution PRs and upserts a single marker-tagged comment — the template for safe untrusted-PR handling and idempotent comment-based notifications. |
+| [`logos-co/ecosystem/.github/workflows/add-to-project.yaml`](https://github.com/logos-co/ecosystem/blob/v4/.github/workflows/add-to-project.yaml) | `issues: opened` | Adds new issues to project 11 (Eco Dev Eng) via `actions/add-to-project@v1.0.2` with a PAT — the template for "add new item to project 18" automations. |
+| [`logos-co/rfp/.github/workflows/label-proposals.yml`](https://github.com/logos-co/rfp/blob/master/.github/workflows/label-proposals.yml) | `issues: [opened, edited]` | Regexes the issue body for the rendered `### RFP ID` form field to apply a per-RFP label — the template for extracting the RFP number reliably. Parses the rendered *body* field, not the title; titles are inconsistently formatted (see [[#Category field]]). |
+| [`logos-co/lambda-prize/.github/workflows/validate-submission.yml`](https://github.com/logos-co/lambda-prize/blob/master/.github/workflows/validate-submission.yml) | `pull_request_target` | Validates LP solution PRs and upserts a single marker-tagged comment — the template for safe untrusted-PR handling and idempotent comment-based notifications. |
 
 **A title-matching caveat found in `lambda-prize` PR titles:** not all submission PRs cleanly match `Solution: LP-xxxx — <name>`. One observed PR used `Solution: LP-0002:` with a colon instead of an em-dash; others reference LP numbers without being submissions at all (e.g. "Open LP-0023: ...", "Close LP-0002, LP-0003..."). Any title-matching automation must anchor strictly on a `^Solution:` prefix, not just "mentions an LP number."
 
 ### Tier 1 — low risk, clear precedent, propose doing first
 
-1. **Auto-add new `[PROPOSAL]` issues to project 18 on open** (`logos-co/rfp`) — reuse the `add-to-project` pattern, repointed at project 18, filtered on the `proposal` label (already applied by the existing issue template) or the `[PROPOSAL]` title prefix.
-2. **Auto-add new `Solution: LP-xxxx` PRs to project 18 on open** (`logos-co/lambda-prize`) — same action, `pull_request: opened` trigger, anchored title regex per the caveat above.
-3. **Auto-remove items from the board when their issue/PR closes without merging** — pure GraphQL delete, no field-write risk. Matches the existing [[#Closed-issue cleanup]] rule.
-4. **Auto-set the `Category` field** (`RFP` / `LPrize`) on newly-added items — trivial, since the source repo alone disambiguates: anything from `rfp`/`ecosystem` → `RFP`, anything from `lambda-prize` → `LPrize`.
-5. **Auto-set the `RFP` single-select field when the target option already exists** — reuse `label-proposals.yml`'s body-field-regex approach (parse `### RFP ID`, not the title). Scoped to the case where the `RFP-0NN` option already exists on the field; does *not* cover auto-creating missing options (see below) — those should be flagged instead.
+- [ ] **Auto-add new `[PROPOSAL]` issues to project 18 on open** (`logos-co/rfp`) — reuse the `add-to-project` pattern, repointed at project 18, filtered on the `proposal` label (already applied by the existing issue template) or the `[PROPOSAL]` title prefix. Not implemented: `logos-co/rfp` has no `add-to-project`-style workflow at all (its only workflows are `label-proposals.yml` and `mdformat.yml`), and `logos-co/ecosystem`'s [`add-to-project.yaml`](https://github.com/logos-co/ecosystem/blob/v4/.github/workflows/add-to-project.yaml) targets project **11**, not 18.
+- [ ] **Auto-add new `Solution: LP-xxxx` PRs to project 18 on open** (`logos-co/lambda-prize`) — same action, `pull_request: opened` trigger, anchored title regex per the caveat above. Not implemented: `logos-co/lambda-prize`'s only workflow is [`validate-submission.yml`](https://github.com/logos-co/lambda-prize/blob/master/.github/workflows/validate-submission.yml) (`pull_request_target`, validation + PR comment only) — it never touches any project board.
+- [ ] **Auto-remove items from the board when their issue/PR closes without merging** — pure GraphQL delete, no field-write risk. Matches the existing [[#Closed-issue cleanup]] rule. Not implemented: no workflow in any of the three repos reacts to `issues: closed`/`pull_request: closed` with a project-removal step.
+- [ ] **Auto-set the `Category` field** (`RFP` / `LPrize`) on newly-added items — trivial, since the source repo alone disambiguates: anything from `rfp`/`ecosystem` → `RFP`, anything from `lambda-prize` → `LPrize`. Not implemented: no workflow writes any project field in any of the three repos.
+- [ ] **Auto-set the `RFP` single-select field when the target option already exists** — reuse `label-proposals.yml`'s body-field-regex approach (parse `### RFP ID`, not the title). Scoped to the case where the `RFP-0NN` option already exists on the field; does *not* cover auto-creating missing options (see below) — those should be flagged instead. Not implemented: [`logos-co/rfp/.github/workflows/label-proposals.yml`](https://github.com/logos-co/rfp/blob/master/.github/workflows/label-proposals.yml) only applies an `RFP-0NN` **label** to the issue — it never calls the Projects GraphQL API or writes a project field, so it's a related but distinct action, not a partial implementation of this one.
 
 ### The single-select-option corruption risk
 
