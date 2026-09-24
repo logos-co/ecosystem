@@ -54,6 +54,15 @@ Not every item passes through every column — a λ-Prize, for instance, never t
 
 Any column whose description carries the literal `[COMMS]` tag means **reaching that status should trigger external communication** — a post, a social media announcement, a Discord/community update. That's columns 6, 10, 12, 13, and 14. Moving an item into one of these columns is a cue to check whether the announcement has gone out, not just a bookkeeping step.
 
+#### λ-Prize publish comms playbook
+
+The `[COMMS]` tag on columns 10, 12, 13, and 14 doesn't yet have a documented concrete procedure — those still rely on judgment call at the time. Column 6 (**Published (accepting proposals/submissions)**), however, does have one worked out for λ-Prizes: the known sequence for announcing a λ-Prize the moment it opens for submissions.
+
+1. Post an announcement on [forum.logos.co](https://forum.logos.co) (Discourse) introducing the λ-Prize, following the pattern of an existing example such as [LP-0023: LEZ Program Registry](https://forum.logos.co/t/new-prize-lp-0023-lez-program-registry-2-000/1946). The post should invite two audiences at once: potential users, to describe how they'd use the prize and what feature they'd want to see, and developers, to share their work in the topic.
+2. Mirror that announcement in Discord's `#builder-hub` channel, linking back to the forum post, and open a thread on it inviting the same dual discussion from users and developers.
+3. Forward the announcement to a second Discord channel depending on who the λ-Prize's output is aimed at: `#general` if it's end-user/GUI-oriented, `#node-operators` if it's node-operator-oriented.
+4. Once the Discord thread exists, close the loop by editing the forum post to backlink it, so the forum post ends up pointing at the Discord discussion too.
+
 ### Kind-restricted columns
 
 Several columns are explicitly restricted to one *kind* of GitHub item, called out in their own description text:
