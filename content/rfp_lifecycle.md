@@ -53,12 +53,31 @@ Any column whose description carries the literal `[COMMS]` tag means **reaching 
 
 #### λ-Prize publish comms playbook
 
-The `[COMMS]` tag on columns 10, 12, 13, and 14 doesn't yet have a documented concrete procedure — those still rely on judgment call at the time. Column 6 (**Published (accepting proposals/submissions)**), however, does have one worked out for λ-Prizes: the known sequence for announcing a λ-Prize the moment it opens for submissions.
+The `[COMMS]` tag on columns 10, 12, 13, and 14 doesn't yet have a documented concrete procedure — those still rely on judgment call at the time. Column 6 (**Published (accepting proposals/submissions)**), however, does have one worked out. Below is the known sequence for announcing a λ-Prize the moment it opens for submissions; RFPs have their own, in [[#RFP publish comms playbook]].
 
 1. Post an announcement on [forum.logos.co](https://forum.logos.co) (Discourse) introducing the λ-Prize, following the pattern of an existing example such as [LP-0023: LEZ Program Registry](https://forum.logos.co/t/new-prize-lp-0023-lez-program-registry-2-000/1946). Write it with genuine enthusiasm — this is exciting news, and the tone should read that way, not like a dry status update. The post should invite two audiences at once: potential users, to describe how they'd use the prize and what feature they'd want to see, and developers, to share their work in the topic. Since λ-Prizes are judged against [[index#λ-Prizes vs RFPs|adoption criteria]], call out that ongoing conversation with potential users is encouraged, not a one-off ask — builders should keep checking back in with the thread as they work.
 2. Mirror that announcement in Discord's `#builder-hub` channel, pinging `@vrycmfy` (chair) and the `@builder` role, linking back to the forum post, keeping the same enthusiastic tone, and open a thread on it inviting the same dual discussion from users and developers. Repeat the adoption-criteria note here too: regular back-and-forth with potential users throughout the build is encouraged, not just at launch.
 3. Forward the announcement to a second Discord channel depending on who the λ-Prize's output is aimed at: `#general` if it's end-user/GUI-oriented, `#node-operators` if it's node-operator-oriented.
 4. Once the Discord thread exists, close the loop by editing the forum post to backlink it, so the forum post ends up pointing at the Discord discussion too.
+
+#### RFP publish comms playbook
+
+An RFP announcement has a different audience from a λ-Prize one. λ-Prizes are judged on adoption, so their posts court end users as much as builders. An RFP is a grant for a team to deliver a scoped build, so its post is aimed at **dev studios and teams deciding whether to bid**: it should read as a well-scoped engagement they'd want to take on, not a call for user feedback. Keep the enthusiasm, but pitch it at the studio.
+
+Before announcing, check the RFP is actually open in `logos-co/rfp`: its row in the README table shows `open` with a submission deadline, and its ID is an option in the `.github/ISSUE_TEMPLATE/proposal.yml` dropdown. An announcement pointing at a template that won't accept the RFP loses the reader immediately.
+
+1. Post an announcement on [forum.logos.co](https://forum.logos.co) (Discourse) titled `New RFP: RFP-0NN, <Title> (Tier <X>)`. Cover, in this order:
+   - **The opportunity:** the problem and why it's worth solving on Logos, drawn from the RFP's Overview and Why This Matters.
+   - **What you'd build:** a short list of scope highlights from the hard requirements.
+   - **Is this a fit for your studio?:** the RFP's Recommended Team Profile, framed so a studio can self-select in or out.
+   - **Engagement details:** tier, estimated duration, phasing if the RFP allows it, audit expectations, license, and submission deadline.
+   - **How to apply:** link the spec, link the proposal template and name the dropdown option, and restate the review cadence from the README.
+   - A closing line linking the [Terms & Conditions](https://github.com/logos-co/rfp/blob/master/TERMS_AND_CONDITIONS.md).
+
+   Invite questions on scope and on the Logos components involved in the thread, and say that studios are encouraged to ask early and keep coming back while they write their proposal. Follow the wording rules the RFP itself follows: say the RFP *invites proposals*, never that it funds or awards a build, and describe what the software does as technical properties rather than outcomes or promises.
+2. Mirror the announcement in Discord's `#builder-hub` channel, pinging `@vrycmfy` (chair) and the `@builder` role, with a condensed version (problem, scope bullets, duration and deadline, who it suits) linking the spec, the proposal template, and the forum post. Open a thread on it for studio questions.
+3. Post a one-line pointer in `#general` linking the forum post, so studios in the wider community see it.
+4. Once the Discord thread exists, edit the forum post to backlink it.
 
 ### Kind-restricted columns
 
