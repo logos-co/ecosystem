@@ -51,16 +51,30 @@ Not every item passes through every column — a λ-Prize, for instance, never t
 
 Any column whose description carries the literal `[COMMS]` tag means **reaching that status should trigger external communication** — a post, a social media announcement, a Discord/community update. That's columns 6, 10, 12, 13, and 14. Moving an item into one of these columns is a cue to check whether the announcement has gone out, not just a bookkeeping step.
 
+Concrete procedures exist for publishing a λ-Prize ([[#λ-Prize publish comms playbook]]) and for an RFP from publication through each milestone acceptance ([[#RFP comms playbook]]). Column 14 (**Complete**), and λ-Prize acceptance in column 13, still rely on judgment call at the time.
+
+#### Who posts
+
+The forum posts and Discord messages in these playbooks are sent by the **author of the RFP or λ-Prize in Eco Dev Eng**, from their own accounts, not by Comms. Why? So they are notified of replies and can answer questions or follow up when needed.
+
+Comms then takes the announcement and broadcasts it further: a series of tweets, a push to Circles, and so on.
+
 #### λ-Prize publish comms playbook
 
-The `[COMMS]` tag on columns 10, 12, 13, and 14 doesn't yet have a documented concrete procedure — those still rely on judgment call at the time. Column 6 (**Published (accepting proposals/submissions)**), however, does have one worked out. Below is the known sequence for announcing a λ-Prize the moment it opens for submissions; RFPs have their own, in [[#RFP publish comms playbook]].
+The known sequence for announcing a λ-Prize the moment it opens for submissions (column 6, **Published (accepting proposals/submissions)**). The λ-Prize's author in Eco Dev Eng does every step below themselves (see [[#Who posts]]); Comms amplifies afterwards.
 
 1. Post an announcement on [forum.logos.co](https://forum.logos.co) (Discourse) introducing the λ-Prize, following the pattern of an existing example such as [LP-0023: LEZ Program Registry](https://forum.logos.co/t/new-prize-lp-0023-lez-program-registry-2-000/1946). Write it with genuine enthusiasm — this is exciting news, and the tone should read that way, not like a dry status update. The post should invite two audiences at once: potential users, to describe how they'd use the prize and what feature they'd want to see, and developers, to share their work in the topic. Since λ-Prizes are judged against [[index#λ-Prizes vs RFPs|adoption criteria]], call out that ongoing conversation with potential users is encouraged, not a one-off ask — builders should keep checking back in with the thread as they work.
 2. Mirror that announcement in Discord's `#builder-hub` channel, pinging `@vrycmfy` (chair) and the `@builder` role, linking back to the forum post, keeping the same enthusiastic tone, and open a thread on it inviting the same dual discussion from users and developers. Repeat the adoption-criteria note here too: regular back-and-forth with potential users throughout the build is encouraged, not just at launch.
 3. Forward the announcement to a second Discord channel depending on who the λ-Prize's output is aimed at: `#general` if it's end-user/GUI-oriented, `#node-operators` if it's node-operator-oriented.
 4. Once the Discord thread exists, close the loop by editing the forum post to backlink it, so the forum post ends up pointing at the Discord discussion too.
 
-#### RFP publish comms playbook
+#### RFP comms playbook
+
+An RFP is announced several times over its life: when it's published, when it's contracted, and at each milestone submission and acceptance. The RFP's author in Eco Dev Eng makes every post and Discord message (see [[#Who posts]]); Comms amplifies afterwards.
+
+For now, the recommendation is to keep all of an RFP's announcements in the **same forum topic and Discord thread** opened at publication: later announcements are replies there, not new topics or threads, so anyone following the RFP sees its whole history in one place.
+
+##### At publication (column 6)
 
 An RFP announcement has a different audience from a λ-Prize one. λ-Prizes are judged on adoption, so their posts court end users as much as builders. An RFP is a grant for a team to deliver a scoped build, so its post is aimed at **dev studios and teams deciding whether to bid**: it should read as a well-scoped engagement they'd want to take on, not a call for user feedback. Keep the enthusiasm, but pitch it at the studio.
 
@@ -78,6 +92,17 @@ Before announcing, check the RFP is actually open in `logos-co/rfp`: its row in 
 2. Mirror the announcement in Discord's `#builder-hub` channel, pinging `@vrycmfy` (chair) and the `@builder` role, with a condensed version (problem, scope bullets, duration and deadline, who it suits) linking the spec, the proposal template, and the forum post. Open a thread on it for studio questions.
 3. Post a one-line pointer in `#general` linking the forum post, so studios in the wider community see it.
 4. Once the Discord thread exists, edit the forum post to backlink it.
+
+##### When contracted (column 10)
+
+Once the contract is signed and the RFP moves to **RFPs In delivery**, reply in the forum topic and the Discord thread announcing the selected team: who they are, a link to their `[PROPOSAL]` issue, and the milestones they'll deliver.
+
+##### At each milestone (columns 12 and 13)
+
+Post twice per milestone, again as replies in the same forum topic and Discord thread:
+
+- **On submission** (column 12, **RFP milestone in review**): the team has submitted milestone N. Link the `[MILESTONE]` issue and the delivered work, and say it's under review.
+- **On acceptance** (column 13, **RFP Milestone & λ-Prize accepted**): milestone N is accepted. Summarize what shipped with links, and say what comes next.
 
 ### Kind-restricted columns
 
