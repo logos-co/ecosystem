@@ -55,7 +55,13 @@ Concrete procedures exist for publishing a λ-Prize ([[#λ-Prize publish comms p
 
 #### Who posts
 
-The forum posts and Discord messages in these playbooks are sent by the **author of the RFP or λ-Prize in Eco Dev Eng**, from their own accounts, not by Comms. Why? So they are notified of replies and can answer questions or follow up when needed.
+The forum posts and Discord messages in these playbooks are sent by the responsible Eco Dev Eng engineer, from their own accounts, not by Comms:
+
+- **λ-Prize:** its author.
+- **RFP publication:** its author.
+- **RFP contracting and milestones:** the RFP's Eco Dev Eng owner, who verifies the milestones. The owner may or may not be the author.
+
+Why? So they are notified of replies and can answer questions or follow up when needed.
 
 Comms then takes the announcement and broadcasts it further: a series of tweets, a push to Circles, and so on.
 
@@ -70,7 +76,7 @@ The known sequence for announcing a λ-Prize the moment it opens for submissions
 
 #### RFP comms playbook
 
-An RFP is announced several times over its life: when it's published, when it's contracted, and at each milestone submission and acceptance. The RFP's author in Eco Dev Eng makes every post and Discord message (see [[#Who posts]]); Comms amplifies afterwards.
+An RFP is announced several times over its life: when it's published, when it's contracted, and at each milestone submission and acceptance. The RFP's author in Eco Dev Eng makes the publication posts, and the RFP's Eco Dev Eng owner, who verifies the milestones, makes the contracting and milestone ones (see [[#Who posts]]); Comms amplifies afterwards.
 
 For now, the recommendation is to keep all of an RFP's announcements in the **same forum topic and Discord thread** opened at publication: later announcements are replies there, not new topics or threads, so anyone following the RFP sees its whole history in one place.
 
