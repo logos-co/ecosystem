@@ -1,15 +1,15 @@
 {
-    "timestamp": "2026-10-01T00:01:52Z",
+    "timestamp": "2026-10-01T04:54:47Z",
     "git": {
-        "commit": "676a74fc6e024ecae2f8cd2a67601650663a2f68",
+        "commit": "10d41012255dc15069c5162daaf658d07ffe0ec8",
         "branch": "origin/v4",
         "url": "git@github.com:logos-co/ecosystem.git"
     },
     "build": {
-        "id": "33",
-        "number": "33",
+        "id": "34",
+        "number": "34",
         "name": "website/ecosystem.logos.co",
         "slave": "linux-02",
-        "url": "https://ci.infra.status.im/job/website/job/ecosystem.logos.co/33/"
+        "url": "https://ci.infra.status.im/job/website/job/ecosystem.logos.co/34/"
     }
 }
