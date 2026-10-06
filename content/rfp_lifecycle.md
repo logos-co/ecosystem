@@ -124,6 +124,15 @@ Several columns are explicitly restricted to one *kind* of GitHub item, called o
 
 A consequence: a `[PROPOSAL]` issue and its parent `[RFP]` issue should essentially never sit in the same kind-restricted column at the same time. If a `[PROPOSAL]` issue is found parked in a main-tracking-only column (7 or 10), that's a misplacement to fix, not a valid state.
 
+Column 9 (RFPs Contracting) is deliberately **not** in this table: it takes both kinds, see below.
+
+### Contracting and the accepted proposal
+
+Column 9 (**RFPs Contracting**) is not kind-restricted. Unlike columns 7 and 10, the RFP's main tracking issue and the `[PROPOSAL]` issue being contracted can, and normally do, sit there at the same time.
+
+- **When a proposal is accepted:** move that one `[PROPOSAL]` issue from column 8 to column 9 while legal drafts and sends the contract. Every other (losing) proposal stays in column 8 until the cleanup rules apply (see [[#Sub-issue linkage]] and [[#Closed-issue cleanup]]).
+- **Temporary state, contract not yet signed:** milestones can be prepared before the contract is signed. The parent `[RFP]` issue may therefore already be in column 10 (**RFPs In delivery**) with its `[MILESTONE]` issues linked as sub-issues, while the accepted proposal is still in column 9 and still linked as a sub-issue of the parent. This is expected, not a misplacement. As of 2026-10-07, RFP-008 is in this state: `ecosystem#184` is In delivery with milestones prepared, and the accepted `[PROPOSAL] RFP-008 — Argo` is in Contracting. The state ends at signature: unlink the proposal from the parent, as the swap rule in [[#Sub-issue linkage]] describes, so that only milestone sub-issues remain.
+
 ---
 
 ## Category field
@@ -151,7 +160,7 @@ GitHub's native sub-issue relationship (the `addSubIssue` mutation / repo Sub-is
 - Losing proposals are unlinked from the parent, and once closed, removed from the project board entirely (see [[#Closed-issue cleanup]]).
 - `[MILESTONE]` issues become the parent's sub-issues instead.
 
-Once an RFP moves into delivery, its proposal sub-issues must be removed and replaced with milestone sub-issues (RFP-001 and RFP-002 illustrate the end state: only milestone sub-issues remain once delivery is underway).
+Once an RFP moves into delivery, its proposal sub-issues must be removed and replaced with milestone sub-issues (RFP-001 and RFP-002 illustrate the end state: only milestone sub-issues remain once delivery is underway). One exception: the accepted proposal may stay linked, and stay in column 9, until the contract is signed (see [[#Contracting and the accepted proposal]]).
 
 ---
 
@@ -280,7 +289,7 @@ flowchart TD
 | 1–6 (Backlog → Published) | ✅ | — | — | ✅ (from 6 on) |
 | 7. RFPs Closed for proposals | ✅ only | ❌ | — | — |
 | 8. Proposals & Submissions to review | ❌ | ✅ only | — | ✅ |
-| 9. RFPs Contracting | ✅ | — | — | — |
+| 9. RFPs Contracting | ✅ | ✅ (the accepted proposal only) | — | — |
 | 10. RFPs In delivery | ✅ only | ❌ | — | — |
 | 11. Pending RFP milestone | — | — | ✅ only | — |
 | 12. RFP milestone in review | — | — | ✅ only | — |
