@@ -1,0 +1,38 @@
+name: Board check
+
+# Flags misplaced items on the RFP & LPrize Tracking board (project 18) by writing the
+# "Board check" / "Board check reason" project fields. Rules: content/rfp_lifecycle.md.
+# Only those two project fields are written; issues and PRs are never edited, labelled or closed.
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print what would change without writing any project field"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: board-check
+  cancel-in-progress: false
+
+jobs:
+  board-check:
+    name: Evaluate project 18
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run board check
+        env:
+          # Needs Projects read/write on logos-co, and read on ecosystem, rfp and lambda-prize.
+          GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          # Scheduled runs write; manual runs are dry by default.
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
+        run: python3 .github/scripts/board_check.py
