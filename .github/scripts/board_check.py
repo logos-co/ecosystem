@@ -4,7 +4,7 @@
 Evaluates every board item against the rules in content/rfp_lifecycle.md and writes the
 result into two project fields:
 
-  * "Board check"        single-select: "✅ OK" / "🔴 Misplaced" / "🟠 Warning"
+  * "Board check"        single-select: "🔴 Misplaced" / "🟠 Warning"; empty when the item is OK
   * "Board check reason" text: which rule(s) the item breaks, empty when OK
 
 It only ever writes those two fields. It never edits, labels, relinks or closes issues/PRs
@@ -29,7 +29,7 @@ from pathlib import Path
 PROJECT_NUMBER = 18
 FIELD_CHECK = "Board check"
 FIELD_REASON = "Board check reason"
-OK, RED, AMBER = "✅ OK", "🔴 Misplaced", "🟠 Warning"
+OK, RED, AMBER = "OK", "🔴 Misplaced", "🟠 Warning"  # OK is a verdict only: it is stored as an empty field
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
 GRACE = timedelta(minutes=int(os.environ.get("GRACE_MINUTES", "60")))
 IGNORE_FILE = Path(__file__).resolve().parent.parent / "board-check-ignore.json"
@@ -154,7 +154,7 @@ def load_meta():
         if name not in fields:
             sys.exit(f'Project field "{name}" does not exist on project {PROJECT_NUMBER}. Create it first.')
     options = {o["name"]: o["id"] for o in fields[FIELD_CHECK].get("options", [])}
-    for name in (OK, RED, AMBER):
+    for name in (RED, AMBER):
         if name not in options:
             sys.exit(f'Option "{name}" is missing from the "{FIELD_CHECK}" field.')
     return project["id"], fields[FIELD_CHECK]["id"], fields[FIELD_REASON]["id"], options
@@ -363,11 +363,12 @@ def main():
         want, why = verdict(f), reason_text(f)
         if want != OK:
             report.append((want, i, why))
-        same = i["current_check"] == want and (i["current_reason"] or "") == why
+        stored = None if want == OK else want  # OK is stored as an empty field
+        same = i["current_check"] == stored and (i["current_reason"] or "") == why
         if same:
             continue
         # Don't newly flag an item that was only just edited (parent/child moves happen one at a time).
-        if want != OK and now - i["updated"] < GRACE and i["current_check"] in (None, OK):
+        if want != OK and now - i["updated"] < GRACE and i["current_check"] is None:
             skipped.append(i)
             continue
         changes.append((i, want, why))
@@ -393,8 +394,12 @@ def main():
     if DRY_RUN:
         return
     for i, want, why in changes:
-        if i["current_check"] != want:
-            graphql(SET_SELECT, project=project_id, item=i["item_id"], field=check_field, option=options[want])
+        stored = None if want == OK else want
+        if i["current_check"] != stored:
+            if stored:
+                graphql(SET_SELECT, project=project_id, item=i["item_id"], field=check_field, option=options[stored])
+            else:
+                graphql(CLEAR, project=project_id, item=i["item_id"], field=check_field)
         if (i["current_reason"] or "") != why:
             if why:
                 graphql(SET_TEXT, project=project_id, item=i["item_id"], field=reason_field, text=why)
