@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Flag misplaced items on the RFP & LPrize Tracking board (project 18).
+"""Flag misplaced items and items with missing data on the RFP & LPrize Tracking board (project 18).
 
 Evaluates every board item against the rules in content/rfp_lifecycle.md and writes the
 result into two project fields:
 
-  * "Board check"        single-select: "🔴 Misplaced" / "🟠 Warning"; empty when the item is OK
+  * "Board check"        single-select: "🔴 Misplaced" = in the wrong place / wrong state (wrong column,
+                         closed but still open on the board, bad parent, wrong Category);
+                         "🟠 Warning" = needs data or a look (empty Status / Category / RFP / λ-Prize /
+                         Closing date, hygiene); empty when the item is OK
   * "Board check reason" text: which rule(s) the item breaks, empty when OK
 
 It only ever writes those two fields. It never edits, labels, relinks or closes issues/PRs
@@ -265,7 +268,7 @@ def evaluate(items, by_key, ignored):
         if i["unlabeled_proposal"]:
             add(i, "AMBER", "hygiene", "looks like a proposal but has no `proposal` label (the auto-add workflow filters on it)")
         if status is None:
-            add(i, "RED", "status", "no Status set")
+            add(i, "AMBER", "status", "no Status set")
             continue
 
         # 1. Status vs kind
@@ -313,20 +316,20 @@ def evaluate(items, by_key, ignored):
         # 4. Category matches kind
         expected = "LPrize" if kind in ("main_lp", "lp_submission") else "RFP"
         if i["category"] is None:
-            add(i, "RED", "category", f"Category is empty (expected {expected})")
+            add(i, "AMBER", "category", f"Category is empty (expected {expected})")
         elif i["category"] != expected:
             add(i, "RED", "category", f"Category is {i['category']} but a {kind.replace('_', ' ')} should be {expected}")
 
         # 5. Published or further right => the RFP / λ-Prize value must be set
         if IDX[status] >= PUBLISHED:
             if kind in ("main_rfp", "proposal", "milestone") and not i["rfp_value"]:
-                add(i, "RED", "field", "RFP field is empty (required from Published onwards; add the RFP-0NN option first if it doesn't exist)")
+                add(i, "AMBER", "field", "RFP field is empty (required from Published onwards; add the RFP-0NN option first if it doesn't exist)")
             if kind in ("main_lp", "lp_submission") and not i["lp_value"]:
-                add(i, "RED", "field", "λ-Prize field is empty (required from Published onwards; add the LP-00NN option first if it doesn't exist)")
+                add(i, "AMBER", "field", "λ-Prize field is empty (required from Published onwards; add the LP-00NN option first if it doesn't exist)")
 
         # 6. An RFP open for proposals must say when it closes
         if kind == "main_rfp" and status == "Published (accepting proposals/submissions)" and not i["closing_date"]:
-            add(i, "RED", "closing-date", "RFP is Published (open for proposals) but has no Closing date")
+            add(i, "AMBER", "closing-date", "RFP is Published (open for proposals) but has no Closing date")
 
     for parent_key, group in contracting.items():
         if len(group) > 1 and parent_key not in ignored:
