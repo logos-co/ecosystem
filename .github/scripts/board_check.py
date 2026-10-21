@@ -38,7 +38,7 @@ GRACE = timedelta(minutes=int(os.environ.get("GRACE_MINUTES", "60")))
 IGNORE_FILE = Path(__file__).resolve().parent.parent / "board-check-ignore.json"
 
 ORDER = [
-    "Backlog", "Priority list", "Writing", "Legal & EcoDev review", "Ready to publish",
+    "Backlog", "Priority list", "Writing", "Eng & expert review", "Legal review", "Ready to publish",
     "Published (accepting proposals/submissions)",
     "RFPs Closed for proposals (reviewing proposals)", "Proposals & Submissions to review",
     "RFPs Contracting", "RFPs In delivery", "Pending RFP milestone", "RFP milestone in review",
