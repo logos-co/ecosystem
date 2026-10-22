@@ -7,7 +7,8 @@ result into two project fields:
   * "Board check"        single-select: "🔴 Misplaced" = in the wrong place / wrong state (wrong column,
                          closed but still open on the board, bad parent, wrong Category);
                          "🟠 Warning" = needs data or a look (empty Status / Category / RFP / λ-Prize /
-                         Closing date, hygiene); empty when the item is OK
+                         Closing date / Est. readiness for legal review, a readiness date that has passed,
+                         hygiene); empty when the item is OK
   * "Board check reason" text: which rule(s) the item breaks, empty when OK
 
 It only ever writes those two fields. It never edits, labels, relinks or closes issues/PRs
@@ -32,6 +33,7 @@ from pathlib import Path
 PROJECT_NUMBER = 18
 FIELD_CHECK = "Board check"
 FIELD_REASON = "Board check reason"
+FIELD_READY = "Est. readiness for legal review"
 OK, RED, AMBER = "OK", "🔴 Misplaced", "🟠 Warning"  # OK is a verdict only: it is stored as an empty field
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
 GRACE = timedelta(minutes=int(os.environ.get("GRACE_MINUTES", "60")))
@@ -199,6 +201,7 @@ def load_items():
                 "rfp_value": values.get("RFP"),
                 "lp_value": values.get("λ-Prize"),
                 "closing_date": dates.get("Closing date"),
+                "ready_date": dates.get(FIELD_READY),
                 "current_check": values.get(FIELD_CHECK),
                 "current_reason": text.get(FIELD_REASON, ""),
                 "parent": (parent["repository"]["nameWithOwner"], parent["number"]) if parent else None,
@@ -245,6 +248,7 @@ def load_ignored():
 def evaluate(items, by_key, ignored):
     """Returns {item_key: [(severity, rule, message), ...]}."""
     result = defaultdict(list)
+    today = datetime.now(timezone.utc).date().isoformat()  # project date values are ISO strings
 
     def add(i, sev, rule, msg):
         result[i["key"]].append((sev, rule, msg))
@@ -330,6 +334,14 @@ def evaluate(items, by_key, ignored):
         # 6. An RFP open for proposals must say when it closes
         if kind == "main_rfp" and status == "Published (accepting proposals/submissions)" and not i["closing_date"]:
             add(i, "AMBER", "closing-date", "RFP is Published (open for proposals) but has no Closing date")
+
+        # 7. Estimated readiness for legal review: required on the Priority list, and flagged once
+        #    the date has passed while the RFP is still left of Legal review
+        if kind == "main_rfp":
+            if status == "Priority list" and not i["ready_date"]:
+                add(i, "AMBER", "ready-date", f"'{FIELD_READY}' is empty (required on the Priority list)")
+            if i["ready_date"] and IDX[status] < IDX["Legal review"] and i["ready_date"] < today:
+                add(i, "AMBER", "ready-date", f"'{FIELD_READY}' ({i['ready_date']}) has passed but the RFP is still in '{status}'")
 
     for parent_key, group in contracting.items():
         if len(group) > 1 and parent_key not in ignored:
