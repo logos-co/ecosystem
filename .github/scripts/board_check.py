@@ -47,6 +47,7 @@ ORDER = [
     "RFP Milestone & λ-Prize accepted", "Complete",
 ]
 IDX = {s: i for i, s in enumerate(ORDER)}
+NEEDS_READY_DATE = {"Priority list", "Writing", "Eng & expert review"}
 PUBLISHED = IDX["Published (accepting proposals/submissions)"]
 CLOSED_FOR_PROPOSALS = "RFPs Closed for proposals (reviewing proposals)"
 IN_REVIEW = "Proposals & Submissions to review"
@@ -335,11 +336,11 @@ def evaluate(items, by_key, ignored):
         if kind == "main_rfp" and status == "Published (accepting proposals/submissions)" and not i["closing_date"]:
             add(i, "AMBER", "closing-date", "RFP is Published (open for proposals) but has no Closing date")
 
-        # 7. Estimated readiness for legal review: required on the Priority list, and flagged once
-        #    the date has passed while the RFP is still left of Legal review
+        # 7. Estimated readiness for legal review: required until the RFP reaches Legal review, and
+        #    flagged once the date has passed while the RFP is still left of it
         if kind == "main_rfp":
-            if status == "Priority list" and not i["ready_date"]:
-                add(i, "AMBER", "ready-date", f"'{FIELD_READY}' is empty (required on the Priority list)")
+            if status in NEEDS_READY_DATE and not i["ready_date"]:
+                add(i, "AMBER", "ready-date", f"'{FIELD_READY}' is empty (required in '{status}')")
             if i["ready_date"] and IDX[status] < IDX["Legal review"] and i["ready_date"] < today:
                 add(i, "AMBER", "ready-date", f"'{FIELD_READY}' ({i['ready_date']}) has passed but the RFP is still in '{status}'")
 
