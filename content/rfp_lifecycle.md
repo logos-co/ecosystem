@@ -26,32 +26,33 @@ Tracking is split across three repos, each with a different job:
 
 ## The Status pipeline
 
-Project 18's `Status` field is a single-select with 14 values, in pipeline order. Each column's description below is copied verbatim from the field definition on the board.
+Project 18's `Status` field is a single-select with 15 values, in pipeline order. Each column's description below is copied verbatim from the field definition on the board.
 
 | # | Status | Description |
 | :-: | --- | --- |
 | 1 | Backlog | Backlog of write-ups to do |
 | 2 | Priority list | Triaged & prioritized ideas, ready to spec |
 | 3 | Writing | Eng writing the RFP/LPrize |
-| 4 | Legal & EcoDev review | Legal & Ecodev reviews of both RFPs and λ-Prizes before publishing |
-| 5 | Ready to publish | Reviewed and legal approved RFPs and λ-Prizes, but pending scheduling/opening. |
-| 6 | Published (accepting proposals/submissions) | RFPs open for proposals and λ-Prizes opened for submissions. `[COMMS]` |
-| 7 | RFPs Closed for proposals (reviewing proposals) | RFPs closed from proposals, and reviewing them (main tracking issue only). |
-| 8 | Proposals & Submissions to review | The actual RFP proposals and λ-Prize submissions to review (no main tracking issues here) |
-| 9 | RFPs Contracting | Proposal accepted; legal drafts & sends contract |
-| 10 | RFPs In delivery | RFPs in progress (main tracking issues only) `[COMMS]` |
-| 11 | Pending RFP milestone | RFP Milestones not yet submitted/approved (milestone issues only) |
-| 12 | RFP milestone in review | Grantee submitted a milestone; eng reviewing `[COMMS]` (milestone issues only) |
-| 13 | RFP Milestone & λ-Prize accepted | RFP Milestone or λ-Prize submission approved; ready for payment `[COMMS]` |
-| 14 | Complete | All milestones complete `[COMMS]` |
+| 4 | Eng & expert review | Review by eco dev eng and Logos R&D |
+| 5 | Legal review | Review from legal |
+| 6 | Ready to publish | Reviewed and legal approved RFPs and λ-Prizes, but pending scheduling/opening. |
+| 7 | Published (accepting proposals/submissions) | RFPs open for proposals and λ-Prizes opened for submissions. `[COMMS]` |
+| 8 | RFPs Closed for proposals (reviewing proposals) | RFPs closed from proposals, and reviewing them (main tracking issue only). |
+| 9 | Proposals & Submissions to review | The actual RFP proposals and λ-Prize submissions to review (no main tracking issues here) |
+| 10 | RFPs Contracting | Proposal accepted; legal drafts & sends contract |
+| 11 | RFPs In delivery | RFPs in progress (main tracking issues only) `[COMMS]` |
+| 12 | Pending RFP milestone | RFP Milestones not yet submitted/approved (milestone issues only) |
+| 13 | RFP milestone in review | Grantee submitted a milestone; eng reviewing `[COMMS]` (milestone issues only) |
+| 14 | RFP Milestone & λ-Prize accepted | RFP Milestone or λ-Prize submission approved; ready for payment `[COMMS]` |
+| 15 | Complete | All milestones complete `[COMMS]` |
 
-Not every item passes through every column — a λ-Prize, for instance, never touches columns 7, 9, 11 or 12 (see [[#λ-Prize submissions are PRs, not issues]]).
+Not every item passes through every column — a λ-Prize, for instance, never touches columns 8, 10, 12 or 13 (see [[#λ-Prize submissions are PRs, not issues]]).
 
 ### The `[COMMS]` rule
 
-Any column whose description carries the literal `[COMMS]` tag means **reaching that status should trigger external communication** — a post, a social media announcement, a Discord/community update. That's columns 6, 10, 12, 13, and 14. Moving an item into one of these columns is a cue to check whether the announcement has gone out, not just a bookkeeping step.
+Any column whose description carries the literal `[COMMS]` tag means **reaching that status should trigger external communication** — a post, a social media announcement, a Discord/community update. That's columns 7, 11, 13, 14, and 15. Moving an item into one of these columns is a cue to check whether the announcement has gone out, not just a bookkeeping step.
 
-Concrete procedures exist for publishing a λ-Prize ([[#λ-Prize publish comms playbook]]) and for an RFP from publication through each milestone acceptance ([[#RFP comms playbook]]). Column 14 (**Complete**), and λ-Prize acceptance in column 13, still rely on judgment call at the time.
+Concrete procedures exist for publishing a λ-Prize ([[#λ-Prize publish comms playbook]]) and for an RFP from publication through each milestone acceptance ([[#RFP comms playbook]]). Column 15 (**Complete**), and λ-Prize acceptance in column 14, still rely on judgment call at the time.
 
 #### Who posts
 
@@ -67,7 +68,7 @@ Comms then takes the announcement and broadcasts it further: a series of tweets,
 
 #### λ-Prize publish comms playbook
 
-The known sequence for announcing a λ-Prize the moment it opens for submissions (column 6, **Published (accepting proposals/submissions)**). The λ-Prize's author in Eco Dev Eng does every step below themselves (see [[#Who posts]]); Comms amplifies afterwards.
+The known sequence for announcing a λ-Prize the moment it opens for submissions (column 7, **Published (accepting proposals/submissions)**). The λ-Prize's author in Eco Dev Eng does every step below themselves (see [[#Who posts]]); Comms amplifies afterwards.
 
 1. Post an announcement on [forum.logos.co](https://forum.logos.co) (Discourse) introducing the λ-Prize, following the pattern of an existing example such as [LP-0023: LEZ Program Registry](https://forum.logos.co/t/new-prize-lp-0023-lez-program-registry-2-000/1946). Write it with genuine enthusiasm — this is exciting news, and the tone should read that way, not like a dry status update. The post should invite two audiences at once: potential users, to describe how they'd use the prize and what feature they'd want to see, and developers, to share their work in the topic. Since λ-Prizes are judged against [[index#λ-Prizes vs RFPs|adoption criteria]], call out that ongoing conversation with potential users is encouraged, not a one-off ask — builders should keep checking back in with the thread as they work.
 2. Mirror that announcement in Discord's `#builder-hub` channel, pinging `@vrycmfy` (chair) and the `@builder` role, linking back to the forum post, keeping the same enthusiastic tone, and open a thread on it inviting the same dual discussion from users and developers. Repeat the adoption-criteria note here too: regular back-and-forth with potential users throughout the build is encouraged, not just at launch.
@@ -80,7 +81,7 @@ An RFP is announced several times over its life: when it's published, when it's 
 
 For now, the recommendation is to keep all of an RFP's announcements in the **same forum topic and Discord thread** opened at publication: later announcements are replies there, not new topics or threads, so anyone following the RFP sees its whole history in one place.
 
-##### At publication (column 6)
+##### At publication (column 7)
 
 An RFP announcement has a different audience from a λ-Prize one. λ-Prizes are judged on adoption, so their posts court end users as much as builders. An RFP is a grant for a team to deliver a scoped build, so its post is aimed at **dev studios and teams deciding whether to bid**: it should read as a well-scoped engagement they'd want to take on, not a call for user feedback. Keep the enthusiasm, but pitch it at the studio.
 
@@ -99,16 +100,16 @@ Before announcing, check the RFP is actually open in `logos-co/rfp`: its row in 
 3. Post a one-line pointer in `#general` linking the forum post, so studios in the wider community see it.
 4. Once the Discord thread exists, edit the forum post to backlink it.
 
-##### When contracted (column 10)
+##### When contracted (column 11)
 
 Once the contract is signed and the RFP moves to **RFPs In delivery**, reply in the forum topic and the Discord thread announcing the selected team: who they are, a link to their `[PROPOSAL]` issue, and the milestones they'll deliver.
 
-##### At each milestone (columns 12 and 13)
+##### At each milestone (columns 13 and 14)
 
 Post twice per milestone, again as replies in the same forum topic and Discord thread:
 
-- **On submission** (column 12, **RFP milestone in review**): the team has submitted milestone N. Link the `[MILESTONE]` issue and the delivered work, and say it's under review.
-- **On acceptance** (column 13, **RFP Milestone & λ-Prize accepted**): milestone N is accepted. Summarize what shipped with links, and say what comes next.
+- **On submission** (column 13, **RFP milestone in review**): the team has submitted milestone N. Link the `[MILESTONE]` issue and the delivered work, and say it's under review.
+- **On acceptance** (column 14, **RFP Milestone & λ-Prize accepted**): milestone N is accepted. Summarize what shipped with links, and say what comes next.
 
 ### Kind-restricted columns
 
@@ -116,22 +117,22 @@ Several columns are explicitly restricted to one *kind* of GitHub item, called o
 
 | Column | Restricted to |
 | --- | --- |
-| 7. RFPs Closed for proposals | Main tracking issue (`[RFP]` / `[Internal RFP]`) only — never a `[PROPOSAL]` child |
-| 8. Proposals & Submissions to review | `[PROPOSAL]` issues and λ-Prize submission PRs only — never a main tracking issue |
-| 10. RFPs In delivery | Main tracking issue only — never a `[PROPOSAL]` child |
-| 11. Pending RFP milestone | `[MILESTONE]` child issues only |
-| 12. RFP milestone in review | `[MILESTONE]` child issues only |
+| 8. RFPs Closed for proposals | Main tracking issue (`[RFP]` / `[Internal RFP]`) only — never a `[PROPOSAL]` child |
+| 9. Proposals & Submissions to review | `[PROPOSAL]` issues and λ-Prize submission PRs only — never a main tracking issue |
+| 11. RFPs In delivery | Main tracking issue only — never a `[PROPOSAL]` child |
+| 12. Pending RFP milestone | `[MILESTONE]` child issues only |
+| 13. RFP milestone in review | `[MILESTONE]` child issues only |
 
-A consequence: a `[PROPOSAL]` issue and its parent `[RFP]` issue should essentially never sit in the same kind-restricted column at the same time. If a `[PROPOSAL]` issue is found parked in a main-tracking-only column (7 or 10), that's a misplacement to fix, not a valid state.
+A consequence: a `[PROPOSAL]` issue and its parent `[RFP]` issue should essentially never sit in the same kind-restricted column at the same time. If a `[PROPOSAL]` issue is found parked in a main-tracking-only column (8 or 11), that's a misplacement to fix, not a valid state.
 
-Column 9 (RFPs Contracting) is deliberately **not** in this table: it takes both kinds, see below.
+Column 10 (RFPs Contracting) is deliberately **not** in this table: it takes both kinds, see below.
 
 ### Contracting and the accepted proposal
 
-Column 9 (**RFPs Contracting**) is not kind-restricted. Unlike columns 7 and 10, the RFP's main tracking issue and the `[PROPOSAL]` issue being contracted can, and normally do, sit there at the same time.
+Column 10 (**RFPs Contracting**) is not kind-restricted. Unlike columns 8 and 11, the RFP's main tracking issue and the `[PROPOSAL]` issue being contracted can, and normally do, sit there at the same time.
 
-- **When a proposal is accepted:** move that one `[PROPOSAL]` issue from column 8 to column 9 while legal drafts and sends the contract. Every other (losing) proposal stays in column 8 until the cleanup rules apply (see [[#Sub-issue linkage]] and [[#Closed-issue cleanup]]).
-- **Temporary state, contract not yet signed:** milestones can be prepared before the contract is signed. The parent `[RFP]` issue may therefore already be in column 10 (**RFPs In delivery**) with its `[MILESTONE]` issues linked as sub-issues, while the accepted proposal is still in column 9 and still linked as a sub-issue of the parent. This is expected, not a misplacement. As of 2026-10-07, RFP-008 is in this state: `ecosystem#184` is In delivery with milestones prepared, and the accepted `[PROPOSAL] RFP-008 — Argo` is in Contracting. The state ends at signature: unlink the proposal from the parent, as the swap rule in [[#Sub-issue linkage]] describes, so that only milestone sub-issues remain.
+- **When a proposal is accepted:** move that one `[PROPOSAL]` issue from column 9 to column 10 while legal drafts and sends the contract. Every other (losing) proposal stays in column 9 until the cleanup rules apply (see [[#Sub-issue linkage]] and [[#Closed-issue cleanup]]).
+- **Temporary state, contract not yet signed:** milestones can be prepared before the contract is signed. The parent `[RFP]` issue may therefore already be in column 11 (**RFPs In delivery**) with its `[MILESTONE]` issues linked as sub-issues, while the accepted proposal is still in column 10 and still linked as a sub-issue of the parent. This is expected, not a misplacement. As of 2026-10-07, RFP-008 is in this state: `ecosystem#184` is In delivery with milestones prepared, and the accepted `[PROPOSAL] RFP-008 — Argo` is in Contracting. The state ends at signature: unlink the proposal from the parent, as the swap rule in [[#Sub-issue linkage]] describes, so that only milestone sub-issues remain.
 
 ---
 
@@ -151,16 +152,16 @@ Every item also carries a `Category` single-select: `RFP` or `LPrize`. It's what
 
 GitHub's native sub-issue relationship (the `addSubIssue` mutation / repo Sub-issues UI) is used to link child issues to their parent `[RFP]` main tracking issue, and which children are linked changes as the RFP moves through the pipeline.
 
-**While an RFP is in column 8 (Proposals & Submissions to review):** every competing `[PROPOSAL]` issue for that RFP must be attached as a sub-issue of the parent `[RFP]` tracking issue — not just the eventual winner (RFP-012, 014, 015, 016, and 017 illustrate this: each has its full set of open proposals linked as sub-issues of the parent).
+**While an RFP is in column 9 (Proposals & Submissions to review):** every competing `[PROPOSAL]` issue for that RFP must be attached as a sub-issue of the parent `[RFP]` tracking issue — not just the eventual winner (RFP-012, 014, 015, 016, and 017 illustrate this: each has its full set of open proposals linked as sub-issues of the parent).
 
 > **Known platform limitation:** a sub-issue can only have one parent. A proposal that spans two RFPs (an observed real case: `[PROPOSAL] RFP-015 & 016 - LPAD`) can only be linked under one of the two parent RFP issues, not both. There's no clean fix for this — it's a structural gap in the sub-issue feature, documented here so it isn't mistaken for a missed link.
 
-**Once an RFP moves into column 10 (RFPs In delivery):** the `[PROPOSAL]` sub-issues are swapped out —
+**Once an RFP moves into column 11 (RFPs In delivery):** the `[PROPOSAL]` sub-issues are swapped out —
 
 - Losing proposals are unlinked from the parent, and once closed, removed from the project board entirely (see [[#Closed-issue cleanup]]).
 - `[MILESTONE]` issues become the parent's sub-issues instead.
 
-Once an RFP moves into delivery, its proposal sub-issues must be removed and replaced with milestone sub-issues (RFP-001 and RFP-002 illustrate the end state: only milestone sub-issues remain once delivery is underway). One exception: the accepted proposal may stay linked, and stay in column 9, until the contract is signed (see [[#Contracting and the accepted proposal]]).
+Once an RFP moves into delivery, its proposal sub-issues must be removed and replaced with milestone sub-issues (RFP-001 and RFP-002 illustrate the end state: only milestone sub-issues remain once delivery is underway). One exception: the accepted proposal may stay linked, and stay in column 10, until the contract is signed (see [[#Contracting and the accepted proposal]]).
 
 ---
 
@@ -173,7 +174,7 @@ Once an RFP moves into delivery, its proposal sub-issues must be removed and rep
 3. On merge/acceptance, set `Status = RFP Milestone & λ-Prize accepted`, then `Complete` once paid out.
 4. Rejected or closed-without-merge submissions are never left sitting on the board.
 
-Because a λ-Prize item never has a `[PROPOSAL]`/`[MILESTONE]` issue shape, it structurally can't occupy the RFP-specific-worded columns (7, 9, 11, 12) — see [[#Board views]].
+Because a λ-Prize item never has a `[PROPOSAL]`/`[MILESTONE]` issue shape, it structurally can't occupy the RFP-specific-worded columns (8, 10, 12, 13) — see [[#Board views]].
 
 ---
 
@@ -254,24 +255,25 @@ flowchart TD
     B["1. Backlog"]
     PL["2. Priority list"]
     W["3. Writing"]
-    LR["4. Legal & EcoDev review"]
-    RP["5. Ready to publish"]
-    PUB["6. Published (accepting proposals/submissions)<br/>[COMMS]"]
+    ER["4. Eng & expert review"]
+    LR["5. Legal review"]
+    RP["6. Ready to publish"]
+    PUB["7. Published (accepting proposals/submissions)<br/>[COMMS]"]
 
-    B --> PL --> W --> LR --> RP --> PUB
+    B --> PL --> W --> ER --> LR --> RP --> PUB
 
     subgraph RFP["RFP-only path"]
         direction TB
-        CFP["7. RFPs Closed for proposals<br/>(reviewing proposals)<br/><i>main tracking issue only</i>"]
-        REV["8. Proposals & Submissions to review<br/><i>[PROPOSAL] issues / λ-Prize PRs only</i>"]
-        CONTRACT["9. RFPs Contracting"]
-        DELIVERY["10. RFPs In delivery<br/>[COMMS]<br/><i>main tracking issue only</i>"]
-        PEND["11. Pending RFP milestone<br/><i>[MILESTONE] issues only</i>"]
-        MREV["12. RFP milestone in review<br/>[COMMS]<br/><i>[MILESTONE] issues only</i>"]
+        CFP["8. RFPs Closed for proposals<br/>(reviewing proposals)<br/><i>main tracking issue only</i>"]
+        REV["9. Proposals & Submissions to review<br/><i>[PROPOSAL] issues / λ-Prize PRs only</i>"]
+        CONTRACT["10. RFPs Contracting"]
+        DELIVERY["11. RFPs In delivery<br/>[COMMS]<br/><i>main tracking issue only</i>"]
+        PEND["12. Pending RFP milestone<br/><i>[MILESTONE] issues only</i>"]
+        MREV["13. RFP milestone in review<br/>[COMMS]<br/><i>[MILESTONE] issues only</i>"]
     end
 
-    ACC["13. RFP Milestone & λ-Prize accepted<br/>[COMMS]"]
-    COMP["14. Complete<br/>[COMMS]"]
+    ACC["14. RFP Milestone & λ-Prize accepted<br/>[COMMS]"]
+    COMP["15. Complete<br/>[COMMS]"]
 
     PUB -->|"RFP"| CFP --> REV --> CONTRACT --> DELIVERY --> PEND --> MREV --> ACC
     PUB -->|"λ-Prize"| REV
@@ -286,13 +288,13 @@ flowchart TD
 
 | Status | RFP main tracking issue | `[PROPOSAL]` issue | `[MILESTONE]` issue | λ-Prize submission PR |
 | --- | :-: | :-: | :-: | :-: |
-| 1–6 (Backlog → Published) | ✅ | — | — | ✅ (from 6 on) |
-| 7. RFPs Closed for proposals | ✅ only | ❌ | — | — |
-| 8. Proposals & Submissions to review | ❌ | ✅ only | — | ✅ |
-| 9. RFPs Contracting | ✅ | ✅ (the accepted proposal only) | — | — |
-| 10. RFPs In delivery | ✅ only | ❌ | — | — |
-| 11. Pending RFP milestone | — | — | ✅ only | — |
-| 12. RFP milestone in review | — | — | ✅ only | — |
-| 13–14 (Accepted / Complete) | — | — | ✅ | ✅ |
+| 1–7 (Backlog → Published) | ✅ | — | — | ✅ (from 7 on) |
+| 8. RFPs Closed for proposals | ✅ only | ❌ | — | — |
+| 9. Proposals & Submissions to review | ❌ | ✅ only | — | ✅ |
+| 10. RFPs Contracting | ✅ | ✅ (the accepted proposal only) | — | — |
+| 11. RFPs In delivery | ✅ only | ❌ | — | — |
+| 12. Pending RFP milestone | — | — | ✅ only | — |
+| 13. RFP milestone in review | — | — | ✅ only | — |
+| 14–15 (Accepted / Complete) | — | — | ✅ | ✅ |
 
 ---
