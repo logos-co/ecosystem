@@ -8,14 +8,14 @@ Home of the Logos **Ecosystem Development Engineering** ("Eco Dev Eng") team. We
 
 ## Team
 
-| Name          | GitHub                                               |
-| ------------- | ---------------------------------------------------- |
-| Franck (lead) | [@fryorcraken](https://github.com/fryorcraken)       |
-| James Zaki    | [@jzaki](https://github.com/jzaki)                   |
-| Vaclav Pavlin | [@vpavlin](https://github.com/vpavlin)               |
-| Danish Arora  | [@danisharora099](https://github.com/danisharora099) |
-| Sasha         | [@weboko](https://github.com/weboko)                 |
-| Alisher       | [@xAlisher](https://github.com/xAlisher)             |
+| Name          | GitHub                                               | Areas of preference   |
+| ------------- | ---------------------------------------------------- | --------------------- |
+| Franck (lead) | [@fryorcraken](https://github.com/fryorcraken)       |                       |
+| James Zaki    | [@jzaki](https://github.com/jzaki)                   | Zone                  |
+| Vaclav Pavlin | [@vpavlin](https://github.com/vpavlin)               | Messaging, Anon Comms |
+| Danish Arora  | [@danisharora099](https://github.com/danisharora099) | Storage               |
+| Sasha         | [@weboko](https://github.com/weboko)                 | Core                  |
+| Alisher       | [@xAlisher](https://github.com/xAlisher)             | Blockchain, Basecamp  |
 
 # Mandate
 
