@@ -17,6 +17,8 @@ Home of the Logos **Ecosystem Development Engineering** ("Eco Dev Eng") team. We
 | Sasha         | [@weboko](https://github.com/weboko)                 | Core                  |
 | Alisher       | [@xAlisher](https://github.com/xAlisher)             | Blockchain, Basecamp  |
 
+Program: the work is RFP related, so eco dev eng person assigned to the individual RFP tracks the work.
+
 # Mandate
 
 Enable bi-directional feedback between the Logos technical stack and the Logos community/ecosystem. By:
