@@ -165,6 +165,29 @@ Once an RFP moves into delivery, its proposal sub-issues must be removed and rep
 
 ---
 
+## RFP milestone reviews and payment
+
+This section covers how an accepted RFP's milestones are set up, reviewed by Eco Dev Eng, and paid. On the board, each milestone issue moves through columns 12 → 13 → 14 (see [[#The Status pipeline]]).
+
+### Milestone issue creation
+
+Once an RFP's proposal is accepted, a `[MILESTONE]` issue is created in `logos-co/rfp` for each milestone, from the `milestone.yml` template. Each one:
+
+- is linked as a sub-issue of the RFP's parent tracking issue (see [[#Sub-issue linkage]]);
+- carries two labels: `milestone`, and the RFP's own `RFP-0NN` label (for example `RFP-008`).
+
+### Milestone review
+
+Milestones are reviewed **asynchronously** by the Eco Dev Engineering team; there is no scheduled review meeting. When an Eco Dev engineer approves a milestone, that engineer adds the `milestone-approved` label to its `[MILESTONE]` issue. That label is the record of approval, and it goes with the move to column 14 (**RFP Milestone & λ-Prize accepted**).
+
+### Milestone payment
+
+1. Once a milestone carries `milestone-approved`, the contracted team is expected to send an invoice for it.
+2. The team emails the invoice to liene@logos.co, with guru@logos.co on CC.
+3. The finance team then makes the payment.
+
+---
+
 ## λ-Prize submissions are PRs, not issues
 
 λ-Prize submissions land in `logos-co/lambda-prize` as pull requests titled `Solution: LP-xxxx — <name>`, not as issues. This matters because project 18, as of this writing, contains only Issue-type items — zero PR-type items — so a λ-Prize submission is tracked as its own board item rather than as a sub-issue of anything:
